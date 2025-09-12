@@ -72,14 +72,14 @@ const ProductCard = ({ product, isHovered, onProductClick }) => {
         {/* Status Indicator & Learn More - Pushed to the bottom */}
         <div className="flex items-center justify-between pt-4 border-t border-gray-100 mt-auto">
           <div className="flex items-center space-x-2">
-            <div className={`w-3 h-3 ${statusColor} rounded-full animate-pulse-slow`} />
-            <span className="text-gray-700 text-sm font-medium">{product.status}</span>
+{/*             <div className={`w-3 h-3 ${statusColor} rounded-full animate-pulse-slow`} />
+            <span className="text-gray-700 text-sm font-medium">{product.status}</span> */}
           </div>
           <button
             onClick={() => onProductClick(product)} // This button also clicks to view series models
             className="text-indigo-600 hover:text-indigo-800 font-semibold transition-colors duration-300 flex items-center space-x-1"
           >
-            <span>Explore</span>
+{/*             <span>Explore</span> */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"

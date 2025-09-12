@@ -263,13 +263,13 @@ useEffect(() => {
                       <div className={`relative w-16 h-16 rounded-2xl flex items-center justify-center bg-gradient-to-br ${point.color} shadow-2xl`}>
                         {point.icon}
                         {activePoint === index && (
-                          <div className={`absolute inset-0 bg-gradient-to-br ${point.color} rounded-2xl animate-ping opacity-30`}></div>
+                          <div className={`absolute inset-0 bg-gradient-to-br ${point.color} rounded-2xl opacity-30`}></div>
                         )}
                       </div>
                       <div className="flex-1">
                         <h3 className="text-2xl font-light lg:font-bold text-slate-800 mb-3 flex items-center gap-3">
                           {point.title}
-                          {activePoint === index && <Waves className="w-5 h-5 text-blue-500 animate-bounce" />}
+                          {/* {activePoint === index && <Waves className="w-5 h-5 text-blue-500 animate-bounce" />} */}
                         </h3>
                         <p className="text-slate-600 leading-relaxed text-base sm:text-lg lg:text-xl">
                           {point.description}

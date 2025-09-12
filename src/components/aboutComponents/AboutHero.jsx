@@ -14,13 +14,13 @@ const AboutHero = ({ backgroundImage = '/images/aboutbg2.png' }) => {
 
       <div className="relative z-10 flex flex-col items-center justify-center h-full">
         <h1 
-          className="text-5xl md:text-6xl lg:text-7xl font-medium text-black mb-6 leading-tight tracking-tight animate-fade-in-up delay-[200ms]"
+          className="text-5xl md:text-6xl lg:text-7xl font-medium text-black mb- leading-tight tracking-tight animate-fade-in-up delay-[200ms]"
         >
           ABOUT
         </h1>
-        <p className="text-base sm:text-lg lg:text-xl text-black mt-4 max-w-3xl text-center leading-relaxed opacity-0 animate-fade-in-up delay-[400ms]">
+        {/* <p className="text-base sm:text-lg lg:text-xl text-black mt-4 max-w-3xl text-center leading-relaxed opacity-0 animate-fade-in-up delay-[400ms]">
           At Resoundify, we are a leading AV brand dedicated to delivering cutting-edge, Dante-enabled audio and video solutions that redefine connectivity and empower exceptional experiences.
-        </p>
+        </p> */}
       </div>
     </section>
   );

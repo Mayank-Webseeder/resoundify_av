@@ -128,7 +128,7 @@ const ProductsPage = () => {
           {/* Background Pattern */}
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(0,0,0,0.05)_1px,transparent_0)] bg-[length:20px_20px] opacity-30" />
           
-          <div className="relative z-10 max-w-[1600px] mx-auto px-6 sm:px-8 lg:px-12 py-8 lg:py-12">
+          <div className="relative z-10  mx-auto px-6 sm:px-8 lg:px-10 py-8 lg:py-12">
             
             {/* Page Header */}
             <div className="mb-8">

@@ -21,7 +21,7 @@ const ProductsHero = () => {
   }, [backgroundImages.length]);
 
   return (
-    <section className="relative h-170 flex items-center justify-center overflow-hidden">
+    <section className="relative h-[65vh] flex items-center justify-center overflow-hidden">
       {/* Background Images Container with Fade Transition */}
       <div className="absolute inset-0 z-0">
         {backgroundImages.map((image, index) => (

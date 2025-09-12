@@ -110,7 +110,7 @@ export default function ContactPage() {
       <div className="min-h-screen">
         {/* Hero section with background image and overlay */}
         <div
-          className="relative bg-cover bg-center bg-no-repeat h-170 flex items-center justify-center"
+          className="relative bg-cover bg-center bg-no-repeat h-[65vh] flex items-center justify-center"
           style={{
             backgroundImage: "url('/images/contactbg2.png')", // Background image for the hero section
           }}
