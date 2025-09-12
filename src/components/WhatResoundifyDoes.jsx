@@ -4,9 +4,8 @@ import { Network, Monitor, Cable } from 'lucide-react';
 // Define a reusable component for each content block
 const FeatureSection = ({ videoSrc, title, description, icon: Icon, reverse, delay, isAnimated, isLast }) => (
   <div
-    className={`flex flex-col lg:flex-row items-center justify-between ${isLast ? 'mb-0 lg:mb-0' : 'mb-24 lg:mb-32'} ${
-      reverse ? 'lg:flex-row-reverse' : ''
-    } transition-all duration-1000 ${isAnimated ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}
+    className={`flex flex-col lg:flex-row items-center justify-between ${isLast ? 'mb-0 lg:mb-0' : 'mb-24 lg:mb-32'} ${reverse ? 'lg:flex-row-reverse' : ''
+      } transition-all duration-1000 ${isAnimated ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}
     data-animate={delay}
   >
     {/* Video Container - Wider on large screens */}
@@ -78,39 +77,21 @@ export default function WhatResoundifyDoes() {
   const features = [
     {
       videoSrc: "/images/video1.mp4",
-      title: "Network Architecture",
-      description: "Enterprise-grade Dante network design and implementation for seamless audio distribution across complex infrastructures.",
-      icon: Network,
-      delay: 1,
-      reverse: false,
-    },
-    {
-      videoSrc: "/images/video1.mp4",
-      title: "Future-Ready Technology",
-      description: "Products are designed to be compatible with current standards and prepared for future innovations, ensuring long-term relevance.",
-      icon: Cable,
+      title: "About Us",
+      description: `At Resoundify, our foundation is built on a clear mission to revolutionize professional audio-visual experiences with intelligent networking solutions that integrate clarity, reliability, and innovation. We empower organizations of every size to communicate, collaborate, and create without technological barriers.`, icon: Cable,
       delay: 2,
       reverse: true,
-    },
-    {
-      videoSrc: "/images/video1.mp4",
-      title: "24/7 Monitoring",
-      description: "Continuous system monitoring with proactive maintenance and expert technical support, ensuring optimal performance.",
-      icon: Monitor,
-      delay: 3,
-      reverse: false,
-    },
+    }
   ];
 
   return (
     <section ref={sectionRef} className="relative bg-gradient-to-b from-white via-cyan-50 to-white py-16 lg:pt-24 overflow-hidden" style={{ fontFamily: 'Exo 2, sans-serif' }}>
       <div className="mx-auto px-6 lg:px-28 relative z-10">
-        
+
         {/* Header Section */}
         <div
-          className={`text-center mb-24 transition-all duration-1000 ${
-            animatedElements.has(0) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-          }`}
+          className={`text-center mb-24 transition-all duration-1000 ${animatedElements.has(0) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+            }`}
           data-animate={0}
         >
           <h2 className="text-4xl sm:text-5xl lg:text-6xl text-slate-900 mb-6 tracking-tight"
