@@ -18,6 +18,47 @@ const ProductDetailPage = () => {
 
     console.log(model, "model, series", series);
 
+    // Handle datasheet download
+    const handleDatasheetDownload = () => {
+        // Define PDF paths for different products
+        const datasheetPaths = {
+            'model_ap_44d': '/datasheets/AurisPro-44D.pdf',
+            'model_ap_88d': '/datasheets/AurisPro-88D.pdf',
+            'model_ap_128d': '/datasheets/AURISPRO-128D.pdf',
+            'model_ap_1616d': '/datasheets/AurisPro-1616D.pdf',
+            'model_ap_6464d': '/datasheets/AurisPro-6464D.pdf',
+            'model_EchoPrime_88AEC': '/datasheets/EchoPrime-88AEC.pdf',
+            'model_EchoPrime_b88': '/datasheets/EchoPrime-B88.pdf',
+            'model_EchoPrime_B1616': '/datasheets/EchoPrime-B1616.pdf',
+            'model_fusion_1005': '/datasheets/Fusion-1005.pdf',
+            'model_fusion_1008': '/datasheets/Fusion-1008.pdf',
+            'model_fusion_1009': '/datasheets/Fusion-1009.pdf',
+            'model_fusion_2009': '/datasheets/Fusion-2009.pdf',
+            'model_fusion_cp2': '/datasheets/Fusion-CP2.pdf',
+            'model_fusion_cp6': '/datasheets/Fusion-CP6.pdf',
+            'model_VoxNova_88': '/datasheets/VoxNova88.pdf',
+            'model_VoxNova_128f': '/datasheets/VoxNova128F.pdf',
+            'model_VoxNova_1616': '/datasheets/VoxNova1616.pdf',
+            // Add more product datasheets as needed
+        };
+
+        // Get the PDF path for current product
+        const pdfPath = datasheetPaths[model.id] || datasheetPaths[model.name?.toLowerCase().replace(/\s+/g, '_')];
+        
+        if (pdfPath) {
+            // Create a temporary link and trigger download
+            const link = document.createElement('a');
+            link.href = pdfPath;
+            link.download = `${model.name.replace(/\s+/g, '-')}-Datasheet.pdf`;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        } else {
+            // Fallback: show alert or redirect to contact
+            alert('Datasheet not available. Please contact us for product information.');
+        }
+    };
+
     if (!model) {
         return (
             <div className="min-h-screen flex items-center justify-center">
@@ -180,7 +221,7 @@ const ProductDetailPage = () => {
 
             <div className="min-h-screen bg-gray-50">
                 {/* Header */}
-                <header className="bg-white border-b border-gray-200 sticky top-20 z-10">
+                <header className="bg-white border-b border-gray-200 top-20 mt-20">
                     <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
                         <nav className="flex items-center space-x-2 text-gray-500">
                             <Link to="/products" className="hover:text-emerald-600 transition-colors flex items-center space-x-2">
@@ -208,7 +249,10 @@ const ProductDetailPage = () => {
                         </nav>
 
                         <div className="flex items-center space-x-4">
-                            <button className="flex items-center space-x-2 px-4 py-2 bg-emerald-500 text-white rounded-lg font-medium hover:bg-emerald-700 transition-colors">
+                            <button 
+                                onClick={handleDatasheetDownload}
+                                className="flex items-center space-x-2 px-4 py-2 bg-emerald-500 text-white rounded-lg font-medium hover:bg-emerald-700 transition-colors"
+                            >
                                 <Download className="w-4 h-4" />
                                 <span>Datasheet</span>
                             </button>
@@ -399,95 +443,128 @@ const ProductDetailPage = () => {
                         </div>
                     </div>
 
-                    {/* Support & Documentation */}
-                    <div className="grid md:grid-cols-2 gap-8">
-
-                        {/* Support Card */}
-                        <div className="bg-white rounded-xl shadow-sm border border-gray-200">
-                            <div className="p-8">
-                                <div className="flex items-center space-x-3 mb-6">
-                                    <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center">
-                                        <svg className="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M12 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                        </svg>
-                                    </div>
-                                    <h3 className="text-xl font-bold text-gray-900">Technical Support</h3>
-                                </div>
-
-                                <p className="text-gray-600 mb-6">
-                                    Get expert technical support and guidance from our professional team.
-                                </p>
-
-                                <ul className="space-y-3 mb-8">
-                                    <li className="flex items-center space-x-3">
-                                        <svg className="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                                        </svg>
-                                        <span className="text-gray-700">24/7 Technical Assistance</span>
-                                    </li>
-                                    <li className="flex items-center space-x-3">
-                                        <svg className="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                                        </svg>
-                                        <span className="text-gray-700">Installation Guidance</span>
-                                    </li>
-                                    <li className="flex items-center space-x-3">
-                                        <svg className="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                                        </svg>
-                                        <span className="text-gray-700">Maintenance Support</span>
-                                    </li>
-                                </ul>
-
-                                <button
-                                    onClick={() => navigate('/contact', { state: { product: model, type: 'support' } })}
-                                    className="w-full bg-emerald-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-emerald-700 transition-colors"
-                                >
-                                    Contact Support
-                                </button>
-                            </div>
+                    {/* Contact form */}
+                    {/* Product Inquiry Form */}
+                    <div className="bg-white rounded-lg border border-gray-200 mb-12">
+                        <div className="px-6 py-4 border-b border-gray-200">
+                            <h2 className="text-2xl font-semibold text-gray-900">Get Product Information</h2>
+                            <p className="text-gray-600 mt-1">Interested in {model.name}? Let's discuss your requirements.</p>
                         </div>
-
-                        {/* Documentation Card */}
-                        <div className="bg-white rounded-xl shadow-sm border border-gray-200">
-                            <div className="p-8">
-                                <div className="flex items-center space-x-3 mb-6">
-                                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                                        <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6-4h6m2 5.291A7.962 7.962 0 0112 15c-2.34 0-4.29-1.009-5.701-2.573M15 3.291A7.962 7.962 0 0112 1c-2.34 0-4.29 1.009-5.701 2.573" />
-                                        </svg>
+                        
+                        <div className="p-6">
+                            <form className="space-y-4">
+                                {/* Basic Info */}
+                                <div className="grid md:grid-cols-2 gap-4">
+                                    <div>
+                                        <label htmlFor="fullName" className="block text-sm font-medium text-gray-700 mb-1">
+                                            Full Name *
+                                        </label>
+                                        <input
+                                            type="text"
+                                            id="fullName"
+                                            name="fullName"
+                                            required
+                                            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                                        />
                                     </div>
-                                    <h3 className="text-xl font-bold text-gray-900">Documentation</h3>
+                                    
+                                    <div>
+                                        <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                                            Email Address *
+                                        </label>
+                                        <input
+                                            type="email"
+                                            id="email"
+                                            name="email"
+                                            required
+                                            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                                        />
+                                    </div>
                                 </div>
 
-                                <p className="text-gray-600 mb-6">
-                                    Access comprehensive documentation and resources for this product.
+                                <div className="grid md:grid-cols-2 gap-4">
+                                    <div>
+                                        <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-1">
+                                            Company
+                                        </label>
+                                        <input
+                                            type="text"
+                                            id="company"
+                                            name="company"
+                                            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                                        />
+                                    </div>
+                                    
+                                    <div>
+                                        <label htmlFor="inquiryType" className="block text-sm font-medium text-gray-700 mb-1">
+                                            I'm interested in *
+                                        </label>
+                                        <select
+                                            id="inquiryType"
+                                            name="inquiryType"
+                                            required
+                                            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                                        >
+                                            <option value="">Select option</option>
+                                            <option value="quote">Getting a Quote</option>
+                                            <option value="demo">Product Demo</option>
+                                            <option value="technical">Technical Details</option>
+                                            <option value="support">Support & Integration</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                {/* Product Context */}
+                                <div className="bg-emerald-50 rounded-lg p-3 border border-emerald-200">
+                                    <div className="flex items-center space-x-2 text-sm">
+                                        <span className="w-2 h-2 bg-emerald-500 rounded-full"></span>
+                                        <span className="text-emerald-800 font-medium">Product: {model.name}</span>
+                                        {series && <span className="text-emerald-600">• {series.name} Series</span>}
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+                                        Message
+                                    </label>
+                                    <textarea
+                                        id="message"
+                                        name="message"
+                                        rows="3"
+                                        placeholder="Tell us about your project or any specific questions..."
+                                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                                    ></textarea>
+                                </div>
+
+                                {/* Actions */}
+                                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between pt-2">
+                                    <div className="flex items-center mb-4 sm:mb-0">
+                                        <input
+                                            id="sendDatasheet"
+                                            name="sendDatasheet"
+                                            type="checkbox"
+                                            className="h-4 w-4 text-emerald-600 focus:ring-emerald-500 border-gray-300 rounded"
+                                        />
+                                        <label htmlFor="sendDatasheet" className="ml-2 text-sm text-gray-600">
+                                            Send me the datasheet
+                                        </label>
+                                    </div>
+                                    
+                                    <button
+                                        type="submit"
+                                        className="bg-emerald-600 text-white py-2 px-6 rounded-lg font-medium hover:bg-emerald-700 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
+                                    >
+                                        Send Inquiry
+                                    </button>
+                                </div>
+                                
+                                <p className="text-xs text-gray-500">
+                                    * Required fields. We typically respond within 4 hours during business days.
                                 </p>
-
-                                <div className="space-y-3 mb-8">
-                                    <a href="#" className="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
-                                        <div className="flex items-center space-x-3">
-                                            <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                                            </svg>
-                                            <span className="font-medium text-gray-900">Installation Guide</span>
-                                        </div>
-                                        <span className="text-xs text-gray-500 bg-white px-2 py-1 rounded">PDF</span>
-                                    </a>
-
-                                    <a href="#" className="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
-                                        <div className="flex items-center space-x-3">
-                                            <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                                            </svg>
-                                            <span className="font-medium text-gray-900">Technical Specs</span>
-                                        </div>
-                                        <span className="text-xs text-gray-500 bg-white px-2 py-1 rounded">PDF</span>
-                                    </a>
-                                </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
+                    
                 </main>
             </div>
 
