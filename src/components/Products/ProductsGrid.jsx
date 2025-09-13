@@ -2,42 +2,64 @@ import React from 'react';
 import ProductCard from './ProductCard'; // For displaying Series
 import ModelDetailsCard from './ModelDetailsCard'; // Component for displaying Models
 
-const ProductsGrid = ({ 
-  products, 
-  hoveredProduct, 
-  setHoveredProduct, 
-  onProductClick, 
+const ProductsGrid = ({
+  products,
+  hoveredProduct,
+  setHoveredProduct,
+  onProductClick,
   isShowingModels,
-  onLearnMore 
+  onLearnMore
 }) => {
   return (
-    // Change xl:grid-cols-3 to xl:grid-cols-2
-    <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8 mb-20">
-      {products.map((product, index) => (
-        <div
-          key={product.id}
-          onMouseEnter={() => setHoveredProduct(index)}
-          onMouseLeave={() => setHoveredProduct(null)}
-          className="group" // Group class for hover effects on child elements
-        >
-          {isShowingModels ? (
-            <ModelDetailsCard 
-              model={product} 
-              isHovered={hoveredProduct === index}
-              onLearnMore={onLearnMore}
-            />
-          ) : (
-            <ProductCard 
-              product={product} 
-              isHovered={hoveredProduct === index} 
-              onProductClick={onProductClick} 
-            />
-          )}
-        </div>
-      ))}
+    <div className="space-y-6">
+      {/* Grid Container - Fixed aspect ratio grid */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
+        {products.map((product, index) => (
+          <div
+            key={product.id}
+            onMouseEnter={() => setHoveredProduct(index)}
+            onMouseLeave={() => setHoveredProduct(null)}
+            className="group transition-all duration-200 ease-out"
+            style={{ aspectRatio: '3/4', minHeight: '480px' }}
+          >
+            <div className="w-full h-full">
+              {isShowingModels ? (
+                <ModelDetailsCard
+                  model={product}
+                  isHovered={hoveredProduct === index}
+                  onLearnMore={onLearnMore}
+                  className="w-full h-full"
+                />
+              ) : (
+                <ProductCard
+                  product={product}
+                  isHovered={hoveredProduct === index}
+                  onProductClick={onProductClick}
+                  className="w-full h-full"
+                />
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Empty State */}
       {products.length === 0 && (
-        <div className="col-span-full text-center text-xl text-gray-600 py-10">
-          No products found in this category.
+        <div className="text-center py-16">
+          <div className="w-16 h-16 mx-auto mb-4 bg-gray-100 rounded-full flex items-center justify-center">
+            <svg className="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 12h6m-6-4h6m2 5.291A7.962 7.962 0 0112 15c-2.34 0-4.29-1.009-5.824-2.562M15 17H9m6 0a3 3 0 01-3 3H9a3 3 0 01-3-3m6 0V9a3 3 0 00-3 3H9a3 3 0 00-3 3v8.1" />
+            </svg>
+          </div>
+          <h3 className="text-lg font-semibold text-gray-900 mb-2">
+            No {isShowingModels ? 'models' : 'products'} found
+          </h3>
+          <p className="text-gray-600 max-w-md mx-auto">
+            {isShowingModels
+              ? 'No models are available in this series at the moment.'
+              : 'Try adjusting your filters or browse other categories.'
+            }
+          </p>
         </div>
       )}
     </div>
