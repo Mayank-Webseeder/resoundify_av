@@ -53,7 +53,7 @@ const ProductCard = ({ product, isHovered, onProductClick }) => {
                 <div className="flex-shrink-0">
                     {/* Heading Font (for H1, H2): Tilt Neon applied here */}
                     <h3 className="text-2xl font-medium text-gray-900 mb-2 leading-tight font-[Tilt_Neon] line-clamp-2 min-h-[3.5rem]">
-                        {product.name} lmao
+                        {product.name}
                     </h3>
                     <p className="text-gray-600 mb-4 text-sm leading-relaxed line-clamp-3 min-h-[3.75rem]">
                         {product.description}
