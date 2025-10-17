@@ -296,16 +296,16 @@ const ProductsPage = () => {
                     {productsToRender.map((product, index) => (
                       <div
                         key={product.id}
-                        className="group bg-white rounded-xl border border-gray-200 hover:border-gray-300 hover:shadow-lg transition-all duration-200 overflow-hidden flex flex-col cursor-pointer"
-                        onClick={() => handleSeriesClick(product)}
+                        className="group bg-white rounded-xl border border-gray-200 hover:border-gray-300 hover:shadow-lg transition-all duration-200 overflow-hidden flex flex-col"
+                      // onClick={() => handleSeriesClick(product)}
                       >
                         {/* Product Image */}
-                        <div className="relative h-48 overflow-hidden bg-gray-100">
+                        <div className="relative h-48 overflow-hidden bg-white">
                           {product.image ? (
                             <img
                               src={product.image}
                               alt={product.name}
-                              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                              className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300 p-1"
                             />
                           ) : (
                             <div className="w-full h-full flex items-center justify-center">
@@ -349,7 +349,7 @@ const ProductsPage = () => {
                           <div className="flex-1"></div>
 
                           {/* Action Button */}
-                          <div className="flex gap-3">
+                          {/* <div className="flex gap-3">
                             <button
                               onClick={(e) => {
                                 e.stopPropagation(); // prevent double trigger
@@ -359,7 +359,7 @@ const ProductsPage = () => {
                             >
                               View Details
                             </button>
-                          </div>
+                          </div> */}
                         </div>
                       </div>
 

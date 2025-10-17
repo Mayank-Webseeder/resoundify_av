@@ -241,7 +241,7 @@ export const productsData = [
         id: "series_streamcore",
         name: "Streamcore series",
         description: "High-quality 4K60 4:4:4/HDR AV over IP with JPEG2K compression and advanced features.",
-        image: "/images/Products/av_over_ip_soln/EN.png",
+        image: "/images/Products/av_over_ip_soln/EN.webp",
         features: ["4K60 HDR", "JPEG2K Compression", "USB & Audio Support", "Dante Management"],
         status: "In Stock",
         type: "series",
