@@ -139,7 +139,7 @@ const ContactForm = () => {
     },
     {
       icon: Mail,
-      primary: 'support@resoundify.com',
+      primary: 'info@resoundify.com',
       secondary: 'We respond within 24 hours',
     },
   ];
@@ -254,7 +254,7 @@ const ContactForm = () => {
                         Phone Number *
                       </label>
                       <PhoneInput
-                        country={'ae'}
+                        country={'in'}
                         value={formData.phone}
                         onChange={handlePhoneChange}
                         inputProps={{
