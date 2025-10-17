@@ -5,14 +5,14 @@ const ProductsHero = () => {
 
   const backgroundImages = [
     '/images/Products/all_in_one_processor/231127A_CLIMBER-2009 full input.webp',
-    '/images/Products/all_in_one_processor/231127A_CLIMBER-2009 full range.webp', 
+    '/images/Products/all_in_one_processor/231127A_CLIMBER-2009 full range.webp',
     '/images/Products/all_in_one_processor/CLIMBER-2009 front 2.webp',
-    '/images/Products/av_over_ip_soln/StreamPro_HDN-EB100AT.webp', 
+    '/images/Products/av_over_ip_soln/StreamPro_HDN-EB100AT.webp',
   ];
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => 
+      setCurrentImageIndex((prevIndex) =>
         (prevIndex + 1) % backgroundImages.length
       );
     }, 5000);
@@ -41,7 +41,7 @@ const ProductsHero = () => {
       {/* Hero Content - With a clear, semi-transparent background for readability */}
       <div className="relative z-10 text-center font-extrabold text-white px-8 py-10 rounded-2xl bg-black/0 mx-auto max-w-4xl transition-all duration-300">
         <h1 className="text-5xl md:text-7xl font-[Tilt_Neon] font-medium mb-6 leading-tight tracking-tighter mt-15">
-          Explore Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-emerald-600">Innovation</span>
+          Explore Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">Innovation</span>
         </h1>
         <p className="text-xl md:text-xl font-[Exo_2] opacity-90 max-w-3xl mx-auto leading-relaxed">
           Discover Resoundify's cutting-edge audio-visual solutions. Each product is engineered for unparalleled performance, seamlessly integrating with your vision.
