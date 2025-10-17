@@ -369,7 +369,7 @@ const ProductsPage = () => {
                   {/* Load More Section */}
                   {hasMoreProducts && (
                     <div className="text-left"> {/* stays left */}
-                      <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 w-[550px] max-w-3xl mx-0 text-center">
+                      <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 w-fit mx-auto text-center">
                         <p className="text-gray-600 mb-4">
                           Showing {productsToRender.length} of {allFilteredProducts.length} products
                         </p>
