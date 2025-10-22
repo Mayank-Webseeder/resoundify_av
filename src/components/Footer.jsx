@@ -351,20 +351,20 @@ const Footer = () => {
               <div>
                 <p className="text-slate-500 text-sm mb-0.5">Email Us</p>
                 <a
-                  href="mailto:resoundify@example.com"
+                  href="mailto:support@resoundify.com"
                   className="text-white font-semibold transition-colors duration-300 text-base underline-offset-2 hover:text-blue-500 hover:underline"
                 >
-                  resoundify@example.com
+                  support@resoundify.com
                 </a>
               </div>
               {/* Phone */}
               <div>
                 <p className="text-slate-500 text-sm mb-0.5">Call Us</p>
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+971551057816"
                   className="text-white font-semibold transition-colors duration-300 text-base underline-offset-2 hover:text-blue-500 hover:underline"
                 >
-                  +91-9876543210
+                  +971 55 105 7816
                 </a>
               </div>
               {/* Location */}
@@ -381,8 +381,6 @@ const Footer = () => {
                 <p className="text-slate-500 text-sm mb-0.5">Business Hours</p>
                 <p className="text-white text-base font-medium">
                   Mon - Fri: 9AM - 6PM
-                  <br />
-                  Sat: 10AM - 4PM
                 </p>
               </div>
             </div>

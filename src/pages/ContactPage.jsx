@@ -111,8 +111,11 @@ export default function ContactPage() {
         {/* Hero section with background image and overlay */}
         <div
           className="relative bg-cover bg-center bg-no-repeat h-[65vh] flex items-center justify-center"
+          // style={{
+          //   backgroundImage: "url('/images/contactbg2.png')", // Background image for the hero section
+          // }}
           style={{
-            backgroundImage: "url('/images/contactbg2.png')", // Background image for the hero section
+            backgroundImage: "url('https://images.unsplash.com/photo-1686519093104-3140c6dcf284?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2340')", // Background image for the hero section
           }}
         >
           {/* Overlay for the background image to improve text readability */}

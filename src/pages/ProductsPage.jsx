@@ -204,14 +204,14 @@ const ProductsPage = () => {
                         key={category.id}
                         onClick={() => handleCategoryChange(category.id)}
                         className={`w-full flex items-center justify-between px-3 py-2 text-left rounded-lg transition-colors ${isActive
-                            ? 'bg-blue-50 text-blue-900 border border-blue-200'
-                            : 'text-gray-700 hover:bg-gray-50'
+                          ? 'bg-blue-50 text-blue-900 border border-blue-200'
+                          : 'text-gray-700 hover:bg-gray-50'
                           }`}
                       >
                         <span className="font-medium">{category.name}</span>
                         <span className={`text-sm px-2 py-1 rounded-full ${isActive
-                            ? 'bg-blue-100 text-blue-700'
-                            : 'bg-gray-100 text-gray-600'
+                          ? 'bg-blue-100 text-blue-700'
+                          : 'bg-gray-100 text-gray-600'
                           }`}>
                           {categoryProductCount}
                         </span>
@@ -247,8 +247,8 @@ const ProductsPage = () => {
                   <button
                     onClick={handleSearchClick}
                     className={`w-full flex items-center justify-between p-3 text-left rounded-lg border transition-colors ${isSearchVisible
-                        ? 'border-blue-300 bg-blue-50'
-                        : 'border-gray-200 hover:border-gray-300'
+                      ? 'border-blue-300 bg-blue-50'
+                      : 'border-gray-200 hover:border-gray-300'
                       }`}
                   >
                     <div className="flex items-center">
@@ -291,14 +291,14 @@ const ProductsPage = () => {
                           key={category.id}
                           onClick={() => handleCategoryChange(category.id)}
                           className={`w-full flex items-center justify-between px-3 py-2 text-left rounded-lg transition-colors ${isActive
-                              ? 'bg-blue-50 text-blue-900 border border-blue-200'
-                              : 'text-gray-700 hover:bg-gray-50 border border-transparent'
+                            ? 'bg-blue-50 text-blue-900 border border-blue-200'
+                            : 'text-gray-700 hover:bg-gray-50 border border-transparent'
                             }`}
                         >
                           <span className="font-medium">{category.name}</span>
                           <span className={`text-sm px-2 py-1 rounded-full ${isActive
-                              ? 'bg-blue-100 text-blue-700'
-                              : 'bg-gray-100 text-gray-600'
+                            ? 'bg-blue-100 text-blue-700'
+                            : 'bg-gray-100 text-gray-600'
                             }`}>
                             {categoryProductCount}
                           </span>
@@ -398,8 +398,8 @@ const ProductsPage = () => {
                   {/* Load More Section */}
                   {hasMoreProducts && (
                     <div className="text-left">
-                      <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 w-fit mx-auto text-center">
-                        <p className="text-gray-600 mb-4">
+                      <div className="bg-white rounded-xl shadow-sm border border-gray-200 w-fit mx-auto text-center">
+                        {/* <p className="text-gray-600 mb-4">
                           Showing {productsToRender.length} of {allFilteredProducts.length} products
                         </p>
                         <div className="w-64 bg-gray-200 rounded-full h-2 mb-4 mx-auto">
@@ -407,15 +407,15 @@ const ProductsPage = () => {
                             className="bg-blue-600 h-2 rounded-full transition-all duration-500"
                             style={{ width: `${(productsToRender.length / allFilteredProducts.length) * 100}%` }}
                           ></div>
-                        </div>
+                        </div> */}
                         <button
                           onClick={handleLoadMore}
                           className="inline-flex items-center space-x-2 px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
                         >
                           <span>Load More Products</span>
-                          <span className="bg-white/20 rounded px-2 py-1 text-sm">
+                          {/* <span className="bg-white/20 rounded px-2 py-1 text-sm">
                             +{Math.min(productsPerPage, allFilteredProducts.length - productsToRender.length)}
-                          </span>
+                          </span> */}
                         </button>
                       </div>
                     </div>

@@ -134,12 +134,12 @@ const ContactForm = () => {
   const contactMethods = [
     {
       icon: Phone,
-      primary: '+971 4 888 8888',
-      secondary: 'Mon-Fri 9am-5pm GST',
+      primary: '+971 55 105 7816',
+      secondary: 'Mon-Fri 9am-7pm GST',
     },
     {
       icon: Mail,
-      primary: 'info@resoundify.com',
+      primary: 'support@resoundify.com',
       secondary: 'We respond within 24 hours',
     },
   ];
@@ -254,7 +254,7 @@ const ContactForm = () => {
                         Phone Number *
                       </label>
                       <PhoneInput
-                        country={'in'}
+                        country={'ae'}
                         value={formData.phone}
                         onChange={handlePhoneChange}
                         inputProps={{
