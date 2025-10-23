@@ -228,7 +228,7 @@ const Header = () => {
                 {/* Hamburger and Search Icon for Mobile */}
                 <div className="md:hidden flex items-center space-x-4">
                     {/* Search Button for Mobile */}
-                    <button
+                    {/* <button
                         onClick={() => setIsSearchVisible(!isSearchVisible)}
                         className={`text-2xl focus:outline-none ${textColorClass}`}
                     >
@@ -236,7 +236,7 @@ const Header = () => {
                             <circle cx="11" cy="11" r="8"></circle>
                             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                         </svg>
-                    </button>
+                    </button> */}
                     {/* Hamburger */}
                     <button
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
