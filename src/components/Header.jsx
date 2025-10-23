@@ -181,12 +181,13 @@ const Header = () => {
                     </Link>
                 </nav>
 
-                {/* Desktop Contact and Search Icons */}
+                {/* Desktop Contact and Social Icons */}
                 <div className={`items-center space-x-10 tracking-wide hidden md:flex ${textColorClass}`}>
                     <div className="flex space-x-4">
                         <a
-                            href="mailto:support@resoundify.com"
+                            href="mailto:operations@resoundify.com"
                             className={`flex items-center space-x-2 transition duration-300 ${isWhiteBg ? 'hover:text-blue-700' : 'hover:text-blue-400'}`}
+                            aria-label="Send email to operations@resoundify.com"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -207,6 +208,7 @@ const Header = () => {
                         <a
                             href="tel:+971551057816"
                             className={`flex items-center space-x-2 transition duration-300 ${isWhiteBg ? 'hover:text-blue-700' : 'hover:text-blue-400'}`}
+                            aria-label="Call +971551057816"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -220,6 +222,30 @@ const Header = () => {
                                 className="lucide lucide-phone"
                             >
                                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                        </a>
+
+                        <a
+                            href="https://www.linkedin.com/company/resoundify/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`flex items-center space-x-2 transition duration-300 ${isWhiteBg ? 'hover:text-blue-700' : 'hover:text-blue-400'}`}
+                            aria-label="Visit Resoundify LinkedIn page"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="25"
+                                height="25"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                className="lucide lucide-linkedin"
+                            >
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect width="4" height="12" x="2" y="9" />
+                                <circle cx="4" cy="4" r="2" />
                             </svg>
                         </a>
                     </div>
@@ -319,18 +345,32 @@ const Header = () => {
 
                 {/* Mobile Contact Icons */}
                 <div className="flex items-end space-x-8">
-                    <div className="hover:text-blue-400 transition duration-300 cursor-pointer">
+                    <a
+                        href="mailto:operations@resoundify.com"
+                        className="hover:text-blue-400 transition duration-300"
+                        aria-label="Send email to operations@resoundify.com"
+                    >
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-mail">
                             <rect width="20" height="16" x="2" y="4" rx="2" />
                             <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                         </svg>
-                    </div>
-                    <div className="hover:text-blue-400 transition duration-300 cursor-pointer">
+                    </a>
+                    <a
+                        href="tel:+971551057816"
+                        className="hover:text-blue-400 transition duration-300"
+                        aria-label="Call +971551057816"
+                    >
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-phone">
                             <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                         </svg>
-                    </div>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition duration-300">
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/company/resoundify/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-blue-400 transition duration-300"
+                        aria-label="Visit Resoundify LinkedIn page"
+                    >
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-linkedin">
                             <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
                             <rect width="4" height="12" x="2" y="9" />

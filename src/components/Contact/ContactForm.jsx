@@ -139,7 +139,7 @@ const ContactForm = () => {
     },
     {
       icon: Mail,
-      primary: 'support@resoundify.com',
+      primary: 'operations@resoundify.com',
       secondary: 'We respond within 24 hours',
     },
   ];
@@ -376,7 +376,7 @@ const ContactForm = () => {
 
             <div className="space-y-2">
               <p className="text-sm font-medium text-gray-900">Burj Khalifa</p>
-              <p className="text-sm text-gray-600">1 Sheikh Mohammed bin Rashid Blvd, Downtown Dubai, Dubai, UAE</p>
+              <p className="text-sm text-gray-600">Dubai, UAE</p>
               <a
                 href="https://www.google.com/maps/dir/?api=1&destination=Burj+Khalifa"
                 target="_blank"
