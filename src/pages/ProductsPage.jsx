@@ -347,7 +347,10 @@ const ProductsPage = () => {
                     {productsToRender.map((product, index) => (
                       <div
                         key={product.id}
-                        className="group bg-white rounded-xl border border-gray-200 hover:border-gray-300 hover:shadow-lg transition-all duration-200 overflow-hidden flex flex-col"
+                        onClick={() => {
+                          handleSeriesClick(product);
+                        }}
+                        className="group cursor-pointer bg-white rounded-xl border border-gray-200 hover:border-gray-300 hover:shadow-lg transition-all duration-200 overflow-hidden flex flex-col"
                       >
                         {/* Product Image */}
                         <div className="relative h-48 overflow-hidden bg-white">
