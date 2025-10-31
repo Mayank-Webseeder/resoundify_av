@@ -2,9 +2,35 @@ import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const ModelDetailsCard = ({ model, isHovered, onLearnMore }) => {
+  // Check if model data is complete
+  const isModelDataComplete = (model) => {
+    try {
+      if (!model || !model.id) {
+        console.warn('ModelDetailsCard: Invalid model object', model);
+        return false;
+      }
+      const isComplete =
+        model &&
+        typeof model.overview === 'string' && model.overview.length > 0 &&
+        Array.isArray(model.keyFeatures) && model.keyFeatures.length > 0 &&
+        Array.isArray(model.applications) && model.applications.length > 0 &&
+        model.specifications && typeof model.specifications === 'object' &&
+        Object.keys(model.specifications).length > 0;
+      console.debug(`ModelDetailsCard: Model ${model.id} isComplete: ${isComplete}`);
+      return isComplete;
+    } catch (error) {
+      console.error('ModelDetailsCard: Error in isModelDataComplete', error);
+      return false;
+    }
+  };
+
+  const isComplete = isModelDataComplete(model);
+
   // Assuming 'model' object now has an 'images' array.
   // If no images are provided, a default placeholder is used.
-  const images = model.images && model.images.length > 0 ? model.images : ["https://placehold.co/400x300/E5E7EB/6B7280?text=No+Image"];
+  const images = model.images && Array.isArray(model.images) && model.images.length > 0
+    ? model.images
+    : ["https://placehold.co/400x300/E5E7EB/6B7280?text=No+Image"];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -23,25 +49,31 @@ const ModelDetailsCard = ({ model, isHovered, onLearnMore }) => {
   };
 
   const handleCardClick = () => {
-    if (onLearnMore) {
+    if (isComplete && onLearnMore) {
+      console.debug(`ModelDetailsCard: Clicking model ${model.id || 'unknown'}`);
       onLearnMore(model);
+    } else {
+      console.debug(`ModelDetailsCard: Click blocked for incomplete model ${model.id || 'unknown'}`);
     }
   };
 
   return (
     <div
       className={`
-        bg-white rounded-2xl overflow-hidden shadow-md p-6 font-[Exo_2] cursor-pointer
+        bg-white rounded-2xl overflow-hidden shadow-md p-4 font-[Exo_2]
         transform transition-all duration-300 ease-in-out min-h-[420px]
-        ${isHovered ? "scale-105 shadow-lg ring-2 ring-emerald-300" : "hover:shadow-lg"}
+        ${isComplete
+          ? `${isHovered ? "scale-105 shadow-lg ring-2 ring-emerald-300" : "hover:shadow-lg"}`
+          : "cursor-not-allowed pointer-events-none opacity-60"}
       `}
       onClick={handleCardClick}
+      title={isComplete ? '' : 'More details coming soon'}
     >
       {/* Image Slider Section - Fixed height */}
-      <div className="relative w-full h-48 mb-4 rounded-xl overflow-hidden flex-shrink-0">
+      <div className="relative w-full h-48 mb-2 rounded-xl overflow-hidden flex-shrink-0">
         <img
           src={images[currentImageIndex]}
-          alt={`${model.name} - Image ${currentImageIndex + 1}`}
+          alt={`${model.name || 'Unnamed Model'} - Image ${currentImageIndex + 1}`}
           className="w-full h-full object-cover transition-opacity duration-300 ease-in-out"
           onError={(e) => {
             e.target.onerror = null;
@@ -75,8 +107,7 @@ const ModelDetailsCard = ({ model, isHovered, onLearnMore }) => {
             {images.map((_, index) => (
               <div
                 key={index}
-                className={`w-2 h-2 rounded-full transition-colors ${index === currentImageIndex ? 'bg-white' : 'bg-white bg-opacity-50'
-                  }`}
+                className={`w-2 h-2 rounded-full transition-colors ${index === currentImageIndex ? 'bg-white' : 'bg-white bg-opacity-50'}`}
               />
             ))}
           </div>
@@ -86,7 +117,7 @@ const ModelDetailsCard = ({ model, isHovered, onLearnMore }) => {
       {/* Content Section - Consistent layout */}
       <div className="flex flex-col justify-between h-[calc(100%-13rem)]">
         {/* Top content */}
-        <div className="space-y-3 flex-grow">
+        <div className="space-y-2 flex-grow">
           {/* Heading Font: Tilt Neon - Fixed height */}
           <h4 className="text-xl font-semibold text-gray-900 font-[Tilt_Neon] line-clamp-2 min-h-[2.5rem]">
             {model.name || 'Unnamed Model'}
@@ -99,7 +130,7 @@ const ModelDetailsCard = ({ model, isHovered, onLearnMore }) => {
 
           {/* Features preview - Consistent height */}
           <div className="min-h-[2rem] max-h-[4rem] overflow-hidden">
-            {model.features && model.features.length > 0 ? (
+            {model.features && Array.isArray(model.features) && model.features.length > 0 ? (
               <div className="flex flex-wrap gap-1">
                 {model.features.slice(0, 3).map((feature, index) => (
                   <span

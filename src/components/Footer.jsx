@@ -240,7 +240,7 @@ const Footer = () => {
       <div className="relative z-10 w-[95%] mx-auto py-8 bg-opacity-500 rounded-xl backdrop-blur-sm lg:ml-25 md:ml-0">
         {" "}
         {/* Corrected width and padding */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-y-10 gap-x-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-y-10 gap-x-16">
           {/* Company Info Section - Takes 2 columns on XL screens, adjusted for flex to push legal links down */}
           <div className="xl:col-span-2 text-center md:text-left flex flex-col justify-between">
             {" "}
@@ -295,7 +295,7 @@ const Footer = () => {
                 { name: "Home", path: "/" },
                 { name: "About", path: "/about" },
                 { name: "Products", path: "/products" },
-                { name: "Projects", path: "/projects" },
+                // { name: "Projects", path: "/projects" },
                 { name: "Contact", path: "/contact" },
               ].map((link, index) => (
                 <li key={index}>
@@ -310,12 +310,11 @@ const Footer = () => {
             </ul>
           </div>
           {/* Services Section */}
-          <div className="text-center md:text-left">
+          {/* <div className="text-center md:text-left">
             {" "}
-            {/* Added text-center for mobile */}
+          
             <h4 className="text-xl font-bold text-white mb-6 relative group cursor-pointer">
               Services
-              {/* Corrected underline positioning for proper hover effect on all screens */}
               <span className="absolute left-1/2 md:left-0 -bottom-2 w-0 h-1 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full transform -translate-x-1/2 md:translate-x-0 transition-all duration-300 group-hover:w-12"></span>
             </h4>
             <ul className="space-y-4">
@@ -336,7 +335,7 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
           {/* Contact Information Section */}
           <div className="text-center md:text-left">
             {" "}
@@ -378,7 +377,7 @@ const Footer = () => {
               <div>
                 <p className="text-slate-500 text-sm mb-0.5">Business Hours</p>
                 <p className="text-white text-base font-medium">
-                  Mon - Fri: 9AM - 6PM
+                  Mon - Fri : 9AM - 6PM
                 </p>
               </div>
             </div>

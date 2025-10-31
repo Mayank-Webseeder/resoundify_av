@@ -1,6 +1,41 @@
 import React from 'react';
+import { productsData } from "../../data/products";
 
 const ProductCard = ({ product, isHovered, onProductClick }) => {
+    // Check if series has at least one model with complete data
+    const isSeriesDataComplete = (series) => {
+        try {
+            if (!series || !series.id) {
+                console.warn('ProductCard: Invalid series object', series);
+                return false;
+            }
+            const seriesData = productsData
+                .flatMap(brand => brand.series)
+                .find(s => s.id === series.id);
+            if (!seriesData || !seriesData.models || !Array.isArray(seriesData.models) || seriesData.models.length === 0) {
+                console.warn('ProductCard: Series not found or has no models', series.id);
+                return false;
+            }
+            const hasCompleteModel = seriesData.models.some(model => {
+                const isComplete =
+                    model &&
+                    typeof model.overview === 'string' && model.overview.length > 0 &&
+                    Array.isArray(model.keyFeatures) && model.keyFeatures.length > 0 &&
+                    Array.isArray(model.applications) && model.applications.length > 0 &&
+                    model.specifications && typeof model.specifications === 'object' &&
+                    Object.keys(model.specifications).length > 0;
+                return isComplete;
+            });
+            console.debug(`ProductCard: Series ${series.id} isComplete: ${hasCompleteModel}`);
+            return hasCompleteModel;
+        } catch (error) {
+            console.error('ProductCard: Error in isSeriesDataComplete', error);
+            return false;
+        }
+    };
+
+    const isComplete = isSeriesDataComplete(product);
+
     // Determine status color
     const statusColor =
         product.status === "In Stock"
@@ -14,17 +49,25 @@ const ProductCard = ({ product, isHovered, onProductClick }) => {
         <div
             className={`
                 relative bg-white rounded-3xl overflow-hidden shadow-xl
-                w-full h-[480px] font-[Exo_2] cursor-pointer
+                w-full h-[480px] font-[Exo_2]
                 transform transition-all duration-500 ease-in-out
-                ${isHovered ? "scale-105 shadow-2xl ring-4 ring-indigo-300" : "hover:shadow-xl"}
+                ${isComplete
+                    ? `${isHovered ? "scale-105 shadow-2xl ring-4 ring-indigo-300" : "hover:shadow-xl"}`
+                    : "cursor-not-allowed pointer-events-none"}
             `}
-            onClick={() => onProductClick(product)}
+            onClick={isComplete ? () => {
+                console.debug(`ProductCard: Clicking series ${product.id || 'unknown'}`);
+                onProductClick(product);
+            } : () => {
+                console.debug(`ProductCard: Click blocked for incomplete series ${product.id || 'unknown'}`);
+            }}
+            title={isComplete ? '' : 'More details coming soon'}
         >
             {/* Product Image with dynamic overlay */}
             <div className="relative overflow-hidden h-48 flex-shrink-0">
                 <img
-                    src={product.image}
-                    alt={product.name}
+                    src={product.image || 'https://placehold.co/400x300/CCCCCC/666666?text=Image+Unavailable'}
+                    alt={product.name || 'Unnamed Product'}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     onError={(e) => {
                         e.target.onerror = null;
@@ -36,7 +79,7 @@ const ProductCard = ({ product, isHovered, onProductClick }) => {
                 <div
                     className={`absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6
                         transition-opacity duration-500 ease-in-out
-                        ${isHovered ? "opacity-100" : "opacity-0 group-hover:opacity-100"}
+                        ${isComplete && isHovered ? "opacity-100" : "opacity-0 group-hover:opacity-100"}
                     `}
                 >
                     <div className="w-full bg-white/20 backdrop-blur-sm text-white py-3 rounded-xl font-sans text-lg
@@ -53,16 +96,16 @@ const ProductCard = ({ product, isHovered, onProductClick }) => {
                 <div className="flex-shrink-0">
                     {/* Heading Font (for H1, H2): Tilt Neon applied here */}
                     <h3 className="text-2xl font-medium text-gray-900 mb-2 leading-tight font-[Tilt_Neon] line-clamp-2 min-h-[3.5rem]">
-                        {product.name}
+                        {product.name || 'Unnamed Product'}
                     </h3>
                     <p className="text-gray-600 mb-4 text-sm leading-relaxed line-clamp-3 min-h-[3.75rem]">
-                        {product.description}
+                        {product.description || 'No description available'}
                     </p>
                 </div>
 
                 {/* Middle section - Features (flexible height) */}
                 <div className="flex-1 min-h-[4rem] max-h-[6rem] mb-4 overflow-hidden">
-                    {product.features && product.features.length > 0 ? (
+                    {product.features && Array.isArray(product.features) && product.features.length > 0 ? (
                         <div className="flex flex-wrap gap-2">
                             {product.features.slice(0, 6).map((feature, featureIndex) => (
                                 <span
