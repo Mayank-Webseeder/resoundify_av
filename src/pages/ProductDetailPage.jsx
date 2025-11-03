@@ -498,7 +498,7 @@ const ProductDetailPage = () => {
                                 <img
                                     src={images[currentImageIndex]}
                                     alt={`${model.name} - Image ${currentImageIndex + 1}`}
-                                    className="w-full h-full object-cover rounded bg-gray-100 cursor-pointer mt-14"
+                                    className="w-full h-full object-contain rounded cursor-pointer mt-14"
                                     onError={e => {
                                         e.target.onerror = null;
                                         e.target.src = "https://placehold.co/800x450/F8F9FA/6B7280?text=" + encodeURIComponent(model.name);
