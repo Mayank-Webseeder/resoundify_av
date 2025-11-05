@@ -1027,38 +1027,38 @@ export const productsData = [
         status: "In Stock",
         type: "series",
         models: [
-          {
-            id: "model_sc_en",
-            name: "StreamCore-EN",
-            description: "4K60 4:4:4/HDR AV over IP JPEG2K Encoder - Basic Version",
-            images: [
-              "/images/Products/av_over_ip_soln/EN.png",
-            ]
-          },
-          {
-            id: "model_sc_dn",
-            name: "StreamCore-DN",
-            description: "4K60 4:4:4/HDR AV over IP JPEG2K Decoder - Basic Version",
-            images: [
-              "/images/Products/av_over_ip_soln/DN.png",
-            ]
-          },
+          // {
+          //   id: "model_sc_en",
+          //   name: "StreamCore-EN",
+          //   description: "4K60 4:4:4/HDR AV over IP JPEG2K Encoder - Basic Version",
+          //   images: [
+          //     "/images/Products/av_over_ip_soln/EN.png",
+          //   ]
+          // },
+          // {
+          //   id: "model_sc_dn",
+          //   name: "StreamCore-DN",
+          //   description: "4K60 4:4:4/HDR AV over IP JPEG2K Decoder - Basic Version",
+          //   images: [
+          //     "/images/Products/av_over_ip_soln/DN.png",
+          //   ]
+          // },
           {
             id: "model_sc_enkvm",
-            name: "StreamCore-ENKVM",
+            name: "StreamCore-EN/DE",
             description: "4K60 4:4:4/HDR w/USB and Audio over IP JPEG2K Encoder",
             images: [
               "/images/Products/av_over_ip_soln/ENKVM.png",
             ]
           },
-          {
-            id: "model_sc_dnkvm",
-            name: "StreamCore-DNKVM",
-            description: "4K60 4:4:4/HDR w/USB and Audio over IP JPEG2K Decoder",
-            images: [
-              "/images/Products/av_over_ip_soln/DNKVM.png",
-            ]
-          },
+          // {
+          //   id: "model_sc_dnkvm",
+          //   name: "StreamCore-DNKVM",
+          //   description: "4K60 4:4:4/HDR w/USB and Audio over IP JPEG2K Decoder",
+          //   images: [
+          //     "/images/Products/av_over_ip_soln/DNKVM.png",
+          //   ]
+          // },
           {
             id: "model_sc_wp",
             name: "StreamCore-WP",
