@@ -356,6 +356,7 @@ const Footer = () => {
                   operations@resoundify.com
                 </a>
               </div>
+
               {/* Phone */}
               <div>
                 <p className="text-slate-500 text-sm mb-0.5">Call Us</p>
@@ -366,19 +367,19 @@ const Footer = () => {
                   +971 55 105 7816
                 </a>
               </div>
+
               {/* Location */}
-              <div>
+              <div className="text-center md:text-left">
                 <p className="text-slate-500 text-sm mb-0.5">Visit Us</p>
-                <p className="text-white text-base leading-relaxed font-medium">
-                  Dubai, UAE
+                <p className="text-white text-base font-medium leading-relaxed max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xl mx-auto md:mx-0 break-words">
+                  7 Tolworth Broadway, KT6 7DQ, Southwest London
                 </p>
               </div>
+
               {/* Business Hours */}
               <div>
                 <p className="text-slate-500 text-sm mb-0.5">Business Hours</p>
-                <p className="text-white text-base font-medium">
-                  Mon - Fri : 9AM - 6PM
-                </p>
+                <p className="text-white text-base font-medium">Mon - Fri : 9AM - 6PM</p>
               </div>
             </div>
           </div>

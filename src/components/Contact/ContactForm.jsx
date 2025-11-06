@@ -45,16 +45,22 @@ const ContactForm = () => {
     let map = null;
 
     if (mapRef.current && !mapRef.current._leaflet_id) {
-      map = L.map(mapRef.current).setView(dubaiCoordinates, 13);
+      // Coordinates for 7 Tolworth Broadway, KT6 7DQ, Southwest London
+      const londonCoordinates = [51.3796, -0.2794];
+
+      const map = L.map(mapRef.current).setView(londonCoordinates, 15);
 
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        attribution:
+          '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
       }).addTo(map);
 
-      L.marker(dubaiCoordinates).addTo(map)
-        .bindPopup('Our office at Burj Khalifa!')
+      L.marker(londonCoordinates)
+        .addTo(map)
+        .bindPopup('Our Office')
         .openPopup();
     }
+
 
     return () => {
       if (map && mapRef.current && mapRef.current._leaflet_id) {
@@ -375,10 +381,12 @@ const ContactForm = () => {
             </div>
 
             <div className="space-y-2">
-              <p className="text-sm font-medium text-gray-900">Burj Khalifa</p>
-              <p className="text-sm text-gray-600">Dubai, UAE</p>
+              {/* <p className="text-sm font-medium text-gray-900">Resoundify HQ</p> */}
+              <p className="text-sm text-gray-600">
+                7 Tolworth Broadway, KT6 7DQ, Southwest London, United Kingdom
+              </p>
               <a
-                href="https://www.google.com/maps/dir/?api=1&destination=Burj+Khalifa"
+                href="https://www.google.com/maps/dir/?api=1&destination=7+Tolworth+Broadway,+KT6+7DQ,+Southwest+London,+United+Kingdom"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm text-gray-900 hover:text-gray-700 transition-colors"
@@ -387,6 +395,7 @@ const ContactForm = () => {
                 <ArrowRight className="w-4 h-4" />
               </a>
             </div>
+
           </div>
         </div>
       </div>
