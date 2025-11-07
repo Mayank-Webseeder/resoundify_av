@@ -44,7 +44,7 @@ const TestimonialsSection = () => {
     {
       id: 5,
       name: "Lisa Anderson",
-      role: "Brand Manager",
+      role: "Manager",
       company: "Creative Studio",
       content: "Resoundify's analytics dashboard provides insights we never had before. Understanding our audio content performance has helped us make data-driven decisions.",
       rating: 5,
@@ -135,9 +135,9 @@ const TestimonialsSection = () => {
                       <p className="text-xs sm:text-sm text-slate-700">
                         {testimonial.role}
                       </p>
-                      <p className="text-xs text-slate-500">
+                      {/* <p className="text-xs text-slate-500">
                         {testimonial.company}
-                      </p>
+                      </p> */}
                     </div>
                   </div>
                 </div>

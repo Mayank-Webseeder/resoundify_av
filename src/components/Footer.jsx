@@ -358,7 +358,7 @@ const Footer = () => {
               </div>
 
               {/* Phone */}
-              <div>
+              {/* <div>
                 <p className="text-slate-500 text-sm mb-0.5">Call Us</p>
                 <a
                   href="tel:+971551057816"
@@ -366,7 +366,7 @@ const Footer = () => {
                 >
                   +971 55 105 7816
                 </a>
-              </div>
+              </div> */}
 
               {/* Location */}
               <div className="text-center md:text-left">
@@ -377,10 +377,10 @@ const Footer = () => {
               </div>
 
               {/* Business Hours */}
-              <div>
+              {/* <div>
                 <p className="text-slate-500 text-sm mb-0.5">Business Hours</p>
                 <p className="text-white text-base font-medium">Mon - Fri : 9AM - 6PM</p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
