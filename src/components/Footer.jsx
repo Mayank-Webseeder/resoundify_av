@@ -8,7 +8,12 @@ const Modal = ({ title, content, isOpen, onClose, onAccept }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4"> {/* Changed to bg-black/50 for a darker overlay */}
+    <div onClick={(e) => {
+      if (e.target === e.currentTarget) {
+        onClose()
+
+      }
+    }} className="fixed inset-0 bg-black/50 flex items-center justify-center z-[999999] p-4"> {/* Changed to bg-black/50 for a darker overlay */}
       <div className="bg-white rounded-lg shadow-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative p-6">
         <button
           onClick={onClose}
@@ -20,7 +25,7 @@ const Modal = ({ title, content, isOpen, onClose, onAccept }) => {
         <div className="text-slate-700 text-sm leading-relaxed mb-6">
           {content}
         </div>
-        <div className="flex items-center mb-6">
+        {/* <div className="flex items-center mb-6">
           <input
             type="checkbox"
             id="acceptCheckbox"
@@ -31,7 +36,7 @@ const Modal = ({ title, content, isOpen, onClose, onAccept }) => {
           <label htmlFor="acceptCheckbox" className="text-slate-700 text-sm">
             I have read and agree to the {title.toLowerCase()}.
           </label>
-        </div>
+        </div> */}
         <div className="flex justify-end space-x-3">
           <button
             onClick={onClose}
@@ -39,7 +44,7 @@ const Modal = ({ title, content, isOpen, onClose, onAccept }) => {
           >
             Close
           </button>
-          <button
+          {/* <button
             onClick={() => {
               if (isChecked) {
                 onAccept();
@@ -48,15 +53,14 @@ const Modal = ({ title, content, isOpen, onClose, onAccept }) => {
                 alert("Please accept the terms to proceed.");
               }
             }}
-            className={`px-4 py-2 rounded-md transition-colors ${
-              isChecked
-                ? "bg-blue-600 text-white hover:bg-blue-700"
-                : "bg-blue-300 text-white cursor-not-allowed"
-            }`}
+            className={`px-4 py-2 rounded-md transition-colors ${isChecked
+              ? "bg-blue-600 text-white hover:bg-blue-700"
+              : "bg-blue-300 text-white cursor-not-allowed"
+              }`}
             disabled={!isChecked}
           >
             Accept
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
@@ -80,7 +84,7 @@ const Footer = () => {
       <p className="mb-3">
         Resoundify ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website, resoundify.com, and any other media form, media channel, mobile website, or mobile application related or connected thereto (collectively, the "Site"). Please read this Privacy Policy carefully. IF YOU DO NOT AGREE WITH THE TERMS OF THIS PRIVACY POLICY, PLEASE DO NOT ACCESS THE SITE.
       </p>
-      
+
       <p className="mb-2">
         1. Information We Collect
       </p>
@@ -132,7 +136,7 @@ const Footer = () => {
       <p className="mb-3">
         You have rights regarding your personal information, including the right to access, correct, delete, or restrict its use. Please contact us to exercise these rights or if you have any questions about our privacy practices.
       </p>
-      
+
       <p className="mb-2">
         6. Cookies and Tracking Technologies
       </p>
@@ -236,7 +240,7 @@ const Footer = () => {
       <div className="relative z-10 w-[95%] mx-auto py-8 bg-opacity-500 rounded-xl backdrop-blur-sm lg:ml-25 md:ml-0">
         {" "}
         {/* Corrected width and padding */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-y-10 gap-x-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-y-10 gap-x-16">
           {/* Company Info Section - Takes 2 columns on XL screens, adjusted for flex to push legal links down */}
           <div className="xl:col-span-2 text-center md:text-left flex flex-col justify-between">
             {" "}
@@ -265,13 +269,13 @@ const Footer = () => {
               {/* Added pt-4 for mobile spacing, md:pt-0 to remove on larger screens */}
               <button
                 onClick={() => setShowPrivacyModal(true)}
-                className="text-emerald-500 transition-colors duration-300 text-sm font-medium hover:text-emerald-300"
+                className="text-white transition-colors duration-300 text-sm font-medium hover:text-blue-300"
               >
                 Privacy Policy
               </button>
               <button
                 onClick={() => setShowTermsModal(true)}
-                className="text-emerald-500 transition-colors duration-300 text-sm font-medium hover:text-emerald-300"
+                className="text-white transition-colors duration-300 text-sm font-medium hover:text-blue-300"
               >
                 Terms of Use
               </button>
@@ -284,20 +288,20 @@ const Footer = () => {
             <h4 className="text-xl font-bold text-white mb-6 relative group cursor-pointer">
               Quick Links
               {/* Corrected underline positioning for proper hover effect on all screens */}
-              <span className="absolute left-1/2 md:left-0 -bottom-2 w-0 h-1 bg-gradient-to-r from-emerald-400 to-emerald-600 rounded-full transform -translate-x-1/2 md:translate-x-0 transition-all duration-300 group-hover:w-12"></span>
+              <span className="absolute left-1/2 md:left-0 -bottom-2 w-0 h-1 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full transform -translate-x-1/2 md:translate-x-0 transition-all duration-300 group-hover:w-12"></span>
             </h4>
             <ul className="space-y-4">
               {[
                 { name: "Home", path: "/" },
                 { name: "About", path: "/about" },
                 { name: "Products", path: "/products" },
-                { name: "Projects", path: "/projects" },
+                // { name: "Projects", path: "/projects" },
                 { name: "Contact", path: "/contact" },
               ].map((link, index) => (
                 <li key={index}>
                   <Link
                     to={link.path}
-                    className="text-slate-400 transition-colors duration-300 text-base relative inline-block group hover:text-emerald-400"
+                    className="text-slate-400 transition-colors duration-300 text-base relative inline-block group hover:text-blue-400"
                   >
                     {link.name}
                   </Link>
@@ -306,13 +310,12 @@ const Footer = () => {
             </ul>
           </div>
           {/* Services Section */}
-          <div className="text-center md:text-left">
+          {/* <div className="text-center md:text-left">
             {" "}
-            {/* Added text-center for mobile */}
+          
             <h4 className="text-xl font-bold text-white mb-6 relative group cursor-pointer">
               Services
-              {/* Corrected underline positioning for proper hover effect on all screens */}
-              <span className="absolute left-1/2 md:left-0 -bottom-2 w-0 h-1 bg-gradient-to-r from-emerald-400 to-emerald-600 rounded-full transform -translate-x-1/2 md:translate-x-0 transition-all duration-300 group-hover:w-12"></span>
+              <span className="absolute left-1/2 md:left-0 -bottom-2 w-0 h-1 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full transform -translate-x-1/2 md:translate-x-0 transition-all duration-300 group-hover:w-12"></span>
             </h4>
             <ul className="space-y-4">
               {[
@@ -325,14 +328,14 @@ const Footer = () => {
                 <li key={index}>
                   <Link
                     to={service.path}
-                    className="text-slate-400 transition-colors duration-300 text-base relative inline-block group hover:text-emerald-400"
+                    className="text-slate-400 transition-colors duration-300 text-base relative inline-block group hover:text-blue-400"
                   >
                     {service.name}
                   </Link>
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
           {/* Contact Information Section */}
           <div className="text-center md:text-left">
             {" "}
@@ -340,47 +343,53 @@ const Footer = () => {
             <h4 className="text-xl font-bold text-white mb-6 relative group cursor-pointer">
               Get In Touch
               {/* Corrected underline positioning for proper hover effect on all screens */}
-              <span className="absolute left-1/2 md:left-0 -bottom-2 w-0 h-1 bg-gradient-to-r from-emerald-400 to-emerald-600 rounded-full transform -translate-x-1/2 md:translate-x-0 transition-all duration-300 group-hover:w-12"></span>
+              <span className="absolute left-1/2 md:left-0 -bottom-2 w-0 h-1 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full transform -translate-x-1/2 md:translate-x-0 transition-all duration-300 group-hover:w-12"></span>
             </h4>
             <div className="space-y-5">
               {/* Email */}
               <div>
                 <p className="text-slate-500 text-sm mb-0.5">Email Us</p>
                 <a
-                  href="mailto:resoundify@example.com"
-                  className="text-emerald-400 font-semibold transition-colors duration-300 text-base underline-offset-2 hover:text-emerald-500 hover:underline"
+                  href="mailto:operations@resoundify.com"
+                  className="text-white font-semibold transition-colors duration-300 text-base underline-offset-2 hover:text-blue-500 hover:underline"
                 >
-                  resoundify@example.com
+                  operations@resoundify.com
                 </a>
               </div>
-              {/* Phone */}
               <div>
+                <p className="text-slate-500 text-sm mb-0.5">Support</p>
+                <a
+                  href="mailto:operations@resoundify.com"
+                  className="text-white font-semibold transition-colors duration-300 text-base underline-offset-2 hover:text-blue-500 hover:underline"
+                >
+                  support@resoundify.com
+                </a>
+              </div>
+
+              {/* Phone */}
+              {/* <div>
                 <p className="text-slate-500 text-sm mb-0.5">Call Us</p>
                 <a
-                  href="tel:+919876543210"
-                  className="text-emerald-400 font-semibold transition-colors duration-300 text-base underline-offset-2 hover:text-emerald-500 hover:underline"
+                  href="tel:+971551057816"
+                  className="text-white font-semibold transition-colors duration-300 text-base underline-offset-2 hover:text-blue-500 hover:underline"
                 >
-                  +91-9876543210
+                  +971 55 105 7816
                 </a>
-              </div>
+              </div> */}
+
               {/* Location */}
-              <div>
+              <div className="text-center md:text-left">
                 <p className="text-slate-500 text-sm mb-0.5">Visit Us</p>
-                <p className="text-white text-base leading-relaxed font-medium">
-                  Innovation Hub, Tech City
-                  <br />
-                  India
+                <p className="text-white text-base font-medium leading-relaxed max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xl mx-auto md:mx-0 break-words">
+                  7 Tolworth Broadway, KT6 7DQ, Southwest London
                 </p>
               </div>
+
               {/* Business Hours */}
-              <div>
+              {/* <div>
                 <p className="text-slate-500 text-sm mb-0.5">Business Hours</p>
-                <p className="text-white text-base font-medium">
-                  Mon - Fri: 9AM - 6PM
-                  <br />
-                  Sat: 10AM - 4PM
-                </p>
-              </div>
+                <p className="text-white text-base font-medium">Mon - Fri : 9AM - 6PM</p>
+              </div> */}
             </div>
           </div>
         </div>
@@ -390,15 +399,15 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 py-0 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           {/* Left section: Copyright */}
           <div className="text-center md:text-left mt-6">
-            <p className="text-slate-500 text-sm">
+            <p className="text-slate-100 text-sm">
               &copy; {new Date().getFullYear()} Resoundify. All Rights Reserved.
             </p>
           </div>
           {/* Right section: Designed & Developed by */}
           <div className="text-center md:text-right mt-6">
-            <p className="text-slate-600 text-sm">
+            <p className="text-slate-100 text-sm">
               Designed & developed by
-              <span className="text-emerald-400 cursor-pointer transition-colors duration-300 ml-1 font-semibold hover:text-emerald-500">
+              <span className="text-blue-400 cursor-pointer transition-colors duration-300 ml-1 font-semibold hover:text-blue-500">
                 <a
                   href="https://www.webseeder.in"
                   target="_blank"

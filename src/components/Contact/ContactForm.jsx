@@ -2,8 +2,10 @@ import React, { useEffect, useRef, useState } from 'react';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import emailjs from '@emailjs/browser';
+import PhoneInput from 'react-phone-input-2'
+import 'react-phone-input-2/lib/style.css'
 
-import { Phone, Mail, CheckCircle, MapPin, ArrowRight, XCircle } from 'lucide-react';
+import { Phone, Mail, CheckCircle, MapPin, ArrowRight, XCircle, User, Building } from 'lucide-react';
 
 import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
 import markerIcon from 'leaflet/dist/images/marker-icon.png';
@@ -20,6 +22,8 @@ const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phone: '',
+    company: '',
     subject: '',
     message: '',
   });
@@ -32,25 +36,31 @@ const ContactForm = () => {
 
   const dubaiCoordinates = [25.1972, 55.2744];
 
-  const EMAILJS_SERVICE_ID = 'service_pdp24wn';
-  const EMAILJS_TEMPLATE_ID = 'template_9ea33d8';
-  const EMAILJS_PUBLIC_KEY = 'LDfDmnFH0NNjK-AGp';
+  const EMAILJS_SERVICE_ID = 'service_a4vk5cg';
+  const EMAILJS_TEMPLATE_ID = 'template_pzzogyb';
+  const EMAILJS_PUBLIC_KEY = 'rKjALanBXaP97yXJJ';
 
   // Leaflet Map Initialization
   useEffect(() => {
     let map = null;
 
     if (mapRef.current && !mapRef.current._leaflet_id) {
-      map = L.map(mapRef.current).setView(dubaiCoordinates, 13);
+      // Coordinates for 7 Tolworth Broadway, KT6 7DQ, Southwest London
+      const londonCoordinates = [51.3796, -0.2794];
+
+      const map = L.map(mapRef.current).setView(londonCoordinates, 15);
 
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        attribution:
+          '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
       }).addTo(map);
 
-      L.marker(dubaiCoordinates).addTo(map)
-        .bindPopup('Our office at Burj Khalifa!')
+      L.marker(londonCoordinates)
+        .addTo(map)
+        .bindPopup('Our Office')
         .openPopup();
     }
+
 
     return () => {
       if (map && mapRef.current && mapRef.current._leaflet_id) {
@@ -67,58 +77,84 @@ const ContactForm = () => {
     }));
   };
 
+  const handlePhoneChange = (phone) => {
+    setFormData((prevData) => ({
+      ...prevData,
+      phone,
+    }));
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmissionMessage({ type: '', text: '' });
 
     try {
-      await emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, formRef.current, EMAILJS_PUBLIC_KEY);
+      // Create a form data object that includes phone number
+      const templateParams = {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        company: formData.company,
+        subject: formData.subject,
+        message: formData.message,
+      };
 
-      setSubmissionMessage({ type: 'success', text: 'Message sent successfully! We will get back to you within 24 hours.' });
+      await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams, EMAILJS_PUBLIC_KEY);
+
+      setSubmissionMessage({
+        type: 'success',
+        text: 'Message sent successfully! We will get back to you within 24 hours.'
+      });
       setFormData({
         name: '',
         email: '',
+        phone: '',
+        company: '',
         subject: '',
         message: '',
       });
     } catch (error) {
       console.error('Error submitting form:', error);
-      setSubmissionMessage({ type: 'error', text: 'Failed to send message. Please try again later.' });
+      setSubmissionMessage({
+        type: 'error',
+        text: 'Failed to send message. Please try again later.'
+      });
     } finally {
       setIsSubmitting(false);
     }
   };
 
   const handleSendAnotherMessage = () => {
-    setSubmissionMessage({ type: '', text: '' }); // Clear message to show the form again
+    setSubmissionMessage({ type: '', text: '' });
     setFormData({
       name: '',
       email: '',
+      phone: '',
+      company: '',
       subject: '',
       message: '',
     });
   };
 
   const contactMethods = [
-    {
-      icon: Phone,
-      primary: '+971 4 888 8888',
-      secondary: 'Mon-Fri 9am-5pm GST',
-    },
+    // {
+    //   icon: Phone,
+    //   primary: '+971 55 105 7816',
+    //   secondary: 'Mon-Fri 9am-7pm GST',
+    // },
     {
       icon: Mail,
-      primary: 'support@resoundify.com',
+      primary: 'operations@resoundify.com',
       secondary: 'We respond within 24 hours',
     },
   ];
 
   return (
     <div className="max-w-7xl mx-auto px-6 py-8 lg:py-12">
-      <div
-        className="text-center mb-12"
-      >
-        <h2 className="text-4xl sm:text-5xl lg:text-6xl text-slate-900 mb-6 tracking-tight"
+      <div className="text-center mb-12">
+        <h2
+          className="text-4xl sm:text-5xl lg:text-6xl text-slate-900 mb-6 tracking-tight"
           style={{ textShadow: '0 0 8px rgba(0, 0, 0, 0.1), 0 0 15px rgba(0, 0, 0, 0.05)' }}
         >
           Contact <span className="font-semibold bg-gradient-to-br from-slate-800 to-slate-400 bg-clip-text text-transparent">Our Team</span>
@@ -128,7 +164,7 @@ const ContactForm = () => {
 
       <div className="grid lg:grid-cols-3 gap-12">
         <div className="lg:col-span-2">
-          <div className="bg-white rounded-2xl h-[700px] p-8 shadow-sm border border-gray-200 flex flex-col">
+          <div className="bg-white rounded-2xl h-auto min-h-[700px] p-8 shadow-sm border border-gray-200 flex flex-col">
             <div className="mb-6">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center">
@@ -142,9 +178,8 @@ const ContactForm = () => {
             </div>
 
             {submissionMessage.text && (
-              <div className={`p-4 rounded-lg mb-4 flex items-center gap-3 ${
-                submissionMessage.type === 'success' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'
-              }`}>
+              <div className={`p-4 rounded-lg mb-4 flex items-center gap-3 ${submissionMessage.type === 'success' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'
+                }`}>
                 {submissionMessage.type === 'success' ? (
                   <CheckCircle className="w-5 h-5" />
                 ) : (
@@ -170,69 +205,134 @@ const ContactForm = () => {
                 </button>
               </div>
             ) : (
-              <form key={submissionMessage.type === 'success' ? 'submitted-form' : 'initial-form'} ref={formRef} onSubmit={handleSubmit} className="space-y-4 flex-grow flex flex-col justify-between">
-                <div className="grid md:grid-cols-2 gap-4">
+              <form
+                key={submissionMessage.type === 'success' ? 'submitted-form' : 'initial-form'}
+                ref={formRef}
+                onSubmit={handleSubmit}
+                className="space-y-4 flex-grow flex flex-col justify-between"
+              >
+                <div className="space-y-4">
+                  {/* Name and Email Row */}
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="relative">
+                      <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1.5">
+                        Full Name *
+                      </label>
+                      <div className="relative">
+                        <User className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
+                        <input
+                          type="text"
+                          id="name"
+                          name="name"
+                          value={formData.name}
+                          onChange={handleInputChange}
+                          className="w-full pl-10 pr-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-transparent outline-none transition-all duration-200"
+                          placeholder="Your full name"
+                          required
+                        />
+                      </div>
+                    </div>
+
+                    <div className="relative">
+                      <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1.5">
+                        Email Address *
+                      </label>
+                      <div className="relative">
+                        <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
+                        <input
+                          type="email"
+                          id="email"
+                          name="email"
+                          value={formData.email}
+                          onChange={handleInputChange}
+                          className="w-full pl-10 pr-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-transparent outline-none transition-all duration-200"
+                          placeholder="your@email.com"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Phone and Company Row */}
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="relative">
+                      <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1.5">
+                        Phone Number *
+                      </label>
+                      <PhoneInput
+                        country={'ae'}
+                        value={formData.phone}
+                        onChange={handlePhoneChange}
+                        placeholder="Enter phone number"
+                        inputProps={{
+                          name: 'phone',
+                          required: true,
+                        }}
+                        containerClass="phone-input-container"
+                        inputClass="phone-input-field"
+                        buttonClass="phone-input-button"
+                        dropdownClass="phone-input-dropdown"
+                      />
+                    </div>
+
+                    <div className="relative">
+                      <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-1.5">
+                        Company/Organization
+                      </label>
+                      <div className="relative">
+                        <Building className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
+                        <input
+                          type="text"
+                          id="company"
+                          name="company"
+                          value={formData.company}
+                          onChange={handleInputChange}
+                          className="w-full pl-10 pr-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-transparent outline-none transition-all duration-200"
+                          placeholder="Your company name"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Subject */}
                   <div className="relative">
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1.5">Full Name</label>
+                    <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1.5">
+                      Subject *
+                    </label>
                     <input
                       type="text"
-                      id="name"
-                      name="name"
-                      value={formData.name}
+                      id="subject"
+                      name="subject"
+                      value={formData.subject}
                       onChange={handleInputChange}
                       className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-transparent outline-none transition-all duration-200"
-                      placeholder="Your full name"
+                      placeholder="e.g., Order Inquiry, Technical Support, General Question"
                       required
                     />
                   </div>
 
-                  <div className="relative">
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1.5">Email Address</label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formData.email}
+                  {/* Message */}
+                  <div className="relative flex-grow">
+                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1.5">
+                      Your Message *
+                    </label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      value={formData.message}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-transparent outline-none transition-all duration-200"
-                      placeholder="your@email.com"
+                      rows={4}
+                      className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-transparent outline-none transition-all duration-200 resize-none h-40"
+                      placeholder="Please describe your query or concern in detail..."
                       required
                     />
                   </div>
-                </div>
-
-                <div className="relative">
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1.5">Subject</label>
-                  <input
-                    type="text"
-                    id="subject"
-                    name="subject"
-                    value={formData.subject}
-                    onChange={handleInputChange}
-                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-transparent outline-none transition-all duration-200"
-                    placeholder="e.g., Order Inquiry, Technical Support, General Question"
-                    required
-                  />
-                </div>
-
-                <div className="relative flex-grow">
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1.5">Your Message</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    rows={4}
-                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-transparent outline-none transition-all duration-200 resize-none h-40"
-                    placeholder="Please describe your query or concern in detail..."
-                    required
-                  />
                 </div>
 
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-gray-900 hover:bg-gray-800 text-white font-medium py-3.5 px-6 rounded-lg transition-all duration-200 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed "
+                  className="w-full bg-gray-900 hover:bg-gray-800 text-white font-medium py-3.5 px-6 rounded-lg transition-all duration-200 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed mt-6"
                 >
                   {isSubmitting ? (
                     <>
@@ -282,10 +382,12 @@ const ContactForm = () => {
             </div>
 
             <div className="space-y-2">
-              <p className="text-sm font-medium text-gray-900">Burj Khalifa</p>
-              <p className="text-sm text-gray-600">1 Sheikh Mohammed bin Rashid Blvd, Downtown Dubai, Dubai, UAE</p>
+              {/* <p className="text-sm font-medium text-gray-900">Resoundify HQ</p> */}
+              <p className="text-sm text-gray-600">
+                7 Tolworth Broadway, KT6 7DQ, Southwest London, United Kingdom
+              </p>
               <a
-                href="https://www.google.com/maps/dir/?api=1&destination=Burj+Khalifa"
+                href="https://www.google.com/maps/dir/?api=1&destination=7+Tolworth+Broadway,+KT6+7DQ,+Southwest+London,+United+Kingdom"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm text-gray-900 hover:text-gray-700 transition-colors"
@@ -294,9 +396,51 @@ const ContactForm = () => {
                 <ArrowRight className="w-4 h-4" />
               </a>
             </div>
+
           </div>
         </div>
       </div>
+
+      <style jsx>{`
+  .phone-input-container {
+    width: 100%;
+  }
+
+  .phone-input-container .phone-input-field::placeholder {
+  color: #9ca3af !important;
+  opacity: 1 !important;
+}
+
+  
+  .phone-input-container .phone-input-field {
+    width: 100% !important;
+    height: 47px !important;
+    padding: 10px 12px 10px 58px !important;
+    border: 1px solid #d1d5db !important;
+    border-radius: 8px !important;
+    font-size: 14px !important;
+    transition: all 0.2s !important;
+    outline: none !important;
+  }
+  
+  .phone-input-container .phone-input-field:focus {
+    border-color: #111827 !important;
+    box-shadow: 0 0 0 2px rgba(17, 24, 39, 0.1) !important;
+  }
+  
+  .phone-input-container .phone-input-button {
+    background: transparent !important;
+    border: none !important;
+    border-radius: 8px 0 0 8px !important;
+    padding: 8px !important;
+  }
+  
+  .phone-input-dropdown {
+    border: 1px solid #d1d5db !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+  }
+`}</style>
     </div>
   );
 };
