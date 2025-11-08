@@ -356,6 +356,15 @@ const Footer = () => {
                   operations@resoundify.com
                 </a>
               </div>
+              <div>
+                <p className="text-slate-500 text-sm mb-0.5">Support</p>
+                <a
+                  href="mailto:operations@resoundify.com"
+                  className="text-white font-semibold transition-colors duration-300 text-base underline-offset-2 hover:text-blue-500 hover:underline"
+                >
+                  support@resoundify.com
+                </a>
+              </div>
 
               {/* Phone */}
               {/* <div>
