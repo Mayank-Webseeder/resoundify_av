@@ -122,7 +122,7 @@ const ModelDetailsCard = ({ model, isHovered, onLearnMore }) => {
             {model.name || 'Unnamed Model'}
           </h4>
           <p className="text-gray-600 text-sm leading-relaxed line-clamp-3 min-h-[3.75rem]">
-            {model.frontDescription || 'No description available'}
+            {model.description || 'No description available'}
           </p>
           {/* <div className="min-h-[2rem] max-h-[4rem] overflow-hidden">
             {model.features && Array.isArray(model.features) && model.features.length > 0 ? (
