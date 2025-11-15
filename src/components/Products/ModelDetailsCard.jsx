@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const ModelDetailsCard = ({ model, isHovered, onLearnMore }) => {
+
+  console.log(model, "thisis model detail")
   // Check if model data is complete
   const isModelDataComplete = (model) => {
     try {
@@ -120,7 +122,7 @@ const ModelDetailsCard = ({ model, isHovered, onLearnMore }) => {
             {model.name || 'Unnamed Model'}
           </h4>
           <p className="text-gray-600 text-sm leading-relaxed line-clamp-3 min-h-[3.75rem]">
-            {model.description || 'No description available'}
+            {model.frontDescription || 'No description available'}
           </p>
           {/* <div className="min-h-[2rem] max-h-[4rem] overflow-hidden">
             {model.features && Array.isArray(model.features) && model.features.length > 0 ? (

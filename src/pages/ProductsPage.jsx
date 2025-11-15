@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ProductsHero from '../components/Products/ProductsHero';
-import JoinCommunitySection from '../components/JoinCommunitySection';
+import JoinCommunitySection from '../components/ProductPageCta';
 import ContactForm from '../components/Contact/ContactForm';
 
 // Import the product data

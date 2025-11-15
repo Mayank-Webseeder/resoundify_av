@@ -1,13 +1,13 @@
 import React, { memo } from 'react'; // Import memo
+import { Link } from 'react-router-dom';
 
 // Define the GradientButton component
 // This component is memoized for performance and accepts a className prop for responsiveness.
 const GradientButton = memo(({ text = 'Button', href = '#', className = '' }) => {
   return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer" 
+    <Link
+      to={href}
+      rel="noopener noreferrer"
       // Combine base classes with any additional classes passed via the className prop
       className={`relative inline-flex items-center justify-center px-8 py-5 text-lg font-medium bg-transparent border-none cursor-pointer user-select-none overflow-hidden text-royalblue-500 group ${className}`}
     >
@@ -24,7 +24,7 @@ const GradientButton = memo(({ text = 'Button', href = '#', className = '' }) =>
                      active:bg-gray-200"
         ></span>
       </span>
-    </a>
+    </Link>
   );
 });
 
@@ -70,9 +70,9 @@ const ResoundifyHeroSection = () => {
           className="text-4xl sm:text-5xl lg:text-6xl text-slate-200 mb-4 sm:mb-6 tracking-tight"
           style={{ textShadow: '0 0 8px rgba(0, 0, 0, 0.1), 0 0 15px rgba(0, 0, 0, 0.05)' }}
         >
-          Resoundify{' '}
+          Get In{' '}
           <span className="font-semibold bg-gradient-to-br from-slate-600 to-slate-200 bg-clip-text text-transparent">
-            Community
+            Touch
           </span>
         </h2>
         {/* Paragraph text with responsive font size */}
@@ -81,7 +81,7 @@ const ResoundifyHeroSection = () => {
           products, connect with our team, and experience the future of AV with Resoundify.
         </p>
         {/* Integrated GradientButton with responsive width */}
-        <GradientButton text="Join Now!" href="https://www.linkedin.com/" className="w-full md:max-w-[240px] max-w-[160px] md:max-h-[100px] max-h-[50px] md:mt-0 mt-5" />
+        <GradientButton text="Contact Us!" href="/contact" className="w-full md:max-w-[240px] max-w-[160px] md:max-h-[100px] max-h-[50px] md:mt-0 mt-5" />
       </div>
 
       {/* Navigation Arrows (Optional, if this is part of a carousel) */}

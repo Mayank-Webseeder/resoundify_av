@@ -138,11 +138,11 @@ const ContactForm = () => {
   };
 
   const contactMethods = [
-    {
-      icon: Phone,
-      primary: '+971 55 105 7816',
-      secondary: 'Mon-Fri 9am-7pm GST',
-    },
+    // {
+    //   icon: Phone,
+    //   primary: '+971 55 105 7816',
+    //   secondary: 'Mon-Fri 9am-7pm GST',
+    // },
     {
       icon: Mail,
       primary: 'operations@resoundify.com',
@@ -263,6 +263,7 @@ const ContactForm = () => {
                         country={'ae'}
                         value={formData.phone}
                         onChange={handlePhoneChange}
+                        placeholder="Enter phone number"
                         inputProps={{
                           name: 'phone',
                           required: true,
@@ -404,6 +405,12 @@ const ContactForm = () => {
   .phone-input-container {
     width: 100%;
   }
+
+  .phone-input-container .phone-input-field::placeholder {
+  color: #9ca3af !important;
+  opacity: 1 !important;
+}
+
   
   .phone-input-container .phone-input-field {
     width: 100% !important;

@@ -4,7 +4,7 @@ import { useParams, useLocation, useNavigate, Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ProductsGrid from '../components/Products/ProductsGrid';
-import JoinCommunitySection from '../components/JoinCommunitySection';
+import JoinCommunitySection from '../components/ProductPageCta';
 
 const ProductSeriesPage = () => {
     const { seriesId } = useParams();

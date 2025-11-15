@@ -23,7 +23,7 @@ export default function Home() {
       <Testimonial />
       {/* <Clients /> */}
       <JoinCommunitySection />
-      <ContactForm />
+      {/* <ContactForm /> */}
       <Footer />
     </>
   );

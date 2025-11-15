@@ -356,9 +356,18 @@ const Footer = () => {
                   operations@resoundify.com
                 </a>
               </div>
+              <div>
+                <p className="text-slate-500 text-sm mb-0.5">Support</p>
+                <a
+                  href="mailto:operations@resoundify.com"
+                  className="text-white font-semibold transition-colors duration-300 text-base underline-offset-2 hover:text-blue-500 hover:underline"
+                >
+                  support@resoundify.com
+                </a>
+              </div>
 
               {/* Phone */}
-              <div>
+              {/* <div>
                 <p className="text-slate-500 text-sm mb-0.5">Call Us</p>
                 <a
                   href="tel:+971551057816"
@@ -366,7 +375,7 @@ const Footer = () => {
                 >
                   +971 55 105 7816
                 </a>
-              </div>
+              </div> */}
 
               {/* Location */}
               <div className="text-center md:text-left">
@@ -377,10 +386,10 @@ const Footer = () => {
               </div>
 
               {/* Business Hours */}
-              <div>
+              {/* <div>
                 <p className="text-slate-500 text-sm mb-0.5">Business Hours</p>
                 <p className="text-white text-base font-medium">Mon - Fri : 9AM - 6PM</p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

@@ -3,7 +3,7 @@ import { useParams, useLocation, useNavigate, Link } from 'react-router-dom';
 import { ChevronLeft, ChevronRight, ArrowLeft, Download, Mail, X } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import JoinCommunitySection from '../components/JoinCommunitySection';
+import JoinCommunitySection from '../components/ProductPageCta';
 import { productsData } from "../data/products";
 
 const ProductDetailPage = () => {
@@ -12,7 +12,7 @@ const ProductDetailPage = () => {
     const navigate = useNavigate();
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [activeSpecTab, setActiveSpecTab] = useState(0);
-    const [isModalOpen, setIsModalOpen] = useState(false); // State to control modal visibility
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     let model = location.state?.model;
     let series = location.state?.series;
@@ -31,7 +31,6 @@ const ProductDetailPage = () => {
         }
     }
 
-    // Check if model data is complete
     const isModelDataComplete = (model) => {
         return (
             model &&
@@ -45,7 +44,6 @@ const ProductDetailPage = () => {
         );
     };
 
-    // Redirect to series page if model data is incomplete
     if (model && !isModelDataComplete(model) && series) {
         navigate(`/products/series/${series.id}`, { state: { series } });
         return null;
@@ -65,7 +63,6 @@ const ProductDetailPage = () => {
     }
 
     const getProductData = (model) => {
-        // Agar rich data hai → use karo
         if (model.overview || model.keyFeatures || model.specifications) {
             return {
                 overview: model.overview || model.description || "Professional audio solution.",
@@ -157,7 +154,7 @@ const ProductDetailPage = () => {
             return {
                 overview: `The Resoundify AurisPro-88D is a professional-grade 8x8 Digital Signal Processor (DSP) designed for highperformance audio applications in conferencing, commercial AV, and integrated systems. With native support for Dante™ audio networking, and built-in AEC (Acoustic Echo Cancellation) and ANC (Automatic Noise Cancellation) on all mic inputs, it ensures crystal-clear voice and audio transmission in even the most acoustically challenging environments. This versatile DSP features 8 balanced analog inputs and 8 balanced outputs, along with 8x8 Dante digital channels, enabling seamless integration with modern AV networks. The AurisPro-88D supports flexible routing, powerful DSP tools (EQ, dynamics, delay, etc.), and remote control via Ethernet or RS-232, making it an ideal solution for medium to large meeting rooms, boardrooms, lecture halls, and hybrid AV environments.`,
                 keyFeatures: [
-                    "Professional SHARC DSP Core: Powered by Analog Devices’ SHARC processor for advanced, low-latency signal processing.",
+                    "Professional SHARC DSP Core: Powered by Analog Devices' SHARC processor for advanced, low-latency signal processing.",
                     "High-Quality Audio Processing: 24-bit/48kHz audio resolution ensures crystal-clear sound quality across all channels.",
                     "Intelligent Feedback Suppression: Adaptive per-channel feedback elimination to reduce howling or mic interference.",
                     "Full-Duplex AEC & ANC: Integrated Adaptive Echo Cancellation and Active Noise Cancellation per channel for flawless communication.",
@@ -224,7 +221,7 @@ const ProductDetailPage = () => {
             return {
                 overview: `The Resoundify AurisPro-1616D is a flagship-grade 16x16 Advanced Audio Digital Signal Processor (DSP) designed for large-scale, mission-critical AV installations. Powered by the ADI SHARC DSP platform, it delivers robust performance, ultra-low latency, and professional-grade audio processing. With 16 balanced analog inputs and 16 balanced outputs, plus 16x16 Dante™ audio networking, this system is built for high-capacity audio routing and processing. Ideal for enterprise-level applications, the AurisPro-1616D includes full-duplex AEC (Acoustic Echo Cancellation) and ANC (Automatic Noise Cancellation) on all mic inputs, ensuring crystal-clear communication in challenging acoustic environments. It also features intelligent auto mixing, feedback suppression, gain sharing, and ambient noise compensation—making it a complete solution for conferencing, courtrooms, broadcast studios, and more.`,
                 keyFeatures: [
-                    "Professional SHARC DSP Core: Delivers powerful processing using Analog Devices’ renowned SHARC platform, ensuring low-latency performance and customization potential.",
+                    "Professional SHARC DSP Core: Delivers powerful processing using Analog Devices' renowned SHARC platform, ensuring low-latency performance and customization potential.",
                     "High-Quality Audio Processing: 24-bit/48kHz audio resolution ensures crystal-clear sound quality across all channels.",
                     "Intelligent Feedback Suppression: Adaptive per-channel feedback elimination for consistent, interference-free audio.",
                     "Full-Duplex AEC & ANC: Integrated Adaptive Echo Cancellation and Active Noise Cancellation per channel for flawless communication.",
@@ -292,7 +289,7 @@ const ProductDetailPage = () => {
             return {
                 overview: `The Resoundify AurisPro-6464D is a high-performance, enterprise-class 64x64 Audio Digital Signal Processor (DSP) engineered for large-scale, professional AV installations. Designed for audio environments that demand extensive input/output capacity and uncompromising processing power, this DSP is built on the Analog Devices SHARC DSP platform and supports full Dante™ audio networking (64x64 channels). With built-in AEC (Acoustic Echo Cancellation) and ANC (Automatic Noise Cancellation) on all mic channels, the AurisPro-6464D guarantees crystal-clear voice pickup and reliable audio clarity in high-density conferencing or broadcast setups. It features intelligent audio tools such as auto-mixing, adaptive feedback suppression, AGC, ducking, and ambient noise compensation, all configurable through an intuitive interface.`,
                 keyFeatures: [
-                    "Professional SHARC DSP Core: Delivers powerful processing using Analog Devices’ renowned SHARC platform, ensuring low-latency performance and customization potential.",
+                    "Professional SHARC DSP Core: Delivers powerful processing using Analog Devices' renowned SHARC platform, ensuring low-latency performance and customization potential.",
                     "High-Quality Audio Processing: 24-bit/48kHz audio resolution ensures crystal-clear sound quality across all channels.",
                     "Intelligent Feedback Suppression: Adaptive per-channel feedback elimination for consistent, interference-free audio.",
                     "Full-Duplex AEC & ANC: Integrated Adaptive Echo Cancellation and Active Noise Cancellation per channel for flawless communication.",
@@ -438,7 +435,6 @@ const ProductDetailPage = () => {
             'model_sp_avp1000_fiber_6': '/datasheets/av-over-ip/streampro-series/StreamPro100ATF.pdf',
         };
 
-        // ✅ safe lookup by model.id or model.name
         const pdfPath =
             datasheetPaths[model.id?.toLowerCase()] ||
             datasheetPaths[
@@ -459,7 +455,6 @@ const ProductDetailPage = () => {
         }
     };
 
-
     const openModal = () => {
         setIsModalOpen(true);
     };
@@ -473,36 +468,38 @@ const ProductDetailPage = () => {
             <Header />
             <div className="min-h-screen bg-gray-50">
                 <header className="bg-white border-b border-gray-200 top-20 mt-20">
-                    <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-                        <nav className="flex items-center space-x-2 text-gray-500">
-                            <Link to="/products" className="hover:text-emerald-600 transition-colors flex items-center space-x-2">
-                                <ArrowLeft className="w-5 h-5" />
-                                <span className="font-medium">Products</span>
-                            </Link>
-                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                            </svg>
-                            {series && (
-                                <>
-                                    <Link to={`/products/series/${series.id}`} state={{ series }} className="hover:text-emerald-600 transition-colors">
-                                        {series.name}
-                                    </Link>
-                                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                                    </svg>
-                                </>
-                            )}
-                            <span className="text-emerald-600 font-medium">{model.name}</span>
-                        </nav>
-                        <div className="flex items-center space-x-4">
-                            <button onClick={handleDatasheetDownload} className="flex items-center space-x-2 px-4 py-2 bg-emerald-500 text-white rounded-lg font-medium hover:bg-emerald-700 transition-colors">
-                                <Download className="w-4 h-4" />
-                                <span>Datasheet</span>
-                            </button>
-                            <button onClick={() => navigate('/contact', { state: { product: model } })} className="flex items-center space-x-2 px-4 py-2 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-colors">
-                                <Mail className="w-4 h-4" />
-                                <span>Contact</span>
-                            </button>
+                    <div className="max-w-7xl mx-auto px-6 py-4">
+                        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                            <nav className="flex items-center space-x-2 text-gray-500 overflow-x-auto">
+                                <Link to="/products" className="hover:text-emerald-600 transition-colors flex items-center space-x-2 whitespace-nowrap">
+                                    <ArrowLeft className="w-5 h-5" />
+                                    <span className="font-medium">Products</span>
+                                </Link>
+                                <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                                {series && (
+                                    <>
+                                        <Link to={`/products/series/${series.id}`} state={{ series }} className="hover:text-emerald-600 transition-colors whitespace-nowrap">
+                                            {series.name}
+                                        </Link>
+                                        <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                                        </svg>
+                                    </>
+                                )}
+                                <span className="text-emerald-600 font-medium whitespace-nowrap">{model.name}</span>
+                            </nav>
+                            <div className="flex items-center gap-3">
+                                <button onClick={handleDatasheetDownload} className="flex items-center space-x-2 px-4 py-2 bg-emerald-500 text-white rounded-lg font-medium hover:bg-emerald-700 transition-colors whitespace-nowrap">
+                                    <Download className="w-4 h-4" />
+                                    <span>Datasheet</span>
+                                </button>
+                                <button onClick={() => navigate('/contact', { state: { product: model } })} className="flex items-center space-x-2 px-4 py-2 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-colors whitespace-nowrap">
+                                    <Mail className="w-4 h-4" />
+                                    <span>Contact</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </header>
@@ -522,41 +519,37 @@ const ProductDetailPage = () => {
                                         e.target.onerror = null;
                                         e.target.src = "https://placehold.co/800x450/F8F9FA/6B7280?text=" + encodeURIComponent(model.name);
                                     }}
-                                    onClick={openModal} // Open modal on image click
+                                    onClick={openModal}
                                 />
                                 {images.length > 1 && (
-                                    <>
-                                        <button onClick={goToPreviousImage} className="absolute left-3 top-1/2 transform -translate-y-1/2 bg-white shadow-lg rounded-full p-2 hover:bg-gray-50 transition-colors">
-                                            <ChevronLeft className="w-5 h-5" />
-                                        </button>
-                                        <button onClick={goToNextImage} className="absolute right-3 top-1/2 transform -translate-y-1/2 bg-white shadow-lg rounded-full p-2 hover:bg-gray-50 transition-colors">
-                                            <ChevronRight className="w-5 h-5" />
-                                        </button>
-                                    </>
-                                )}
-                                {images.length > 1 && (
-                                    <div className="absolute bottom-3 right-3 bg-black bg-opacity-70 text-white px-3 pyıçıkart1 rounded text-sm">
+                                    <div className="absolute bottom-3 right-3 bg-black bg-opacity-70 text-white px-3 py-1 rounded text-sm">
                                         {currentImageIndex + 1} / {images.length}
                                     </div>
                                 )}
                             </div>
                             {images.length > 1 && (
-                                <div className="flex space-x-3 overflow-x-auto">
+                                <div className="flex gap-3 overflow-x-auto pb-2 mt-4">
                                     {images.map((image, index) => (
                                         <button
                                             key={index}
                                             onClick={() => setCurrentImageIndex(index)}
-                                            className={`flex-shrink-0 w-20 h-16 rounded border-2 overflow-hidden transition-colors ${index === currentImageIndex ? 'border-blue-500' : 'border-gray-200 hover:border-gray-300'}`}
+                                            className={`flex-shrink-0 w-24 h-20 rounded border-2 p-1 overflow-hidden transition-all ${index === currentImageIndex
+                                                ? 'border-emerald-500 ring-2 ring-emerald-200'
+                                                : 'border-gray-200 hover:border-gray-300'
+                                                }`}
                                         >
-                                            <img src={image} alt={`Thumbnail ${index + 1}`} className="w-full h-full object-cover" />
+                                            <img
+                                                src={image}
+                                                alt={`Thumbnail ${index + 1}`}
+                                                className="w-full h-full object-contain bg-gray-50"
+                                            />
                                         </button>
                                     ))}
                                 </div>
                             )}
-                            {/* Full-Screen Modal */}
                             {isModalOpen && (
-                                <div className="fixed inset-0 backdrop-blur-md bg-white bg-opacity-30 flex items-center justify-center z-50">
-                                    <div className="relative max-w-4xl w-full h-[80vh] flex items-center justify-center ">
+                                <div className="fixed inset-0 backdrop-blur-md bg-white bg-opacity-30 flex items-center justify-center z-50 p-4">
+                                    <div className="relative w-full max-w-5xl h-full max-h-[90vh] flex items-center justify-center">
                                         <img
                                             src={images[currentImageIndex]}
                                             alt={`${model.name} - Image ${currentImageIndex + 1}`}
@@ -566,29 +559,27 @@ const ProductDetailPage = () => {
                                                 e.target.src = `https://placehold.co/800x450/F8F9FA/6B7280?text=${encodeURIComponent(model.name)}`;
                                             }}
                                         />
-                                        {/* Close Button */}
                                         <button
                                             onClick={closeModal}
-                                            className="absolute top-4 right-4 bg-white rounded-full p-2 shadow-lg hover:bg-gray-100 transition-colors"
+                                            className="absolute top-24 right-2 md:top-14 md:right-4 bg-white rounded-full p-2 shadow-lg hover:bg-gray-100 transition-colors z-10"
                                         >
-                                            <X className="w-6 h-6 text-gray-800" />
+                                            <X className="w-5 h-5 md:w-6 md:h-6 text-gray-800" />
                                         </button>
-                                        {/* Navigation Buttons in Modal */}
                                         {images.length > 1 && (
                                             <>
                                                 <button
                                                     onClick={goToPreviousImage}
-                                                    className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-lg hover:bg-gray-100 transition-colors"
+                                                    className="absolute left-2 md:-left-24 bottom-1/3 md:top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-lg hover:bg-gray-100 transition-colors z-10"
                                                 >
-                                                    <ChevronLeft className="w-6 h-6" />
+                                                    <ChevronLeft className="w-5 h-5 md:w-6 md:h-6" />
                                                 </button>
                                                 <button
                                                     onClick={goToNextImage}
-                                                    className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-lg hover:bg-gray-100 transition-colors"
+                                                    className="absolute right-2 md:-right-24 bottom-1/3 md:top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-lg hover:bg-gray-100 transition-colors z-10"
                                                 >
-                                                    <ChevronRight className="w-6 h-6" />
+                                                    <ChevronRight className="w-5 h-5 md:w-6 md:h-6" />
                                                 </button>
-                                                <div className="absolute bottom-4 right-4 bg-black bg-opacity-70 text-white px-3 py-1 rounded text-sm">
+                                                <div className="absolute bottom-2 md:bottom-4 right-2 md:right-4 bg-black bg-opacity-70 text-white px-3 py-1 rounded text-sm">
                                                     {currentImageIndex + 1} / {images.length}
                                                 </div>
                                             </>
@@ -600,9 +591,9 @@ const ProductDetailPage = () => {
                         <div className="lg:col-span-1">
                             <div className="bg-white rounded-lg border border-gray-200 p-6">
                                 <h2 className="text-2xl font-semibold text-gray-900 mb-6">Product Overview</h2>
-                                <p className="text-gray-700 leading-relaxed text-base mb-8">{productData.overview}</p>
+                                <p className="text-gray-700 leading-relaxed text-base mb-8 text-sm">{productData.overview}</p>
                                 <h2 className="text-xl font-semibold text-gray-900 mb-2">Applications</h2>
-                                <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-y-3 gap-x-4 pr-2">
+                                <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-y-3 gap-x-4 pr-2 text-sm">
                                     {(productData.applications || []).map((application, index) => (
                                         <li key={index} className="text-gray-700 flex items-start">
                                             <span className="w-1.5 h-1.5 bg-green-500 rounded-full mt-2.5 mr-3 flex-shrink-0"></span>
@@ -615,7 +606,7 @@ const ProductDetailPage = () => {
                     </div>
                     <div className="bg-white rounded-lg border border-gray-200 p-6 mb-12">
                         <h2 className="text-xl font-semibold text-gray-900 mb-4">Key Features</h2>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 text-sm">
                             <ul className="space-y-2 pr-2">
                                 {(productData.keyFeatures || []).slice(0, Math.ceil(productData.keyFeatures.length / 2)).map((feature, index) => (
                                     <li key={index} className="text-gray-700 flex items-start">
@@ -650,15 +641,22 @@ const ProductDetailPage = () => {
                             </ul>
                         </div>
                     )}
-                    <div className="bg-white rounded-lg border border-gray-200 mb-12">
+                    <div className="bg-white rounded-lg border border-gray-200 mb-12 mx-auto">
                         <div className="px-6 py-4 border-b border-gray-200">
                             <h2 className="text-2xl font-semibold text-gray-900">Technical Specifications</h2>
                         </div>
                         {Object.keys(productData.specifications || {}).length > 1 && (
                             <div className="border-b border-gray-200">
-                                <nav className="flex space-x-8 px-6">
+                                <nav className="flex space-x-8 px-6 overflow-x-auto">
                                     {Object.keys(productData.specifications || {}).map((tab, index) => (
-                                        <button key={index} onClick={() => setActiveSpecTab(index)} className={`py-4 text-md font-medium border-b-2 transition-colors ${activeSpecTab === index ? 'border-blue-500 text-blue-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'}`}>
+                                        <button
+                                            key={index}
+                                            onClick={() => setActiveSpecTab(index)}
+                                            className={`py-4 text-md font-medium border-b-2 transition-colors whitespace-nowrap ${activeSpecTab === index
+                                                ? 'border-blue-500 text-blue-600'
+                                                : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+                                                }`}
+                                        >
                                             {tab}
                                         </button>
                                     ))}
@@ -666,71 +664,14 @@ const ProductDetailPage = () => {
                             </div>
                         )}
                         <div className="p-6">
-                            <div className="grid md:grid-cols-2 gap-x-8 gap-y-4">
+                            <div className="grid md:grid-cols-2 gap-x-12 gap-y-3">
                                 {Object.entries(productData.specifications[specTabs[activeSpecTab]] || {}).map(([key, value], index) => (
-                                    <div key={index} className="flex justify-between py-2 border-b border-gray-100">
-                                        <dt className="font-medium text-gray-900">{key}</dt>
-                                        <dd className="text-gray-700">{value}</dd>
+                                    <div key={index} className="flex flex-col py-2 border-b border-gray-100">
+                                        <dt className="font-medium text-gray-900 mb-1">{key}</dt>
+                                        <dd className="text-gray-700 text-sm">{value}</dd>
                                     </div>
                                 ))}
                             </div>
-                        </div>
-                    </div>
-                    <div className="bg-white rounded-lg border border-gray-200 mb-12">
-                        <div className="px-6 py-4 border-b border-gray-200">
-                            <h2 className="text-2xl font-semibold text-gray-900">Get Product Information</h2>
-                            <p className="text-gray-600 mt-1">Interested in {model.name}? Let's discuss your requirements.</p>
-                        </div>
-                        <div className="p-6">
-                            <form className="space-y-4">
-                                <div className="grid md:grid-cols-2 gap-4">
-                                    <div>
-                                        <label htmlFor="fullName" className="block text-sm font-medium text-gray-700 mb-1">Full Name *</label>
-                                        <input type="text" id="fullName" name="fullName" required className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500" />
-                                    </div>
-                                    <div>
-                                        <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email Address *</label>
-                                        <input type="email" id="email" name="email" required className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500" />
-                                    </div>
-                                </div>
-                                <div className="grid md:grid-cols-2 gap-4">
-                                    <div>
-                                        <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-1">Company</label>
-                                        <input type="text" id="company" name="company" className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500" />
-                                    </div>
-                                    <div>
-                                        <label htmlFor="inquiryType" className="block text-sm font-medium text-gray-700 mb-1">I'm interested in *</label>
-                                        <select id="inquiryType" name="inquiryType" required className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500">
-                                            <option value="">Select option</option>
-                                            <option value="quote">Getting a Quote</option>
-                                            <option value="demo">Product Demo</option>
-                                            <option value="technical">Technical Details</option>
-                                            <option value="support">Support & Integration</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div className="bg-emerald-50 rounded-lg p-3 border border-emerald-200">
-                                    <div className="flex items-center space-x-2 text-sm">
-                                        <span className="w-2 h-2 bg-emerald-500 rounded-full"></span>
-                                        <span className="text-emerald-800 font-medium">Product: {model.name}</span>
-                                        {series && <span className="text-emerald-600">• {series.name} Series</span>}
-                                    </div>
-                                </div>
-                                <div>
-                                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Message</label>
-                                    <textarea id="message" name="message" rows="3" placeholder="Tell us about your project or any specific questions..." className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"></textarea>
-                                </div>
-                                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between pt-2">
-                                    <div className="flex items-center mb-4 sm:mb-0">
-                                        <input id="sendDatasheet" name="sendDatasheet" type="checkbox" className="h-4 w-4 text-emerald-600 focus:ring-emerald-500 border-gray-300 rounded" />
-                                        <label htmlFor="sendDatasheet" className="ml-2 text-sm text-gray-600">Send me the datasheet</label>
-                                    </div>
-                                    <button type="submit" className="bg-emerald-600 text-white py-2 px-6 rounded-lg font-medium hover:bg-emerald-700 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-                                        Send Inquiry
-                                    </button>
-                                </div>
-                                <p className="text-xs text-gray-500">* Required fields. We typically respond within 4 hours during business days.</p>
-                            </form>
                         </div>
                     </div>
                 </main>
