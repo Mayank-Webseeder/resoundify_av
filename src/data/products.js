@@ -354,7 +354,7 @@ export const productsData = [
                 name: "EchoPrime-88AEC",
                 description: "8 in, 8 out DSP, 8x8 Dante",
                 images: [
-                  "/images/Products/audio_dsp/aurispro88d.webp"
+                  "/images/Products/audio_dsp/aurispro88d.webp",
                 ],
                 overview: `The Resoundify EchoPrime-88AEC is a professional-grade Digital Signal Processor (DSP) designed for audio
                       processing applications such as conferencing, broadcasting, and AV installations. It features an 8×8 matrix,
@@ -464,7 +464,9 @@ export const productsData = [
             name: "EchoPrime-B88",
             description: "8 in, 8 out DSP",
             images: [
-              "/images/Products/audio_dsp/EchoPrime-B88.webp"
+              "/images/Products/audio_dsp/EchoPrime-B88.webp",
+              "/images/Products/audio_dsp/EchoPrime-B88(1).webp",
+              "/images/Products/audio_dsp/EchoPrime-B88(2).webp"
             ],
 
             overview: `The Resoundify EchoPrime-B88 is a high-performance Digital Signal Processor (DSP) equipped with an 8×8
@@ -521,7 +523,10 @@ export const productsData = [
         name: "EchoPrime-B1616",
         description: "16 in, 16 out DSP",
         images: [
-          "/images/Products/audio_dsp/EchoPrime-B1616.webp"
+          "/images/Products/audio_dsp/EchoPrime-B1616.webp",
+          "/images/Products/audio_dsp/EchoPrime-B1616(1).webp",
+          "/images/Products/audio_dsp/EchoPrime-B1616(2).webp",
+
         ],
 
         overview: `The Resoundify EchoPrime-B1616 is a professional-grade 16×16 digital audio signal processor built to meet
@@ -919,30 +924,134 @@ export const productsData = [
         status: "In Stock",
         type: "series",
         models: [
-          {
-            id: "model_omni_panel8",
-            name: "OmniPanel8",
-            description: "8 inch control panel",
+           {
+            id: "model_omni_panel3",
+            name: "OmniPanel3",
+            description: "VC and SS with LCD Screen and Rotary Knob – Aurispro Series",
             images: [
-              "/images/Products/audio_dsp/omnipanel8.png"
-            ]
+              "/images/Products/audio_dsp/omnipanel3.png"
+            ],
+             overview: `The Resoundify OmniPane13 is a modern, user-centric control interface designed for conference rooms,
+                      boardrooms, and AV-integrated environments. It combines Volume Control (VC) and Source Selector (SS)
+                      control into a single intuitive wall-mounted unit, offering real-time interaction and effortless operation.
+                      The OmniPane13 is a premium-grade, multi-function wall control panel designed for seamless integration
+                      with professional Volume Control (VC) and Source Selector (SS). Tailored for high-end meeting
+                      environments, the OmniPane13 provides a highly intuitive, ergonomic, and interactive control solution that
+                      simplifies room technology for everyday users.`,
+
+             keyFeatures: [
+                    "High-Resolution Multi-Touch Display: The OmniPane13 features a high-quality LCD screen with clear visual feedback and customizable UI layouts. It delivers a smooth and intuitive interface for real-time control of video conferencing systems, audio levels, input sources, and presets — all in one sleek panel.",
+                    "Seamless Ethernet Connectivity: Equipped with a Gigabit Ethernet port and Power over Ethernet (PoE), the panel ensures fast data transmission, simplified wiring, and flexible installation across networked environments.",
+                    "Modern Mechanical Design: Its slim, wall-mountable form factor and optional mounting accessories allow for seamless integration into a variety of architectural settings.",
+                    "Secure & Maintainable Platform: Advanced encryption protocols and remote firmware update capabilities ensure long-term reliability, security, and ease of maintenance."
+                  ],
+
+             applications: [
+              "Classrooms",
+              "Boardrooms",
+              "Auditoriums",
+            ],
+
+           specifications: {
+              "System Specifications": {
+                "Power": "DC 12V 1.5A & PoE IEEE 802.3at",
+                "Display Type": "IPS",
+                "Compatibility": "Can be used with a full range of processors",
+                "Display": "With OLED highlight",
+                "Display Colors": "16.7M",
+                "Display Orientation": "Landscape (horizontal), or portrait (vertical)",
+                "Display Viewing Angle": "±85° horizontal, ±85° vertical"
+              },
+              "Mechanical Specifications": {
+                "Screen Size": "1.13 inches"
+              }
+            },
           },
           {
             id: "model_omni_panel4",
             name: "OmniPanel4",
-            description: "4inch control panel",
+            description: "4 inch control panel",
             images: [
               "/images/Products/audio_dsp/omnipanel4.png"
-            ]
+            ],
+
+            overview: "The Resoundify OmniPanel4 is a compact and intelligent 4-inch touch control panel designed for streamlined control in smart buildings, hospitality, and AV automation environments. Despite its small footprint, the panel delivers powerful performance with an intuitive capacitive touch interface, real-time processing, and seamless integration with multiple communication protocols such as TCP/IP. Equipped with PoE-enabled Ethernet connectivity, the OmniPanel4 simplifies installation by combining power and data over a single cable. Its responsive UI supports scene control, lighting dimming, HVAC adjustments, and more — all from a sleek wall-mounted device. With robust security, remote configuration support, and compatibility with major automation platforms, the OmniPanel4 is ideal for use in guest rooms, meeting spaces, and high-end residential applications.",
+
+            keyFeatures: [
+              "High-Resolution Multi-Touch Display: The panel features a 4-inch capacitive multi-touch screen with gesture support, delivering a responsive and user-friendly interface for real-time control and monitoring applications.",
+              "Seamless Ethernet Connectivity: Equipped with a Gigabit Ethernet port and Power over Ethernet (PoE), the panel ensures fast data transmission, simplified wiring, and flexible installation across networked environments.",
+              "Customized User Interface: The OmniPanel4 uses award-winning Omni graphic user interface authoring technology, allowing control screens to be created, tested, and simulated before deployment. Multiple pages, custom controls, backgrounds, logos, and more can be created quickly and easily.",
+              "Modern Mechanical Design: Its slim, wall-mountable form factor and optional mounting accessories allow for seamless integration into a variety of architectural settings."
+            ],
+
+            applications: [
+              "Classrooms",
+              "Boardrooms",
+              "Auditoriums",
+            ],
+
+            specifications: {
+              "System Specifications": {
+                Power: "DC 12V 1.5A & PoE IEEE 802.3at",
+                "Display Type": "4-inch TFT touch screen",
+                Compatibility: "Can be used with a full range of processors",
+                "Control protocol": "UDP, TCP/IP",
+                "Address setting method": "RJ-45",
+                "Control functions": "Support 32 control functions; Supports volume control, mute, scene calling, matrix switching, and central control functions",
+                "Display Resolution": "gray",
+                "Display Colors": "16.7M",
+                "Display Orientation": "Landscape (horizontal), or portrait (vertical)",
+                "Display Viewing Angle": "±85° horizontal, ±85° vertical"
+              },
+              "Mechanical Specifications": {
+                "Screen Size": "4 inches",
+                "Product size (WxH)": "88 x 88mm"
+              }
+            },
           },
-          {
-            id: "model_omni_panel3",
-            name: "OmniPanel3",
-            description: "VC and SS with lcd screen and rotary knob for Aurispro Series",
-            images: [
-              "/images/Products/audio_dsp/omnipanel3.png"
-            ]
+        {
+          id: "model_omni_panel8",
+          name: "OmniPanel8",
+          description: "8 inch control panel",
+          images: [
+            "/images/Products/audio_dsp/Ominipanel8.png"
+          ],
+
+          overview: "The Resoundify OmniPanel8 is a sleek and powerful 8-inch capacitive touch control panel designed for seamless control of AV systems, lighting, HVAC, and other automation functions. Engineered for both commercial and residential applications, it features a vibrant high-resolution display, intuitive UI, and network connectivity, enabling it to serve as the central interface in modern smart environments. With support for custom graphical layouts, control scripting, and integration with third-party systems (via TCP/IP, RS-232), the OmniPanel8 delivers flexibility and performance for meeting rooms, classrooms, control centers, and luxury living spaces. Wall-mountable and PoE-powered, it offers both a clean aesthetic and simple installation.",
+
+          keyFeatures: [
+            "High-Resolution Multi-Touch Display: The OmniPanel8 features an 8-inch capacitive multi-touch screen with gesture support, providing an intuitive and responsive user interface for control and monitoring.",
+            "Seamless Ethernet Connectivity: Equipped with a Gigabit Ethernet port and Power over Ethernet (PoE), the panel ensures fast data transmission, simplified wiring, and flexible installation across networked environments.",
+            "Modern Mechanical Design: Its slim, wall-mountable form factor and optional mounting accessories allow for seamless integration into a variety of architectural settings.",
+            "Secure & Maintainable Platform: Advanced encryption protocols and remote firmware update capabilities ensure long-term reliability, security, and ease of maintenance.",
+          ],
+
+          applications: [
+            "Classrooms",
+            "Boardrooms",
+            "Auditoriums",
+          ],
+
+          specifications: {
+            "System Specifications": {
+              Power: "DC 12V 1.5A & PoE IEEE 802.3at",
+              "Display Type": "IPS",
+              Compatibility: "Supports DSP volume, mute, preset, matrix mixing, and device status detection controls",
+              "Display Resolution": "1280000",
+              "Display Aspect Ratio": "16:9",
+              "Display Contrast Ratio": "800:1",
+              "Display Colors": "16.7M",
+              "Display Orientation": "Landscape (horizontal), or portrait (vertical)",
+              "Display Viewing Angle": "±85° horizontal, ±85° vertical"
+            },
+            "Mechanical Specifications": {
+              "Screen Size": "8 inches",
+              Dimensions: "212.2x147.6x31mm",
+              "Product Weight": "0.7kg"
+            }
           },
+        },
+          
           {
             id: "model_gmic_cp",
             name: "GMIC-CP",
@@ -1010,11 +1119,61 @@ export const productsData = [
           {
             id: "model_sl_4k30",
             name: "StreamLite-4k30",
-            description: "H.264 with up to 4 screen capability PTN Electronic, 4K@30",
+            description: "H.264 with up to 4 screen capability, 4K@30",
             images: [
-              "/images/Products/av_over_ip_soln/IPM2000.B.png",
               "/images/Products/av_over_ip_soln/IPM2000.png",
-            ]
+              "/images/Products/av_over_ip_soln/IPM2000.B.png",
+            ],
+
+            overview: "The Resoundify StreamLite-4k30 4K Encoding and Decoding Integrated IP Matrix integrates advanced video compression, network, visualization, and centralized control technologies. It builds an IP-based system combining video splicing, KVM management, audio processing, and encoding/decoding with distributed, visualized, and server-less features. Supporting HDMI 4K@30Hz input/output, multi-screen splicing, and IR, I/O and RS-232 control, it ensures synchronization, real-time performance, and vivid color reproduction. This cost-effective solution simplifies wiring and offers visual control and decentralized operation for HD/1080p applications. Ideal for conference centers, exhibition halls, command centers, and transportation hubs.",
+
+            keyFeatures: [
+              "Integrated Encoder and Decoder: Combines encoder and decoder functions in one unit with DIP-switch to change the mode.",
+              "Support for H.264 and H.265 Protocols: Compatible with H.264 and H.265 encoding and decoding protocols.",
+              "High Resolution Support: HDMI interface supports up to 3840x2160@30Hz for input and output.",
+              "Multiple Controlling Method: I/O, IR, RS-232",
+              "Seamless Switching",
+              "Visualization Operation",
+              "Ultra-thin Design: The height is only 16mm.",
+              "Multi-channel Decoding: Supports at least 4 images displaying in a single screen."
+            ],
+
+            applications: [
+             "Classrooms",
+              "Boardrooms",
+              "Auditoriums",
+            ],
+
+            specifications: {
+              "Encoder Specifications": {
+                "Video Input": "1x HDMI IN (Type-A Female Port), up to 3840x2160@30Hz",
+                "Digital Audio Input": "1x HDMI IN (Type-A Female Port)",
+                "Analog Audio Input": "1x 3-Pin Terminal Block",
+                "Video Output": "1x RJ45 for IP Stream Output; 1x HDMI Loopout (Type-A Female Port)",
+                "Encoding Performance": "3840x2160@30Hz x1"
+              },
+              "Decoder Specifications": {
+                "Video Input": "1x RJ-45 (1000Mbps) for IP Stream Input",
+                "Video Output": "1x HDMI (Type-A Female Port), up to 4K@30Hz",
+                "Digital Audio Output": "1x HDMI (Type-A Female Port)",
+                "Analog Audio Output": "1x 3-Pin Terminal Block",
+                "Decoding Performance": "3840x2160@30Hz x1"
+              },
+              "General Specifications": {
+                "Control Connector": "1 x 3-Pin Terminal Block for I/O or IR; 1 x 3-Pin Terminal Block for RS-232",
+                Codec: "H.264, H.265",
+                "Communication Protocols": "TCP/IP, UDP",
+                "Bit Depth": "8-bit",
+                Latency: "Less than 150ms",
+                "Operation Temperature": "0°C ~ +50°C",
+                "Storage Temperature": "-10°C ~ +70°C",
+                "Relative Humidity": "10% ~ 90%",
+                Power: "DC 12V/2A, or PoE",
+                "Power Consumption": "Unknown",
+                "Dimension (W x H x D)": "152mm x 16mm x 104mm",
+                "Net Weight": "285g"
+              }
+            },
           },
         ],
       },
@@ -1046,10 +1205,63 @@ export const productsData = [
           {
             id: "model_sc_enkvm",
             name: "StreamCore-EN/DE",
-            description: "4K60 4:4:4/HDR w/USB and Audio over IP JPEG2K Encoder",
+            description: "4K60 4:4:4/HDR AV over IP JPEG2K Encoder / Decoder",
             images: [
-              "/images/Products/av_over_ip_soln/ENKVM.png",
-            ]
+              "/images/Products/av_over_ip_soln/StreamCore-ENDE.webp"
+            ],
+
+            overview: "The Resoundify StreamCore-EN is a high-performance 4K60 4:4:4/HDR AV over IP Encoder and Decoder based on JPEG2000 technology, designed for ultra-low latency and visually lossless video transmission. It integrates both copper and fiber network interfaces in a single unit, providing flexibility for various installation environments. The encoder supports up to 4K60 4:4:4 video input with audio embedding or extraction, while the decoder outputs up to 4K60 4:4:4 with audio extraction capabilities. The product also supports multiple audio return options including ARC, eARC, S/PDIF, and analog. Additionally, it features USB 2.0, KVM, and camera connectivity, along with bi-directional RS-232, IR, and CEC control interfaces. Two built-in relay channels and two I/O ports are provided for external contact control. A built-in MJPEG substream allows real-time video previewing via third-party applications using API commands. The system runs on a Linux-based software platform and supports intelligent network control over 1G Ethernet switches.",
+
+            keyFeatures: [
+              "4K60 Ultra HD Video: Supports resolutions up to 4096x2160 @ 60fps, delivering smooth, high-definition video performance.",
+              "4:4:4 Chroma Subsampling: Preserves full color data for precise image quality, ideal for detail-critical applications like design, broadcast, or simulation.",
+              "HDR Support: Compatible with HDR10 and HLG formats to deliver enhanced contrast, brightness, and color depth.",
+              "JPEG2000 Compression: Uses visually lossless, low-latency intraframe compression—perfect for real-time AV distribution.",
+              "AV over IP (1G/10G Ethernet): Streams high-quality video over standard IP networks using multicast or unicast protocols.",
+              "Embedded Audio Transmission: Supports digital audio embedded in the video stream for synchronized AV distribution.",
+              "Web-Based Management Interface: Simple configuration, monitoring, and firmware updates via an intuitive browser GUI.",
+              "Control System Integration: RS-232 support for integration with control platforms like Crestron, AMX, Q-SYS, etc.",
+              "Low Latency Performance: End-to-end latency as low as 40 ms, suitable for live video, conferencing, and command centers.",
+              "Compact & Reliable Design: Fanless, robust form factor with wall or rack mounting; built for 24/7 operation in demanding environments."
+            ],
+
+            applications: [
+              "Classrooms",
+              "Boardrooms",
+              "Auditoriums",
+            ],
+
+            specifications: {
+              "Technical Specifications": {
+                "HDMI Compliance": "HDMI 2.0b",
+                "HDCP Compliance": "HDCP 2.2",
+                "Video Bandwidth": "18Gbps",
+                "Video Compression Standard": "JPEG2000",
+                "Network Video Bandwidth": "1G",
+                "Video Resolution": "Up to 4K@60Hz 4:4:4",
+                "IR Frequency": "Wideband 20K - 60KHz"
+              },
+              "Connections - Encoder": {
+                Input: "1x HDMI IN [Type A, 19-pin male]; 1x L/R AUDIO IN [3-pin 3.81mm Phoenix connector]",
+                Output: "1x HDMI OUT [Type A, 19-pin male]; 1x L/R AUDIO OUT (3-pin 3.81mm Phoenix connector)",
+                Control: "1x RS-232 (3-pin 3.81mm Phoenix connector); 1x LAN (PoE) (RJ45 jack); 1x IR IN (3.5mm Audio Jack); 1x IR OUT (3.5mm Audio Jack)"
+              },
+              "Connections - Decoder": {
+                Output: "1x HDMI OUT [Type A, 19-pin male]; 1x L/R AUDIO OUT [3-pin 3.81mm Phoenix connector]",
+                Control: "1x RS-232 (3.81mm Phoenix connector); 1x LAN (PoE) [RJ45 jack]; 1x IR IN [3.5mm Audio Jack]; 1x IR OUT [3.5mm Audio Jack]"
+              },
+              "Mechanical Specifications": {
+                Housing: "Metal Enclosure",
+                Color: "Black",
+                Dimensions: "204mm [W] x 136mm [D] x 25.5mm [H]",
+                Weight: "Encoder: 631g",
+                "Power Supply": "Input: AC100-240V 50/60Hz, Output: DC 12V/1A (US/EU standards, CE/FCC/UL certified)",
+                "Power Consumption (Max)": "Encoder: 8.52W",
+                "Operation Temperature": "0°C to 40°C (32°F to 104°F)",
+                "Storage Temperature": "-20°C to 60°C (-4°F to 140°F)",
+                "Relative Humidity": "20-90% RH (no condensation)"
+              }
+            },
           },
           // {
           //   id: "model_sc_dnkvm",
@@ -1062,10 +1274,56 @@ export const productsData = [
           {
             id: "model_sc_wp",
             name: "StreamCore-WP",
-            description: "4K60 4:4:4/HDR w/USB and Audio over IP JPEG2K HDMI/USB-C Wallplate Encoder",
+            description: "4K60 4:4:4/HDR w/USB and Audio over IP JPEG2K HDMI/USB-C Wall plate Encoder",
             images: [
               "/images/Products/av_over_ip_soln/WP.png"
-            ]
+            ],
+
+            overview: "The Resoundify StreamCore-WP is a high-performance, wall-mountable HDMI 2.0a encoder featuring dual inputs (HDMI and USB-C), designed for seamless IP-based AV distribution. Supporting visually lossless JPEG 2000 compression, it delivers 4K60 4:4:4 video with HDR over standard 1G Ethernet infrastructure. This encoder integrates USB, audio, and RS-232 control (via 3-pin Phoenix/Euroblock), making it ideal for modern collaboration spaces, classrooms, and meeting rooms. It is PoE-powered for simplified installation and requires a compatible StreamCore Decoder for operation. The StreamCore-WP is a next-generation, wall plate-style AV encoder engineered for high-performance IP-based audiovisual distribution. Designed for modern AV environments, it features dual video inputs (HDMI 2.0a and USB-C), enabling flexible source connectivity in conference rooms, classrooms, lecture halls, and control centers.",
+
+            keyFeatures: [
+              "Supports 4K60 4:4:4 HDR Video: High-resolution video with full color sampling and High Dynamic Range for exceptional image quality.",
+              "Dual Input: HDMI 2.0a and USB-C: Flexible connectivity for modern devices including laptops, media players, and USB peripherals.",
+              "JPEG 2000 Compression for IP Streaming: Efficient, visually lossless video compression over standard 1Gb Ethernet networks.",
+              "USB and Audio over IP: Integrates USB data and high-quality audio streaming within the IP network for unified AV distribution.",
+              "POE (Power over Ethernet) Support: Simplifies installation with power and data over a single Ethernet cable.",
+              "HDCP 2.3 Encryption: Ensures secure content protection for protected media streams.",
+              "RS-232 Serial Control (3-pin Phoenix): Enables device control and automation integration.",
+              "Wall plate Form Factor: Compact and professional flush-mount design suitable for conference rooms and collaboration spaces.",
+              "Compatible with StreamCore Decoders: Works seamlessly with complementary StreamCore decoder units for complete AV over IP solutions."
+            ],
+
+            applications: [
+              "Classrooms",
+              "Boardrooms",
+              "Auditoriums",
+            ],
+
+           specifications: {
+              "Video & Audio": {
+                "Video Inputs": "HDMI 2.0a (Type A) and USB-C",
+                "Video Resolutions": "Supports all major VESA resolutions and variations including: VGA: 640x480 (4:3), SVGA: 800x600 (4:3), XGA: 1024x768 (4:3), SXGA: 1280x1024 (5:4), WXGA: 1366x768 (16:9), SXGA+: 1440x1080 (4:3), UXGA: 1600x1200 (4:3), QXGA: 2048x1536 (4:3), 1080p/i, 720p, Ultra HD 3840x2160 (16:9), 4K: 4096x2160 (16:10)",
+                "Color Depth": "24 bit, 30 bit",
+                "Chroma Subsampling": "4:4:4",
+                HDR: "HDR10, HLG",
+                "Audio Inputs": "Embedded via HDMI/USB-C, Analog L/R via 3-pin Phoenix"
+              },
+              "Control & Network": {
+                Serial: "Full Duplex up to 115.2 kbps, 3-pin Phoenix connector",
+                USB: "USB 2.0, 2x USB Type-C",
+                "Ethernet (PoE)": "1 Gb for Video/Audio/Control, RJ45 port",
+                "Network Distance": "Cat6a: 328 ft (100 m)",
+                "Copy Protection/Security": "HDCP 2.3, 802.1X compatible"
+              },
+              "Mechanical & Power": {
+                "Power Consumption": "Approximately 7W",
+                "Power Supply": "PoE (802.3af/at) or optional 20V 6A via 2-pin Phoenix (U60WPPS)",
+                Dimensions: "Standard 2-Gang box (90mm Wide x 105.6mm High x 47mm Deep)",
+                "Operating Temperature": "0°C to +45°C (+32°F to +113°F)",
+                "Storage Temperature": "-20°C to +70°C (-4°F to +158°F)",
+                Humidity: "10% – 90%, non-condensing"
+              },
+            },
           },
           {
             id: "model_sc_cb",
@@ -1073,7 +1331,49 @@ export const productsData = [
             description: "Control box for with Dante management",
             images: [
               "/images/Products/av_over_ip_soln/CB.png"
-            ]
+            ],
+
+            overview: "The Resoundify StreamCore-CB is a professional-grade control box designed for seamless integration and management of Dante-enabled audio systems. It serves as the central hub for routing, controlling, and monitoring digital audio signals over IP networks, ensuring low-latency, high-quality audio transmission. With its reliable hardware design and intuitive control interface, StreamCore-CB is ideal for live sound, broadcast, corporate AV, and installed sound applications where precise Dante network management is essential. Equipped with intuitive network management tools, the StreamCore-CB simplifies system setup, device discovery, channel mapping, and audio distribution. It is perfect for live event venues, broadcast studios, conference facilities, houses of worship, and integrated AV installations. With robust build quality and a user-friendly interface, it allows technicians and operators to manage complex audio networks with confidence, efficiency, and precision.",
+
+            keyFeatures: [
+              "Simple Project Setup: Easily create, control, and manage the entire system.",
+              "Flexible IP Configuration: Supports Auto, DHCP, and Manual IP settings.",
+              "Enhanced Security: Compatible with HTTPS, SSH, and SFTP protocols.",
+              "User-Friendly Web Interface: Built-in Web GUI with drag-and-drop operation.",
+              "Media Preview Support: Enables image preview within the system.",
+              "Comprehensive Control Options: Supports video, audio, RS-232, IR, and KVM control for distributed systems.",
+              "Dual Network Ports: VIDEO LAN port supports PoE, with separation of control and multicast networks.",
+              "Third-Party Integration: Supports LAN/RS-232 control and integration with external central control systems.",
+              "IR Signal Support: Receives IR signals via 3.5mm audio jack (12V level).",
+              "Versatile GPIO Ports: 8-channel GPIO control (5V or 12V selectable).",
+              "Robust Protection Design: Multiple circuit protection with lightning and ESD safeguards.",
+              "24/7 Reliability: Engineered for continuous, stable operation."
+            ],
+
+            applications: [
+              "Classrooms",
+              "Boardrooms",
+              "Auditoriums",
+            ],
+
+            specifications: {
+              "Technical Specifications": {
+                "Network Bandwidth": "100 Mbps",
+                "Transmission Distance": "up to 100m (CAT5e/6/6A/7)",
+                "Control Ports": "2 x 100M LAN (RJ45, VIDEO LAN supports PoE); 1 x IR IN (3.5mm audio jack, 12V level); 1 x Digital I/O (6-pin 3.81 mm Phoenix connector); 1 x RS-232 (3-pin 3.81mm Phoenix connector)",
+                "Power Supply": "12V/1A DC",
+                "Power Consumption": "Max 4.5W",
+                "Operating Temperature": "0°C to 40°C (32°F to 104°F)",
+                "Storage Temperature": "-20°C to 60°C (-4°F to 140°F)",
+                "Relative Humidity": "20% - 90% RH (non-condensing)"
+              },
+              "Mechanical Specifications": {
+                Dimensions: "204mm (W) x 98mm (D) x 21mm (H)",
+                "Housing Material": "Metal enclosure",
+                Color: "Black",
+                Weight: "509g"
+              }
+            },
           },
           {
             id: "model_sc_cbd",
@@ -1094,28 +1394,222 @@ export const productsData = [
         status: "In Stock",
         type: "series",
         models: [
+         
+         {
+            id: "model_sp_fiber_kvm_2",
+            name: "StreamPro-100ASENDE",
+            description: "SDVoE AVP2000 IP solution Seamless Matrix/Video Wall/Multiview -- Fiber Port",
+            images: [
+              "/images/Products/av_over_ip_soln/StreamPro_HDN-EB100AS-DEC.webp"
+            ],
+
+            overview: "The StreamPro-100ASEN/DE is an SDVoE-compliant, all-in-one AV over IP solution that provides highest-quality, uncompressed 4K60 and zero-frame latency audio/video extension over a standard 10G Fiber Network Switch. It can transfer advanced HDMI content such as HDR (high dynamic range), full color-depth, and multi-channel HD Bitstream audio. Multiple control and data signals can be transmitted along with audio and video signals simultaneously, including RS-232 and 1G Ethernet. The product features a 10G fiber port, which can extend signals up to 40km via a single-mode fiber cable, or 300m via a multi-mode fiber cable. The 1G LAN port is for product management or Ethernet extension. The encoder supports HDMI loop out, the decoder HDMI output supports video scaling. The product supports bi-directional analog stereo audio pass-through and RS-232 with 12V voltage output on connector. This product combines multiple encoders/decoders with one or more 10GbE fiber switches to form an ideal IP solution for distributed 4K60 video matrix, multiview systems, or video wall systems.",
+
+            keyFeatures: [
+              "Separate Encoder/Decoder Design: Built with independent modules and a 10G fiber optical port for high-speed and stable signal transmission.",
+              "4K UHD Video Resolution: Supports 4K2K@60Hz 4:4:4 video quality, fully compliant with HDMI 2.0b standards.",
+              "HDCP 2.2 Compliance: Ensures secure transmission of protected 4K content with 18Gbps video bandwidth.",
+              "HDR Format Compatibility: Enables seamless HDR10, Dolby Vision, and HLG signal pass-through for enhanced color and contrast.",
+              "Comprehensive Audio Format Support: Handles LPCM2/5.1/7.1, Dolby Digital, Dolby Digital+, Dolby TrueHD, Dolby Atmos, DTS 5.1, DTS-HD Master Audio, and DTS:X.",
+              "Zero-Frame Latency Mode: Provides real-time video and audio transmission without perceptible delay.",
+              "HDMI Loop Out (Encoder): Allows local monitoring or cascading connections directly from the encoder.",
+              "Dual Network Ports: Equipped with one 1G LAN port and one 10G fiber port for flexible network configurations.",
+              "Comprehensive Control Options: Offers control via CEC, RS-232, TCP/IP, and Web GUI for easy system integration.",
+              "10G Managed Network Compatibility: Designed to operate seamlessly within 10G managed network switch environments.",
+              "Dedicated IP Controller Compatibility: Fully compatible with a dedicated IP controller box for centralized management."
+            ],
+
+            applications: [
+              "Classrooms",
+              "Boardrooms",
+              "Auditoriums",
+            ],
+
+            specifications: {
+              "System Specifications": {
+                "HDMI Compliance": "HDMI 2.0b",
+                "HDCP Compliance": "HDCP 2.2",
+                "Video Bandwidth": "594MHz / 18Gbps",
+                "Video Compression Standard": "SDVoE",
+                "Video Network Bandwidth": "10Gbps (SFP+)",
+                "Audio Latency": "Zero latency",
+                "Video Latency": "Zero latency",
+                "Input Video Resolution": "640x480p60Hz, 800x600p60Hz, 1024x768p60Hz, 1280x1024p60Hz, 1360x768p60Hz, 1440x900p60Hz, 1440x1050p60Hz, 1600x1200p60Hz, 720x480i59.94Hz (480i59), 720x480p59.94Hz (480p59), 720x576i50Hz (576i50), 720x576p50Hz (576p50), 1280x720p50Hz (720p50), 1280x720p59.94Hz (720p59), 1280x720p60Hz (720p60), 1920x1080i50Hz (1080i50), 1920x1080i59.94Hz (1080i59), 1920x1080i60Hz (1080i60), 1920x1080p23.98Hz (1080p23), 1920x1080p24Hz (1080p24), 1920x1080p25Hz (1080p25), 1920x1080p29.97Hz (1080p29), 1920x1080p30Hz (1080p30), 1920x1080p50Hz (1080p50), 1920x1080p59.94Hz (1080p59), 1920x1080p60Hz (1080p60), 3840x2160p23.98Hz (2160p23), 3840x2160p24Hz (2160p24), 3840x2160p25Hz (2160p25), 3840x2160p29.97Hz (2160p29), 3840x2160p30Hz (2160p30), 3840x2160p50Hz (2160p50), 3840x2160p59.94Hz (2160p59), 3840x2160p60Hz (2160p60), 4096x2160p23.98Hz, 4096x2160p24Hz, 4096x2160p25Hz, 4096x2160p29.97Hz, 4096x2160p30Hz, 4096x2160p50Hz, 4096x2160p59.94Hz, 4096x2160p60Hz",
+                "Output Video Resolution": "Auto, 3840x2160p60, 3840x2160p50, 4096x2160p60, 4096x2160p50, 3840x2160p30, 3840x2160p25, 1920x1200p60RB, 1920x1080p60, 1920x1080p50, 1360x768p60, 1280x800p60, 1280x720p60, 1280x720p50, 1024x768p60",
+                "Color Space": "RGB, YCbCr 4:4:4 / 4:2:2, YUV",
+                "Color Depth": "8/10/12-bit",
+                HDR: "HDR, HDR10, HDR10+, Dolby Vision, HLG",
+                "Audio Formats": "LPCM2/5.1/7.1, Dolby Digital, Dolby Digital+, Dolby TrueHD, Dolby Atmos, DTS 5.1, DTS-HD Master Audio, DTS:X",
+                "Audio Sample Rate": "22.05/24/32/44.1/48/88.2/96/176.4/192KHz",
+                "Transmission Distance": "HDMI passive cable: 16.4ft/5m (4K60); 33ft/10m (4K30); 49ft/15m (1080p60); Single-mode optical fiber cable: 40km; Multi-mode optical fiber cable: 300m (depending on the 10G optical module)",
+                "ESD Protection": "IEC61000-4-2: ±15kV (Air-gap discharge) & ±8kV (Contact Discharge)"
+              },
+              "Connection Specifications - Encoder": {
+                Input: "1x IN [HDMI Type A, 19-pin female]; 1x AUDIO IN [3.5mm audio jack]",
+                Output: "1x SFP+ (Fiber slot, 10Gbps); 1x OUT [HDMI Type A, 19-pin female]; 1x AUDIO OUT [3.5mm audio jack]",
+                Control: "1x 1G LAN [RJ45 jack]; 1x RS-232 [4-pin 3.5mm phoenix connector]"
+              },
+              "Connection Specifications - Decoder": {
+                Input: "1x SFP+ (Fiber slot, 10Gbps); 1x AUDIO IN [3.5mm audio jack]",
+                Output: "1x OUT [HDMI Type A, 19-pin female]; 1x AUDIO OUT [3.5mm audio jack]",
+                Control: "1x 1G LAN [RJ45 jack]; 1x RS-232 [4-pin 3.5mm phoenix connector]"
+              },
+              "Mechanical Specifications": {
+                Housing: "Metal Enclosure",
+                Color: "Black",
+                Dimensions: "Encoder/Decoder: 95mm [W] x 120mm [D] x 21.5mm [H]",
+                Weight: "Encoder: 329g; Decoder: 323g",
+                "Power Supply": "Input: AC 100–240V 50/60Hz; Output: DC 12V/1A (US/EU standard, CE/FCC/UL certified)",
+                "Power Consumption (Max)": "Encoder: 6.72W; Decoder: 6.36W",
+                "Operating Temperature": "0°C to 40°C (32°F to 104°F)",
+                "Storage Temperature": "-20°C to 60°C (-4°F to 140°F)",
+                "Operating Humidity": "20% – 80% (relative humidity, no condensation)",
+                "Storage Humidity": "10% – 90% (relative humidity, no condensation)"
+              }
+            },
+          },
+         {
+            id: "model_sp_avp2000_fiber_3",
+            name: "StreamPro-100ASLEN/DE",
+            description: "SDVoE AVP1000 IP solution Seamless Matrix - Fiber Port",
+            images: [
+              "/images/Products/av_over_ip_soln/StreamPro_HDN-EB100ASL-DEC.webp"
+            ],
+
+            overview: "The StreamPro-100ASLEN/DE is an SDVoE-compliant, all-in-one AV over IP solution that provides highest-quality, uncompressed 4K60 and zero-frame latency audio/video extension over a standard 10G Fiber Network Switch. It can transfer advanced HDMI content such as HDR (high dynamic range), full color-depth, and multi-channel HD Bitstream audio. Multiple control and data signals can be transmitted along with audio and video signals simultaneously, including RS-232 and 1G Ethernet. The product features a 10G fiber port, which can extend signals up to 40km via a single-mode fiber cable, or 300m via a multi-mode fiber cable. The 1G LAN port is for product management or Ethernet extension. The encoder supports HDMI loop out. The product supports bi-directional analog stereo audio pass-through and RS-232 with 12V voltage output on connector. This product combines multiple encoders/decoders with one or more 10GbE fiber switches to form an ideal IP solution for distributed 4K60 video matrix.",
+
+            keyFeatures: [
+              "Separate Encoder/Decoder Design: Built with independent encoder and decoder modules featuring a 10G fiber optical port for high-speed AV signal transmission.",
+              "4K UHD Video Resolution: Supports 4K2K@60Hz 4:4:4 video quality, fully compliant with HDMI 2.0b standards for exceptional image clarity.",
+              "HDCP 2.2 Compliance: Delivers secure, encrypted content transmission with 18Gbps video bandwidth for uncompressed high-quality video.",
+              "HDR Format Compatibility: Provides pass-through for HDR10, Dolby Vision, and HLG, ensuring rich color depth and superior dynamic range.",
+              "4K60 IP Matrix Support: Enables 4K60 signal switching and distribution over IP networks for scalable AV system design.",
+              "HDMI Loop Out (Encoder): Allows direct local signal monitoring or cascading without additional splitters.",
+              "Dual Network Connectivity: Equipped with one 1G LAN port and one 10G fiber port, offering flexible network deployment options.",
+              "Comprehensive Control Options: Operable via CEC, RS-232, TCP/IP, and Web GUI for versatile system control and integration.",
+              "10G Managed Network Compatibility: Designed to function seamlessly with 10G managed network switches for reliable, high-bandwidth performance.",
+              "Dedicated IP Controller Compatibility: Fully compatible with a dedicated IP controller box for centralized configuration and management."
+            ],
+
+            applications: [
+              "Classrooms",
+              "Boardrooms",
+              "Auditoriums",
+            ],
+
+            specifications: {
+              "System Specifications": {
+                "HDMI Compliance": "HDMI 2.0b",
+                "HDCP Compliance": "HDCP 2.2",
+                "Video Bandwidth": "594MHz / 18Gbps",
+                "Video Compression Standard": "SDVoE",
+                "Video Network Bandwidth": "10Gbps (SFP+)",
+                "Audio Latency": "Zero latency",
+                "Video Latency": "Zero latency",
+                "Input Video Resolution": "640x480p60Hz, 800x600p60Hz, 1024x768p60Hz, 1280x1024p60Hz, 1360x768p60Hz, 1440x900p60Hz, 1440x1050p60Hz, 1600x1200p60Hz, 720x480i59.94Hz (480i59), 720x480p59.94Hz (480p59), 720x576i50Hz (576i50), 720x576p50Hz (576p50), 1280x720p50Hz (720p50), 1280x720p59.94Hz (720p59), 1280x720p60Hz (720p60), 1920x1080i50Hz (1080i50), 1920x1080i59.94Hz (1080i59), 1920x1080i60Hz (1080i60), 1920x1080p23.98Hz (1080p23), 1920x1080p24Hz (1080p24), 1920x1080p25Hz (1080p25), 1920x1080p29.97Hz (1080p29), 1920x1080p30Hz (1080p30), 1920x1080p50Hz (1080p50), 1920x1080p59.94Hz (1080p59), 1920x1080p60Hz (1080p60), 3840x2160p23.98Hz (2160p23), 3840x2160p24Hz (2160p24), 3840x2160p25Hz (2160p25), 3840x2160p29.97Hz (2160p29), 3840x2160p30Hz (2160p30), 3840x2160p50Hz (2160p50), 3840x2160p59.94Hz (2160p59), 3840x2160p60Hz (2160p60), 4096x2160p23.98Hz, 4096x2160p24Hz, 4096x2160p25Hz, 4096x2160p29.97Hz, 4096x2160p30Hz, 4096x2160p50Hz, 4096x2160p59.94Hz, 4096x2160p60Hz",
+                "Output Video Resolution": "Pass-through",
+                "Color Space": "RGB, YCbCr 4:4:4 / 4:2:2, YUV",
+                "Color Depth": "8/10/12-bit",
+                HDR: "HDR, HDR10, HDR10+, Dolby Vision, HLG",
+                "Audio Formats": "LPCM2/5.1/7.1, Dolby Digital, Dolby Digital+, Dolby TrueHD, Dolby Atmos, DTS 5.1, DTS-HD Master Audio, DTS:X",
+                "Audio Sample Rate": "22.05/24/32/44.1/48/88.2/96/176.4/192KHz",
+                "Transmission Distance": "HDMI passive cable: 16.4ft/5m (4K60); 33ft/10m (4K30); 49ft/15m (1080p60); Single-mode optical fiber cable: 40km; Multi-mode optical fiber cable: 300m (depending on the 10G optical module)",
+                "ESD Protection": "IEC 61000-4-2: ±15kV (Air-gap discharge) & ±8kV (Contact Discharge)"
+              },
+              "Connection Specifications - Encoder": {
+                Input: "1x IN [HDMI Type A, 19-pin female]; 1x AUDIO IN [3.5mm audio jack]",
+                Output: "1x SFP+ [Fiber slot, 10Gbps]; 1x OUT [HDMI Type A, 19-pin female]; 1x AUDIO OUT [3.5mm audio jack]",
+                Control: "1x 1G LAN [RJ45 jack]; 1x RS-232 [4-pin 3.5mm phoenix connector]"
+              },
+              "Connection Specifications - Decoder": {
+                Input: "1x SFP+ [Fiber slot, 10Gbps]; 1x AUDIO IN [3.5mm audio jack]",
+                Output: "1x OUT [HDMI Type A, 19-pin female]; 1x AUDIO OUT [3.5mm audio jack]",
+                Control: "1x 1G LAN [RJ45 jack]; 1x RS-232 [4-pin 3.5mm phoenix connector]"
+              },
+              "Mechanical Specifications": {
+                Housing: "Metal Enclosure",
+                Color: "Black",
+                Dimensions: "Encoder/Decoder: 95mm [W] x 120mm [D] x 21.5mm [H]",
+                Weight: "Encoder: 329g; Decoder: 323g",
+                "Power Supply": "Input: AC 100–240V 50/60Hz; Output: DC 12V/1A (US/EU standard, CE/FCC/UL certified)",
+                "Power Consumption (Max)": "Encoder: 5.52W; Decoder: 5.04W",
+                "Operating Temperature": "0°C to 40°C (32°F to 104°F)",
+                "Storage Temperature": "-20°C to 60°C (-4°F to 140°F)",
+                "Operating Humidity": "20% – 80% (relative humidity, no condensation)",
+                "Storage Humidity": "10% – 90% (relative humidity, no condensation)"
+              }
+            },
+          },
           {
+            id: "model_sp_avp1000_fiber_6",
+            name: "StreamPro100ATF",
+            description: "4K60 4:4:4/HDR W/USB KVM over IP SDVoE Tranceiver Fiber",
+            images: [
+              "/images/Products/av_over_ip_soln/StreamPro_HDN-EB100AT.webp"
+            ],
+
+            overview: "The Resoundify StreamPro 100ATF transceiver is an SDVoE-compliant, all-in-one AV over IP solution that provides highest-quality, uncompressed 4K and zero-frame latency audio/video extension over a standard 10G Fiber Network Switch with instant switching, Video Wall, and MultiView functions. It can transfer advanced HDMI content such as HDR (high dynamic range), full color-depth, and multichannel HD Bitstream audio. Flexible transceiver design (one box can be set to encoder or decoder) is much convenient in real installation sites and inventory control. Its built-in Secondary Stream supports a high-quality, bandwidth-configurable H.264/H.265 compression video stream for portable device preview purposes. Multiple control and data signals can be transmitted along with audio and video signals simultaneously, including bi-directional IR, RS-232, USB KVM, CEC, and 1G Ethernet.",
+
+            keyFeatures: [
+              "HDMI 2.0b and HDCP 2.2 Compliance: Ensures compatibility with the latest high-definition video and content protection standards.",
+              "4K Ultra HD Video Performance: Supports resolutions up to 4K@60Hz (4:4:4) with 18Gbps video bandwidth for crystal-clear visuals.",
+              "Flexible Transceiver Design: Combines Encoder and Decoder functionality within a single unit for versatile installation.",
+              "Selectable Operation Mode: Encoder or Decoder mode can be configured via Button or API control.",
+              "HDMI Loop Out (Encoder): Enables local monitoring or signal daisy-chaining without additional splitters.",
+              "Advanced Video Format Support: Compatible with HDR10, Dolby Vision, HLG, and 3D video formats.",
+              "Comprehensive Audio Format Support: Handles Dolby TrueHD, Dolby Atmos, DTS-HD, and DTS:X audio formats.",
+              "Zero-Frame Latency Mode: Provides real-time signal transmission without perceptible delay.",
+              "Built-in Secondary Stream (SS): Integrated H.264/H.265 streaming for preview and monitoring.",
+              "Comprehensive Control Options: Enables bi-directional IR and RS-232 pass-through for device communication.",
+              "Multiple Control Interfaces: Manage via IR, RS-232, TCP/IP, or Web GUI for flexible system integration.",
+              "Power over Ethernet (PoE): Complies with IEEE 802.3at PD standard for simplified power and data connectivity.",
+              "10G Managed Network Support: Designed for high-bandwidth AV-over-IP systems with 10G network switch integration."
+            ],
+
+            applications: [
+              "Classrooms",
+              "Boardrooms",
+              "Auditoriums",
+            ],
+
+            specifications: {
+              "System Specifications": {
+                "HDMI Compliance": "HDMI 2.0b",
+                "HDCP Compliance": "HDCP 2.2",
+                "Video Bandwidth": "18Gbps",
+                "Network Video Bandwidth": "10G",
+                "Video Resolution": "Up to 4K@60Hz 4:4:4",
+                "Color Space": "Full Color-Depth",
+                HDR: "HDR, HDR10, HDR10+, Dolby Vision, HLG",
+                "HDMI Audio Formats": "LPCM, Dolby Digital/Plus/EX, Dolby True HD, Dolby Atmos, DTS, DTS-EX, DTS-96/24, DTS High Res, DTS-HD Master Audio, DSD, DTS:X",
+                "Analog Audio Formats": "Left and Right stereo analog audio",
+                "Transmission Distance": "100m (CAT6A/7) / 90m (CAT6)",
+                "ESD Protection": "Human body model — ±8kV (air-gap discharge) & ±4kV (contact discharge)"
+              },
+              "Connection Specifications": {
+                "Input Ports": "1x HDMI IN [Type A, 19-pin female]; 1x USB 2.0 HOST [Type B, 9-pin female]; 1x IR IN [3.5mm Jack]; 1x AUDIO IN [3.5mm Jack]; 1x RS-232 [4-pin phoenix connector]",
+                "Output Ports": "1x HDMI OUT [Type A, 19-pin female]; 1x AUDIO OUT [3.5mm Jack]; 1x IR OUT [3.5mm Jack]; 2x USB 2.0 DEVICE [Type-A, 4-pin female]",
+                "Network Ports": "1x 10G SFP+ [Fiber slot]; 1x 1G LAN [RJ45 jack]"
+              },
+              "Mechanical Specifications": {
+                Housing: "Metal Enclosure",
+                Color: "Black",
+                Dimensions: "204mm [W] x 134mm [D] x 21.5mm [H]",
+                Weight: "693g",
+                "Power Supply": "Input: AC 100-240V 50/60Hz, Output: DC 12V/2.5A (US/EU standards, CE/FCC/UL certified)",
+                "Power Consumption (Max)": "13.5W",
+                "Operating Temperature": "0°C to 40°C (32°F to 104°F)",
+                "Storage Temperature": "-20°C to 60°C (-4°F to 140°F)",
+                "Relative Humidity": "20-90% RH (no condensation)"
+              }
+            },
+          },
+           {
             id: "model_sp_copper_fiber_1",
             name: "StreamPro",
             description: "4K60 4:4:4/HDR w/USB2.0/Video Preview over IP SDVoE Tranceiver Copper&Fiber",
             images: [
               "/images/Products/av_over_ip_soln/StreamPro_HDN-CTL100D.png",
-            ]
-          },
-          {
-            id: "model_sp_fiber_kvm_2",
-            name: "StreamPro",
-            description: "4K60 4:4:4/HDR w/USB KVM over IP SDVoE Tranceiver Fiber",
-            images: [
-              "/images/Products/av_over_ip_soln/StreamPro_HDN-EB100AS-DEC.webp",
-            ]
-          },
-          {
-            id: "model_sp_avp2000_fiber_3",
-            name: "StreamPro",
-            description: "SDVoE AVP2000 IP solution Seamless Matrix/Video Wall/Multiview -- Fiber Port",
-            images: [
-              "/images/Products/av_over_ip_soln/StreamPro_HDN-EB100ASL-DEC.webp",
             ]
           },
           {
@@ -1132,14 +1626,6 @@ export const productsData = [
             description: "SDVoE AVP1000 IP solution Seamless Matrix -- Fiber Port",
             images: [
               "/images/Products/av_over_ip_soln/StreamPro_HDN-EB100ASL-ENC.webp",
-            ]
-          },
-          {
-            id: "model_sp_avp1000_fiber_6",
-            name: "StreamPro",
-            description: "SDVoE AVP1000 IP solution Seamless Matrix -- Fiber Port",
-            images: [
-              "/images/Products/av_over_ip_soln/StreamPro_HDN-EB100AT.webp",
             ]
           },
           {
@@ -1172,6 +1658,273 @@ export const productsData = [
         type: "series",
         models: [
           {
+            id: "model_vc_ptz12_dante",
+            name: "VC-PTZ12 (DANTE)",
+            description: "4K Ultra HD Video Conference Camera AI tracking",
+            images: [
+              "/images/Products/video_conferencing/PTZ12.webp"
+            ],
+
+            overview: "The Resoundify VC-PTZ12 (DANTE) 4K UHD PTZ camera delivers exceptional image quality and intelligent performance, making it ideal for broadcasting, live events, education, and conferencing environments. Equipped with a 1/2.8-inch UHD CMOS sensor offering up to 8.51 megapixels, it supports stunning 4K@60fps ultra-high-definition video, while remaining compatible with 1080p, 720p, and other resolutions. Its 12x optical zoom lens provides a wide 80° field of view, ensuring crisp and detailed visuals for both close-up and wide-angle shots. The camera's superior low-light performance, powered by a 3D noise reduction algorithm, maintains clean and clear images even in dim environments, achieving an impressive signal-to-noise ratio of 55dB. Supporting HDMI 2.0 and 3G-SDI interfaces, the camera can output uncompressed 4K digital video with effective transmission distances of up to 150 meters at 1080p30. With HDMI, 3G-SDI, USB 3.0, and LAN ports, it allows up to four simultaneous HD digital outputs, providing flexibility for diverse system setups. The integrated AI tracking function, driven by embedded NPU hardware and deep learning technology, enables precise and smooth face tracking, making it ideal for automatic presenter or speaker tracking in classrooms, lectures, and live presentations.",
+
+            keyFeatures: [
+              "Compatible with NDI@HX2 Protocol: NDI is ideal for broadcasting including broadcast studios, live broadcast, gymnasiums, arenas, churches and lecture halls, thanks to its high SNR and ultra-low latency.",
+              "4K@60fps UHD Video: 1/2.8-inch UHD CMOS sensor with up to 8.51 megapixels offers 4K (3840x2160) UHD images, downward compatible with 1080P, 720P and other resolutions.",
+              "AI Tracking: Embedded NPU hardware uses deep learning technology to extract the target's characteristics and allow smooth face tracking, no matter where the face is facing. The product is applicable to automatic tracking of speakers in lecture and presentation.",
+              "12x Optical Zoom: 4K UHD lens with effective resolution of 8 megapixels, 12x optical zoom and FOV angle of up to 80°.",
+              "Multiple Interfaces: It supports HDMI 2.0 HD output, and also equipped with 3G-SDI interface, the effective transmission distance up to 150 meters (1080P30). HDMI, 3G-SDI, USB 3.0, LAN can simultaneously output 4 channels of high-definition digital signals.",
+              "Built-in Gravity Sensor: Automatic image rotation supported for easy installation.",
+              "Smart Exposure: The effects of projectors, TV and other devices on the people can be resolved effectively.",
+              "Remote Control: Through the LAN, RS232 and RS485 serial ports, the camera can be controlled remotely."
+            ],
+
+            applications: [
+             "classrooms",
+             "boardrooms",
+             "auditoriums",
+            ],
+
+            specifications: {
+              "Camera Specifications": {
+                "Video Resolution": "4K/60, 4K/50, 4K/30, 4K/25, 4K/59.94, 4K/29.97; 1080P/60, 1080P/50, 1080I/60, 1080I/50, 1080P/30, 1080P/59.94, 1080I/59.94, 1080P/29.97; 720P/60, 720P/59.94",
+                Sensor: "1/2.8 inches, CMOS, Effective Pixels: 8.40 Megapixels",
+                "Scanning Mode": "Progressive",
+                Lens: "12x, f = 4.4mm ~ 52.8mm, F1.8 ~ F2.6",
+                "Digital Zoom": "16x",
+                "Minimum Illumination": "0.5Lux @ (F1.8, AGC ON)",
+                "Shutter Speed": "1/30s ~ 1/10000s",
+                "White Balance": "Auto, Indoor, Outdoor, One Push, Manual, VAR",
+                "Backlight Compensation": "Support",
+                "Digital Noise Reduction": "3D Digital Noise Reduction",
+                SNR: ">55dB",
+                "Horizontal FOV": "80.8° ~ 7.5°",
+                "Vertical FOV": "49.9° ~ 4.3°",
+                "Pan Angle": "±170°",
+                "Tilt Angle": "-30° ~ +90°",
+                "Pan Speed": "1.7° ~ 100°/s",
+                "Tilt Speed": "1.7° ~ 69.9°/s",
+                "Image Flip": "Support",
+                "Image Freeze": "Support",
+                POE: "Support",
+                "Preset Position": "255",
+                "Preset Accuracy": "0.1°"
+              },
+              "Interface Specifications": {
+                "HD Output": "1 x HDMI: Version 2.0; 1 x 3G-SDI: BNC, 800mVp-p, 75Ω, as per SMPTE 424M standard",
+                "Network Interface": "1 x RJ45: 10M/100M/1000M adaptive Ethernet",
+                "Audio Interface": "1 x LINE IN: 3.5mm Jack",
+                "USB Interface": "1 x USB3.0, type-C",
+                "Control Interface": "1 x RS485: 2pin phoenix port, Max Distance: 1200m, Protocol: VISCA / Pelco-D / Pelco-P; 1 x RS232 IN: 8pin Mini DIN, Max Distance: 30m, Protocol: VISCA / Pelco-D / Pelco-P; 1 x RS232 OUT: 8pin Mini DIN, Max Distance: 30m, Protocol: VISCA only",
+                "Power Interface": "JEITA type (DC IN 12V)"
+              },
+              "Network Specifications": {
+                "Video Compression": "H.265 / H.264 / MJPEG",
+                "Video Stream": "First Stream, Second Stream",
+                "First Stream Resolution": "3840x2160, 1920x1080, 1280x720, etc",
+                "Second Stream Resolution": "720x480, 320x240 etc.",
+                "Video Bit Rate": "32kbps—51200kbps",
+                "Bit Rate Control": "VBR, CBR",
+                "Frame Rate": "50Hz: 1fps—50fps, 60Hz: 1fps—60fps",
+                "Audio Compression": "AAC, G711A",
+                "Audio Bit Rate": "96kbps, 128kbps, 256Kbps",
+                Protocols: "NDI HX2, TCP/IP, HTTP, RTSP, RTMP(s), Onvif, DHCP, Multicast, etc",
+                "Control Protocol": "NDI PTZ, VISCA over IP"
+              },
+              "USB Specifications": {
+                "Operating System Supported": "Windows 7, Windows 8, Windows 10, Windows 11, MacOS 11.6.6 or higher, Ubuntu 18.04.4 LTS or higher, Android 8.0.0 or higher",
+                "Color System / Compression": "YUY2 / H.265 / H.264 / MJPEG",
+                "Video Format": "YUY2: Max.1080P5; H.264: Max.2160P30; H.265 HEVC: Max.2160P30; MJPEG: Max.2160P30",
+                "USB Audio": "Support",
+                "USB Video Communication Protocol": "UVC 1.1~1.5",
+                "UVC PTZ Control": "Support"
+              },
+              "General Specifications": {
+                "Input Voltage": "DC 12V / PoE+ (802.3at)",
+                "Input Current": "1.5A (Max.)",
+                "Power Switch": "Support",
+                "Recovery key": "Support",
+                "IR Remote Input": "Support",
+                "Operating Temperature": "-10°C ~ 60°C",
+                "Storage Temperature": "-40°C ~ 60°C",
+                "Power Consumption": "12W (Max.)",
+                Dimension: "223mm x 155mm x 166mm",
+                "Net Weight": "1.8kg"
+              }
+            },
+          },
+          {
+            id: "model_vc_ptz16_dante",
+            name: "VC-PTZ16 (DANTE)",
+            description: "4K Ultra HD Video Conference Camera AI Tracking",
+            images: [
+              "/images/Products/video_conferencing/PTZ16.webp"
+            ],
+
+            overview: "The VC-PTZ16 (DANTE) is a high-performance 4K video conferencing camera engineered for professional meeting rooms, lecture halls, and broadcasting environments. Equipped with advanced AI tracking, Dante audio compatibility, and robust connectivity options, it delivers crystal-clear video and intelligent automation for seamless remote collaboration. The VC-PTZ16 is a next-generation video conferencing and live streaming camera engineered to deliver professional-grade 4K60P video, AI-powered auto tracking, and network audio integration via Dante. Designed for modern AV installations, it offers the perfect combination of ultra-high-definition imaging, intelligent automation, and flexible connectivity to meet the demands of today's hybrid communication environments.",
+
+            keyFeatures: [
+              "4K60P UHD Video: Using 1/1.8-inch high-quality UHD CMOS sensor with a maximum of 8.42 million pixels can realize 4K (3840x2160) ultra-high-resolution high-quality images. And downward compatible with 1080p, 720p and other resolutions.",
+              "AI Tracking: With the help of the AI computing power of the chip, the camera is equipped with advanced AI algorithms to realize monocular humanoid tracking, which can realize automatic tracking of scenes such as education, conferences and live broadcasts.",
+              "Voice Tracking: The built-in intelligent AI algorithm uses dual microphones to accurately locate the sound source. The camera can automatically find and track the speaker. When different speakers speak, the camera can switch between different speakers.",
+              "20x Optical Zoom + 60° Wide-angle Lens: It adopts 4K ultra long focal lens with high quality and 8 million ultra-high resolution, 20x optical zoom, and the maximum field angle is 60°.",
+              "HDMI 2.0: Support HDMI 2.0 interface, which can directly output 4K/60P uncompressed digital video.",
+              "Multiple Interfaces: Support HDMI and 3G-SDI interface, effective transmission distance of 3G-SDI is up to 150 meters (1080P30). HDMI or 3G-SDI, USB, LAN can output three HD digital signals at the same time.",
+              "NDI |HX2: Support low-latency NDI@HX2 protocol, plug to play, minimal configuration and easy for deployment."
+            ],
+
+            applications: [
+              "classrooms",
+              "boardrooms",
+              "auditoriums",
+            ],
+
+            specifications: {
+              "Camera Specifications": {
+                "Video Resolution": "HDMI: 4K/60, 4K/59.94, 4K/50, 4K/30, 4K/29.97, 4K/25, 1080p/60, 1080p/59.94, 1080p/50, 1080p/30, 1080p/29.97, 1080p/25, 1080i/60, 1080i/59.94, 1080i/50, 720p/60, 720p/59.94, 720p/50; 3G-SDI: 1080p/60, 1080p/59.94, 1080p/50, 1080p/30, 1080p/29.97, 1080p/25, 1080i/60, 1080i/59.94, 1080i/50, 720p/60, 720p/50",
+                Sensor: "1/1.8 inches, CMOS, Effective Pixels: 8.42 Megapixels",
+                "Scanning Mode": "Progressive",
+                Lens: "20x, f=6.25mm ~ 125mm, F1.58 ~ F3.95",
+                "Digital Zoom": "16x",
+                "Minimum Illumination": "0.5Lux @ (F1.8, AGC ON)",
+                "Shutter Speed": "1/30s ~ 1/10000s",
+                "White Balance": "Auto, Indoor, Outdoor, One Push, Manual, VAR",
+                "Backlight Compensation": "Support",
+                "Digital Noise Reduction": "3D Digital Noise Reduction",
+                SNR: ">55dB",
+                "Horizontal FOV": "60° ~ 3.5°",
+                "Vertical FOV": "35.7° ~ 2.0°",
+                "Pan Angle": "±162.5°",
+                "Tilt Angle": "-30° ~ +90°",
+                "Pan Speed": "1.8° ~ 80°/s",
+                "Tilt Speed": "1.5° ~ 49°/s",
+                "Image Flip": "Support",
+                "Image Freeze": "Support",
+                POE: "Support",
+                "Preset Position": "255",
+                "Preset Accuracy": "0.1°"
+              },
+              "Interface Specifications": {
+                "HD Output": "1 x HDMI: Version 2.0; 1 x 3G-SDI: BNC, 800mVp-p, 75Ω, as per SMPTE 424M standard",
+                "Network Interface": "1 x RJ45: 10M/100M/1000M adaptive Ethernet",
+                "Audio Interface": "1 x LINE IN: 3.5mm Jack",
+                "USB Interface": "1 x USB3.0, Type-C",
+                "Control Interface": "1 x RS485: 3pin phoenix port, Max Distance: 1200m, Protocol: VISCA / Pelco-D / Pelco-P; 1 x RS232 IN: 8pin Mini DIN, Max Distance: 30m, Protocol: VISCA / Pelco-D / Pelco-P; 1 x RS232 OUT: 8pin Mini DIN, Max Distance: 30m, Protocol: VISCA only",
+                "Power Interface": "JEITA type (DC IN 12V)"
+              },
+              "Network Specifications": {
+                "Video Compression": "H.265 / H.264 / MJPEG",
+                "Video Stream": "First Stream, Second Stream",
+                "First Stream Resolution": "3840x2160, 1920x1080, etc",
+                "Second Stream Resolution": "720x480, etc",
+                "Video Bit Rate": "First Stream: 32kbps—51200kbps; Second Stream: 32kbps—20480kbps",
+                "Bit Rate Control": "VBR, CBR",
+                "Frame Rate": "50Hz: 1fps—50fps, 60Hz: 1fps—60fps",
+                "Audio Compression": "AAC, G711A",
+                "Audio Bit Rate": "96kbps, 128kbps",
+                Protocols: "NDI HX2, SRT, TCP/IP, HTTP, RTSP, RTMP(s), Onvif, DHCP, Multicast, etc"
+              },
+              "USB Specifications": {
+                "Operating System Supported": "Windows 7, Windows 8, Windows 10, Mac OS X, Linux, Android",
+                "Color System / Compression": "YUY2 / H.264 / MJPEG / H.265",
+                "Video Format": "YUY2; H.264: Max.2160p/30; H.265 HEVC: Max.2160p/30; MJPEG: Max.2160p/30",
+                "USB Audio": "Support",
+                "USB Video Communication Protocol": "UVC 1.1~1.5",
+                "UVC PTZ Control": "Support"
+              },
+              "General Specifications": {
+                "Input Voltage": "DC 12V / PoE+ (802.3at)",
+                "Input Current": "2A (Max.)",
+                "Operating Temperature": "-10°C ~ 40°C",
+                "Storage Temperature": "-40°C ~ 60°C",
+                "Power Consumption": "18W",
+                Dimension: "223mm x 154.8mm x 165mm",
+                "Net Weight": "1.8kg"
+              }
+            },
+          },
+         {
+            id: "model_vc_ptz20_dante",
+            name: "VC-PTZ20 (DANTE)",
+            description: "4K Ultra HD Video Conference Camera",
+            images: [
+              "/images/Products/video_conferencing/PTZ20.webp"
+            ],
+
+            overview: "The VC-PTZ20 (DANTE) is a professional-grade 4K Ultra HD video conference camera designed for high-performance video conferencing and broadcasting environments. Equipped with a large 1/1.8\" CMOS sensor and an effective resolution of 8.42 megapixels, it delivers exceptional clarity, color accuracy, and detail — ideal for boardrooms, training rooms, lecture halls, and other professional AV applications. The VC-PTZ20 is a cutting-edge professional video conferencing camera that combines 4K Ultra HD resolution, AI-powered features, and broadcast-grade optics to deliver an exceptional conferencing experience. Engineered for modern meeting spaces, lecture halls, and hybrid collaboration environments, it ensures participants appear crisp, clear, and professional—no matter where they are.",
+
+            keyFeatures: [
+              "4K30P UHD Video: Using 1/1.8-inch high-quality UHD CMOS sensor with a maximum of 8.42 million pixels can realize 4K (3840x2160) ultra-high-resolution high-quality images. And downward compatible with 1080p, 720p and other resolutions.",
+              "20x Optical Zoom + 60° Wide-angle Lens: It adopts 4K ultra long focal lens with high quality and 8 million ultra-high resolution, 20x optical zoom, and the maximum field angle is 60°.",
+              "HDMI 1.4b: Support HDMI 1.4b interface, which can directly output 4K/60P uncompressed digital video.",
+              "Remote Control: Support a variety of control methods, you can use RS232, RS485, network and USB to control the camera.",
+              "Local Storage: Support U disk local storage, local recording directly without NVR.",
+              "Low Illumination: The application of 3D noise reduction algorithm greatly reduces image noise. Even under the condition of ultra-low illumination, it still keep the picture clean and clear, and the SNR of image is as high as 55dB.",
+              "Smart Exposure: Effectively solve the impact of projection, TV and other equipment on shooting people.",
+              "NDI |HX2: NDI@HX2 has the characteristics of low latency and plug and play, which is convenient for project implementation and deployment. It has good ecology and supports the simultaneous transmission of audio, video and control commands. It is a new generation of network video transmission mode.",
+              "Multiple Interfaces: Support HDMI and 3G-SDI interface, effective transmission distance of 3G-SDI is up to 150 meters (1080P30). HDMI, LAN or 3G-SDI, LAN can output 2 high-definition digital signals at the same time."
+            ],
+
+            applications: [
+              "classrooms",
+              "boardrooms",
+              "auditoriums",
+            ],
+
+            specifications: {
+              "Camera Specifications": {
+                "Signal System": "HDMI: 4K/30, 4K/29.97, 4K/25, 1080p/60, 1080p/59.94, 1080p/50, 1080p/30, 1080p/29.97, 1080p/25, 1080i/60, 1080i/59.94, 1080i/50, 720p/60, 720p/59.94, 720p/50; 3G-SDI: 1080p/50, 1080p/30, 1080p/29.97, 1080p/25, 1080i/60, 1080i/59.94, 1080i/50, 720p/60, 720p/59.94",
+                Sensor: "1/1.8 inches, CMOS, Effective Pixels: 8.42 Megapixels",
+                "Scanning Mode": "Progressive",
+                Lens: "20x, f=6.25mm ~ 125mm, F1.58 ~ F3.95",
+                Shutter: "1/30s ~ 1/10000s",
+                "White Balance": "Auto, Indoor, Outdoor, One Push, Manual, VAR",
+                "Backlight Compensation": "Support",
+                "Digital Noise Reduction": "3D Digital Noise Reduction",
+                SNR: "55dB",
+                "Horizontal FOV": "60° ~ 3.5°",
+                "Vertical FOV": "35.7° ~ 2.0°",
+                "Pan Angle": "±170°",
+                "Tilt Angle": "-30° ~ +90°",
+                "Pan Speed": "1.7° ~ 100°/s",
+                "Tilt Speed": "1.7° ~ 69.9°/s",
+                "Image Flip": "Support",
+                "Image Freeze": "Support",
+                "PoE+": "Support",
+                "Preset Position": "255",
+                "Preset Accuracy": "0.1°"
+              },
+              "Interface Specifications": {
+                "HD Output": "1x HDMI: Version 1.4b; 1x 3G-SDI: BNC, 800mVp-p, 75Ω, as per SMPTE 424M standard",
+                "Network Interface": "1 x RJ45: 10M/100M/1000M adaptive Ethernet",
+                "Audio Interface": "1 x Line In: 3.5mm Jack; 1 x Line Out: 3.5mm Jack",
+                "USB Interface": "1 x USB2.0, Type-A",
+                "Control Interface": "1 x RS485: 2pin phoenix port, Max Distance: 1200m, Protocol: VISCA / Pelco-D / Pelco-P; 1 x RS232 IN: 8pin Mini DIN, Max Distance: 30m, Protocol: VISCA / Pelco-D / Pelco-P; 1 x RS232 OUT: 8pin Mini DIN, Max Distance: 30m, Protocol: VISCA only",
+                "Power Interface": "JEITA type (DC IN 12V)"
+              },
+              "Network Specifications": {
+                "Video Compression": "H.265 / H.264 / MJPEG",
+                "Video Stream": "First Stream, Second Stream",
+                "First Stream Resolution": "3840x2160, 1920x1080, 1280x720, etc",
+                "Second Stream Resolution": "etc",
+                "Video Bit Rate": "First Stream: 32kbps—51200kbps; Second Stream: 32kbps—20480kbps",
+                "Bit Rate Control": "VBR, CBR",
+                "Frame Rate": "50Hz: 1fps—50fps, 60Hz: 1fps—60fps",
+                "Audio Compression": "AAC, G.711A",
+                "Audio Bit Rate": "96kbps, 128kbps, 256Kbps",
+                Protocols: "NDI HX2, SRT, TCP/IP, HTTP, RTSP, RTMP(s), Onvif, DHCP, GB/T 28181, Multicast, etc"
+              },
+              "General Specifications": {
+                "Input Voltage": "DC 12V / PoE+ (802.3at)",
+                "Input Current": "1.5A (Max.)",
+                "Operating Temperature": "-10°C ~ 40°C",
+                "Storage Temperature": "-40°C ~ 60°C",
+                "Power Consumption": "13W (Max.)",
+                Dimension: "169mm x 142mm x 175mm",
+                "Net Weight": "1.4kg"
+              }
+            },
+          },
+          {
             id: "model_vc_ptz30_dante",
             name: "VC-PTZ30 (DANTE)",
             description: "4K Ultra HD Video Conference Camera AI tracking 1/1.8'', CMOS, Max Effective Pixel: 8.42M, 30X 4K@60/59.94/50//30/29.97/25fps, 1080P@60/59.94/50/30/29.97fps, 1080I@60/59.94fps, 720P@60/59.94fps HDMI, 3G-SDI, RJ45, USB2.0, 1-ch Line in, RS232 in, RS232 out, RS485, POE+",
@@ -1179,30 +1932,7 @@ export const productsData = [
               "/images/Products/video_conferencing/PTZ30.webp",
             ]
           },
-          {
-            id: "model_vc_ptz16_dante",
-            name: "VC-PTZ16 (DANTE)",
-            description: "4K Ultra HD Video Conference Camera AI tracking 1/1.8'', CMOS, Max Effective Pixel: 8.42M, 20X + 16X digital zoom 4K@60/59.94/50/30/29.97/25fps, 1080P@60/59.94/50/30/29.97fps, 1080I@60/59.94/50fps, 720P@60/59.94fps HDMI, 3G-SDI, RJ45, USB2.0, 1-ch Line in, RS232 in, RS232 out, RS485, POE+",
-            images: [
-              "/images/Products/video_conferencing/PTZ16.webp",
-            ]
-          },
-          {
-            id: "model_vc_ptz20_dante",
-            name: "VC-PTZ20 (DANTE)",
-            description: "4K Ultra HD Video Conference Camera 1/1.8'', CMOS, Max Effective Pixel: 8.42M, 20X 4K@60/59.94/50//30/29.97/25fps, 1080P@60/59.94/50/30/29.97fps, 1080I@60/59.94/50fps, 720P@60/59.94fps HDMI, 3G-SDI, RJ45, USB2.0, 1-ch Line in, RS232 in, RS232 out, RS485, POE+ AI tracking",
-            images: [
-              "/images/Products/video_conferencing/PTZ20.webp",
-            ]
-          },
-          {
-            id: "model_vc_ptz12_dante",
-            name: "VC-PTZ12 (DANTE)",
-            description: "4K Ultra HD Video Conference Camera AI tracking FOV 80.8 degree 1/2.5'', CMOS, Max Effective Pixel: 8.40M, 12X optical zoom,16X digital zoom 4K@60/59.94/50//30/29.97/25fps, 1080P@60/59.94/50/30/29.97fps, 1080I@60/59.94/50fps, 720P@60/59.94fps HDMI, 3G-SDI, RJ45, USB2.0, 1-ch Line in, RS232 in, RS232 out, RS485, POE+",
-            images: [
-              "/images/Products/video_conferencing/PTZ12.webp",
-            ]
-          },
+         
         ],
       },
       {
@@ -1976,127 +2706,127 @@ export const productsData = [
                 }
               },
             },
+          {
+            id: "model_fusion_2009",
+            name: "Fusion -2009",
+            description: "Thirteen-in-one Integrated Processor",
+            images: [
+              "/images/Products/all_in_one_processor/Fusion_2009.webp",
+              "/images/Products/all_in_one_processor/Fusion_2009(1).webp",
+              "/images/Products/all_in_one_processor/Fusion_2009(2).webp",
+            ],
+            overview: `The Fusion-2009 is a state-of-the-art 13-in-1 integrated processor engineered for high-performance
+              multimedia applications. Building on advanced design principles, the Fusion-2009 merges thirteen core
+              functionalities into a single, compact unit — simplifying system integration, reducing installation time, and
+              improving overall efficiency.
+              With its powerful and flexible feature set, the Fusion-2009 is the perfect fit for modern smart classrooms,
+              multimedia conference rooms, training centers, lecture halls, and multi-functional venues. From on-site
+              presentations and remote conferencing to live streaming and interactive learning, the Fusion-2009 delivers
+              seamless performance and reliability across a wide range of professional environments.`,
 
-        //   {
-        //     id: "model_fusion_2009",
-        //     name: "Fusion -2009",
-        //     description: "Thirteen-in-one Integrated Processor",
-        //     images: [
-        //       "https://placehold.co/400x300/E5E7EB/6B7280?text=Fusion-2009+1",
-        //       "https://placehold.co/400x300/E5E7EB/6B7280?text=Fusion-2009+2"
-        //     ],
-        //     overview: `The Fusion-2009 is a state-of-the-art 13-in-1 integrated processor engineered for high-performance
-        //       multimedia applications. Building on advanced design principles, the Fusion-2009 merges thirteen core
-        //       functionalities into a single, compact unit — simplifying system integration, reducing installation time, and
-        //       improving overall efficiency.
-        //       With its powerful and flexible feature set, the Fusion-2009 is the perfect fit for modern smart classrooms,
-        //       multimedia conference rooms, training centers, lecture halls, and multi-functional venues. From on-site
-        //       presentations and remote conferencing to live streaming and interactive learning, the Fusion-2009 delivers
-        //       seamless performance and reliability across a wide range of professional environments.`,
+            keyFeatures : [
+              "Smart Centralized Control: Integrated control of multimedia equipment via a conference tablet, enabling unified management of audio/video, conferencing, recording, broadcasting, and third-party peripherals.",
+              "Standard Control Interfaces: Supports RS232/485, IR, IO, and RELAY connections for common AV and automation devices.",
+              "Zigbee IoT Protocol: Enables wireless control of smart devices through Zigbee integration.",
+              "Bi-directional Serial Communication: Supports two-way control over a single serial link for seamless device interaction.",
+              "Hybrid Control Design: Combines wired and wireless IoT control, preventing interference and disconnection even in shielded environments.",
+              "4K Video Matrix Switching: 4-in 2-out seamless 4K@60Hz video switching for fast and clear AV transitions.",
+              "Digital Audio Interface: Features 8-in/4-out configuration with network and HDMI audio routing.",
+              "Built-in Amplifier: Delivers 2×100W output power for direct speaker drive.",
+              "Multi-Stream Local Recording: Records 4–6 video streams simultaneously for meetings, training, or lectures.",
+              "IPC Camera Integration: Supports up to 12 IPC video inputs for live output, display, or recording."
+            ],
+            applications: [
+              "Meeting Room",
+              "Conference Center",
+              "Courtrooms",
+              "Classrooms",
+              "Lecture Halls",
+              "House of Worship",
+              "Hotels",
+              "Event Venues",
+              "Training Centers",
+              "All Hand Space",
+              "Command Centers",
+              "Smart Conference Facilities"
+            ],
 
-        //     features : [
-        //       "Smart Centralized Control: Integrated control of multimedia equipment via a conference tablet, enabling unified management of audio/video, conferencing, recording, broadcasting, and third-party peripherals.",
-        //       "Standard Control Interfaces: Supports RS232/485, IR, IO, and RELAY connections for common AV and automation devices.",
-        //       "Zigbee IoT Protocol: Enables wireless control of smart devices through Zigbee integration.",
-        //       "Bi-directional Serial Communication: Supports two-way control over a single serial link for seamless device interaction.",
-        //       "Hybrid Control Design: Combines wired and wireless IoT control, preventing interference and disconnection even in shielded environments.",
-        //       "4K Video Matrix Switching: 4-in 2-out seamless 4K@60Hz video switching for fast and clear AV transitions.",
-        //       "Digital Audio Interface: Features 8-in/4-out configuration with network and HDMI audio routing.",
-        //       "Built-in Amplifier: Delivers 2×100W output power for direct speaker drive.",
-        //       "Multi-Stream Local Recording: Records 4–6 video streams simultaneously for meetings, training, or lectures.",
-        //       "IPC Camera Integration: Supports up to 12 IPC video inputs for live output, display, or recording."
-        //     ],
-        //     applications: [
-        //       "Meeting Room",
-        //       "Conference Center",
-        //       "Courtrooms",
-        //       "Classrooms",
-        //       "Lecture Halls",
-        //       "House of Worship",
-        //       "Hotels",
-        //       "Event Venues",
-        //       "Training Centers",
-        //       "All Hand Space",
-        //       "Command Centers",
-        //       "Smart Conference Facilities"
-        //     ],
-
-        //     specifications: {
-        //   "System Specifications": {
-        //     "System Architecture": "Industrial-grade embedded system, virus-resistant",
-        //     "Operating System": "Embedded system with integrated OPS 11th Gen Windows 11 Pro PC (16GB RAM, 512GB SSD)",
-        //     "Processor": "High-performance DSP Core with Advanced Video Processing Unit",
-        //     "Sampling Rate (Audio)": "48 kHz ± 100 ppm",
-        //     "Video Resolution": "Up to 4K@60Hz (4:4:4)",
-        //     "Main Stream": "1080P@60",
-        //     "Preview Stream": "CIF",
-        //     "Video Codec": "H.264 HP/MP/BP, H.265 MP, up to 16 channels 1080P encoding/decoding, 512 Kbps–16 Mbps per channel",
-        //     "Audio Protocols": "G.711, G.722, G.722.1, G.722.1C, AAC",
-        //     "Communication Protocols": "SIP, BFCP, H.323, H.239, RTSP, RTMP, TCP/IP, HTTP, FTP, UDP, RTP, RTCP, TLS, Telnet, NAT, E.164, H.245, H.225, Q.931, NTP",
-        //     "Frequency Response (Audio)": "20 Hz – 20 kHz ± 0.5 dB",
-        //     "Dynamic Range (Audio)": "122 dB (A-weighted)",
-        //     "THD + Noise (Audio)": "<0.002% @ 4 dBu",
-        //     "Latency (Audio)": "<0.6 ms (input to output)",
-        //     "Latency (Video)": "<10 ms (input to output)",
-        //     "Delay Memory": "300 mono seconds (audio)",
-        //     "Control Inputs": "0–3.3 VDC",
-        //     "External Control Potentiometer": "10k Ohm, linear",
-        //     "Logic Outputs": "Low (0 V) active, high (5 V) inactive",
-        //     "Logic Output Max Power": "24 VDC / 50 mA",
-        //     "Stored Presets": "2000 storable presets",
-        //     "IoT Protocol": "Zigbee for wireless device control",
-        //     "Amplifier Output": "4 x 200W @ 8 Ohms",
-        //     "Power Input": "AC 100–240V, 50/60Hz",
-        //     "Power Consumption": "Typical: 50W, Full Load: 750W",
-        //     "Power Switch": "One-touch system switch, sleep/wake via network"
-        //   },
-        //   "Analog and Digital Inputs/Outputs": {
-        //     "Analog Audio Inputs": "8 x Phoenix terminal (mic/line level, 48V phantom power), 1 x OPS PC audio, 1 x wireless screen projection (optional), 1 x wireless speech (optional), DIGIT MIC network port (2 mic links)",
-        //     "Analog Audio Outputs": "4 x Line out (2 pairs L/R stereo Phoenix terminal), 4 x 200W @ 8Ω digital amp",
-        //     "Digital Audio Inputs/Outputs": "8-in/4-out (network and HDMI audio routing), 8 x HDMI embedded audio input, 8 x HDMI embedded audio output, 10 x DSP, 1 x OPS",
-        //     "Video Inputs": "8 x HDMI inputs (4K@60Hz), 12 x IP network camera inputs (RTSP supported), 1 x OPS, 1 x wireless screen projection",
-        //     "Video Outputs": "8 x HDMI outputs (4K@60Hz), 8 x RTMP, 1 x OPS",
-        //     "Connectors (Audio)": "Phoenix terminal (3.81 mm), DIGIT MIC network port",
-        //     "Connectors (Video)": "HDMI 2.0, RJ45 (for IPC)",
-        //     "Nominal Level (Audio)": "+4 dBu with 20 dB headroom",
-        //     "Maximum Level (Audio)": "+24 dBu",
-        //     "Mic Pre-amp Gain": "0 to 51 dB (in 3 dB steps)",
-        //     "Phantom Power": "+48 VDC, 10 mA per input",
-        //     "Input Impedance (Audio)": "5k Ohms balanced",
-        //     "Input Dynamic Range (Audio)": ">122 dB, A-weighted",
-        //     "Input THD + Noise (Audio)": "<-98 dB, 1 kHz @ +15 dBu",
-        //     "Input Latency (Audio)": "0.12 ms",
-        //     "Output Impedance (Audio)": "600 Ohms balanced",
-        //     "Output Dynamic Range (Audio)": "122 dB, A-weighted",
-        //     "Output THD + Noise (Audio)": "<-94 dB,  Banda, 1 kHz @ +8 dBu",
-        //     "Output Latency (Audio)": "0.12 ms"
-        //   },
-        //   "Control Specifications": {
-        //     "Control Interfaces": "3 x RS-232/485, 1 x RS232/RS485 DEBUG, 2 x Relay, 2 x I/O, 2 x IR, Zigbee",
-        //     "Bi-directional Serial Communication": "Supported over RS232/485",
-        //     "Control Panel Options": "10.1” Android wired touchscreen (no PoE), 10.1” PoE desktop touchscreen, 10.1” PoE wall-mount touchscreen (w/ box), 4” Android PoE/non-PoE options",
-        //     "Central Control Functions": "One-touch control for system power, signal switching, volume control, recording, broadcasting, remote call, environment control",
-        //     "Maintenance Interface": "Web-based configuration, upgrades, logs, remote O&M, Telnet debugging, USB restore",
-        //     "Video Conferencing": "H.323 & SIP with short-number calling, GK & SIP registration, up to 6-party conferences, multiple templates, scheduling, mute/unmute, invite/kick participants",
-        //     "Third-Party Platform Integration": "RTMP push stream (>8 simultaneous platforms), RTSP pull stream, up to 10-channel multicast",
-        //     "Recording Capability": "Up to 6 local recording streams or 1 x 4K video stream, file format: MP4, supports USB backup and content management, 4K multi-screen synthesis (virtual)",
-        //     "Display Terminal": "Supports single to 16-screen splits (e.g., 2/4/9/13/16), picture-in-picture, picture-out-picture, resolution adaptation, subtitle overlay, terminal name, station logo with transparency control",
-        //     "Data Interfaces": "2 x USB Type-A, 1 x USB Type-B (for wireless projection transmitter pairing, updates, and recording backup)",
-        //     "Network Interfaces": "2 x WAN, 6 x LAN (4 PoE-enabled), configurable full interconnection, external antenna support",
-        //     "Network Communication": "6-channel audio mixing/playback",
-        //     "Live Streaming": "Up to 10-channel multicast, live/on-demand playback",
-        //     "Wireless Projection": "PC/mobile/PAD to HDMI output with 1-click projection and external antenna support",
-        //     "Wireless Speaking Module": "Dual mic support for handheld/lapel/headset with antenna support"
-        //   },
-        //   "Mechanical Specifications": {
-        //     "Installation": "3U standard telecom rack mount",
-        //     "Dimensions": "437 mm (W) × 410 mm (D) × 132.5 mm (H)",
-        //     "Operating Temperature": "0–45°C",
-        //     "Operating Humidity": "10%–90%",
-        //     "Operating Altitude": "≤ 5000 meters"
-        //   }
-        // },
-        //   },
+            specifications: {
+          "System Specifications": {
+            "System Architecture": "Industrial-grade embedded system, virus-resistant",
+            "Operating System": "Embedded system with integrated OPS 11th Gen Windows 11 Pro PC (16GB RAM, 512GB SSD)",
+            "Processor": "High-performance DSP Core with Advanced Video Processing Unit",
+            "Sampling Rate (Audio)": "48 kHz ± 100 ppm",
+            "Video Resolution": "Up to 4K@60Hz (4:4:4)",
+            "Main Stream": "1080P@60",
+            "Preview Stream": "CIF",
+            "Video Codec": "H.264 HP/MP/BP, H.265 MP, up to 16 channels 1080P encoding/decoding, 512 Kbps–16 Mbps per channel",
+            "Audio Protocols": "G.711, G.722, G.722.1, G.722.1C, AAC",
+            "Communication Protocols": "SIP, BFCP, H.323, H.239, RTSP, RTMP, TCP/IP, HTTP, FTP, UDP, RTP, RTCP, TLS, Telnet, NAT, E.164, H.245, H.225, Q.931, NTP",
+            "Frequency Response (Audio)": "20 Hz – 20 kHz ± 0.5 dB",
+            "Dynamic Range (Audio)": "122 dB (A-weighted)",
+            "THD + Noise (Audio)": "<0.002% @ 4 dBu",
+            "Latency (Audio)": "<0.6 ms (input to output)",
+            "Latency (Video)": "<10 ms (input to output)",
+            "Delay Memory": "300 mono seconds (audio)",
+            "Control Inputs": "0–3.3 VDC",
+            "External Control Potentiometer": "10k Ohm, linear",
+            "Logic Outputs": "Low (0 V) active, high (5 V) inactive",
+            "Logic Output Max Power": "24 VDC / 50 mA",
+            "Stored Presets": "2000 storable presets",
+            "IoT Protocol": "Zigbee for wireless device control",
+            "Amplifier Output": "4 x 200W @ 8 Ohms",
+            "Power Input": "AC 100–240V, 50/60Hz",
+            "Power Consumption": "Typical: 50W, Full Load: 750W",
+            "Power Switch": "One-touch system switch, sleep/wake via network"
+          },
+          "Analog and Digital Inputs/Outputs": {
+            "Analog Audio Inputs": "8 x Phoenix terminal (mic/line level, 48V phantom power), 1 x OPS PC audio, 1 x wireless screen projection (optional), 1 x wireless speech (optional), DIGIT MIC network port (2 mic links)",
+            "Analog Audio Outputs": "4 x Line out (2 pairs L/R stereo Phoenix terminal), 4 x 200W @ 8Ω digital amp",
+            "Digital Audio Inputs/Outputs": "8-in/4-out (network and HDMI audio routing), 8 x HDMI embedded audio input, 8 x HDMI embedded audio output, 10 x DSP, 1 x OPS",
+            "Video Inputs": "8 x HDMI inputs (4K@60Hz), 12 x IP network camera inputs (RTSP supported), 1 x OPS, 1 x wireless screen projection",
+            "Video Outputs": "8 x HDMI outputs (4K@60Hz), 8 x RTMP, 1 x OPS",
+            "Connectors (Audio)": "Phoenix terminal (3.81 mm), DIGIT MIC network port",
+            "Connectors (Video)": "HDMI 2.0, RJ45 (for IPC)",
+            "Nominal Level (Audio)": "+4 dBu with 20 dB headroom",
+            "Maximum Level (Audio)": "+24 dBu",
+            "Mic Pre-amp Gain": "0 to 51 dB (in 3 dB steps)",
+            "Phantom Power": "+48 VDC, 10 mA per input",
+            "Input Impedance (Audio)": "5k Ohms balanced",
+            "Input Dynamic Range (Audio)": ">122 dB, A-weighted",
+            "Input THD + Noise (Audio)": "<-98 dB, 1 kHz @ +15 dBu",
+            "Input Latency (Audio)": "0.12 ms",
+            "Output Impedance (Audio)": "600 Ohms balanced",
+            "Output Dynamic Range (Audio)": "122 dB, A-weighted",
+            "Output THD + Noise (Audio)": "<-94 dB,  Banda, 1 kHz @ +8 dBu",
+            "Output Latency (Audio)": "0.12 ms"
+          },
+          "Control Specifications": {
+            "Control Interfaces": "3 x RS-232/485, 1 x RS232/RS485 DEBUG, 2 x Relay, 2 x I/O, 2 x IR, Zigbee",
+            "Bi-directional Serial Communication": "Supported over RS232/485",
+            "Control Panel Options": "10.1” Android wired touchscreen (no PoE), 10.1” PoE desktop touchscreen, 10.1” PoE wall-mount touchscreen (w/ box), 4” Android PoE/non-PoE options",
+            "Central Control Functions": "One-touch control for system power, signal switching, volume control, recording, broadcasting, remote call, environment control",
+            "Maintenance Interface": "Web-based configuration, upgrades, logs, remote O&M, Telnet debugging, USB restore",
+            "Video Conferencing": "H.323 & SIP with short-number calling, GK & SIP registration, up to 6-party conferences, multiple templates, scheduling, mute/unmute, invite/kick participants",
+            "Third-Party Platform Integration": "RTMP push stream (>8 simultaneous platforms), RTSP pull stream, up to 10-channel multicast",
+            "Recording Capability": "Up to 6 local recording streams or 1 x 4K video stream, file format: MP4, supports USB backup and content management, 4K multi-screen synthesis (virtual)",
+            "Display Terminal": "Supports single to 16-screen splits (e.g., 2/4/9/13/16), picture-in-picture, picture-out-picture, resolution adaptation, subtitle overlay, terminal name, station logo with transparency control",
+            "Data Interfaces": "2 x USB Type-A, 1 x USB Type-B (for wireless projection transmitter pairing, updates, and recording backup)",
+            "Network Interfaces": "2 x WAN, 6 x LAN (4 PoE-enabled), configurable full interconnection, external antenna support",
+            "Network Communication": "6-channel audio mixing/playback",
+            "Live Streaming": "Up to 10-channel multicast, live/on-demand playback",
+            "Wireless Projection": "PC/mobile/PAD to HDMI output with 1-click projection and external antenna support",
+            "Wireless Speaking Module": "Dual mic support for handheld/lapel/headset with antenna support"
+          },
+          "Mechanical Specifications": {
+            "Installation": "3U standard telecom rack mount",
+            "Dimensions": "437 mm (W) × 410 mm (D) × 132.5 mm (H)",
+            "Operating Temperature": "0–45°C",
+            "Operating Humidity": "10%–90%",
+            "Operating Altitude": "≤ 5000 meters"
+          }
+          },
+        },
           // {
           //   id: "model_fs_40_hdmi",
           //   name: "FS-40-HDMI",

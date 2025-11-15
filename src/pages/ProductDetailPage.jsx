@@ -414,9 +414,28 @@ const ProductDetailPage = () => {
             'model_fusion_2009': '/datasheets/all-in-one-processor/Fusion-2009.pdf',
             'model_fusion_cp2': '/datasheets/touchscreen-control-panel/Fusion-CP2.pdf',
             'model_fusion_cp6': '/datasheets/touchscreen-control-panel/Fusion-CP6.pdf',
-            'model_vn_88': '/datasheets/audio-dsp/VoxNova88.pdf',
-            'model_vn_128f': '/datasheets/audio-dsp/VoxNova128F.pdf',
-            'model_vn_1616': '/datasheets/audio-dsp/VoxNova1616.pdf',
+            'model_vn_88': '/datasheets/audio-dsp/DSP/VoxNova88.pdf',
+            'model_vn_128f': '/datasheets/audio-dsp/DSP/VoxNova128F.pdf',
+            'model_vn_1616': '/datasheets/audio-dsp/DSP/VoxNova1616.pdf',
+
+            'model_vc_ptz12_dante': '/datasheets/video-conferencing-solution/VC-PTZ12-DANTE.pdf',
+            'model_vc_ptz16_dante': '/datasheets/video-conferencing-solution/VC-PTZ16-DANTE.pdf',
+            'model_vc_ptz20_dante': '/datasheets/video-conferencing-solution/VC-PTZ20-DANTE.pdf',
+
+            'model_omni_panel3': '/datasheets/control-panel/OmniPanel3.pdf',
+            'model_omni_panel4': '/datasheets/control-panel/OmniPanel4.pdf',
+            'model_omni_panel8': '/datasheets/control-panel/OmniPanel8.pdf',
+
+            //Stream Series
+            'model_sl_4k30': '/datasheets/av-over-ip/streamlite/StreamLite-4k30.pdf',
+
+            'model_sc_enkvm': '/datasheets/av-over-ip/streamcore/StreamCore-ENDE.pdf',
+            'model_sc_wp': '/datasheets/av-over-ip/streamcore/StreamCore-WP.pdf',
+            'model_sc_cb': '/datasheets/av-over-ip/streamcore/StreamCore-CB.pdf',
+
+            'model_sp_fiber_kvm_2': '/datasheets/av-over-ip/streampro-series/StreamPro-100ASEN-DE.pdf',
+            'model_sp_avp2000_fiber_3': '/datasheets/av-over-ip/streampro-series/StreamPro-100ASLEN-DE.pdf',
+            'model_sp_avp1000_fiber_6': '/datasheets/av-over-ip/streampro-series/StreamPro100ATF.pdf',
         };
 
         // ✅ safe lookup by model.id or model.name
@@ -429,7 +448,7 @@ const ProductDetailPage = () => {
         if (pdfPath) {
             const link = document.createElement('a');
             link.href = pdfPath;
-            link.target = '_blank'; 
+            link.target = '_blank';
             link.download = `${model.name ? model.name.replace(/\s+/g, '-') : 'Product'}-Datasheet.pdf`;
 
             document.body.appendChild(link);
