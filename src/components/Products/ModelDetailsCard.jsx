@@ -3,7 +3,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const ModelDetailsCard = ({ model, isHovered, onLearnMore }) => {
 
-  console.log(model, "thisis model detail")
+  // console.log(model, "thisis model detail")
   // Check if model data is complete
   const isModelDataComplete = (model) => {
     try {

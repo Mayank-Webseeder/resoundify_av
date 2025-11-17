@@ -548,7 +548,7 @@ const ProductDetailPage = () => {
                                 </div>
                             )}
                             {isModalOpen && (
-                                <div className="fixed inset-0 backdrop-blur-md bg-white bg-opacity-30 flex items-center justify-center z-50 p-4">
+                                <div className="fixed inset-0 backdrop-blur-md bg-white bg-opacity-30 flex items-center justify-center z-50 p-4 py-24">
                                     <div className="relative w-full max-w-5xl h-full max-h-[90vh] flex items-center justify-center">
                                         <img
                                             src={images[currentImageIndex]}
