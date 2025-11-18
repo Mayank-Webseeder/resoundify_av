@@ -65,7 +65,7 @@ const ProductSeriesPage = () => {
                         <div className="flex items-start justify-between">
                             <div className="flex-1">
                                 <h1 className="text-3xl md:text-4xl font-bold text-white mb-3">
-                                    {series.name} Series
+                                    {series.name}
                                 </h1>
                                 <p className="text-lg text-gray-300 max-w-2xl leading-relaxed mb-6">
                                     {series.description || `Professional-grade ${series.name} solutions engineered for excellence and reliability.`}
