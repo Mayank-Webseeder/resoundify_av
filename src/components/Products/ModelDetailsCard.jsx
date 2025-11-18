@@ -3,7 +3,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const ModelDetailsCard = ({ model, isHovered, onLearnMore }) => {
 
-  console.log(model, "thisis model detail")
+  // console.log(model, "thisis model detail")
   // Check if model data is complete
   const isModelDataComplete = (model) => {
     try {
@@ -122,15 +122,15 @@ const ModelDetailsCard = ({ model, isHovered, onLearnMore }) => {
             {model.name || 'Unnamed Model'}
           </h4>
           <p className="text-gray-600 text-sm leading-relaxed line-clamp-3 min-h-[3.75rem]">
-            {model.frontDescription || 'No description available'}
+            {model.description || 'No description available'}
           </p>
-          <div className="min-h-[2rem] max-h-[4rem] overflow-hidden">
+          {/* <div className="min-h-[2rem] max-h-[4rem] overflow-hidden">
             {model.features && Array.isArray(model.features) && model.features.length > 0 ? (
               <div className="flex flex-wrap gap-1">
                 {model.features.slice(0, 3).map((feature, index) => (
                   <span
                     key={index}
-                    className="px-2 py-1 bg-emerald-50 text-emerald-700 text-xs rounded-full"
+                    className="px-2 py-1 bg-emerald-50 text-emerald-700 text-xs rounded-xl"
                   >
                     {feature}
                   </span>
@@ -144,12 +144,12 @@ const ModelDetailsCard = ({ model, isHovered, onLearnMore }) => {
             ) : (
               <div className="text-gray-400 text-xs italic"></div>
             )}
-          </div>
+          </div> */}
         </div>
 
         {/* Bottom Action Area - Only show if complete */}
         {isComplete && (
-          <div className="mt-4 pt-3 border-t border-gray-100 flex-shrink-0">
+          <div className=" border-t border-gray-100 flex-shrink-0">
             <button
               onClick={(e) => {
                 e.stopPropagation();

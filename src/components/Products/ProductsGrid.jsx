@@ -42,7 +42,7 @@ const ProductsGrid = ({
   };
 
   return (
-    <div className="space-y-6">
+    <div className="w-full">
       {/* Grid Container - Fixed aspect ratio grid */}
       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
         {products.map((product, index) => {
@@ -59,7 +59,7 @@ const ProductsGrid = ({
                 console.debug(`ProductsGrid: Click blocked for ${isShowingModels ? 'model' : 'incomplete series'} ${product.id || 'unknown'}`);
               }}
               className={`group transition-all duration-200 ease-out ${isComplete ? '' : 'cursor-not-allowed pointer-events-none'}`}
-              style={{ aspectRatio: '3/4', minHeight: '480px' }}
+              // style={{ aspectRatio: '3/4', minHeight: '480px' }}
               title={isComplete ? '' : 'More details coming soon'}
             >
               <div className="w-full h-full">
@@ -86,7 +86,7 @@ const ProductsGrid = ({
 
       {/* Empty State */}
       {products.length === 0 && (
-        <div className="text-center py-16">
+        <div className="text-center py-12">
           <div className="w-16 h-16 mx-auto mb-4 bg-gray-100 rounded-full flex items-center justify-center">
             <svg className="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 12h6m-6-4h6m2 5.291A7.962 7.962 0 0112 15c-2.34 0-4.29-1.009-5.824-2.562M15 17H9m6 0a3 3 0 01-3 3H9a3 3 0 01-3-3m6 0V9a3 3 0 00-3 3H9a3 3 0 00-3 3v8.1" />
