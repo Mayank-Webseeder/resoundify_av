@@ -9,7 +9,7 @@ export const productsData = [
     series: [
       {
         id: "series_aurispro",
-        name: "Aurispro series",
+        name: "AurisPro Series",
         description: "Cutting-edge Dante audio interfaces for professional sound.",
         image: "/images/Products/audio_dsp/aurispro44d.webp",
         features: ["Dante Enabled", "High Channel Count", "Compact Design"],
@@ -18,7 +18,7 @@ export const productsData = [
         models: [
          {
             id: "model_ap_44d",
-            name: "Auris Pro-44D",
+            name: "AurisPro-44D",
             description: "4 in, 4 out DSP, 1/2 rack, 4x4 Dante",
             images: [
               "/images/Products/audio_dsp/aurispro44d.webp"
@@ -105,7 +105,7 @@ export const productsData = [
 
           {
               id: "model_ap_88d",
-              name: "Auris Pro-88D",
+              name: "AurisPro-88D",
               description: "8 in, 8 out DSP, 8x8 Dante",
               images: [
                 "/images/Products/audio_dsp/aurispro88d.webp"
@@ -201,7 +201,7 @@ export const productsData = [
           // },
           {
               id: "model_ap_1616d",
-              name: "Auris Pro-1616D",
+              name: "AurisPro-1616D",
               description: "16 in, 16 out DSP, 16x16 Dante",
               images: [
                 "/images/Products/audio_dsp/aurispro1616.webp"
@@ -293,7 +293,7 @@ export const productsData = [
 
           {
               id: "model_ap_6464d",
-              name: "Auris Pro-6464D",
+              name: "AurisPro-6464D",
               description: "0 in, 0 out DSP, 64x64 Dante",
               images: [
                 "/images/Products/audio_dsp/aurispro6464.webp"
@@ -337,12 +337,11 @@ export const productsData = [
                 }
               }
             },
-
         ],
       },
       {
         id: "series_echoprime",
-        name: "Echoprime series",
+        name: "EchoPrime Series",
         description: "Versatile DSPs with Acoustic Echo Cancellation (AEC) for clear audio conferencing.",
         image: "/images/Products/audio_dsp/EchoPrime-88AEC.webp",
         features: ["AEC Support", "Multiple I/O Options", "Robust Performance"],
@@ -582,7 +581,7 @@ export const productsData = [
     },
       {
         id: "series_vox_nova",
-        name: "VOX NOVA series",
+        name: "VoxNova Series",
         description: "Open structure DSPs with extensive Dante and AEC capabilities for flexible audio solutions.",
         image: "/images/Products/audio_dsp/VoxNova88.webp",
         features: ["Open Architecture", "Dante Integration", "Advanced AEC"],
@@ -1052,27 +1051,27 @@ export const productsData = [
           },
         },
           
-          {
-            id: "model_gmic_cp",
-            name: "GMIC-CP",
-            description: "Dante microphone with control panel",
-            images: [
-              "/images/Products/audio_dsp/GMIC-CP.webp"
-            ]
-          },
-          {
-            id: "model_gmic_3",
-            name: "GMIC-3",
-            description: "Dante Microphone",
-            images: [
-              "/images/Products/audio_dsp/GMIC-3.webp"
-            ]
-          },
+          // {
+          //   id: "model_gmic_cp",
+          //   name: "GMIC-CP",
+          //   description: "Dante microphone with control panel",
+          //   images: [
+          //     "/images/Products/audio_dsp/GMIC-CP.webp"
+          //   ]
+          // },
+          // {
+          //   id: "model_gmic_3",
+          //   name: "GMIC-3",
+          //   description: "Dante Microphone",
+          //   images: [
+          //     "/images/Products/audio_dsp/GMIC-3.webp"
+          //   ]
+          // },
         ],
       },
       {
         id: "series_multiplayer",
-        name: "Multiplayer",
+        name: "Multiplayer Series",
         description: "Multi-channel audio web streamers with scheduling and Dante virtual sound card support.",
         image: "/images/Products/audio_dsp/R-MP8.jpg",
         features: ["Web Streaming", "Dante Virtual Sound Card", "Scheduling & Playback"],
@@ -1082,7 +1081,7 @@ export const productsData = [
           {
             id: "model_r_mp8",
             name: "R-MP8",
-            description: "8 Channel audio web streamer and schedule, playback, insertion, support Dante virtual sound card",
+            description: "8-Channel Web Audio Streamer with Scheduler & Dante",
             images: [
               "/images/Products/audio_dsp/R-MP8.jpg"
             ]
@@ -1090,7 +1089,7 @@ export const productsData = [
           {
             id: "model_r_mp16",
             name: "R-MP16",
-            description: "16 Channel Audio web streamer and schedule, playback, insertion, support Dante virtual sound card",
+            description: "16-Channel Web Audio Streamer with Scheduler & Dante",
             images: [
               "/images/Products/audio_dsp/R-MP16.jpg"
             ]
@@ -1109,7 +1108,7 @@ export const productsData = [
     series: [
       {
         id: "series_streamlite",
-        name: "Streamlite series",
+        name: "StreamLite Series",
         description: "Efficient H.264 AV over IP solutions with multi-screen capability.",
         image: "/images/Products/av_over_ip_soln/IPM2000.B.png",
         features: ["H.264 Encoding", "Multi-screen Capability", "4K@30Hz"],
@@ -1179,7 +1178,7 @@ export const productsData = [
       },
       {
         id: "series_streamcore",
-        name: "Streamcore series",
+        name: "StreamCore Series",
         description: "High-quality 4K60 4:4:4/HDR AV over IP with JPEG2K compression and advanced features.",
         image: "/images/Products/av_over_ip_soln/EN.webp",
         features: ["4K60 HDR", "JPEG2K Compression", "USB & Audio Support", "Dante Management"],
@@ -1387,7 +1386,7 @@ export const productsData = [
       },
       {
         id: "series_streampro",
-        name: "Streampro Series",
+        name: "StreamPro Series",
         description: "SDVoE solutions for advanced 4K60 A/V over IP with KVM and video wall capabilities.",
         image: "/images/Products/av_over_ip_soln/StreamPro_HDN-CTL100D.png",
         features: ["SDVoE Technology", "4K60 4:4:4 HDR", "USB KVM", "Video Wall/Multiview"],
@@ -1927,7 +1926,7 @@ export const productsData = [
           {
             id: "model_vc_ptz30_dante",
             name: "VC-PTZ30 (DANTE)",
-            description: "4K Ultra HD Video Conference Camera AI tracking 1/1.8'', CMOS, Max Effective Pixel: 8.42M, 30X 4K@60/59.94/50//30/29.97/25fps, 1080P@60/59.94/50/30/29.97fps, 1080I@60/59.94fps, 720P@60/59.94fps HDMI, 3G-SDI, RJ45, USB2.0, 1-ch Line in, RS232 in, RS232 out, RS485, POE+",
+            description: "4K Ultra HD Video Conference Camera AI tracking",
             images: [
               "/images/Products/video_conferencing/PTZ30.webp",
             ]
@@ -1956,7 +1955,7 @@ export const productsData = [
           {
             id: "model_vc_auto4",
             name: "VC-AUTO4",
-            description: "4K Integrated HD teaching tracking camera Student Close -up Lens: f=7.37mm, Horizontal FOV: 43° Teacher Close -up Lens: f=12.49mm, Horizontal FOV: 26° Student Panoramic lens: f=2.2mm, Horizontal FOV: 110° Teacher Panoramic lens: f=7.37mm, Horizontal FOV: 43° 4K@30fps/25fps RJ45, USB3.0, Line In, Line out, POE",
+            description: "4K AI Dual-Tracking Camera with Panoramic View, POE+USB3.0",
             images: [
               "/images/Products/video_conferencing/PTZ12.webp"
             ]
@@ -1975,7 +1974,7 @@ export const productsData = [
           {
             id: "model_st_200",
             name: "ST-200",
-            description: "4K UHD ALL-IN-ONE USB Camera 1/1.8'', CMOS, 20M, 4K@30fps Built-in microphone and speaker, 114° (DFOV) ,105° (HFOV) , 5x zoom, MPT + EPTZ, speaker tracking, smart gallery, USB3.0(Type C), HDMI, RJ45, Bluetooth 5.0, WIFI6, BYOM",
+            description: "4K All-in-One USB Camera with Mic+Speaker, 5x Zoom, AI Tracking, BYOM",
             images: [
               "/images/Products/video_conferencing/ST-200.png",
             ]
@@ -1983,7 +1982,7 @@ export const productsData = [
           {
             id: "model_rc_700",
             name: "RC-700",
-            description: "Digital Array Microphone, Built-in 7 microphone arrays, with 360° pickup range, 8-meter distance voice pickup, USB2.0 and 3.5 mm audio interface, USB DC5V",
+            description: "7-Mic Array Ceiling/Surface Mic – 360° 8m Pickup, USB + 3.5mm",
             images: [
               "/images/Products/video_conferencing/RC-700.png",
             ]
@@ -1991,7 +1990,7 @@ export const productsData = [
           {
             id: "model_rc_702",
             name: "RC-702",
-            description: "POE Cascading Omnidirectional Digital Array Microphone Built-in 6 mics to form a circular array microphone",
+            description: "POE Cascading 6-Mic Array – 360° Omnidirectional",
             images: [
               "/images/Products/video_conferencing/RC-702.png",
             ]
@@ -2159,7 +2158,7 @@ export const productsData = [
           {
             id: "model_dw_25_lrbt_io",
             name: "DW 25 - LRBT iO",
-            description: "Dante wall plate with 4-channel XLR Audio Input Panel , 48V phantom power supply.",
+            description: "Dante Wall Plate – 4x XLR Input with 48V Phantom",
             images: [
               "/images/Products/dante_wall_plates/DW25-LRBT.png",
             ]
@@ -2167,7 +2166,7 @@ export const productsData = [
           {
             id: "model_dw_26_lrbt_io",
             name: "DW 26 - LRBT iO",
-            description: "Dante Audio Input Panel Bluetooth 5.0, RCA stereo left and right channel interface (white)",
+            description: "Dante Wall Panel – Bluetooth 5.0 + Stereo RCA Input",
             images: [
               "/images/Products/dante_wall_plates/DW26-LRBT.png",
             ]
@@ -2175,7 +2174,7 @@ export const productsData = [
           {
             id: "model_dw_27_lrbt_io",
             name: "DW 27 - LRBT iO",
-            description: "Dante Audio Input Panel Bluetooth 5.0, RCA stereo left and right channel interface (black)",
+            description: "Dante Wall Panel (Black) – Bluetooth 5.0 + Stereo RCA",
             images: [
               "/images/Products/dante_wall_plates/DW27-LRBT.png",
             ]
@@ -2183,7 +2182,7 @@ export const productsData = [
           {
             id: "model_dw_28_lrbt_io",
             name: "DW 28 - LRBT iO",
-            description: "Dante Audio Input Panel Bluetooth 5.0, RCA stereo left and right channel interface (rose gold)",
+            description: "Dante Wall Panel (Rose Gold) – Bluetooth 5.0 + Stereo RCA",
             images: [
               "/images/Products/dante_wall_plates/DW28-LRBT.png",
             ]
@@ -2390,7 +2389,7 @@ export const productsData = [
         models: [
           {
             id: "model_fusion_1005",
-            name: "Fusion -1005",
+            name: "Fusion-1005",
             description: "Five-in-one Integrated Processor",
             images: [
               "/images/Products/all_in_one_processor/CLIMBER-1005.webp",
@@ -2500,7 +2499,7 @@ export const productsData = [
           },
           {
             id: "model_fusion_1008",
-            name: "Fusion -1008",
+            name: "Fusion-1008",
             description: "Nine-in-one Integrated Processor",
             images: [
               "/images/Products/all_in_one_processor/CLIMBER-1008a.webp",
@@ -2596,7 +2595,7 @@ export const productsData = [
           },
           {
               id: "model_fusion_1009",
-              name: "Fusion -1009",
+              name: "Fusion-1009",
               description: "Twelve-in-one Integrated Processor",
               images: [
                 "/images/Products/all_in_one_processor/CLIMBER-1009.webp",
@@ -2708,7 +2707,7 @@ export const productsData = [
             },
           {
             id: "model_fusion_2009",
-            name: "Fusion -2009",
+            name: "Fusion-2009",
             description: "Thirteen-in-one Integrated Processor",
             images: [
               "/images/Products/all_in_one_processor/Fusion_2009.webp",
@@ -2879,7 +2878,7 @@ export const productsData = [
         id: "series_touchscreen_control_panel",
         name: "Touchscreen control Panel",
         description: "High-performance wired touchscreen control panels for intuitive system interaction.",
-        image: "https://placehold.co/400x300/F0F4F8/FF5733?text=Touchpanel",
+        image: "https://placehold.co/400x300/E5E7EB/6B7280?text=Touchscreen",
         features: ["10.1 inch IPS", "ARM Architecture", "High Frequency"],
         status: "In Stock",
         type: "series",
@@ -2887,7 +2886,7 @@ export const productsData = [
           {
             id: "model_fusion_cp6",
             name: "Fusion-CP6",
-            description: "Wired Control Touch Panel 10.1 inches, ARM architecture, up to 1.8 GHz main frequency",
+            description: "10.1\" Wired Touch Control Panel – ARM 1.8GHz",
             images: [
               "https://placehold.co/400x300/E5E7EB/6B7280?text=Fusion-CP6+1",
               "https://placehold.co/400x300/E5E7EB/6B7280?text=Fusion-CP6+2"
@@ -2949,71 +2948,64 @@ export const productsData = [
             }
           }
           },
-       {
-          id: "model_fusion_cp2",
-          name: "Fusion-CP2",
-          description: "Embedded Wired Control Touch Panel 10.1 inches, ARM architecture, up to 1.8GHz main frequency",
-          images: [
-            "/images/Products/touch_panel/FUSION-CP2a.webp",
-            "/images/Products/touch_panel/FUSION-CP2b.webp"
-          ],
+      {
+            id: "model_fusion_cp2",
+            name: "Fusion-CP2",
+            description: "10.1\" In-Wall Touch Panel – PoE, Android, 1.8GHz ARM",
+            images: [
+              "https://placehold.co/400x300/E5E7EB/6B7280?text=Fusion-CP2+1"
+            ],
 
-          overview: `The Fusion-CP2 is a high-performance 10.1-inch embedded wired control touch panel, designed to deliver
-            seamless control and interaction in modern AV and automation environments. Powered by a robust ARM
-            architecture with a main frequency of up to 1.8GHz, it offers fast processing and responsive operation.
-            Ideal for smart conference rooms, classrooms, and centralized control systems, the Fusion-CP2 combines
-            intuitive touchscreen functionality with stable wired communication. With a sleek embedded design, it
-            ensures a professional and space-efficient installation while supporting advanced integration through
-            industry-standard protocols.`,
+            overview: `The Fusion-CP2 is a high-performance 10.1-inch embedded wired control touch panel, designed to deliver seamless control and interaction in modern AV and automation environments. Powered by a robust ARM architecture with a main frequency of up to 1.8GHz, it offers fast processing and responsive operation. Ideal for smart conference rooms, classrooms, and centralized control systems, the Fusion-CP2 combines intuitive touchscreen functionality with stable wired communication. With a sleek embedded design, it ensures a professional and space-efficient installation while supporting advanced integration through industry-standard protocols.`,
 
-          features: [
-            "High-Performance Processing: Equipped with a powerful ARM architecture processor running up to 1.8GHz, ensuring fast and stable system operation.",
-            "Modern Android Platform: Runs on Android 9.0 or above, supporting third-party applications and enabling flexible system integration and secondary development.",
-            "Enhanced Memory & Storage: Comes with 2GB DDR4 RAM and 8GB eMMC Flash, providing smooth multitasking and reliable storage capacity.",
-            "HD Touch Display: Features a 10.1-inch capacitive multi-touch screen with 1280x800 resolution (16:10) for clear visuals and responsive interaction.",
-            "Flexible Power Options: Supports both PoE (Power over Ethernet) and DC 24V/1A power supply, giving flexibility in installation.",
-            "Gigabit Network Connectivity: Integrated 1 Gigabit Ethernet interface, supporting fast and reliable data transmission up to 1Gbps.",
-            "Efficient One-Line Connection: Supports data and power transmission over a single PoE network cable, simplifying wiring and reducing clutter.",
-            "Embedded Installation Design: Designed for standard base box installation with professional connectors, ensuring clean and secure mounting.",
-            "Industry Protocol Support: Compatible with industry-standard network communication protocols, ensuring broad integration with smart systems.",
-          ],
+            keyFeatures: [
+              "High-Performance Processing: Equipped with a powerful ARM architecture processor running up to 1.8GHz, ensuring fast and stable system operation.",
+              "Modern Android Platform: Runs on Android 9.0 or above, supporting third-party applications and enabling flexible system integration and secondary development.",
+              "Enhanced Memory & Storage: Comes with 2GB DDR4 RAM and 8GB eMMC Flash, providing smooth multitasking and reliable storage capacity.",
+              "HD Touch Display: Features a 10.1-inch capacitive multi-touch screen with 1280x800 resolution (16:10) for clear visuals and responsive interaction.",
+              "Flexible Power Options: Supports both PoE (Power over Ethernet) and DC 24V/1A power supply, giving flexibility in installation.",
+              "Gigabit Network Connectivity: Integrated 1 Gigabit Ethernet interface, supporting fast and reliable data transmission up to 1Gbps.",
+              "Efficient One-Line Connection: Supports data and power transmission over a single PoE network cable, simplifying wiring and reducing clutter.",
+              "Embedded Installation Design: Designed for standard base box installation with professional connectors, ensuring clean and secure mounting.",
+              "Industry Protocol Support: Compatible with industry-standard network communication protocols, ensuring broad integration with smart systems.",
+            ],
 
-          applications: [
-            "Boardrooms",
-            "Classrooms",
-            "Auditorium",
-          ],
+            applications: [
+              "Boardrooms",
+              "Classrooms",
+              "Auditorium",
+            ],
 
-          specifications: {
-          systemSpecifications: {
-            CPU: "Quad-core ARM architecture 1.8GHz",
-            operatingSystem: "Android 9 and above",
-            memory: "2GB DDR4 RAM",
-            flashMemory: "8GB EMMC Flash",
-            resolution: "1280×800",
-            touchType: "Capacitive touch",
-            userInterface: "Android tablet interface, customizable UI",
-          },
-          technicalSpecifications: {
-            LAN_POE: "1×RJ45 (10/100/1000Mbps), supports PoE",
-            debugPort: "1×Micro USB (for debugging/data transfer)",
-            RS485: "1×RS-485 interface (reserved function)",
-            resetButton: "1×Reset (reserved function)",
-            powerButton: "1×Power (system on/off, screen on/off)",
-            powerSupply: "DC 12V/1A or PoE (IEEE 802.3af)",
-            powerConsumption: "≤ 7W",
-          },
-          mechanicalSpecifications: {
-            frontPanel: "Touch screen, black color",
-            backCover: "Aluminum alloy shell, Apple gray color",
-            dimensions: "245.4mm (L) × 164mm (W) × 27mm (T)",
-            weight: "926 grams",
-            installation: "Embedded/Wall mount with standard box",
-            operatingTemp: "0°C ~ 40°C (32°F ~ 104°F)",
-            relativeHumidity: "10% ~ 90% RH (non-condensing)",
-          },
-        },
-      },
+            specifications: {
+              systemSpecifications: {
+                CPU: "Quad-core ARM architecture 1.8GHz",
+                operatingSystem: "Android 9 and above",
+                memory: "2GB DDR4 RAM",
+                flashMemory: "8GB EMMC Flash",
+                resolution: "1280×800",
+                touchType: "Capacitive touch",
+                userInterface: "Android tablet interface, customizable UI",
+              },
+              technicalSpecifications: {
+                LAN_POE: "1×RJ45 (10/100/1000Mbps), supports PoE",
+                debugPort: "1×Micro USB (for debugging/data transfer)",
+                RS485: "1×RS-485 interface (reserved function)",
+                resetButton: "1×Reset (reserved function)",
+                powerButton: "1×Power (system on/off, screen on/off)",
+                powerSupply: "DC 12V/1A or PoE (IEEE 802.3af)",
+                powerConsumption: "≤ 7W",
+              },
+              mechanicalSpecifications: {
+                frontPanel: "Touch screen, black color",
+                backCover: "Aluminum alloy shell, Apple gray color",
+                dimensions: "245.4mm (L) × 164mm (W) × 27mm (T)",
+                weight: "926 grams",
+                installation: "Embedded/Wall mount with standard box",
+                operatingTemp: "0°C ~ 40°C (32°F ~ 104°F)",
+                relativeHumidity: "10% ~ 90% RH (non-condensing)",
+              },
+            },
+          }
         ],
       },
     ],
