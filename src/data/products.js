@@ -916,7 +916,7 @@ export const productsData = [
         id: "series_control_panel_accessories",
         name: "Control panel and accessories",
         description: "Intuitive control solutions and accessories for seamless audio system management.",
-        image: "/images/Products/audio_dsp/Ominipanel8.png",
+        image: "/images/Products/audio_dsp/Ominipanel8.webp",
         features: ["Touchscreen Interfaces", "Dante Microphones", "Integrated Control"],
         status: "In Stock",
         type: "series",
@@ -926,7 +926,7 @@ export const productsData = [
             name: "OmniPanel3",
             description: "VC and SS with LCD Screen and Rotary Knob – Aurispro Series",
             images: [
-              "/images/Products/audio_dsp/omnipanel3.png"
+              "/images/Products/audio_dsp/omnipanel3.webp"
             ],
              overview: `The Resoundify OmniPane13 is a modern, user-centric control interface designed for conference rooms,
                       boardrooms, and AV-integrated environments. It combines Volume Control (VC) and Source Selector (SS)
@@ -969,7 +969,7 @@ export const productsData = [
             name: "OmniPanel4",
             description: "4 inch control panel",
             images: [
-              "/images/Products/audio_dsp/omnipanel4.png"
+              "/images/Products/audio_dsp/omnipanel4.webp"
             ],
 
             overview: "The Resoundify OmniPanel4 is a compact and intelligent 4-inch touch control panel designed for streamlined control in smart buildings, hospitality, and AV automation environments. Despite its small footprint, the panel delivers powerful performance with an intuitive capacitive touch interface, real-time processing, and seamless integration with multiple communication protocols such as TCP/IP. Equipped with PoE-enabled Ethernet connectivity, the OmniPanel4 simplifies installation by combining power and data over a single cable. Its responsive UI supports scene control, lighting dimming, HVAC adjustments, and more — all from a sleek wall-mounted device. With robust security, remote configuration support, and compatibility with major automation platforms, the OmniPanel4 is ideal for use in guest rooms, meeting spaces, and high-end residential applications.",
@@ -1011,7 +1011,7 @@ export const productsData = [
           name: "OmniPanel8",
           description: "8 inch control panel",
           images: [
-            "/images/Products/audio_dsp/Ominipanel8.png"
+            "/images/Products/audio_dsp/Ominipanel8.webp"
           ],
 
           overview: "The Resoundify OmniPanel8 is a sleek and powerful 8-inch capacitive touch control panel designed for seamless control of AV systems, lighting, HVAC, and other automation functions. Engineered for both commercial and residential applications, it features a vibrant high-resolution display, intuitive UI, and network connectivity, enabling it to serve as the central interface in modern smart environments. With support for custom graphical layouts, control scripting, and integration with third-party systems (via TCP/IP, RS-232), the OmniPanel8 delivers flexibility and performance for meeting rooms, classrooms, control centers, and luxury living spaces. Wall-mountable and PoE-powered, it offers both a clean aesthetic and simple installation.",
@@ -1108,7 +1108,7 @@ export const productsData = [
         id: "series_streamlite",
         name: "StreamLite Series",
         description: "Efficient H.264 AV over IP solutions with multi-screen capability.",
-        image: "/images/Products/av_over_ip_soln/IPM2000.B.png",
+        image: "/images/Products/av_over_ip_soln/IPM2000.webp",
         features: ["H.264 Encoding", "Multi-screen Capability", "4K@30Hz"],
         status: "In Stock",
         type: "series",
@@ -1118,8 +1118,8 @@ export const productsData = [
             name: "StreamLite-4k30",
             description: "H.264 with up to 4 screen capability, 4K@30",
             images: [
-              "/images/Products/av_over_ip_soln/IPM2000.png",
-              "/images/Products/av_over_ip_soln/IPM2000.B.png",
+              "/images/Products/av_over_ip_soln/IPM2000.webp",
+              "/images/Products/av_over_ip_soln/IPM2000.B.webp",
             ],
 
             overview: "The Resoundify StreamLite-4k30 4K Encoding and Decoding Integrated IP Matrix integrates advanced video compression, network, visualization, and centralized control technologies. It builds an IP-based system combining video splicing, KVM management, audio processing, and encoding/decoding with distributed, visualized, and server-less features. Supporting HDMI 4K@30Hz input/output, multi-screen splicing, and IR, I/O and RS-232 control, it ensures synchronization, real-time performance, and vivid color reproduction. This cost-effective solution simplifies wiring and offers visual control and decentralized operation for HD/1080p applications. Ideal for conference centers, exhibition halls, command centers, and transportation hubs.",
@@ -1273,7 +1273,7 @@ export const productsData = [
             name: "StreamCore-WP",
             description: "4K60 4:4:4/HDR w/USB and Audio over IP JPEG2K HDMI/USB-C Wall plate Encoder",
             images: [
-              "/images/Products/av_over_ip_soln/WP.png"
+              "/images/Products/av_over_ip_soln/WP.webp"
             ],
 
             overview: "The Resoundify StreamCore-WP is a high-performance, wall-mountable HDMI 2.0a encoder featuring dual inputs (HDMI and USB-C), designed for seamless IP-based AV distribution. Supporting visually lossless JPEG 2000 compression, it delivers 4K60 4:4:4 video with HDR over standard 1G Ethernet infrastructure. This encoder integrates USB, audio, and RS-232 control (via 3-pin Phoenix/Euroblock), making it ideal for modern collaboration spaces, classrooms, and meeting rooms. It is PoE-powered for simplified installation and requires a compatible StreamCore Decoder for operation. The StreamCore-WP is a next-generation, wall plate-style AV encoder engineered for high-performance IP-based audiovisual distribution. Designed for modern AV environments, it features dual video inputs (HDMI 2.0a and USB-C), enabling flexible source connectivity in conference rooms, classrooms, lecture halls, and control centers.",
@@ -1327,7 +1327,7 @@ export const productsData = [
             name: "StreamCore-CB",
             description: "Control box for with Dante management",
             images: [
-              "/images/Products/av_over_ip_soln/CB.png"
+              "/images/Products/av_over_ip_soln/CB.webp"
             ],
 
             overview: "The Resoundify StreamCore-CB is a professional-grade control box designed for seamless integration and management of Dante-enabled audio systems. It serves as the central hub for routing, controlling, and monitoring digital audio signals over IP networks, ensuring low-latency, high-quality audio transmission. With its reliable hardware design and intuitive control interface, StreamCore-CB is ideal for live sound, broadcast, corporate AV, and installed sound applications where precise Dante network management is essential. Equipped with intuitive network management tools, the StreamCore-CB simplifies system setup, device discovery, channel mapping, and audio distribution. It is perfect for live event venues, broadcast studios, conference facilities, houses of worship, and integrated AV installations. With robust build quality and a user-friendly interface, it allows technicians and operators to manage complex audio networks with confidence, efficiency, and precision.",
@@ -1377,7 +1377,7 @@ export const productsData = [
             name: "StreamCore-CBD",
             description: "Control box for JPEG2K Gen 1/2 IP",
             images: [
-              "/images/Products/av_over_ip_soln/CBD.png"
+              "/images/Products/av_over_ip_soln/CBD.webp"
             ]
           },
         ],
@@ -1397,7 +1397,7 @@ export const productsData = [
             name: "StreamPro-100ASENDE",
             description: "SDVoE AVP2000 IP solution Seamless Matrix/Video Wall/Multiview -- Fiber Port",
             images: [
-              "/images/Products/av_over_ip_soln/StreamPro_HDN-EB100AS-DEC.png"
+              "/images/Products/av_over_ip_soln/StreamPro_HDN-EB100AS-DEC.webp"
             ],
 
             overview: "The StreamPro-100ASEN/DE is an SDVoE-compliant, all-in-one AV over IP solution that provides highest-quality, uncompressed 4K60 and zero-frame latency audio/video extension over a standard 10G Fiber Network Switch. It can transfer advanced HDMI content such as HDR (high dynamic range), full color-depth, and multi-channel HD Bitstream audio. Multiple control and data signals can be transmitted along with audio and video signals simultaneously, including RS-232 and 1G Ethernet. The product features a 10G fiber port, which can extend signals up to 40km via a single-mode fiber cable, or 300m via a multi-mode fiber cable. The 1G LAN port is for product management or Ethernet extension. The encoder supports HDMI loop out, the decoder HDMI output supports video scaling. The product supports bi-directional analog stereo audio pass-through and RS-232 with 12V voltage output on connector. This product combines multiple encoders/decoders with one or more 10GbE fiber switches to form an ideal IP solution for distributed 4K60 video matrix, multiview systems, or video wall systems.",
@@ -1606,7 +1606,7 @@ export const productsData = [
             name: "StreamPro",
             description: "4K60 4:4:4/HDR w/USB2.0/Video Preview over IP SDVoE Tranceiver Copper&Fiber",
             images: [
-              "/images/Products/av_over_ip_soln/StreamPro_HDN-CTL100D.png",
+              "/images/Products/av_over_ip_soln/StreamPro_HDN-CTL100D.webp",
             ]
           },
           {
@@ -1964,7 +1964,7 @@ export const productsData = [
         id: "series_all_in_one_bar_solution",
         name: "All in one BAR solution",
         description: "Integrated 4K UHD USB cameras with built-in mics and speakers for seamless collaboration.",
-        image: "/images/Products/video_conferencing/ST-200.png",
+        image: "/images/Products/video_conferencing/ST-200.webp",
         features: ["4K UHD Camera", "Built-in Mic & Speaker", "AI Tracking", "Bluetooth & WiFi"],
         status: "In Stock",
         type: "series",
@@ -1974,7 +1974,7 @@ export const productsData = [
             name: "ST-200",
             description: "4K All-in-One USB Camera with Mic+Speaker, 5x Zoom, AI Tracking, BYOM",
             images: [
-              "/images/Products/video_conferencing/ST-200.png",
+              "/images/Products/video_conferencing/ST-200.webp",
             ]
           },
           {
@@ -1982,7 +1982,7 @@ export const productsData = [
             name: "RC-700",
             description: "7-Mic Array Ceiling/Surface Mic – 360° 8m Pickup, USB + 3.5mm",
             images: [
-              "/images/Products/video_conferencing/RC-700.png",
+              "/images/Products/video_conferencing/RC-700.webp",
             ]
           },
           {
@@ -1990,7 +1990,7 @@ export const productsData = [
             name: "RC-702",
             description: "POE Cascading 6-Mic Array – 360° Omnidirectional",
             images: [
-              "/images/Products/video_conferencing/RC-702.png",
+              "/images/Products/video_conferencing/RC-702.webp",
             ]
           },
         ],
@@ -1999,7 +1999,7 @@ export const productsData = [
         id: "series_video_codec_control_panel",
         name: "Video codec and control panel",
         description: "Smart video conferencing endpoints and intuitive control panels for enhanced meeting experiences.",
-        image: "/images/Products/video_conferencing/RC-VCE.png",
+        image: "/images/Products/video_conferencing/RC-VCE.webp",
         features: ["4K Endpoint", "Android OS", "Touch Control"],
         status: "In Stock",
         type: "series",
@@ -2009,7 +2009,7 @@ export const productsData = [
             name: "RC-VCE",
             description: "4K Smart Detachable Video Conferencing Endpoint Android 12",
             images: [
-              "/images/Products/video_conferencing/RC-VCE.png",
+              "/images/Products/video_conferencing/RC-VCE.webp",
             ]
           },
           // {
@@ -2027,7 +2027,7 @@ export const productsData = [
         id: "series_av_processor",
         name: "AV Processor",
         description: "Video Conference AV bridges for seamless integration of audio-visual systems.",
-        image: "/images/Products/video_conferencing/AV_PROCESSOR.png",
+        image: "/images/Products/video_conferencing/AV_PROCESSOR.webp",
         features: ["Video Bridging", "Conference Integration"],
         status: "In Stock",
         type: "series",
@@ -2037,7 +2037,7 @@ export const productsData = [
             name: "RC-AVB",
             description: "Video Conference AV Bridge",
             images: [
-              "/images/Products/video_conferencing/AV_PROCESSOR.png",
+              "/images/Products/video_conferencing/AV_PROCESSOR.webp",
             ]
           },
         ],
@@ -2158,7 +2158,7 @@ export const productsData = [
             name: "DW 25 - LRBT iO",
             description: "Dante Wall Plate – 4x XLR Input with 48V Phantom",
             images: [
-              "/images/Products/dante_wall_plates/DW25-LRBT.png",
+              "/images/Products/dante_wall_plates/DW25-LRBT.webp",
             ]
           },
           {
@@ -2166,7 +2166,7 @@ export const productsData = [
             name: "DW 26 - LRBT iO",
             description: "Dante Wall Panel – Bluetooth 5.0 + Stereo RCA Input",
             images: [
-              "/images/Products/dante_wall_plates/DW26-LRBT.png",
+              "/images/Products/dante_wall_plates/DW26-LRBT.webp",
             ]
           },
           {
@@ -2174,7 +2174,7 @@ export const productsData = [
             name: "DW 27 - LRBT iO",
             description: "Dante Wall Panel (Black) – Bluetooth 5.0 + Stereo RCA",
             images: [
-              "/images/Products/dante_wall_plates/DW27-LRBT.png",
+              "/images/Products/dante_wall_plates/DW27-LRBT.webp",
             ]
           },
           {
@@ -2182,7 +2182,7 @@ export const productsData = [
             name: "DW 28 - LRBT iO",
             description: "Dante Wall Panel (Rose Gold) – Bluetooth 5.0 + Stereo RCA",
             images: [
-              "/images/Products/dante_wall_plates/DW28-LRBT.png",
+              "/images/Products/dante_wall_plates/DW28-LRBT.webp",
             ]
           },
         ],
@@ -2191,7 +2191,7 @@ export const productsData = [
         id: "series_customizable_floor_box",
         name: "Customizable Floor box",
         description: "Tailored floor boxes for flexible and discreet cable management and connectivity.",
-        image: "/images/Products/dante_wall_plates/floor_box.png",
+        image: "/images/Products/dante_wall_plates/floor_box.webp",
         features: ["Customizable Ports", "Durable Design"],
         status: "Available to Order",
         type: "series",
@@ -2201,7 +2201,7 @@ export const productsData = [
             name: "Custom",
             description: "Customizable Floor box",
             images: [
-              "/images/Products/dante_wall_plates/floor_box.png",
+              "/images/Products/dante_wall_plates/floor_box.webp",
             ]
           },
         ],
@@ -2210,7 +2210,7 @@ export const productsData = [
         id: "series_customizable_wall_plate",
         name: "Customizable wall plate",
         description: "Design your own wall plates for unique installation needs and aesthetic preferences.",
-        image: "/images/Products/dante_wall_plates/wall_plate.png",
+        image: "/images/Products/dante_wall_plates/wall_plate.webp",
         features: ["Configurable Layout", "Various Finishes"],
         status: "Available to Order",
         type: "series",
@@ -2220,7 +2220,7 @@ export const productsData = [
             name: "Custom",
             description: "Customizable wall plate",
             images: [
-              "/images/Products/dante_wall_plates/wall_plate.png",
+              "/images/Products/dante_wall_plates/wall_plate.webp",
             ]
           },
         ],
@@ -2501,7 +2501,7 @@ export const productsData = [
             description: "Nine-in-one Integrated Processor",
             images: [
               "/images/Products/all_in_one_processor/CLIMBER-1008a.webp",
-              "/images/Products/all_in_one_processor/CLIMBER-1008b.png",
+              "/images/Products/all_in_one_processor/CLIMBER-1008b.webp",
               // "/images/Products/all_in_one_processor/CLIMBER-1008c.webp"
             ],
             overview: `The Fusion -1008 is a next-generation nine-in-one integrated processor designed for comprehensive audio-visual, control, and IoT applications in professional environments. Built on an industrial-grade, virus-resistant embedded system with a high-performance DSP core and integrated OPS computer, it delivers seamless 4K video matrix switching, advanced audio processing, and smart centralized control. With enhanced capabilities for multi-stream recording, third-party platform integration, and Zigbee IoT connectivity, it is the ultimate solution for large-scale corporate boardrooms, auditoriums, educational facilities, live event venues, and multimedia studios.`,
