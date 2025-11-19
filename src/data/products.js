@@ -916,7 +916,7 @@ export const productsData = [
         id: "series_control_panel_accessories",
         name: "Control panel and accessories",
         description: "Intuitive control solutions and accessories for seamless audio system management.",
-        image: "/images/Products/audio_dsp/omnipanel8.png",
+        image: "/images/Products/audio_dsp/Ominipanel8.png",
         features: ["Touchscreen Interfaces", "Dante Microphones", "Integrated Control"],
         status: "In Stock",
         type: "series",
