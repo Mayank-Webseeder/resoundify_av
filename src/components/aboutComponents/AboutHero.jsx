@@ -1,7 +1,7 @@
 // AboutHero.js
 import React from 'react';
 
-const AboutHero = ({ backgroundImage = '/images/aboutbg2.png' }) => {
+const AboutHero = ({ backgroundImage = '/images/aboutbg2.webp' }) => {
   return (
     <section 
       className="relative h-[65vh] bg-cover bg-top" 
