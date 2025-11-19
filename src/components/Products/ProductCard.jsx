@@ -68,7 +68,7 @@ const ProductCard = ({ product, isHovered, onProductClick }) => {
                 <img
                     src={product.image || 'https://placehold.co/400x300/CCCCCC/666666?text=Image+Unavailable'}
                     alt={product.name || 'Unnamed Product'}
-                    className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
+                    className="w-full h-full object-contain transition-transform duration-500 "
                     onError={(e) => {
                         e.target.onerror = null;
                         e.target.src = "https://placehold.co/400x300/CCCCCC/666666?text=Image+Unavailable";

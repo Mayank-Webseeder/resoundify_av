@@ -39,7 +39,7 @@ const ModelDetailsCard = ({ model, isHovered, onLearnMore }) => {
         <img
           src={singleImage}
           alt={`${model.name || 'Unnamed Model'}`}
-          className="w-full h-full object-contain transition-opacity duration-300 ease-in-out"
+          className="w-full h-full object-contain transition-opacity"
           onError={(e) => {
             e.target.onerror = null;
             e.target.src = "https://placehold.co/400x300/E5E7EB/6B7280?text=Image+Unavailable";
@@ -47,7 +47,6 @@ const ModelDetailsCard = ({ model, isHovered, onLearnMore }) => {
         />
       </div>
 
-      {/* Baaki sab exactly same */}
       <div className="flex flex-col justify-between h-[calc(100%-13rem)]">
         <div className="space-y-2 flex-grow">
           <h4 className="text-xl font-semibold text-gray-900 font-[Tilt_Neon] line-clamp-2 min-h-[2.5rem]">

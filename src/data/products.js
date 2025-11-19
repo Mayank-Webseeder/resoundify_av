@@ -464,8 +464,7 @@ export const productsData = [
             description: "8 in, 8 out DSP",
             images: [
               "/images/Products/audio_dsp/EchoPrime-B88.webp",
-              "/images/Products/audio_dsp/EchoPrime-B88(1).webp",
-              "/images/Products/audio_dsp/EchoPrime-B88(2).webp"
+              "/images/Products/audio_dsp/EchoPrime-B88(1).webp"
             ],
 
             overview: `The Resoundify EchoPrime-B88 is a high-performance Digital Signal Processor (DSP) equipped with an 8×8
@@ -524,7 +523,6 @@ export const productsData = [
         images: [
           "/images/Products/audio_dsp/EchoPrime-B1616.webp",
           "/images/Products/audio_dsp/EchoPrime-B1616(1).webp",
-          "/images/Products/audio_dsp/EchoPrime-B1616(2).webp",
 
         ],
 
@@ -1180,7 +1178,7 @@ export const productsData = [
         id: "series_streamcore",
         name: "StreamCore Series",
         description: "High-quality 4K60 4:4:4/HDR AV over IP with JPEG2K compression and advanced features.",
-        image: "/images/Products/av_over_ip_soln/EN.webp",
+        image: "/images/Products/av_over_ip_soln/StreamCore-ENDE.webp",
         features: ["4K60 HDR", "JPEG2K Compression", "USB & Audio Support", "Dante Management"],
         status: "In Stock",
         type: "series",
@@ -1388,7 +1386,7 @@ export const productsData = [
         id: "series_streampro",
         name: "StreamPro Series",
         description: "SDVoE solutions for advanced 4K60 A/V over IP with KVM and video wall capabilities.",
-        image: "/images/Products/av_over_ip_soln/StreamPro_HDN-CTL100D.png",
+        image: "/images/Products/av_over_ip_soln/StreamPro_HDN-EB100AT.webp",
         features: ["SDVoE Technology", "4K60 4:4:4 HDR", "USB KVM", "Video Wall/Multiview"],
         status: "In Stock",
         type: "series",
@@ -1399,7 +1397,7 @@ export const productsData = [
             name: "StreamPro-100ASENDE",
             description: "SDVoE AVP2000 IP solution Seamless Matrix/Video Wall/Multiview -- Fiber Port",
             images: [
-              "/images/Products/av_over_ip_soln/StreamPro_HDN-EB100AS-DEC.webp"
+              "/images/Products/av_over_ip_soln/StreamPro_HDN-EB100AS-DEC.png"
             ],
 
             overview: "The StreamPro-100ASEN/DE is an SDVoE-compliant, all-in-one AV over IP solution that provides highest-quality, uncompressed 4K60 and zero-frame latency audio/video extension over a standard 10G Fiber Network Switch. It can transfer advanced HDMI content such as HDR (high dynamic range), full color-depth, and multi-channel HD Bitstream audio. Multiple control and data signals can be transmitted along with audio and video signals simultaneously, including RS-232 and 1G Ethernet. The product features a 10G fiber port, which can extend signals up to 40km via a single-mode fiber cable, or 300m via a multi-mode fiber cable. The 1G LAN port is for product management or Ethernet extension. The encoder supports HDMI loop out, the decoder HDMI output supports video scaling. The product supports bi-directional analog stereo audio pass-through and RS-232 with 12V voltage output on connector. This product combines multiple encoders/decoders with one or more 10GbE fiber switches to form an ideal IP solution for distributed 4K60 video matrix, multiview systems, or video wall systems.",
@@ -1651,7 +1649,7 @@ export const productsData = [
         id: "series_dante_ptz_camera",
         name: "Dante PTZ Camera",
         description: "4K Ultra HD PTZ cameras with Dante audio and AI tracking for superior video conferencing.",
-        image: "/images/Products/video_conferencing/PTZ30.webp",
+        image: "/images/Products/video_conferencing/PTZ12.webp",
         features: ["4K UHD", "AI Tracking", "Dante Audio", "PoE+"],
         status: "In Stock",
         type: "series",
@@ -2503,8 +2501,8 @@ export const productsData = [
             description: "Nine-in-one Integrated Processor",
             images: [
               "/images/Products/all_in_one_processor/CLIMBER-1008a.webp",
-              "/images/Products/all_in_one_processor/CLIMBER-1008b.webp",
-              "/images/Products/all_in_one_processor/CLIMBER-1008c.webp"
+              "/images/Products/all_in_one_processor/CLIMBER-1008b.png",
+              // "/images/Products/all_in_one_processor/CLIMBER-1008c.webp"
             ],
             overview: `The Fusion -1008 is a next-generation nine-in-one integrated processor designed for comprehensive audio-visual, control, and IoT applications in professional environments. Built on an industrial-grade, virus-resistant embedded system with a high-performance DSP core and integrated OPS computer, it delivers seamless 4K video matrix switching, advanced audio processing, and smart centralized control. With enhanced capabilities for multi-stream recording, third-party platform integration, and Zigbee IoT connectivity, it is the ultimate solution for large-scale corporate boardrooms, auditoriums, educational facilities, live event venues, and multimedia studios.`,
 
@@ -2710,9 +2708,9 @@ export const productsData = [
             name: "Fusion-2009",
             description: "Thirteen-in-one Integrated Processor",
             images: [
-              "/images/Products/all_in_one_processor/Fusion_2009.webp",
               "/images/Products/all_in_one_processor/Fusion_2009(1).webp",
-              "/images/Products/all_in_one_processor/Fusion_2009(2).webp",
+              "/images/Products/all_in_one_processor/Fusion_2009.webp",
+             
             ],
             overview: `The Fusion-2009 is a state-of-the-art 13-in-1 integrated processor engineered for high-performance
               multimedia applications. Building on advanced design principles, the Fusion-2009 merges thirteen core
@@ -2874,140 +2872,140 @@ export const productsData = [
 
         ],
       },
-      {
-        id: "series_touchscreen_control_panel",
-        name: "Touchscreen control Panel",
-        description: "High-performance wired touchscreen control panels for intuitive system interaction.",
-        image: "https://placehold.co/400x300/E5E7EB/6B7280?text=Touchscreen",
-        features: ["10.1 inch IPS", "ARM Architecture", "High Frequency"],
-        status: "In Stock",
-        type: "series",
-        models: [
-          {
-            id: "model_fusion_cp6",
-            name: "Fusion-CP6",
-            description: "10.1\" Wired Touch Control Panel – ARM 1.8GHz",
-            images: [
-              "https://placehold.co/400x300/E5E7EB/6B7280?text=Fusion-CP6+1",
-              "https://placehold.co/400x300/E5E7EB/6B7280?text=Fusion-CP6+2"
-            ],
-            overview: `The Fusion-CP6 is a high-performance wired control touch panel designed for advanced AV and smart
-                control systems. Featuring a sleek 10.1-inch capacitive touch screen, it provides intuitive and responsive
-                control for various applications including meeting rooms, smart classrooms, home automation, and
-                centralized control centers.
-                Built on an ARM architecture processor with speeds of up to 1.8GHz, the Fusion-CP6 ensures smooth
-                operation, fast response times, and reliable performance. Its elegant interface and flexible compatibility with
-                multiple control systems make it a versatile solution for managing audio, video, lighting, HVAC, and other
-                building automation functions with precision and ease.`,
-           keyFeatures: [
-              "High-Performance Processing: ARM processor up to 1.8 GHz for fast, stable operation",
-              "Modern Android Platform: Android 9.0+ with support for third-party apps and custom development",
-              "Enhanced Memory & Storage: 2 GB DDR4 RAM + 8 GB eMMC flash for smooth multitasking",
-              "HD Touch Display: 10.1-inch 1280×800 (16:10) capacitive multi-touch IPS screen",
-              "Flexible Power Options: PoE (IEEE 802.3af) or DC 12V/1A input",
-              "Gigabit Network Connectivity: 1 Gbps Ethernet for fast, reliable data transfer",
-              "Efficient One-Line Connection: Power + data over a single PoE cable",
-              "Embedded Installation Design: Fits standard 86 mm wall box with secure connectors",
-              "Industry Protocol Support: Full compatibility with standard control and automation protocols",
-              "Dual Power Redundancy: : Operates on PoE or DC 12V for flexible power deployment."
-            ],
-            applications: [
-              "Boardrooms",
-              "Classrooms",
-              "Auditorium",
-            ],
-           specifications: {
-            "System": {
-              "CPU": "Quad-core ARM architecture @ 1.8 GHz",
-              "Operating System": "Android 9.0 and above",
-              "Memory": "2 GB DDR4 RAM",
-              "Flash Memory": "8 GB eMMC",
-              "Resolution": "1280 × 800 px",
-              "Touch Type": "Capacitive multi-touch",
-              "User Interface": "Customizable Android tablet interface"
-            },
-            "Connectivity": {
-              "LAN/PoE": "1 × RJ45 (10/100/1000 Mbps), supports PoE (IEEE 802.3af)",
-              "Debug Port": "1 × Micro USB (for debugging/data transfer)",
-              "RS-485": "1 × RS-485 interface (reserved)",
-              "Reset Button": "1 × Reset button (reserved)",
-              "Power Button": "1 × Power button (system on/off, screen on/off)"
-            },
-            "Power": {
-              "Power Supply": "DC 12V / 1A or PoE (IEEE 802.3af)",
-              "Power Consumption": "≤ 7 W"
-            },
-            "Mechanical": {
-              "Front Panel": "Touch screen, black tempered glass",
-              "Back Cover": "Aluminum alloy shell, Apple gray",
-              "Dimensions": "245.4 mm (L) × 164 mm (W) × 27 mm (T)",
-              "Weight": "926 g",
-              "Installation": "Embedded / wall-mount with standard 86 mm box",
-              "Operating Temperature": "0 °C ~ 40 °C (32 °F ~ 104 °F)",
-              "Relative Humidity": "10 % ~ 90 % RH (non-condensing)"
-            }
-          }
-          },
-      {
-            id: "model_fusion_cp2",
-            name: "Fusion-CP2",
-            description: "10.1\" In-Wall Touch Panel – PoE, Android, 1.8GHz ARM",
-            images: [
-              "https://placehold.co/400x300/E5E7EB/6B7280?text=Fusion-CP2+1"
-            ],
+      // {
+      //   id: "series_touchscreen_control_panel",
+      //   name: "Touchscreen control Panel",
+      //   description: "High-performance wired touchscreen control panels for intuitive system interaction.",
+      //   image: "https://placehold.co/400x300/E5E7EB/6B7280?text=Touchscreen",
+      //   features: ["10.1 inch IPS", "ARM Architecture", "High Frequency"],
+      //   status: "In Stock",
+      //   type: "series",
+      //   models: [
+      //     {
+      //       id: "model_fusion_cp6",
+      //       name: "Fusion-CP6",
+      //       description: "10.1\" Wired Touch Control Panel – ARM 1.8GHz",
+      //       images: [
+      //         "https://placehold.co/400x300/E5E7EB/6B7280?text=Fusion-CP6+1",
+      //         "https://placehold.co/400x300/E5E7EB/6B7280?text=Fusion-CP6+2"
+      //       ],
+      //       overview: `The Fusion-CP6 is a high-performance wired control touch panel designed for advanced AV and smart
+      //           control systems. Featuring a sleek 10.1-inch capacitive touch screen, it provides intuitive and responsive
+      //           control for various applications including meeting rooms, smart classrooms, home automation, and
+      //           centralized control centers.
+      //           Built on an ARM architecture processor with speeds of up to 1.8GHz, the Fusion-CP6 ensures smooth
+      //           operation, fast response times, and reliable performance. Its elegant interface and flexible compatibility with
+      //           multiple control systems make it a versatile solution for managing audio, video, lighting, HVAC, and other
+      //           building automation functions with precision and ease.`,
+      //      keyFeatures: [
+      //         "High-Performance Processing: ARM processor up to 1.8 GHz for fast, stable operation",
+      //         "Modern Android Platform: Android 9.0+ with support for third-party apps and custom development",
+      //         "Enhanced Memory & Storage: 2 GB DDR4 RAM + 8 GB eMMC flash for smooth multitasking",
+      //         "HD Touch Display: 10.1-inch 1280×800 (16:10) capacitive multi-touch IPS screen",
+      //         "Flexible Power Options: PoE (IEEE 802.3af) or DC 12V/1A input",
+      //         "Gigabit Network Connectivity: 1 Gbps Ethernet for fast, reliable data transfer",
+      //         "Efficient One-Line Connection: Power + data over a single PoE cable",
+      //         "Embedded Installation Design: Fits standard 86 mm wall box with secure connectors",
+      //         "Industry Protocol Support: Full compatibility with standard control and automation protocols",
+      //         "Dual Power Redundancy: : Operates on PoE or DC 12V for flexible power deployment."
+      //       ],
+      //       applications: [
+      //         "Boardrooms",
+      //         "Classrooms",
+      //         "Auditorium",
+      //       ],
+      //      specifications: {
+      //       "System": {
+      //         "CPU": "Quad-core ARM architecture @ 1.8 GHz",
+      //         "Operating System": "Android 9.0 and above",
+      //         "Memory": "2 GB DDR4 RAM",
+      //         "Flash Memory": "8 GB eMMC",
+      //         "Resolution": "1280 × 800 px",
+      //         "Touch Type": "Capacitive multi-touch",
+      //         "User Interface": "Customizable Android tablet interface"
+      //       },
+      //       "Connectivity": {
+      //         "LAN/PoE": "1 × RJ45 (10/100/1000 Mbps), supports PoE (IEEE 802.3af)",
+      //         "Debug Port": "1 × Micro USB (for debugging/data transfer)",
+      //         "RS-485": "1 × RS-485 interface (reserved)",
+      //         "Reset Button": "1 × Reset button (reserved)",
+      //         "Power Button": "1 × Power button (system on/off, screen on/off)"
+      //       },
+      //       "Power": {
+      //         "Power Supply": "DC 12V / 1A or PoE (IEEE 802.3af)",
+      //         "Power Consumption": "≤ 7 W"
+      //       },
+      //       "Mechanical": {
+      //         "Front Panel": "Touch screen, black tempered glass",
+      //         "Back Cover": "Aluminum alloy shell, Apple gray",
+      //         "Dimensions": "245.4 mm (L) × 164 mm (W) × 27 mm (T)",
+      //         "Weight": "926 g",
+      //         "Installation": "Embedded / wall-mount with standard 86 mm box",
+      //         "Operating Temperature": "0 °C ~ 40 °C (32 °F ~ 104 °F)",
+      //         "Relative Humidity": "10 % ~ 90 % RH (non-condensing)"
+      //       }
+      //     }
+      //     },
+      // {
+      //       id: "model_fusion_cp2",
+      //       name: "Fusion-CP2",
+      //       description: "10.1\" In-Wall Touch Panel – PoE, Android, 1.8GHz ARM",
+      //       images: [
+      //         "https://placehold.co/400x300/E5E7EB/6B7280?text=Fusion-CP2+1"
+      //       ],
 
-            overview: `The Fusion-CP2 is a high-performance 10.1-inch embedded wired control touch panel, designed to deliver seamless control and interaction in modern AV and automation environments. Powered by a robust ARM architecture with a main frequency of up to 1.8GHz, it offers fast processing and responsive operation. Ideal for smart conference rooms, classrooms, and centralized control systems, the Fusion-CP2 combines intuitive touchscreen functionality with stable wired communication. With a sleek embedded design, it ensures a professional and space-efficient installation while supporting advanced integration through industry-standard protocols.`,
+      //       overview: `The Fusion-CP2 is a high-performance 10.1-inch embedded wired control touch panel, designed to deliver seamless control and interaction in modern AV and automation environments. Powered by a robust ARM architecture with a main frequency of up to 1.8GHz, it offers fast processing and responsive operation. Ideal for smart conference rooms, classrooms, and centralized control systems, the Fusion-CP2 combines intuitive touchscreen functionality with stable wired communication. With a sleek embedded design, it ensures a professional and space-efficient installation while supporting advanced integration through industry-standard protocols.`,
 
-            keyFeatures: [
-              "High-Performance Processing: Equipped with a powerful ARM architecture processor running up to 1.8GHz, ensuring fast and stable system operation.",
-              "Modern Android Platform: Runs on Android 9.0 or above, supporting third-party applications and enabling flexible system integration and secondary development.",
-              "Enhanced Memory & Storage: Comes with 2GB DDR4 RAM and 8GB eMMC Flash, providing smooth multitasking and reliable storage capacity.",
-              "HD Touch Display: Features a 10.1-inch capacitive multi-touch screen with 1280x800 resolution (16:10) for clear visuals and responsive interaction.",
-              "Flexible Power Options: Supports both PoE (Power over Ethernet) and DC 24V/1A power supply, giving flexibility in installation.",
-              "Gigabit Network Connectivity: Integrated 1 Gigabit Ethernet interface, supporting fast and reliable data transmission up to 1Gbps.",
-              "Efficient One-Line Connection: Supports data and power transmission over a single PoE network cable, simplifying wiring and reducing clutter.",
-              "Embedded Installation Design: Designed for standard base box installation with professional connectors, ensuring clean and secure mounting.",
-              "Industry Protocol Support: Compatible with industry-standard network communication protocols, ensuring broad integration with smart systems.",
-            ],
+      //       keyFeatures: [
+      //         "High-Performance Processing: Equipped with a powerful ARM architecture processor running up to 1.8GHz, ensuring fast and stable system operation.",
+      //         "Modern Android Platform: Runs on Android 9.0 or above, supporting third-party applications and enabling flexible system integration and secondary development.",
+      //         "Enhanced Memory & Storage: Comes with 2GB DDR4 RAM and 8GB eMMC Flash, providing smooth multitasking and reliable storage capacity.",
+      //         "HD Touch Display: Features a 10.1-inch capacitive multi-touch screen with 1280x800 resolution (16:10) for clear visuals and responsive interaction.",
+      //         "Flexible Power Options: Supports both PoE (Power over Ethernet) and DC 24V/1A power supply, giving flexibility in installation.",
+      //         "Gigabit Network Connectivity: Integrated 1 Gigabit Ethernet interface, supporting fast and reliable data transmission up to 1Gbps.",
+      //         "Efficient One-Line Connection: Supports data and power transmission over a single PoE network cable, simplifying wiring and reducing clutter.",
+      //         "Embedded Installation Design: Designed for standard base box installation with professional connectors, ensuring clean and secure mounting.",
+      //         "Industry Protocol Support: Compatible with industry-standard network communication protocols, ensuring broad integration with smart systems.",
+      //       ],
 
-            applications: [
-              "Boardrooms",
-              "Classrooms",
-              "Auditorium",
-            ],
+      //       applications: [
+      //         "Boardrooms",
+      //         "Classrooms",
+      //         "Auditorium",
+      //       ],
 
-            specifications: {
-              systemSpecifications: {
-                CPU: "Quad-core ARM architecture 1.8GHz",
-                operatingSystem: "Android 9 and above",
-                memory: "2GB DDR4 RAM",
-                flashMemory: "8GB EMMC Flash",
-                resolution: "1280×800",
-                touchType: "Capacitive touch",
-                userInterface: "Android tablet interface, customizable UI",
-              },
-              technicalSpecifications: {
-                LAN_POE: "1×RJ45 (10/100/1000Mbps), supports PoE",
-                debugPort: "1×Micro USB (for debugging/data transfer)",
-                RS485: "1×RS-485 interface (reserved function)",
-                resetButton: "1×Reset (reserved function)",
-                powerButton: "1×Power (system on/off, screen on/off)",
-                powerSupply: "DC 12V/1A or PoE (IEEE 802.3af)",
-                powerConsumption: "≤ 7W",
-              },
-              mechanicalSpecifications: {
-                frontPanel: "Touch screen, black color",
-                backCover: "Aluminum alloy shell, Apple gray color",
-                dimensions: "245.4mm (L) × 164mm (W) × 27mm (T)",
-                weight: "926 grams",
-                installation: "Embedded/Wall mount with standard box",
-                operatingTemp: "0°C ~ 40°C (32°F ~ 104°F)",
-                relativeHumidity: "10% ~ 90% RH (non-condensing)",
-              },
-            },
-          }
-        ],
-      },
+      //       specifications: {
+      //         systemSpecifications: {
+      //           CPU: "Quad-core ARM architecture 1.8GHz",
+      //           operatingSystem: "Android 9 and above",
+      //           memory: "2GB DDR4 RAM",
+      //           flashMemory: "8GB EMMC Flash",
+      //           resolution: "1280×800",
+      //           touchType: "Capacitive touch",
+      //           userInterface: "Android tablet interface, customizable UI",
+      //         },
+      //         technicalSpecifications: {
+      //           LAN_POE: "1×RJ45 (10/100/1000Mbps), supports PoE",
+      //           debugPort: "1×Micro USB (for debugging/data transfer)",
+      //           RS485: "1×RS-485 interface (reserved function)",
+      //           resetButton: "1×Reset (reserved function)",
+      //           powerButton: "1×Power (system on/off, screen on/off)",
+      //           powerSupply: "DC 12V/1A or PoE (IEEE 802.3af)",
+      //           powerConsumption: "≤ 7W",
+      //         },
+      //         mechanicalSpecifications: {
+      //           frontPanel: "Touch screen, black color",
+      //           backCover: "Aluminum alloy shell, Apple gray color",
+      //           dimensions: "245.4mm (L) × 164mm (W) × 27mm (T)",
+      //           weight: "926 grams",
+      //           installation: "Embedded/Wall mount with standard box",
+      //           operatingTemp: "0°C ~ 40°C (32°F ~ 104°F)",
+      //           relativeHumidity: "10% ~ 90% RH (non-condensing)",
+      //         },
+      //       },
+      //     }
+      //   ],
+      // },
     ],
   },
 ];
