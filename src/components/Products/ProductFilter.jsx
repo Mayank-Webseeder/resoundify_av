@@ -91,7 +91,7 @@ const ProductFilter = ({ categories, activeCategory, setActiveCategory }) => {
             </div>
 
             {/* Filter Categories */}
-            <div className="space-y-3">
+            <div className="space-y-2">
               {categories.map((category) => (
                 <button
                   key={category.id}

@@ -913,161 +913,6 @@ export const productsData = [
         ],
       },
       {
-        id: "series_control_panel_accessories",
-        name: "Control panel and accessories",
-        description: "Intuitive control solutions and accessories for seamless audio system management.",
-        image: "/images/Products/audio_dsp/Ominipanel8.webp",
-        features: ["Touchscreen Interfaces", "Dante Microphones", "Integrated Control"],
-        status: "In Stock",
-        type: "series",
-        models: [
-           {
-            id: "model_omni_panel3",
-            name: "OmniPanel3",
-            description: "VC and SS with LCD Screen and Rotary Knob – Aurispro Series",
-            images: [
-              "/images/Products/audio_dsp/omnipanel3.webp"
-            ],
-             overview: `The Resoundify OmniPane13 is a modern, user-centric control interface designed for conference rooms,
-                      boardrooms, and AV-integrated environments. It combines Volume Control (VC) and Source Selector (SS)
-                      control into a single intuitive wall-mounted unit, offering real-time interaction and effortless operation.
-                      The OmniPane13 is a premium-grade, multi-function wall control panel designed for seamless integration
-                      with professional Volume Control (VC) and Source Selector (SS). Tailored for high-end meeting
-                      environments, the OmniPane13 provides a highly intuitive, ergonomic, and interactive control solution that
-                      simplifies room technology for everyday users.`,
-
-             keyFeatures: [
-                    "High-Resolution Multi-Touch Display: The OmniPane13 features a high-quality LCD screen with clear visual feedback and customizable UI layouts. It delivers a smooth and intuitive interface for real-time control of video conferencing systems, audio levels, input sources, and presets — all in one sleek panel.",
-                    "Seamless Ethernet Connectivity: Equipped with a Gigabit Ethernet port and Power over Ethernet (PoE), the panel ensures fast data transmission, simplified wiring, and flexible installation across networked environments.",
-                    "Modern Mechanical Design: Its slim, wall-mountable form factor and optional mounting accessories allow for seamless integration into a variety of architectural settings.",
-                    "Secure & Maintainable Platform: Advanced encryption protocols and remote firmware update capabilities ensure long-term reliability, security, and ease of maintenance."
-                  ],
-
-             applications: [
-              "Classrooms",
-              "Boardrooms",
-              "Auditoriums",
-            ],
-
-           specifications: {
-              "System Specifications": {
-                "Power": "DC 12V 1.5A & PoE IEEE 802.3at",
-                "Display Type": "IPS",
-                "Compatibility": "Can be used with a full range of processors",
-                "Display": "With OLED highlight",
-                "Display Colors": "16.7M",
-                "Display Orientation": "Landscape (horizontal), or portrait (vertical)",
-                "Display Viewing Angle": "±85° horizontal, ±85° vertical"
-              },
-              "Mechanical Specifications": {
-                "Screen Size": "1.13 inches"
-              }
-            },
-          },
-          {
-            id: "model_omni_panel4",
-            name: "OmniPanel4",
-            description: "4 inch control panel",
-            images: [
-              "/images/Products/audio_dsp/omnipanel4.webp"
-            ],
-
-            overview: "The Resoundify OmniPanel4 is a compact and intelligent 4-inch touch control panel designed for streamlined control in smart buildings, hospitality, and AV automation environments. Despite its small footprint, the panel delivers powerful performance with an intuitive capacitive touch interface, real-time processing, and seamless integration with multiple communication protocols such as TCP/IP. Equipped with PoE-enabled Ethernet connectivity, the OmniPanel4 simplifies installation by combining power and data over a single cable. Its responsive UI supports scene control, lighting dimming, HVAC adjustments, and more — all from a sleek wall-mounted device. With robust security, remote configuration support, and compatibility with major automation platforms, the OmniPanel4 is ideal for use in guest rooms, meeting spaces, and high-end residential applications.",
-
-            keyFeatures: [
-              "High-Resolution Multi-Touch Display: The panel features a 4-inch capacitive multi-touch screen with gesture support, delivering a responsive and user-friendly interface for real-time control and monitoring applications.",
-              "Seamless Ethernet Connectivity: Equipped with a Gigabit Ethernet port and Power over Ethernet (PoE), the panel ensures fast data transmission, simplified wiring, and flexible installation across networked environments.",
-              "Customized User Interface: The OmniPanel4 uses award-winning Omni graphic user interface authoring technology, allowing control screens to be created, tested, and simulated before deployment. Multiple pages, custom controls, backgrounds, logos, and more can be created quickly and easily.",
-              "Modern Mechanical Design: Its slim, wall-mountable form factor and optional mounting accessories allow for seamless integration into a variety of architectural settings."
-            ],
-
-            applications: [
-              "Classrooms",
-              "Boardrooms",
-              "Auditoriums",
-            ],
-
-            specifications: {
-              "System Specifications": {
-                Power: "DC 12V 1.5A & PoE IEEE 802.3at",
-                "Display Type": "4-inch TFT touch screen",
-                Compatibility: "Can be used with a full range of processors",
-                "Control protocol": "UDP, TCP/IP",
-                "Address setting method": "RJ-45",
-                "Control functions": "Support 32 control functions; Supports volume control, mute, scene calling, matrix switching, and central control functions",
-                "Display Resolution": "gray",
-                "Display Colors": "16.7M",
-                "Display Orientation": "Landscape (horizontal), or portrait (vertical)",
-                "Display Viewing Angle": "±85° horizontal, ±85° vertical"
-              },
-              "Mechanical Specifications": {
-                "Screen Size": "4 inches",
-                "Product size (WxH)": "88 x 88mm"
-              }
-            },
-          },
-        {
-          id: "model_omni_panel8",
-          name: "OmniPanel8",
-          description: "8 inch control panel",
-          images: [
-            "/images/Products/audio_dsp/Ominipanel8.webp"
-          ],
-
-          overview: "The Resoundify OmniPanel8 is a sleek and powerful 8-inch capacitive touch control panel designed for seamless control of AV systems, lighting, HVAC, and other automation functions. Engineered for both commercial and residential applications, it features a vibrant high-resolution display, intuitive UI, and network connectivity, enabling it to serve as the central interface in modern smart environments. With support for custom graphical layouts, control scripting, and integration with third-party systems (via TCP/IP, RS-232), the OmniPanel8 delivers flexibility and performance for meeting rooms, classrooms, control centers, and luxury living spaces. Wall-mountable and PoE-powered, it offers both a clean aesthetic and simple installation.",
-
-          keyFeatures: [
-            "High-Resolution Multi-Touch Display: The OmniPanel8 features an 8-inch capacitive multi-touch screen with gesture support, providing an intuitive and responsive user interface for control and monitoring.",
-            "Seamless Ethernet Connectivity: Equipped with a Gigabit Ethernet port and Power over Ethernet (PoE), the panel ensures fast data transmission, simplified wiring, and flexible installation across networked environments.",
-            "Modern Mechanical Design: Its slim, wall-mountable form factor and optional mounting accessories allow for seamless integration into a variety of architectural settings.",
-            "Secure & Maintainable Platform: Advanced encryption protocols and remote firmware update capabilities ensure long-term reliability, security, and ease of maintenance.",
-          ],
-
-          applications: [
-            "Classrooms",
-            "Boardrooms",
-            "Auditoriums",
-          ],
-
-          specifications: {
-            "System Specifications": {
-              Power: "DC 12V 1.5A & PoE IEEE 802.3at",
-              "Display Type": "IPS",
-              Compatibility: "Supports DSP volume, mute, preset, matrix mixing, and device status detection controls",
-              "Display Resolution": "1280000",
-              "Display Aspect Ratio": "16:9",
-              "Display Contrast Ratio": "800:1",
-              "Display Colors": "16.7M",
-              "Display Orientation": "Landscape (horizontal), or portrait (vertical)",
-              "Display Viewing Angle": "±85° horizontal, ±85° vertical"
-            },
-            "Mechanical Specifications": {
-              "Screen Size": "8 inches",
-              Dimensions: "212.2x147.6x31mm",
-              "Product Weight": "0.7kg"
-            }
-          },
-        },
-          
-          // {
-          //   id: "model_gmic_cp",
-          //   name: "GMIC-CP",
-          //   description: "Dante microphone with control panel",
-          //   images: [
-          //     "/images/Products/audio_dsp/GMIC-CP.webp"
-          //   ]
-          // },
-          // {
-          //   id: "model_gmic_3",
-          //   name: "GMIC-3",
-          //   description: "Dante Microphone",
-          //   images: [
-          //     "/images/Products/audio_dsp/GMIC-3.webp"
-          //   ]
-          // },
-        ],
-      },
-      {
         id: "series_multiplayer",
         name: "Multiplayer Series",
         description: "Multi-channel audio web streamers with scheduling and Dante virtual sound card support.",
@@ -1119,7 +964,6 @@ export const productsData = [
             description: "H.264 with up to 4 screen capability, 4K@30",
             images: [
               "/images/Products/av_over_ip_soln/IPM2000.webp",
-              "/images/Products/av_over_ip_soln/IPM2000.B.webp",
             ],
 
             overview: "The Resoundify StreamLite-4k30 4K Encoding and Decoding Integrated IP Matrix integrates advanced video compression, network, visualization, and centralized control technologies. It builds an IP-based system combining video splicing, KVM management, audio processing, and encoding/decoding with distributed, visualized, and server-less features. Supporting HDMI 4K@30Hz input/output, multi-screen splicing, and IR, I/O and RS-232 control, it ensures synchronization, real-time performance, and vivid color reproduction. This cost-effective solution simplifies wiring and offers visual control and decentralized operation for HD/1080p applications. Ideal for conference centers, exhibition halls, command centers, and transportation hubs.",
@@ -1921,13 +1765,87 @@ export const productsData = [
               }
             },
           },
-          {
+         {
             id: "model_vc_ptz30_dante",
             name: "VC-PTZ30 (DANTE)",
             description: "4K Ultra HD Video Conference Camera AI tracking",
             images: [
-              "/images/Products/video_conferencing/PTZ30.webp",
-            ]
+              "/images/Products/video_conferencing/PTZ30.webp"
+            ],
+
+            overview: "The VC-PTZ30 (DANTE) is a high-performance 4K Ultra HD video conferencing camera designed for professional-grade AV environments. Equipped with a 30x optical zoom lens, AI-powered auto-tracking, and Dante AV-H support, this camera delivers exceptional clarity, flexibility, and IP-based integration for modern meeting rooms, auditoriums, and broadcast spaces. With support for multiple video output interfaces including HDMI, USB 3.0, IP Streaming, and Dante AV, the VC-PTZ30 offers seamless compatibility with conferencing platforms, control systems, and AV-over-IP infrastructure.",
+
+            keyFeatures: [
+              "4K60FPS: Use a high-quality 1/1.8 inches UHD CMOS sensor with 8.42 million pixels. Support max 4K60fps image output and multiple lower resolutions like 1080p/720p.",
+              "30x Optical Zoom + 59° Wide-angle Lens: 4K optical lens, support max 30x optical zoom (50x lossless in 1080P) and 59° horizontal field of view, can cover the demand of extra-large conferencing room and other scenarios.",
+              "AI Smart Tracking: With the built-in AI capability and algorithms, camera can support multiple tracking modes, including body tracking, hybrid tracking and etc.",
+              "Remote Control: Support multiple ways of control, like RS232, RS485, Network and USB.",
+              "Non-compressed video stream: HDMI 2.0 and 3G-SDI I/O, can output non-compressed video stream.",
+              "Low Illumination: The new generation high performance CMOS image sensor can significantly reduce the image noise in low illumination. With the 3D noise reduction algorithms, even in an ultra-low illumination environment, camera can still deliver a sharp and clean image with more than 55dB S/N ratio.",
+              "Gravity Sensor: Support image flipping, apply to head-up/head-down installation.",
+              "NDI®|HX2: Support low-latency NDI®|HX2 protocol, plug to play, minimal configuration and easy for deployment.",
+              "Multiple Interfaces: HDMI 2.0, USB2.0/3.0, 3G-SDI (Up to 150 meters transmission with 1080P30), LAN. Support HDMI/3G-SDI, USB, LAN streaming simultaneously."
+            ],
+
+            applications: [
+              "boardrooms",
+              "classrooms",
+              "auditoriums"
+            ],
+
+            specifications: {
+              "Camera Specifications": {
+                "Signal System": "HDMI: 4K60, 4K59.94, 4K50, 4K30, 4K25, 4K29.97, 1080p60, 1080p50, 1080i60, 1080i50, 1080p30, 1080p59.94, 1080p29.97, 720p60, 720p59.94; 3G-SDI: 1080p60, 1080p50, 1080p30, 1080p29.97, 1080p59.94, 1080i60, 1080i59.94, 1080i50, 1080p25, 1080p24, 1080p23.98, 720p60, 720p59.94",
+                Sensor: "1/1.8 inches, CMOS, Effective Pixels: 8.42 Megapixels",
+                "Scanning Mode": "Progressive",
+                Lens: "30x, f=7.1mm — 210mm, F1.61 — F5.19",
+                Shutter: "1/30s ~ 1/10000s",
+                "White Balance": "Auto, Indoor, Outdoor, One Push, Manual, VAR",
+                "Backlight Compensation": "Support",
+                "Digital Noise Reduction": "3D Digital Noise Reduction",
+                SNR: ">55dB",
+                "Horizontal FOV": "59.2° ~ 2.5°",
+                "Vertical FOV": "34.6° ~ 1.4°",
+                "Pan Angle": "±170°",
+                "Tilt Angle": "-30° ~ +90°",
+                "Pan Speed": "1.7° ~ 100°/s",
+                "Tilt Speed": "1.7° ~ 69.9°/s",
+                "Image Flip": "Support",
+                "Image Freeze": "Support",
+                "PoE+": "Support",
+                "Preset Position": "255",
+                "Preset Accuracy" : "0.1°"
+              },
+              "Interface Specifications": {
+                "HD Output": "1 x HDMI: Version 2.0; 1 x 3G-SDI: BNC, 800mVp-p, 75Ω, as per SMPTE 424M standard",
+                "Network Interface": "1 x RJ45: 10M/100M/1000M adaptive Ethernet",
+                "Audio Interface": "1 x LINE IN: 3.5mm Jack; 1 x LINE OUT: 3.5mm Jack",
+                "USB Interface": "1 x USB2.0, Type-A; 1 x USB3.0, Type-B",
+                "Control Interface": "1 x RS485: 2pin phoenix port, Max Distance: 1200m, Protocol: VISCA / Pelco-D / Pelco-P; 1 x RS232 IN: 8pin Mini DIN, Max Distance: 30m, Protocol: VISCA / Pelco-D / Pelco-P; 1 x RS232 OUT: 8pin Mini DIN, Max Distance: 30m, Protocol: VISCA only",
+                "Power Interface": "JEITA type (DC IN 12V)"
+              },
+              "Network Specifications": {
+                "Video Compression": "H.265 / H.264 / MJPEG",
+                "Video Stream": "First Stream, Second Stream",
+                "First Stream Resolution": "3840x2160, 1920x1080, 1280x720, 1024x576 etc",
+                "Second Stream Resolution": "720x480, 320x240 etc",
+                "Video Bit Rate": "First Stream: 32kbps—51200kbps; Second Stream: 32kbps—20480kbps",
+                "Bit Rate Control": "VBR, CBR",
+                "Frame Rate": "50Hz: 1fps—50fps, 60Hz: 1fps—60fps",
+                "Audio Compression": "AAC, G.711A",
+                "Audio Bit Rate": "96kbps, 128kbps",
+                Protocols: "NDI|HX2, SRT, TCP/IP, HTTP, RTSP, RTMP(s), Onvif, DHCP, GB/T 28181, Multicast, etc"
+              },
+              "General Specifications": {
+                "Input Voltage": "DC 12V / PoE+ (802.3at)",
+                "Input Current": "2A (Max.)",
+                "Operating Temperature": "0°C ~ 40°C",
+                "Storage Temperature": "-40°C ~ 60°C",
+                "Power Consumption": "18W (Max.)",
+                Dimension: "170mm x 228mm x 181mm",
+                "Net Weight": "2.0kg"
+              }
+            }
           },
          
         ],
@@ -1936,27 +1854,169 @@ export const productsData = [
         id: "series_auto_switching_tracking_camera",
         name: "Auto switching auto Tracking camera",
         description: "Integrated 4K HD tracking cameras for teaching and presentation environments.",
-        image: "/images/Products/video_conferencing/PTZ12.webp",
+        image: "/images/Products/video_conferencing/VC-AUTO2.webp",
         features: ["4K Resolution", "AI Tracking", "Dual Lens Systems", "PoE"],
         status: "In Stock",
         type: "series",
         models: [
-          // {
-          //   id: "model_vc_auto2",
-          //   name: "VC-AUTO2",
-          //   description: "4K Integrated HD teaching tracking camera Close-up Camera:12x optical, 16x digital 4K@30fps, 4K@25fps, 4K@29.97fps1080P@30fps,1080P@25fps Panorama Camera: 4K@30fps, 4K@25fps, 4K@29.97fps1080P@30fps,1080P@25fps RS232 in, RS232 out, RS485, 3G-SDI, RJ45, HDMI, USB3.0, USB2.0, Line In, POE",
-          //   images: [
-          //     "https://placehold.co/400x300/E5E7EB/6B7280?text=VC-AUTO2+1",
-          //     "https://placehold.co/400x300/E5E7EB/6B7280?text=VC-AUTO2+2"
-          //   ]
-          // },
+          {
+            id: "model_vc_auto2",
+            name: "VC-AUTO2",
+            description: "4K Integrated HD teaching tracking camera with dual-lens AI tracking",
+            images: [
+              "/images/Products/video_conferencing/VC-AUTO2.webp",
+              "/images/Products/video_conferencing/VC-AUTO2(1).webp"
+
+            ],
+
+            overview: "The Resoundify VC-AUTO2 (DANTE) is an advanced 4K dual-lens AI tracking camera designed for education, corporate training, and conference recording. Featuring integrated panoramic + close-up lenses with intelligent participant framing and auto-tracking, it delivers smooth, lifelike multi-angle coverage without manual intervention. Supports teacher/student modes, multiple 4K streams, smart directing, NDI, PoE, and rich interfaces for seamless integration in classrooms, auditoriums, and hybrid environments.",
+
+            keyFeatures: [
+              "Dual-Lens Integrated Design: Panoramic (up to 110° FOV) + Close-up lens (up to 43° FOV) in one body, total effective pixels up to 8.29M + 4.93M.",
+              "Ultra-clear 4K Experience: Both lenses use 1/2.7\" 4K CMOS sensors, support 4K@30fps output with crystal-clear detail.",
+              "AI Intelligent Tracking: Advanced image recognition & tracking algorithms – no wearable trackers needed. Supports teacher/student tracking, multi-stream output (panoramic + close-up), and smart directing.",
+              "Multiple Models Available: Teacher model (43° pano + 26° close-up), Student model (110° pano + 43° close-up), Conference model (95° pano + 43° close-up).",
+              "Rich Connectivity: USB 3.0 Type-C, SDI, HDMI, NDI, PoE, LINE In/Out, 4-mic array, RS232/RS485 control.",
+              "Multiple Stream Output: Up to 4 simultaneous streams (panoramic + tracking + mixed + extra), perfect for recording & live streaming."
+            ],
+
+            applications: [
+              "boardrooms",
+              "classrooms",
+              "auditoriums"
+            ],
+
+            specifications: {
+              "Panoramic Camera": {
+                Sensor: "Education: 1/2.7\" CMOS, 4.93MP | Conference: 1/2.7\" CMOS, 8.29MP",
+                "Horizontal FOV": "Student: 110° | Teacher: 43° | Conference: 95°",
+                "Minimum Illumination": "0.5 Lux",
+                Shutter: "1/30s ~ 1/10000s",
+                "White Balance": "Auto, Indoor, Outdoor, One Push, Manual, VAR",
+                "Digital Noise Reduction": "2D & 3D"
+              },
+              "Close-up Tracking Camera": {
+                Sensor: "Education: 1/2.7\" CMOS, 8.29MP | Conference: 1/2.7\" CMOS, 4.93MP",
+                "Horizontal FOV": "Student: 43° | Teacher: 26° | Conference: 43°",
+                "Digital Zoom": "2x",
+                "Pan/Tilt Range": "Pan ±40°, Tilt +5°~-30° (Student: Pan 60°/s, Tilt 30°/s | Others: Pan 30°/s, Tilt 30°/s)",
+                "Preset Positions": "255 (Accuracy 0.5°)",
+                "Minimum Illumination": "0.5 Lux"
+              },
+              "Audio Specifications": {
+                "Built-in Microphone": "4-element array, 100Hz–16kHz",
+                "Audio Input": "1 x LINE In (3.5mm)",
+                "Audio Output": "1 x LINE Out (3.5mm)",
+                "Digital Audio": "USB, SDI, Network (1588 sync supported)"
+              },
+              "USB Specifications": {
+                "Operating System Supported": "Windows 7 (1080p and below only), Windows 8.1+, macOS 10.10+, Chromebook v29.0.1547.70+, Linux (UVC supported)",
+                "Hardware Requirements": "2.4 GHz Intel Core 2 Duo or higher, 2GB RAM or higher, USB 3.0 or 2.0 port",
+                "Color System / Compression": "YUY2 / MJPEG / H.264",
+                "Video Format": "Maximum 4K with multiple resolutions and frame rates",
+                "USB Video Communication Protocol": "UVC 1.1",
+                "USB Audio": "Max 48kHz sampling rate, supports UAC1.0",
+                "UVC PTZ Control": "Supported"
+              },
+              "Interface Specifications": {
+                "USB": "1 x USB 3.0 Type-C (UVC/UAC)",
+                "HD Output": "1 x SDI (1080p60, PoC supported)",
+                "Network": "1 x RJ45 10/100M (NDI, PoE 802.3af)",
+                "Audio I/O": "LINE In + LINE Out 3.5mm",
+                "Power": "DC 12V (DC005 jack)",
+                Control: "RS232 IN/OUT, RS485 (VISCA/Pelco-D/P)"
+              },
+              "Network Specifications": {
+                "Video Compression": "H.265 / H.264 / MJPEG",
+                "Video Streams": "Up to 4 simultaneous streams",
+                "Max Resolution": "3840x2160 (First stream)",
+                "Frame Rate": "25/30fps",
+                "Audio Compression": "AAC / G.711",
+                Protocols: "TCP/IP, HTTP/HTTPS, NDI, SRT, RTSP, RTMP, ONVIF, DHCP, GB/T 28181, Multicast"
+              },
+              "General Specifications": {
+                "Input Voltage": "DC 12V / PoE (802.3af) / PoC",
+                "Power Consumption": "12W Max",
+                Dimension: "242.05mm × 86.03mm × 70.55mm",
+                "Operating Temperature": "0°C ~ 40°C",
+                "Storage Temperature": "-40°C ~ 60°C",
+                "Net Weight": "TBD",
+                "No Failure Time" : "30000h"
+
+              }
+            },
+          },
           {
             id: "model_vc_auto4",
             name: "VC-AUTO4",
-            description: "4K AI Dual-Tracking Camera with Panoramic View, POE+USB3.0",
+            description: "All-in-One 4K Intelligent Video Conferencing Endpoint with 12x Optical Zoom",
             images: [
-              "/images/Products/video_conferencing/PTZ12.webp"
-            ]
+              "/images/Products/video_conferencing/VC-AUTO4.webp"
+            ],
+
+            overview: "The VC-AUTO4 is a high-performance all-in-one 4K conferencing endpoint built on an open Android 12 platform, powered by quad-core Cortex-A76 + quad-core Cortex-A55 processor and 6 TOPS AI NPU. It supports deep customization with full SDK for developers. Features a 4K UHD sensor with 80.8° ultra-wide-angle lens + 12x optical zoom and large-range PTZ for complete room coverage. Supports dual 4K input/output streams, dual-screen display, built-in advanced audio 3A algorithms, fanless silent design, and rich interfaces — perfect for medium to large meeting rooms.",
+
+            keyFeatures: [
+              "High-performance Open Android 12 Platform: Quad-core A76 + A55 CPU, 6 TOPS AI NPU, full SDK & documentation for deep customization.",
+              "Ultra-wide 80.8° 4K Lens + 12x Optical Zoom with large-range PTZ (±170° pan, -30°~+30° tilt) for full room coverage.",
+              "Dual 4K Video Streaming: 1× built-in MIPI + 1× HDMI input, 2× HDMI 4K60 output, dual-screen different display supported.",
+              "Built-in Audio 3A Processing: AEC, AGC, ANS with multiple mic/line inputs and phantom power support.",
+              "Fanless Silent Metal Design: Excellent heat dissipation, zero noise, ideal for long-hour operation.",
+              "Rich Connectivity: USB 3.0 ×4, HDMI 2.1 ×2, Gigabit LAN, WiFi (optional), Bluetooth 5.2, TF card slot up to 128GB."
+            ],
+
+            applications: [
+              "boardrooms",
+              "classrooms",
+              "auditoriums"
+            ],
+
+            specifications: {
+              "Standard Specifications": {
+                "Operating System": "Android 12",
+                CPU: "4 × Cortex-A76 + 4 × Cortex-A55",
+                RAM: "4GB",
+                ROM: "16GB EMMC (optional 32GB)"
+              },
+              "Camera Specifications": {
+                Sensor: "1/2.5\" CMOS, 8.51 million effective pixels",
+                "Lens": "12x Optical Zoom, f=3.5mm ~ 42.3mm (approx), Horizontal FOV: 80.8° (wide) ~ 7.5° (tele)",
+                "PTZ": "Pan ±170°, Tilt -30° ~ +30°",
+                "Shutter": "1/30s ~ 1/10000s",
+                Features: "Auto White Balance, Auto Exposure, Auto Focus, Remote Control, Image Flip/Mirror"
+              },
+              "Video Specifications": {
+                "Built-in Camera": "4K30fps max",
+                "Video Input": "1 × Integrated MIPI camera, 1 × HDMI 2.0 (up to 4K60)",
+                "Video Output": "2 × HDMI 2.1 (CEC supported, up to 4K60fps each)",
+                "Video Codec": "H.265/H.264/AV1/VP9/AVS2 decoding up to 8K60fps, H.264/H.265 encoding up to 8K30fps",
+                "Bandwidth Requirement": "4K30fps: min 1Mbps (single), 2Mbps (dual), 1080p60: min 512Kbps",
+                "Other Features": "Dual screen different display"
+              },
+              "Audio Specifications": {
+                Input: "1 × Built-in array mic, 1 × Mini-XLR mic (48V phantom), 1 × 3.5mm line in, HDMI embedded, Bluetooth (optional)",
+                Output: "1 × 3.5mm line out, HDMI embedded, Bluetooth (optional)",
+                Features: "AEC, AGC, ANS (full-duplex)"
+              },
+              "Interface Specifications": {
+                "USB": "3 × USB 3.0, 1 × USB 3.0 (for touch/control)",
+                "Network": "1 × RJ45 10/100/1000 Base-T",
+                "Wireless": "WiFi 802.11a/b/g/n/ac (optional), Bluetooth 5.2",
+                "Storage": "1 × TF card slot (up to 128GB)",
+                "Control": "1 × RJ45 for touch panel, 1 × IR receiver",
+                "Power": "1 × DC 12V",
+                Indicator: "1 × Dual-color LED"
+              },
+              "General Specifications": {
+                Dimension: "258mm (W) × 146mm (D) × 170mm (H)",
+                "Power Supply": "DC 12V, Max 36W",
+                "Operating Temperature": "0°C ~ 40°C",
+                "Storage Temperature": "-40°C ~ 70°C",
+                "Operating Humidity": "10% ~ 80%",
+                "Non-Operating Humidity": "0% ~ 95%",
+                Certification: "CCC, CTA"
+              }
+            }
           },
         ],
       },
@@ -1964,35 +2024,273 @@ export const productsData = [
         id: "series_all_in_one_bar_solution",
         name: "All in one BAR solution",
         description: "Integrated 4K UHD USB cameras with built-in mics and speakers for seamless collaboration.",
-        image: "/images/Products/video_conferencing/ST-200.webp",
+        image: "/images/Products/video_conferencing/RC-700.webp",
         features: ["4K UHD Camera", "Built-in Mic & Speaker", "AI Tracking", "Bluetooth & WiFi"],
         status: "In Stock",
         type: "series",
         models: [
-          {
+         {
             id: "model_st_200",
             name: "ST-200",
-            description: "4K All-in-One USB Camera with Mic+Speaker, 5x Zoom, AI Tracking, BYOM",
+            description: "4K UHD All-in-One USB Video Bar with AI Tracking",
             images: [
               "/images/Products/video_conferencing/ST-200.webp",
-            ]
+            ],
+
+            overview: "The Resoundify ST-200 is a USB video bar integrated device designed for small to medium-sized enterprise meeting spaces. It features a 4K ultra-high-definition camera, a digital microphone, and a full-range speaker in a three-in-one design that minimizes cabling. The video resolution reaches up to 20 megapixels, allowing remote participants to see a clear panoramic view and close-ups of individuals in the meeting room. With multiple AI video processing algorithms, it enables efficient and intelligent remote communication and collaboration without the need for manual intervention.",
+
+            keyFeatures: [
+              "Ultra-High-Definition Image Quality: Equipped with a high-quality UHD CMOS sensor of 1/1.8 inches and 20 million effective pixels, it can output 4K ultrahigh-definition resolution images and is backward compatible with resolutions such as 1080P and 720P.",
+              "120° Ultra-Wide Field of View: The lens supports a 120° wide field of view (105° horizontal field of view), with 5x digital zoom, clearly capturing every corner of the meeting room. It features a ±15° mechanical pan-tilt.",
+              "Group Framing: Equipped with facial, human shape recognition, and intelligent framing algorithms, it can identify the number of participants and their positional changes, automatically moving the lens and adjusting the focus to achieve intelligent composition and optimal framing.",
+              "Speaker Tracking: The built-in sound source localization algorithm automatically directs the camera towards the speaker when someone is talking, presenting a close-up in the center of the screen, delivering a \"face-to-face\" communication experience.",
+              "Smart Gallery: Featuring AI algorithms for heads, faces, and human shapes, it can automatically switch to multi-split screen layouts based on the number of participants, extracting and evenly arranging close-ups of each participant. This allows remote attendees to clearly see everyone, making the communication in meetings more vivid and natural.",
+              "BYOD & BYOM Meetings: Equipped with a built-in WiFi module, it supports participants using their familiar personal devices (such as laptops, smartphones, or tablets) to join meetings and access the integrated audio-video functions at any time. It also supports wireless screen mirroring from computers to the device, allowing for local or remote meeting screen sharing without the need for cables.",
+              "Clear Audio Capture up to 6m: The built-in beamforming microphone automatically locates the speaker's sound source and adjusts to precisely capture audio, ensuring consistent and balanced audio pickup. With audio 3A processing algorithms, the clear audio pickup range can reach up to 6 meters.",
+              "POE Cascaded Audio Capture (Optional): Equipped with a POE-powered network port, it supports cascading three M702 array microphones, which can uniformly cover larger meeting room scenarios, providing each participant with equal and consistent audio pickup effects.",
+              "Full-Range Stereo Sound: Integrates a full-range high-fidelity speaker, professionally tuned to effectively reduce sound interference, outputting rich bass, full midrange, and clear treble, with natural and authentic human voices."
+            ],
+
+            applications: [
+              "boardrooms",
+              "classrooms",
+              "auditoriums"
+            ],
+
+            specifications: {
+              "Camera Specifications": {
+                "Signal System": "4KP30, 1080P30, 720P30 etc.",
+                Sensor: "1/1.8 inches, CMOS, Effective Pixels: 20 Megapixels",
+                Lens: "114° Digital zoom, Horizontal/pitch ±15° Mechanical PTZ (MPTZ) + e-PTZ (EPTZ)",
+                "Digital Noise Reduction": "2D & 3D Digital Noise Reduction",
+                SNR: "≥ 55dB",
+                "Backlight Compensation": "Support"
+              },
+              "Audio Specifications": {
+                "Full-frequency Speaker": "96 dB SPL at 0.5 m",
+                "Microphone Array": "Beamforming microphone with 6m pickup distance",
+                "Expansion MIC": "Support"
+              },
+              "Interface Specifications": {
+                "USB 3.0": "1 × USB3.0, Type-C",
+                HDMI: "1 × HDMI",
+                "USB 2.0": "1 × USB2.0, Type-A",
+                "Network Interface 1": "1 × RJ45: 10M/100M adaptive Ethernet (Optional)",
+                "Network Interface 2": "1 × RJ45: Connected to expansion mic, support POE",
+                Power: "1 × Power connector",
+                WiFi: "WiFi 5",
+                "Remote Controller": "Support"
+              },
+              "Others Specifications": {
+                "Installation Method": "Support desktop placement, wall mounting and TV mounting etc",
+                "Supplied Cables": "USB cable",
+                "Safety Protection": "Anti-theft lock"
+              },
+              "USB Specifications": {
+                "Type of Connection": "USB 3.0, downward compatible with USB 2.0",
+                "Color System / Compression": "YUY2 / MJPEG",
+                "USB Video Communication Protocol": "UVC 1.1",
+                "UVC PTZ Control": "Support (ePTZ)"
+              },
+              "General Specifications": {
+                "Power Supply": "DC 12V, 5A (Max.)",
+                "Operating Temperature": "0°C",
+                "Storage Temperature": "-40°C ~ 60°C",
+                Dimension: "600mm (W) × 135mm (D) × 117mm (H) (with bracket)",
+                "Net Weight": "2.5kg"
+              }
+            }
           },
           {
+            id: "model_st_400",
+            name: "ST-400",
+            description: "All-in-One 4K Intelligent Video Conferencing Endpoint",
+            images: [
+              "/images/Products/video_conferencing/ST-400.webp",
+            ],
+
+            overview: "The Resoundify ST-400 this all-in-one intelligent conferencing device integrates an ultra-high-definition camera, array microphone, full-range speaker, and Android-based conference terminal into a single compact system, greatly simplifying installation and reducing wiring complexity. Powered by the Android 12.0 operating system with an advanced 4-core A76 + 4-core A55 processor and a 6 TOPS NPU, the device delivers exceptional computing performance for seamless conferencing applications. Supporting industry-leading decoding formats such as H.265, H.264, AVI, VP9, and AVS2 at up to 8K60fps, along with encoding capabilities up to 8K30fps, it ensures high-quality video processing across various platforms. The built-in AI algorithms enable automatic framing by detecting participant positions and sound-based speaker tracking for precise close-ups, creating an immersive and intelligent meeting experience.",
+
+            keyFeatures: [
+              "All-in-One Integration: An all-in-one design featuring an ultra-high-definition camera, array microphone, full-range speaker, and Android conference terminal, effectively reducing the complexity of wiring and installation.",
+              "Super Computing Power: Android 12.0 operating system, equipped with 4-core A76 + 4-core A55, 6 TOPS super computing power NPU.",
+              "Super Decoding: Support H.265/H.264/AV1/VP9/AVS2 video decoding, up to 8K60fps. Support H.264/H.265 video encoding, up to 8K30fps.",
+              "AI Algorithm: Built-in AI automatic framing algorithm can recognize the position of the participants and automatically adjust the lens angle to get the best view; at the same time, built-in AI sound tracking algorithm can quickly lock the speakers according to the sound positioning and focus on the close-ups.",
+              "Dual-screen display: Supporting two HD video outputs, it can be connected to two large screen display devices at the same time, which can not only display the conference screen but also share pictures, videos and documents, enhancing the conference experience.",
+              "One machine for two purposes: It can be used as an Android video conferencing terminal, or as an audio/video integrated USB camera connected to a PC as a peripheral, with rich application scenarios."
+            ],
+
+            applications: [
+              "boardrooms",
+              "classrooms",
+              "auditoriums"
+            ],
+
+            specifications: {
+              "System Specifications": {
+                "Operating System": "Android 12",
+                CPU: "4 x Cortex-A76@2.4GHz + 4 x Cortex-A55@1.8GHz",
+                RAM: "4GB",
+                ROM: "16GB EMMC (Optional 32GB)"
+              },
+              "Video Specifications": {
+                "Video Input Interface": "1 x HDMI, supports HDMI 2.0, Max. 4K30fps",
+                "Video Output Interface": "2 x HDMI OUT, supports HDMI 2.1, Max. 4K60fps",
+                "Video Coding": "H.264/H.265, Max. 8K30FPS",
+                "Video Decoding": "H.265/H.264/AV1/VP9/AVS2, Max. 8K60fps",
+                "Built-in Camera": "Sensor: 1/2.5 inch CMOS, effective pixel 8.51MP, Field of view angle: DFOV: 121°, HFOV: 110°, 5x Digital zoom, Pan head: mechanical pan head, horizontal/pitch: ±15°, Electronic pan tilt",
+                "AI Tracking": "supports",
+                "Other Image Features": "Dual screen different display, Backlight compensation: supported, Digital noise reduction: 2D and 3D digital noise reduction, Signal to noise ratio: 55dB"
+              },
+              "Audio Specifications": {
+                Input: "1 x Built-in microphone, 1 x USB, 1 x HDMI embedded audio input, 1 x Bluetooth audio input (optional), 1 x 3.5mm linear input",
+                Output: "1 x Integrated speaker (SPL 96dB@0.5m), 1 x USB, 1 x HDMI embedded audio output, 1 x Bluetooth audio output (optional), 1 x 3.5mm linear output",
+                Features: "Automatic gain control; Automatic echo cancellation; Automatic noise suppression; Automatic lip sync"
+              },
+              "Interface Specifications": {
+                "USB Interface": "1 x USB 3.0 Type-A Host, 1 x USB 3.0 Type-A OTG, 1 x USB 3.0 Type-C (Used to connect a PC as a camera and Speaker Phone)",
+                "Power Interface": "1 x DC 12V/3A",
+                "Network Interface": "1 x RJ45, 10M/100M/1000M Base-T, 1 x RJ45, 10M/100M Base-T, Support 15W PSE",
+                Connectivity: "1 x WiFi (2.4G&5.8G), 802.11a/b/g/n/ac (Optional)",
+                "Bluetooth (Optional)": "BT 5.0"
+              },
+              "General Specifications": {
+                Dimension: "601mm (W) x 141mm (D) x 115mm (H)",
+                "Power Supply": "Input Voltage: DC 12V, Power Consumption: 36W",
+                "Environmental Requirement": "Temperature: 0°C ~ 40°C (operating state), -40°C ~ 70°C (non-operating state), Humidity: 10% ~ 80% (operating), 0% ~ 95% (non-operating)",
+                "Certification and Standard": "CQC, RoHS, CE"
+              }
+            }
+          },
+         {
             id: "model_rc_700",
             name: "RC-700",
             description: "7-Mic Array Ceiling/Surface Mic – 360° 8m Pickup, USB + 3.5mm",
             images: [
               "/images/Products/video_conferencing/RC-700.webp",
-            ]
+              "/images/Products/video_conferencing/RC-700(1).webp",
+              "/images/Products/video_conferencing/RC-700(2).webp"
+            ],
+
+            overview: "The Resoundify RC-700 is a high-performance digital array microphone designed for professional conferencing, presentations, and collaboration environments. Equipped with seven high-sensitivity microphone elements arranged in a precise array, it delivers 360° omnidirectional voice pickup with an impressive range of up to 8 meters, ensuring every participant is heard clearly. Featuring USB 2.0 and 3.5 mm audio interfaces, the RC-700 offers versatile connectivity for seamless integration with conferencing systems, computers, and audio equipment. Powered by USB DC 5V, it provides easy plug-and-play operation without the need for complex setup, making it ideal for meeting rooms, classrooms, and training facilities.",
+
+            keyFeatures: [
+              "360° Omnidirectional Pickup: Built-in 7-microphone circular array for full-room voice capture.",
+              "Long-Range Voice Pickup: Clear audio pickup up to 8 meters.",
+              "Wide Frequency Response: 20 Hz — 16 kHz for natural, full-spectrum audio.",
+              "High-Definition Audio: 32 kHz sampling rate for HD broadband sound.",
+              "Advanced Audio Processing: Supports AEC, ANS, AGC, and reverberation suppression for enhanced clarity.",
+              "USB UAC Protocol Support: Plug-and-play connection with computers and conferencing systems.",
+              "Versatile Connectivity: Includes 1 x 3.5 mm line-in and 2 x 3.5 mm line-out for external audio integration.",
+              "Compact & Lightweight Design: Ø130 mm x H33 mm, only 0.9 kg for easy placement and portability.",
+              "USB Powered: Operates via 5V USB for simple, cable-free installation.",
+              "Modern Aesthetic Design: Sleek, professional look that complements any meeting room interior.",
+              "Low Latency Transmission: Maintains perfect sync for video conferencing and live meetings.",
+              "Ideal for Modern Conferencing: Perfect for corporate boardrooms, classrooms, online meetings, and collaborative workspaces."
+            ],
+
+            applications: [
+              "boardrooms",
+              "classrooms",
+              "auditoriums"
+            ],
+
+            specifications: {
+              "Technical Specifications": {
+                "Microphone Type": "Digital Array Microphone",
+                "Microphone Array": "7 omnidirectional microphones arranged in a circular array",
+                "Pickup Distance": "up to 8 meters",
+                Sensitivity: "-26 dBFS",
+                "Signal-to-Noise Ratio (SNR)": "Greater than 80 dB(A)",
+                "Frequency Response": "20 Hz - 16 kHz",
+                "Sampling Rate": "32 kHz, high-definition broadband audio",
+                "USB Protocol": "UAC support (USB Audio Class)",
+                "Automatic Echo Cancellation (AEC)": "Supported",
+                "Automatic Noise Suppression (ANS)": "Supported",
+                "Automatic Gain Control (AGC)": "Supported",
+                "Reverberation Suppression": "Supported"
+              },
+              "Audio I/O": {
+                "Audio Input": "1 × 3.5 mm line-in",
+                "Audio Output": "2 × 3.5 mm line-out",
+                "USB Interface": "1 × USB audio interface (Type-C or Type-A depending on model)"
+              },
+              "Mechanical Specifications": {
+                Dimensions: "Diameter 130 mm × Height 33 mm",
+                "Net Weight": "0.9 kg",
+                "Form Factor": "Compact, low-profile circular design suitable for desktop or table placement",
+                "Power Input": "USB 5V"
+              },
+              "General Specifications": {
+                "Supported Systems": "Windows, Mac, Linux (via USB UAC protocol)",
+                "Application": "Conference rooms, classrooms, training rooms, meeting spaces"
+              }
+            }
           },
-          {
-            id: "model_rc_702",
-            name: "RC-702",
-            description: "POE Cascading 6-Mic Array – 360° Omnidirectional",
-            images: [
-              "/images/Products/video_conferencing/RC-702.webp",
-            ]
-          },
+         {
+          id: "model_rc_702",
+          name: "RC-702",
+          description: "POE Cascading 6-Mic Array – 360° Omnidirectional, Up to 6 Units Cascade",
+          images: [
+            "/images/Products/video_conferencing/RC-702(1).webp",
+             "/images/Products/video_conferencing/RC-702.webp",
+            "/images/Products/video_conferencing/RC-702(2).webp"
+          ],
+
+          overview: "The Resoundify RC-702 is a high-performance omnidirectional digital array microphone designed for professional conferencing and collaboration environments. Equipped with six built-in microphones arranged in a circular array, it ensures 360° voice pickup with exceptional clarity. Its POE (Power over Ethernet) capability enables easy installation and scalability through cascading multiple units, making it ideal for large meeting rooms, boardrooms, and smart conferencing setups. With POE support, the RC-702 simplifies installation by transmitting both power and audio data over a single network cable, reducing clutter and complexity. Its cascading capability allows multiple microphones to be linked together seamlessly, extending coverage for larger rooms without sacrificing audio quality.",
+
+          keyFeatures: [
+            "360° Omnidirectional Pickup: Captures voices from all directions using a high SNR microphone array for crystal-clear sound.",
+            "Intelligent Audio Processing: Built-in DSP algorithms for automatic noise reduction, echo cancellation, automatic gain control, and voice optimization.",
+            "POE (Power over Ethernet): Delivers power and data through a single cable for simplified installation and clean setup.",
+            "Six-Microphone Cascading: Supports up to six interconnected microphones with coverage up to 150㎡ for large meeting spaces.",
+            "Blind Beamforming Technology: Automatically focuses on active speakers and adapts to room acoustics for improved clarity.",
+            "Flexible Installation Options: Desktop placement or ceiling suspension for fast, neat deployment with reduced maintenance.",
+            "Scalable Conference Setup: Easily expandable for small to large rooms without sacrificing performance.",
+            "Wide Frequency Response: Ensures natural, full-spectrum voice reproduction.",
+            "Low Latency Transmission: Maintains real-time audio sync for video conferencing.",
+            "Modern Aesthetic Design: Sleek, professional look that complements any meeting room interior."
+          ],
+
+          applications: [
+            "boardrooms",
+            "classrooms",
+            "auditoriums"
+          ],
+
+          specifications: {
+            "Technical Specifications": {
+              Type: "Digital array microphone",
+              "Array Configuration": "6 omnidirectional microphones in a circular array for full 360° pickup",
+              Sensitivity: "-38 dBFS",
+              "Signal-to-Noise Ratio (SNR)": "65 dB(A)",
+              "Frequency Response": "50 Hz - 16 kHz",
+              "Sampling Rate": "32 kHz, high-definition broadband audio",
+              "Pickup Distance": "Up to 3 meters (single unit)",
+              "Echo Cancellation": "Supported",
+              "Noise Suppression": "Supported",
+              "Automatic Gain Control": "Supported"
+            },
+            "Cascading & Coverage": {
+              "Cascade Mode": "POE cable",
+              "Maximum Units": "Up to 6 microphones",
+              "Coverage Area": "Up to 150–6㎡ with full cascade"
+            },
+            "Connectivity": {
+              "Network Ports": "RJ45 upstream and downstream networking ports",
+              "USB Interface": "USB Type-C, UAC 1.0 protocol for audio data, firmware upgrades, and parameter configuration",
+              "Analog Audio": "AUX1 & AUX2 linear audio input/output",
+              POE: "48V IEEE 802.3at standard via cascade",
+              "USB Power": "5V / 500mA (single unit)"
+            },
+            "Mechanical Specifications": {
+              Dimensions: "Ø170 mm × H40 mm",
+              "Net Weight": "370 g",
+              "Body Design": "Low-profile, modern round design for minimal visual obstruction",
+              Color: "Professional matte finish"
+            },
+          }
+        },
         ],
       },
       {
@@ -2009,8 +2307,163 @@ export const productsData = [
             name: "RC-VCE",
             description: "4K Smart Detachable Video Conferencing Endpoint Android 12",
             images: [
-              "/images/Products/video_conferencing/RC-VCE.webp",
-            ]
+              "/images/Products/video_conferencing/RC-VCE.webp"
+            ],
+
+            overview: "This Resoundify RC-VCE is designed specifically for various meeting scenarios such as government and enterprise conferences, emergency command, telemedicine, and remote education. Powered by the latest generation processor, it ensures smooth and stable operation of the video conferencing system. With a wealth of audio and video input/output interfaces, it meets the needs of diverse meeting environments. Equipped with Android 12, this device features a powerful 4-core A76 + 4-core A55 high-performance CPU and a 6TOPs AI NPU. Its robust hardware encoding/decoding and signal processing capabilities ensure a stable and smooth conference collaboration experience.",
+
+            keyFeatures: [
+              "High-performance Open Platform: Equipped with Android 12, powerful 4-core A76 + 4-core A55 CPU and 6TOPs AI NPU for stable audio/video processing.",
+              "Dual 4K Video Streaming: Supports simultaneous input of two 4K video signals and output of two 4K streams, expanding conference scenarios.",
+              "Dual-screen Display: Two HDMI outputs allow simultaneous display of conference scenes and shared content (documents, videos, images).",
+              "Built-in Audio Processing Algorithms: Includes AEC, AGC, ANS with full-duplex processing for clear, natural sound quality.",
+              "Quiet Design: Fanless metal shell with excellent heat dissipation for silent, long-term high-frequency operation.",
+              "Multiple Interfaces: Supports USB 3.0, HDMI, RJ45, LINE and more to meet diverse conference needs."
+            ],
+
+            applications: [
+              "boardrooms",
+              "classrooms",
+              "auditoriums"
+            ],
+
+            specifications: {
+              "Standard Specifications": {
+                "Operating System": "Android 12",
+                CPU: "4 × Cortex-A76 + 4 × Cortex-A55",
+                RAM: "4GB",
+                ROM: "16GB EMMC (optional 32GB)"
+              },
+              "Video Specifications": {
+                "Video Encoding": "H.264/H.265, up to 8K30fps",
+                "Video Decoding": "4KP30 (min bandwidth 2048Kbps), 1080p (512Kbps), 720p (384Kbps)",
+                "Active Image Resolution": "4KP30, 1080p, 720p",
+                "Other Image Features": "Dual screen different display"
+              },
+              "Audio Specifications": {
+                Features: "Acoustic Echo Cancellation (AEC), Automatic Gain Control (AGC), Automatic Noise Suppression (ANS), Lip-Sync Supported"
+              },
+              "Network Specifications": {
+                "Network Interface": "1 × RJ45: 10/100/1000 Base-T, 1 × RJ45: 10/100/1000 Base-T (Support 25W PSE)",
+                "Wireless Connectivity": "WiFi 802.11a/b/g/n/ac, Bluetooth 5.2"
+              },
+              "Interface Specifications": {
+                "Audio Input Interface (6 inputs)": "1 × Mini XLR mic input, 1 × 3.5mm linear input, 2 × HDMI embedded audio, 1 × DMIC, 1 × USB",
+                "Audio Output Interface (4 outputs)": "1 × 3.5mm linear output, 2 × HDMI embedded audio, 1 × USB",
+                "Video Input Interface (4 inputs)": "2 × HDMI input, 1 × USB input, 1 × POE input",
+                "Video Output Interface (2 outputs)": "2 × HDMI output",
+                "Power Interface": "1 × DC 12V",
+                Indicator: "1 × Dual-color indicator light",
+                "Infrared Interface": "2 × Infrared interface"
+              },
+              "General Specifications": {
+                Dimension: "Terminal (excluding protrusions): 348mm (W) × 148mm (D) × 37mm (H)",
+                "Power Supply": "DC 12V, Max. Power Consumption: 36W",
+                "Operating Temperature": "0°C ~ 40°C",
+                "Storage Temperature": "-40°C ~ 70°C",
+                "Operating Humidity": "10% ~ 80%",
+                "Non-Operating Humidity": "0% ~ 95% (non-condensing)"
+              }
+            }
+          },
+          {
+            id: "model_rc_10cp",
+            name: "RC-10CP",
+            description: "Zoom meeting controlling Panel - 10.1-inch IPS touch screen, Android 9.0 system",
+            images: [
+              "/images/Products/video_conferencing/RC-10CP.webp"
+            ],
+
+            overview: "This Resoundify RC-10CP 10.1-inch capacitive touch panel operates on the Android 9.0 system, allowing seamless installation of ZOOM Controller and other third-party conference control applications. It is designed to manage conference rooms or video conferencing terminals with ease and flexibility. Equipped with a full SDK, the device supports customized development tailored to various industry requirements. Installation is simple, featuring a built-in adjustable bracket and optional wall-mount capability. For communication, it includes an optional built-in IP phone client with H.323/SIP support, enabling use as an IP phone or audio conference terminal through third-party applications. The device also supports dual power supply modes, offering both USB 5V and PoE input for convenient and reliable power options.",
+
+            keyFeatures: [
+              "Touch Screen with Android System: 10.1-inch capacitive screen with Android 9.0 system, the ZOOM controller and other third-party conference control applications can be installed to control the conference or video conference terminal.",
+              "Full SDK: Full SDK supports customized development for various industry needs.",
+              "Easy Installation: Built-in bracket to adjust angle easily and can be wall mounted.",
+              "Built in IP Phone Client (Optional): Built in H.323/SIP client software, can be used as an IP phone. You can also install third-party conference software as an audio conference terminal.",
+              "Two Power Supply Modes: Support USB 5V and PoE power supply."
+            ],
+
+            applications: [
+              "boardrooms",
+              "classrooms",
+              "auditoriums"
+            ],
+
+            specifications: {
+              "Standard Specifications": {
+                "Operating System": "Android 9.0",
+                Storage: "4GB RAM + 16GB ROM",
+                "Video Codec": "Encoder: H.264/H.265, 1x1080P@60fps; Decoder: VP9 Profile-2 up to 4Kx2K@60fps, H.265 HEVC MP-10@L5.1 up to 4Kx2K@60fps, AVS2-P2 Profile up to 4Kx2K@60fps, H.264 AVC HP@L5.1 up to 4Kx2K@30fps, H.264 MVC up to 1080P@60fps",
+                "Touch Screen": "10.1-inch IPS touch screen with 10-point touch support, Resolution: 1920x1080 (1280x800 optional), Visual angle: 170°",
+                Bluetooth: "5.0",
+                "WIFI Standard": "IEEE802.11a/b/g/n/ac, WPA, WPA2"
+              },
+              "Interface Specifications": {
+                "USB Interface": "1 x USB2.0 Type-C",
+                "Network Interface": "1 x RJ45: 10/100 Base-T, 1 x WiFi"
+              },
+              "General Specifications": {
+                Dimension: "243mm (W) x 164mm (D) x 33mm (H) | Terminal (excluding protrusions): 348mm (W) x 148mm (D) x 37mm (H)",
+                Microphone: "Pickup distance is 2 meters",
+                Speaker: "1 x 1.2W",
+                "Power Supply": "DC 12V, Max. Power Consumption: 36W, Also supports USB 5V and PoE",
+                "Operating Temperature": "0°C ~ 40°C",
+                "Storage Temperature": "-40°C ~ 70°C",
+                "Operating Humidity": "10% ~ 80%",
+                "Non-Operating Humidity": "0% ~ 95% (non-condensing)",
+                "Ambient Noise": "<46dBA SPL",
+                "Certification and Standards": "CCC, RoHS"
+              }
+            }
+          },
+          {
+            id: "model_rc_rec",
+            name: "RC-REC",
+            description: "Professional conferencing recorder with 1 TB",
+            images: [
+              "/images/Products/video_conferencing/RC-REC.webp"
+            ],
+
+            overview: "The Resoundify RC-REC is a compact and portable all-in-one recording and playback device that integrates high-definition video, audio, HDMI, USB, and multiple input/output interfaces, making it ideal for versatile multimedia applications. It supports both HD and SD signal inputs with automatic signal detection and flexible layout options, allowing users to conveniently record video, audio, and computer screen content simultaneously. The system generates standard MP4 video files for easy storage and playback, and also supports local preview and review functions. Featuring HDMI and VGA dual output design, it enables HDMI output for video conferencing displays and VGA output for direct monitoring or control interfaces. Additionally, the device can be managed and controlled through a PC system, providing a user-friendly and efficient solution for recording, streaming, and presentation needs.",
+
+            keyFeatures: [
+              "Compact portable equipment, integrated high-definition video, audio, VGA, USB and other input and output interfaces.",
+              "Support access HD and SD signals, automatic identification signal combined layout pattern of choice, can record video, audio and computer screen simultaneously with local preview playback.",
+              "Recording and generating common MP4 video files.",
+              "You can use PC to manage and control the system.",
+              "HDMI, VGA dual output design. HDMI output for video conference screen, VGA output for directed interface."
+            ],
+
+            applications: [
+              "boardrooms",
+              "classrooms",
+              "auditoriums"
+            ],
+
+            specifications: {
+              "System Specifications": {
+                System: "Embedded Linux operating system",
+                "Output Resolution": "Video Output: 1080P; Directed output: 1080P; HD video: 720P, 1080P",
+                "Video encoding": "H.264 High Profile",
+                "Audio encoding": "AAC",
+                "Recording file format": "MP4",
+                Storage: "Supports 4TB of storage space, with a 1TB hard disk included",
+                Downloads: "USB interface copy or PC client download",
+                Management: "WEB, Front panel buttons, PC management plug-in control",
+                "Live and on-demand": "RTSP standard data stream live, RTMP standard data stream live, TS multicast stream data push, Local decoding preview playback"
+              },
+              "General Specifications": {
+                Size: "440mm × 270mm × 44mm",
+                Weight: "2kg",
+                "Operating temperature": "-20°C ~ 60°C",
+                "Relative humidity": "5% to 95%",
+                "Storage and transport temperature": "-40°C ~ 80°C",
+                "Operating voltage": "DC 12V",
+                "Operating Current": "9.2A",
+                Power: "70W"
+              }
+            }
           },
           // {
           //   id: "model_rc_10cp",
@@ -2037,8 +2490,49 @@ export const productsData = [
             name: "RC-AVB",
             description: "Video Conference AV Bridge",
             images: [
-              "/images/Products/video_conferencing/AV_PROCESSOR.webp",
-            ]
+              "/images/Products/video_conferencing/AV_PROCESSOR.webp"
+            ],
+
+            overview: "The RC-AVB is a professional 6x1+1 seamless scaler switcher with 4× HD/3G-SDI + 2× HDMI inputs and dual HDMI + USB outputs. Delivers true seamless switching (no black/jitter), supports up to 1080p60, and includes an adjustable freeze function (0.5–6 seconds). Works as a powerful USB video bridge for Zoom, Teams, Skype for Business, etc. With RS232 & Ethernet control, it integrates perfectly with central control systems and enables intelligent camera auto-tracking when paired with CLEACON/CLASSIC-D series. Ideal for boardrooms, classrooms, auditoriums, and live events.",
+
+            keyFeatures: [
+              "6x1+1 Seamless Scaler Switcher: 4× SDI + 2× HDMI inputs, true seamless switching with zero black screen or jitter.",
+              "Dual HDMI + USB Output: 1+1 HDMI outputs + 1× USB 2.0 video output for conferencing platforms (Zoom, Teams, Skype).",
+              "1080p60 Max Resolution with full scaling support across all inputs.",
+              "Adjustable Image Freeze: 0.5 to 6 seconds (perfect for transitions).",
+              "USB Video Bridge: Plug-and-play integration with all major soft-codec platforms.",
+              "Control & Auto-Tracking: RS232 + Ethernet control, compatible with CLEACON/CLASSIC-D series for intelligent camera tracking.",
+              "Channel Number Display ON/OFF option for clean presentation look."
+            ],
+
+            applications: [
+              "boardrooms",
+              "classrooms",
+              "auditoriums"
+            ],
+
+            specifications: {
+              "Video Input": {
+                "HDMI Input": "2 × HDMI-A (HDMI 1.3a, HDCP 1.3, DVI 1.0), 165MHz, up to 1080p60, max 95m cable",
+                "SDI Input": "4 × BNC (270Mbps SDI / 1.485Gbps HD-SDI / 2.97Gbps 3G-SDI), up to 1080p60, <100m with certified cable"
+              },
+              "Video Output": {
+                "HDMI Output": "2 × HDMI-A, 165MHz, up to 1080p60 / 1080i60",
+                "USB Output": "1 × USB 2.0 Type-A (UVC video bridge)"
+              },
+              "Control & Mechanical": {
+                "Control Method": "RS232, Ethernet (TCP/IP), Front Panel buttons",
+                Dimensions: "483mm (L) × 260mm (W) × 43.6mm (D) (1U rack)",
+                Weight: "Approx. 3.5kg",
+                "Analog Audio Level": "+4 dBu with 20 dB headroom"
+              },
+              "General Specifications": {
+                "Power Supply": "AC 100-240V universal",
+                "Power Consumption": "15W typical",
+                "Operating Temperature": "0°C ~ 40°C",
+                "Storage Temperature": "-20°C ~ 60°C"
+              }
+            }
           },
         ],
       },
@@ -3007,5 +3501,495 @@ export const productsData = [
       //   ],
       // },
     ],
+  },
+  {
+    id: "brand_dante_paging",
+    name: "Dante Table Top Paging Microphone",
+    category: "dante_paging_microphone",
+    description: "Professional Dante-enabled tabletop paging and announcement microphones with gooseneck design, perfect for conference rooms, auditoriums, control rooms, and public address systems.",
+    image: "/images/Products/dante_paging/dante_paging_banner.webp",
+    type: "brand",
+    series: [
+      {
+        id: "series_dante_paging_gooseneck",
+        name: "Dante Paging Series",
+        description: "High-quality Dante networked tabletop paging microphones with touch-to-talk, priority override, and crystal-clear audio.",
+        image: "/images/Products/dante_paging_series/GMIC-CP(1).webp",
+        features: ["Dante Audio Networking", "Touch-to-Talk Button", "Programmable LED Ring", "Priority Override", "48V Phantom Power"],
+        status: "In Stock",
+        type: "series",
+        models: [
+          {
+            id: "model_gmic_cp",
+            name: "GMIC-CP",
+            description: "Dante microphone with 7-inch Android control panel",
+            images: [
+              "/images/Products/dante_paging_series/GMIC-CP(1).webp",
+              "/images/Products/dante_paging_series/GMIC-CP.webp"
+            ],
+
+            overview: "The GMIC-CP is a professional-grade Dante-enabled gooseneck microphone with an integrated 7-inch Android touch control panel. Featuring a built-in microphone pre-amplifier and fully digital Dante transmission, it delivers exceptional audio quality with flexible analog/digital output switching. The customizable Android interface supports web browser control, app integration, and user-imported UI designs – making it perfect for high-end conference rooms, command centers, and control rooms.",
+
+           keyFeatures: [
+                "7-inch Android Touch Screen: Provides an intuitive control interface with customizable UI design based on the processor.",
+                "Customizable Interface: Supports importing personalized user interfaces for flexible operation.",
+                "Web Browser & App Support: Enables convenient control and system monitoring via Web browsers and dedicated applications.",
+                "Flexible Signal Output: Rear panel source dial allows switching between Analog and Digital (Dante) outputs.",
+                "Dual Signal Handling: In analog mode, outputs via line-out; in digital mode, delivers Dante audio while allowing analog input as Dante receive signal.",
+                "Built-in Microphone Pre-amplifier: Ensures clear, professional-quality sound pickup.",
+                "Stable Digital Transmission: Guarantees reliable audio delivery in mission-critical applications.",
+                "Versatile Applications: Ideal for conferences, boardrooms, command centers, and control rooms."
+              ],
+
+            applications: [
+              "Boardrooms",
+              "Classrooms",
+              "Auditoriums"
+            ],
+
+            specifications: {
+              "System Specifications": {
+                "Operating System": "Android 10.0",
+                Display: "7\" RGB Capacitive Touch Screen, 1024 × 600",
+                Processor: "A133 Quad-core Cortex-A53 1.6GHz 64-bit",
+                RAM: "Amount not specified in document (typically 2GB)",
+                Storage: "16GB",
+                "User Interface": "Web browser + App control, supports custom UI import"
+              },
+              "Microphone Specifications": {
+                "Type": "Condenser gooseneck with 48V phantom power",
+                "Polar Pattern": "Hypercardioid",
+                "Frequency Response": "20 Hz – 20 kHz (±0.6 dB)",
+                "Sensitivity": "-40 dB (1V/Pa)",
+                "Max Output Level": "+13 dBu",
+                "Pre-amp Gain": "0 – 30 dB (1 dB steps)",
+                "Sampling Rate": "48 kHz",
+                "THD+N": "< 0.05%",
+                "SNR": "90 dB",
+                "Dynamic Range": "96 dB (input & output)"
+              },
+              "Audio & Connectivity": {
+                "Dante Channels": "1 × 1 (Tx/Rx)",
+                "Analog Output": "1 × Balanced line-out (switchable)",
+                "Output Modes": "A-Mode: Analog | D-Mode: Dante transmit (analog becomes Dante receive)",
+                "Paging Modes": "Mode 1: Press-to-Talk | Mode 2: Triple-tap Lock",
+                "Power Supply": "12V DC + PoE (simultaneous redundancy supported)"
+              },
+              "Mechanical Specifications": {
+                "Form Factor": "Desktop paging station with gooseneck",
+                Construction: "Metal housing + capacitive touch screen",
+                "Power Input": "DC 12V jack + PoE"
+              }
+            }
+          },
+          {
+            id: "model_gmic_3",
+            name: "GMIC-3",
+            description: "Dante Gooseneck Microphone with Touch Switch",
+            images: [
+              "/images/Products/dante_paging_series/GMIC-3.webp",
+            ],
+
+            overview: "This Resoundify GMIC-3 gooseneck Dante microphone is designed for high-quality audio capture, featuring Dante network transmission, a touch-sensitive switch, and green LED indicator. With a heavy-duty die-cast base and anti-slip shock-absorbing pads, it minimizes table vibration noise, making it ideal for meetings, remote teaching, and broadcasting applications. This square-tube conference microphone integrates Dante functionality, featuring a touch-sensitive switch and a green LED indicator. It is specifically designed for high-quality audio capture scenarios. The heavy-duty die-cast base and shock-absorbing pads effectively reduce table vibration noise, making it an ideal choice for professional applications such as meetings and remote teaching.",
+
+            keyFeatures: [
+              "Dante-Enabled Audio Transmission: Integrated Dante network connectivity ensures high-quality, low-latency digital audio transmission over standard Ethernet.",
+              "High-Quality Audio Capture: Designed specifically for clear and accurate voice pickup, ideal for conferences, remote teaching, and broadcasting.",
+              "Touch-Sensitive Switch: Built-in touch control for convenient microphone ON/OFF operation.",
+              "LED Status Indicator: Green LED indicator provides clear visual confirmation of microphone status.",
+              "Heavy-Duty Die-Cast Base: Robust base construction ensures durability and long-term reliability.",
+              "Shock-Absorbing & Anti-Slip Pads: Effectively minimizes table vibration noise and prevents movement during use.",
+              "Professional Application Ready: Suitable for conference rooms, online classrooms, broadcast environments, and other professional audio scenarios."
+            ],
+
+            applications: [
+              "boardrooms",
+              "classrooms",
+              "auditoriums"
+            ],
+
+            specifications: {
+              "Standard Specifications": {
+                Directivity: "Supercardioid",
+                "Frequency Response": "80-19kHz",
+                "High-Pass Filter": "80Hz, 18dB/octave",
+                Impedance: "1.4 kΩ",
+                "Maximum Input Sound Pressure Level": "-10dBu @ +30dB gain / -20dBu @ +40dB gain / -30dBu @ +50dB gain",
+                "Signal-to-Noise Ratio": "65dB, 1kHz @ 1Pa",
+                "Power Supply": "POE IEEE 802.3af standard",
+                "Output Port": "RJ45",
+                "Mic Tube Length": "370 mm",
+                "Base Dimensions (L x W x H)": "107.5 x 145.9 x 50.8 (mm)",
+                Weight: "0.95kg"
+              }
+            }
+          },
+        ]
+      }
+    ]
+  },
+  {
+  id: "brand_ai_power_av",
+  name: "AI Power Audio Video Solutions",
+  category: "ai_power_av",
+  description: "Next-generation AI-powered all-in-one conferencing endpoints, 4K tracking cameras, smart control panels and professional recording solutions for modern meeting rooms, classrooms and auditoriums.",
+  image: "/images/Products/ai_power_av/ai_power_av_banner.webp",
+  type: "brand",
+  series: [
+    {
+      id: "ai_conferencing_solutions",
+      name: "AI Conferencing Solutions",
+      description: "Complete range of intelligent 4K video bars, detachable endpoints, tracking cameras, control panels and recording systems with AI tracking, Dante AV, Android OS and plug-and-play USB connectivity.",
+      image: "/images/Products/ai_conferencing_solutions/RAI-150.webp",
+      features: [
+        "4K UHD with AI Tracking",
+        "Dante AV & USB Dual Mode",
+      ],
+      status: "In Stock",
+      type: "series",
+      models: [
+        {
+          id: "model_rai_128c",
+          name: "RAI-128C",
+          description: "Dante ceiling mount array microphone",
+          images: [
+            "/images/Products/ai_conferencing_solutions/RAI_128C(1).webp",
+            "/images/Products/ai_conferencing_solutions/RAI_128C(2).webp",
+            "/images/Products/ai_conferencing_solutions/RAI_128C.webp",
+          ],
+
+          overview: "The Resoundify RAI-128C is a flagship high-end ceiling conference microphone. It features a 128-unit omnidirectional microphone array and multiple independently configurable pickup zones. Equipped with advanced AI audio algorithms such as high definition noise reduction, reverberation suppression, and automatic gain control, it seamlessly meets diverse pickup needs across different scenarios. With its 48kHz audio sampling capability, RAI-128C captures intricate sound details, ensuring utmost fidelity. Each RAI-128C unit also comes with built-in feedback suppression algorithms, enabling straightforward sound reinforcement solutions. Utilizing Dante digital audio technology, RAI-128C ensures stable transmission and broad compatibility. With support for POE power supply, it simplifies setup by requiring only a single network cable for both audio transmission and device power. Additionally, RAI-128C offers versatile installation options including suspension pole, suspension rope, and ceiling grid mounting, making it suitable for various installation requirements in different meeting spaces.",
+
+          keyFeatures: [
+            "Personalized Configuration: RAI-128C and its accessories support personalized configuration tailored to various scenarios, which can be achieved by downloading and installing configuration software.",
+            "Call Scene Configuration: Configure remote meeting scenarios via the software, enabling simultaneous setup for multiple devices and pickup zones.",
+            "Sound Reinforcement Scene Configuration: Customize local sound reinforcement scenarios through the software, allowing simultaneous setup for multiple devices and sound reinforcement zones.",
+            "Mixed Scene Configuration: Facilitate mixed configuration for remote calls and local sound reinforcement, supporting multiple devices and overlaying two sound reinforcement zones.",
+            "Device Upgrade: Conduct online upgrades for the ceiling microphone via the software."
+          ],
+
+          applications: [
+            "boardrooms",
+            "classrooms",
+            "auditoriums"
+          ],
+
+          specifications: {
+            "Basic Specifications": {
+              "Product Model": "AIMIC-M100",
+              "Product Color": "White",
+              "Product Size": "597mm × 597mm × 53.5mm",
+              "Net Weight": "5KG",
+              "Power Supply": "PoE"
+            },
+            "Mic Specifications": {
+              "Mic Type": "128-unit MEMS microphone array",
+              Sensitivity: "-38dBV/94dB SPL @1KHz",
+              "Signal-to-Noise Ratio": "65dBV/94dB SPL@1KHz, A-weighted"
+            },
+            "Dante": {
+              "Number of Channels": "2x2",
+              "Remote Meeting/Local Sound Reinforcement Channels": "1/1"
+            },
+            "Audio Performance": {
+              "Remote Conversation Pickup Zones": "8",
+              "Local Amplification Pickup Zones": "8",
+              "Sampling Rate": "48kHz",
+              "Maximum Background Noise Suppression": "35dB",
+              "AI Noise Reduction Suppression": "Support",
+              "AI Reverberation Suppression": "Support",
+              "AI Feedback Suppression": "Support",
+              "AI Echo Cancellation": "Support",
+              "Delay (Automatic Mixing Output, Including Dante)": "<30ms"
+            },
+            "Cascade Performance": {
+              "Cascade Quantity": "Unlimited",
+              "Cascade Method": "Dante audio"
+            },
+            "Interface": {
+              "RJ45 Port": "1 (Dante Audio Transmission, POE)",
+              "Reset Button": "1"
+            }
+          }
+        },
+        {
+          id: "model_rai_150",
+          name: "RAI-150",
+          description: "Multi position camera in the venue AI Speech",
+          images: [
+            "/images/Products/ai_conferencing_solutions/RAI-150.webp",
+            "/images/Products/ai_conferencing_solutions/RAI-150(1).webp",
+            "/images/Products/ai_conferencing_solutions/RAI-150(2).webp"
+          ],
+
+          overview: "The Resoundify RAI-150 system features a 4K UHD image sensor with a 1/2.8-inch CMOS and 8.46 million pixels, delivering exceptional image clarity and detail. It is equipped with a wide-angle lens offering 12x optical zoom and a horizontal viewing angle of up to 72.5° for versatile coverage. The AI Real-Time Subtitles function, when expanded and connected to AI Speech microphones and combined with the AI Speech Ltd public cloud service, provides real-time subtitle overlays during cloud conference scenarios, enhancing meeting efficiency. The AI Voice Linkage feature, when paired with the high-end ceiling microphone system of AI Speech, enables precise audiovisual linkage to accurately capture close-up images of the active speaker. The built-in AI Person Centering algorithm automatically centers the subject when the image is offset, ensuring a consistent and professional frame.",
+
+          keyFeatures: [
+            "Multiple Access and Control Options: The camera can be accessed and controlled through various methods for flexible operation and configuration.",
+            "Client Software (CameraCMS): Set tracking parameters, search for cameras, control camera movement, and change network parameters via the CameraCMS software.",
+            "VLC Access: View the two-channel video stream of the camera directly using VLC media player.",
+            "IE Access: Access the main video stream, control camera functions, and modify network parameters through the Internet Explorer interface.",
+            "Onvif Support: Compatible with Onvif version 2.1 for integration with third-party systems."
+          ],
+
+          applications: [
+            "Boardrooms",
+            "Classrooms",
+            "Auditoriums"
+          ],
+
+          specifications: {
+            "Camera Specifications": {
+              "Imaging Sensor": "1/2.8 inch CMOS, 8.46 Million pixels",
+              "Focal Distance": "f=3.9mm–46.8mm",
+              "Iris Diaphragm": "F1.6–F2.8",
+              "Optical Zoom": "12x",
+              "Digital Zoom": "16x",
+              "Horizontal Field of View": "72.5°–6.3°",
+              "Shutter Speed": "1/60–1/10,000 second",
+              "White Balance": "Automatic, Manual, One-button trigger, Automatic tracking, One-key white balance, Static color temperature",
+              "Exposure Control": "Automatic, Manual, Shutter priority, Aperture priority, Brightness priority",
+              "Wide Dynamic": "Available",
+              "Signal-to-Noise Ratio": "≥50dB",
+              "Anti-Flashing": "Support"
+            },
+            "PTZ Specifications": {
+              "Horizontal Rotation Range": "-130° ~ +130°",
+              "Vertical Rotation Range": "-30° ~ +90°",
+              "Horizontal Rotation Speed": "0.2° ~ 90°/second",
+              "Vertical Rotation Speed": "0.2° ~ 60°/second",
+              "Preset Positions": "256"
+            },
+            "Interface Specifications": {
+              "HDMI": "1 × HDMI 1.4 (4KP30/P25, 1080P60 etc.)",
+              "3G-SDI": "1 × 3G-SDI (1080P60/P50/P30/P25, 720P60 etc.)",
+              "USB 3.0": "1 × USB 3.0 Type-B (UVC 1.1, YUY2/NV12/MJPEG/H.264/H.265)",
+              "USB 2.0": "1 × USB 2.0 Type-A HOST",
+              "Network": "1 × 10/100M RJ-45 POE",
+              "Audio Input": "1 × LINE IN 3.5mm, 1 × REF 3.5mm",
+              "Control Interface": "1 × RS-485, 1 × RS-232 IN",
+              "Power Interface": "DC 12V"
+            },
+            "General Specifications": {
+              "Power Consumption": "< 20W",
+              "Operating Temperature": "0°C ~ 40°C",
+              "Operating Humidity": "10% RH ~ 90% RH",
+              "Storage Temperature": "-20°C ~ +60°C",
+              "Storage Humidity": "10% RH ~ 95% RH",
+              "Weight": "≈2kg",
+              "Color": "Elegant gray",
+              "Control Protocol": "VISCA"
+            }
+          }
+        },
+        {
+          id: "model_rai_tb",
+          name: "RAI-TB",
+          description: "Intelligent AI Audio-Visual Tracking & Switching Box – Supports 6 Cameras",
+          images: [
+            "/images/Products/ai_conferencing_solutions/RAI-TB.webp",
+            "/images/Products/ai_conferencing_solutions/RAI-TB(1).webp",
+            "/images/Products/ai_conferencing_solutions/RAI-TB(5).webp",
+            "/images/Products/ai_conferencing_solutions/RAI-TB(3).webp",
+            "/images/Products/ai_conferencing_solutions/RAI-TB(4).webp",
+
+
+          ],
+
+          overview: "The Resoundify AIVIS-MT100 is a high-performance AI Audio-Visual Tracking Box developed by AI-Speech, designed to deliver intelligent and seamless tracking for modern conferencing environments. Compact and easy to deploy, it is ideal for enterprise meeting rooms, training centers, university lecture halls, and other professional venues. Equipped with advanced AI image processing technologies—including face recognition, body posture recognition, and image stitching—the MT100 ensures precise and dynamic visual tracking. When integrated with AI-Speech's high-end ceiling microphones, its DOA (Direction of Arrival) technology accurately locates speakers' voices and synchronizes with multiple PTZ cameras to automatically track participants and their movements in real time. Supporting up to six cameras simultaneously and unlimited ceiling microphones, the MT100 provides a high-definition, low-latency audio-visual experience that enhances both local and hybrid conference scenarios.",
+
+          keyFeatures: [
+            "Supports linkage with the spatial DOA capabilities of AI-Speech high-end ceiling microphones to precisely capture close-up shots of the speaker.",
+            "Supports a WEB UI configuration interface, facilitating easy control of multiple video streams and supporting the configuration of preset point screens and panoramic screens.",
+            "Incorporates an AI intelligent screen scheduling algorithm for real-time adjustment of the output screen.",
+            "Supports 1 USB3.0 video output with a maximum support of 4KP30.",
+            "Supports 6 network inputs and 1 HDMI IN interface input, and provides support for HDMI OUT, USB, and LAN interface outputs.",
+            "USB3.0 supports H.264/H.265/MJPEG video encoding and is compliant with UAC/UVC protocols.",
+            "HDMI supports a maximum resolution of 4KP30."
+          ],
+
+          applications: [
+            "Boardrooms",
+            "Classrooms",
+            "Auditoriums"
+          ],
+
+          specifications: {
+            "System Specifications": {
+              "Maximum Resolution": "4K @ 30fps Output",
+              "Video Compression": "H.265/H.264/MJPEG",
+              "Video Input": "Maximum support for 4K @ 30fps input (6 × Network + 1 × HDMI IN reserved)",
+              "Video Output": "Maximum support for 4K @ 30fps output",
+              "Video Switching": "Built-in AI algorithm, supports automatic video switching",
+              "Audio Interface": "1 × LINE IN, 1 × LINE OUT (3.5mm)"
+            },
+            "Interface Specifications": {
+              "HDMI": "1 × HDMI-IN (Reserved), 1 × HDMI-OUT (supports audio output, 4KP30, 1080P30/25, 720P30/25)",
+              "USB": "1 × USB2.0 Host (Reserved), 1 × USB3.0 Device (USB3.0 compatible with USB2.0)",
+              "Network": "1 × RJ-45, 10M/100M adaptive Ethernet port, standard POE, Supports WEB UI configuration and video preview",
+              "TF Card": "1 × external Micro SD card, up to 256GB"
+            },
+            "General Specifications": {
+              "Power": "DC 12V",
+              "Operating Temperature": "0°C ~ +40°C",
+              "Storage Temperature": "-20°C ~ +40°C",
+              "Dimensions": "119 mm × 104 mm × 29 mm",
+              "Weight": "0.2KG"
+            }
+          }
+        },
+              
+      ]
+    }
+  ]
+  },
+  {
+  id: "brand_control_panel",
+  name: "Control Panel",
+  category: "control_panel",
+  description: "Smart touchscreen wall panels for intuitive AV, lighting, and room automation control.",
+  image: "/images/Products/audio_dsp/Ominipanel8.webp",
+  type: "brand",
+  status: "In Stock",
+  series: [
+    {
+        id: "series_control_panel_accessories",
+        name: "Control panel and accessories",
+        description: "Intuitive control solutions and accessories for seamless audio system management.",
+        image: "/images/Products/audio_dsp/Ominipanel8.webp",
+        features: ["Touchscreen Interfaces", "Dante Microphones", "Integrated Control"],
+        status: "In Stock",
+        type: "series",
+        models: [
+           {
+            id: "model_omni_panel3",
+            name: "OmniPanel3",
+            description: "VC and SS with LCD Screen and Rotary Knob – Aurispro Series",
+            images: [
+              "/images/Products/audio_dsp/omnipanel3.webp"
+            ],
+             overview: `The Resoundify OmniPane13 is a modern, user-centric control interface designed for conference rooms,
+                      boardrooms, and AV-integrated environments. It combines Volume Control (VC) and Source Selector (SS)
+                      control into a single intuitive wall-mounted unit, offering real-time interaction and effortless operation.
+                      The OmniPane13 is a premium-grade, multi-function wall control panel designed for seamless integration
+                      with professional Volume Control (VC) and Source Selector (SS). Tailored for high-end meeting
+                      environments, the OmniPane13 provides a highly intuitive, ergonomic, and interactive control solution that
+                      simplifies room technology for everyday users.`,
+
+             keyFeatures: [
+                    "High-Resolution Multi-Touch Display: The OmniPane13 features a high-quality LCD screen with clear visual feedback and customizable UI layouts. It delivers a smooth and intuitive interface for real-time control of video conferencing systems, audio levels, input sources, and presets — all in one sleek panel.",
+                    "Seamless Ethernet Connectivity: Equipped with a Gigabit Ethernet port and Power over Ethernet (PoE), the panel ensures fast data transmission, simplified wiring, and flexible installation across networked environments.",
+                    "Modern Mechanical Design: Its slim, wall-mountable form factor and optional mounting accessories allow for seamless integration into a variety of architectural settings.",
+                    "Secure & Maintainable Platform: Advanced encryption protocols and remote firmware update capabilities ensure long-term reliability, security, and ease of maintenance."
+                  ],
+
+             applications: [
+              "Classrooms",
+              "Boardrooms",
+              "Auditoriums",
+            ],
+
+           specifications: {
+              "System Specifications": {
+                "Power": "DC 12V 1.5A & PoE IEEE 802.3at",
+                "Display Type": "IPS",
+                "Compatibility": "Can be used with a full range of processors",
+                "Display": "With OLED highlight",
+                "Display Colors": "16.7M",
+                "Display Orientation": "Landscape (horizontal), or portrait (vertical)",
+                "Display Viewing Angle": "±85° horizontal, ±85° vertical"
+              },
+              "Mechanical Specifications": {
+                "Screen Size": "1.13 inches"
+              }
+            },
+          },
+          {
+            id: "model_omni_panel4",
+            name: "OmniPanel4",
+            description: "4 inch control panel",
+            images: [
+              "/images/Products/audio_dsp/omnipanel4.webp"
+            ],
+
+            overview: "The Resoundify OmniPanel4 is a compact and intelligent 4-inch touch control panel designed for streamlined control in smart buildings, hospitality, and AV automation environments. Despite its small footprint, the panel delivers powerful performance with an intuitive capacitive touch interface, real-time processing, and seamless integration with multiple communication protocols such as TCP/IP. Equipped with PoE-enabled Ethernet connectivity, the OmniPanel4 simplifies installation by combining power and data over a single cable. Its responsive UI supports scene control, lighting dimming, HVAC adjustments, and more — all from a sleek wall-mounted device. With robust security, remote configuration support, and compatibility with major automation platforms, the OmniPanel4 is ideal for use in guest rooms, meeting spaces, and high-end residential applications.",
+
+            keyFeatures: [
+              "High-Resolution Multi-Touch Display: The panel features a 4-inch capacitive multi-touch screen with gesture support, delivering a responsive and user-friendly interface for real-time control and monitoring applications.",
+              "Seamless Ethernet Connectivity: Equipped with a Gigabit Ethernet port and Power over Ethernet (PoE), the panel ensures fast data transmission, simplified wiring, and flexible installation across networked environments.",
+              "Customized User Interface: The OmniPanel4 uses award-winning Omni graphic user interface authoring technology, allowing control screens to be created, tested, and simulated before deployment. Multiple pages, custom controls, backgrounds, logos, and more can be created quickly and easily.",
+              "Modern Mechanical Design: Its slim, wall-mountable form factor and optional mounting accessories allow for seamless integration into a variety of architectural settings."
+            ],
+
+            applications: [
+              "Classrooms",
+              "Boardrooms",
+              "Auditoriums",
+            ],
+
+            specifications: {
+              "System Specifications": {
+                Power: "DC 12V 1.5A & PoE IEEE 802.3at",
+                "Display Type": "4-inch TFT touch screen",
+                Compatibility: "Can be used with a full range of processors",
+                "Control protocol": "UDP, TCP/IP",
+                "Address setting method": "RJ-45",
+                "Control functions": "Support 32 control functions; Supports volume control, mute, scene calling, matrix switching, and central control functions",
+                "Display Resolution": "gray",
+                "Display Colors": "16.7M",
+                "Display Orientation": "Landscape (horizontal), or portrait (vertical)",
+                "Display Viewing Angle": "±85° horizontal, ±85° vertical"
+              },
+              "Mechanical Specifications": {
+                "Screen Size": "4 inches",
+                "Product size (WxH)": "88 x 88mm"
+              }
+            },
+          },
+        {
+          id: "model_omni_panel8",
+          name: "OmniPanel8",
+          description: "8 inch control panel",
+          images: [
+            "/images/Products/audio_dsp/Ominipanel8.webp"
+          ],
+
+          overview: "The Resoundify OmniPanel8 is a sleek and powerful 8-inch capacitive touch control panel designed for seamless control of AV systems, lighting, HVAC, and other automation functions. Engineered for both commercial and residential applications, it features a vibrant high-resolution display, intuitive UI, and network connectivity, enabling it to serve as the central interface in modern smart environments. With support for custom graphical layouts, control scripting, and integration with third-party systems (via TCP/IP, RS-232), the OmniPanel8 delivers flexibility and performance for meeting rooms, classrooms, control centers, and luxury living spaces. Wall-mountable and PoE-powered, it offers both a clean aesthetic and simple installation.",
+
+          keyFeatures: [
+            "High-Resolution Multi-Touch Display: The OmniPanel8 features an 8-inch capacitive multi-touch screen with gesture support, providing an intuitive and responsive user interface for control and monitoring.",
+            "Seamless Ethernet Connectivity: Equipped with a Gigabit Ethernet port and Power over Ethernet (PoE), the panel ensures fast data transmission, simplified wiring, and flexible installation across networked environments.",
+            "Modern Mechanical Design: Its slim, wall-mountable form factor and optional mounting accessories allow for seamless integration into a variety of architectural settings.",
+            "Secure & Maintainable Platform: Advanced encryption protocols and remote firmware update capabilities ensure long-term reliability, security, and ease of maintenance.",
+          ],
+
+          applications: [
+            "Classrooms",
+            "Boardrooms",
+            "Auditoriums",
+          ],
+
+          specifications: {
+            "System Specifications": {
+              Power: "DC 12V 1.5A & PoE IEEE 802.3at",
+              "Display Type": "IPS",
+              Compatibility: "Supports DSP volume, mute, preset, matrix mixing, and device status detection controls",
+              "Display Resolution": "1280000",
+              "Display Aspect Ratio": "16:9",
+              "Display Contrast Ratio": "800:1",
+              "Display Colors": "16.7M",
+              "Display Orientation": "Landscape (horizontal), or portrait (vertical)",
+              "Display Viewing Angle": "±85° horizontal, ±85° vertical"
+            },
+            "Mechanical Specifications": {
+              "Screen Size": "8 inches",
+              Dimensions: "212.2x147.6x31mm",
+              "Product Weight": "0.7kg"
+            }
+          },
+        },
+        ],
+      },
+  ]
   },
 ];

@@ -418,6 +418,7 @@ const ProductDetailPage = () => {
             'model_vc_ptz12_dante': '/datasheets/video-conferencing-solution/VC-PTZ12-DANTE.pdf',
             'model_vc_ptz16_dante': '/datasheets/video-conferencing-solution/VC-PTZ16-DANTE.pdf',
             'model_vc_ptz20_dante': '/datasheets/video-conferencing-solution/VC-PTZ20-DANTE.pdf',
+            'model_vc_ptz30_dante': '/datasheets/video-conferencing-solution/VC-PTZ30-DANTE.pdf',
 
             'model_omni_panel3': '/datasheets/control-panel/OmniPanel3.pdf',
             'model_omni_panel4': '/datasheets/control-panel/OmniPanel4.pdf',
@@ -433,6 +434,29 @@ const ProductDetailPage = () => {
             'model_sp_fiber_kvm_2': '/datasheets/av-over-ip/streampro-series/StreamPro-100ASEN-DE.pdf',
             'model_sp_avp2000_fiber_3': '/datasheets/av-over-ip/streampro-series/StreamPro-100ASLEN-DE.pdf',
             'model_sp_avp1000_fiber_6': '/datasheets/av-over-ip/streampro-series/StreamPro100ATF.pdf',
+
+            'model_rc_10cp': '/datasheets/video-conferencing-solution/RC-10CP.pdf',
+            'model_rc_rec': '/datasheets/video-conferencing-solution/RC-REC.pdf',
+            'model_rc_vce': '/datasheets/video-conferencing-solution/RC-VCE.pdf',
+
+            'model_vc_auto2': '/datasheets/video-conferencing-solution/VC-AUTO2-DANTE.pdf',
+            'model_vc_auto4': '/datasheets/video-conferencing-solution/VC-AUTO4-DANTE.pdf',
+            'model_rc_avb': '/datasheets/video-conferencing-solution/RC-AVB.pdf',
+
+            // Dante Paging Series
+            'model_gmic_cp': '/datasheets/dante-paging-microphone/GMIC-CP.pdf',
+            'model_gmic_3': '/datasheets/dante-paging-microphone/GMIC-3.pdf',
+
+            // Video Conferencing Microphones
+            'model_rc_700': '/datasheets/video-conferencing-solution/RC-700.pdf',
+            'model_rc_702': '/datasheets/video-conferencing-solution/RC-702.pdf',
+            'model_st_400': '/datasheets/video-conferencing-solution/ST-400.pdf',
+            'model_st_200': '/datasheets/video-conferencing-solution/ST-200.pdf',
+
+            'model_rai_128c': '/datasheets/ai_conferencing_solutions/RAI-128C.pdf',
+            'model_rai_150': '/datasheets/ai_conferencing_solutions/RAI-150.pdf',
+            'model_rai_tb': '/datasheets/ai_conferencing_solutions/RAI-TB.pdf'
+
         };
 
         const pdfPath =
