@@ -1,6 +1,6 @@
 export const productsData = [
   {
-    id: "brand_audio_dsp",
+    id: "brand-audio-dsp",
     name: "Audio DSP Solutions",
     category: "audio_dsp",
     description: "Advanced Digital Signal Processing units for superior audio control.",
@@ -8,7 +8,7 @@ export const productsData = [
     type: "brand",
     series: [
       {
-        id: "series_aurispro",
+        id: "series-aurispro",
         name: "AurisPro Series",
         description: "Cutting-edge Dante audio interfaces for professional sound.",
         image: "/images/Products/audio_dsp/aurispro44d.webp",
@@ -16,8 +16,8 @@ export const productsData = [
         status: "In Stock",
         type: "series",
         models: [
-         {
-            id: "model_ap_44d",
+          {
+            id: "model-ap-44d",
             name: "AurisPro-44D",
             description: "4 in, 4 out DSP, 1/2 rack, 4x4 Dante",
             images: [
@@ -104,94 +104,94 @@ export const productsData = [
           },
 
           {
-              id: "model_ap_88d",
-              name: "AurisPro-88D",
-              description: "8 in, 8 out DSP, 8x8 Dante",
-              images: [
-                "/images/Products/audio_dsp/aurispro88d.webp"
-              ],
-              overview: `The Resoundify AurisPro-88D is a professional-grade 8x8 Digital Signal Processor (DSP) designed for high-performance audio applications in conferencing, commercial AV, and integrated systems. With native support for Dante™ audio networking, and built-in AEC (Acoustic Echo Cancellation) and ANC (Automatic Noise Cancellation) on all mic inputs, it ensures crystal-clear voice and audio transmission in even the most acoustically challenging environments. This versatile DSP features 8 balanced analog inputs and 8 balanced outputs, along with 8x8 Dante digital channels, enabling seamless integration with modern AV networks. The AurisPro-88D supports flexible routing, powerful DSP tools (EQ, dynamics, delay, etc.), and remote control via Ethernet or RS-232, making it an ideal solution for medium to large meeting rooms, boardrooms, lecture halls, and hybrid AV environments.`,
-              keyFeatures: [
-                "Professional SHARC DSP Core: Powered by Analog Devices’ SHARC processor for advanced, low-latency signal processing.",
-                "High-Quality Audio Processing: 24-bit/48kHz audio resolution ensures crystal-clear sound quality across all channels.",
-                "Intelligent Feedback Suppression: Adaptive per-channel feedback elimination to reduce howling or mic interference.",
-                "Full-Duplex AEC & ANC: Integrated Adaptive Echo Cancellation and Active Noise Cancellation per channel for flawless communication.",
-                "Auto Mixer & Gain Control: Features Gain Sharing Auto Mixer, AGC, and Ducker for smooth level balancing in real-time.",
-                "Ambient Noise Compensation: Dynamically adjusts levels based on background noise fluctuations.",
-                "Comprehensive Audio Matrix: Fully configurable 8x8 routing matrix with input duplication, grouping, level, and mute control.",
-                "Expandable Control Options: 8 configurable GPIOs (input/output/ADC), RS-232 & UDP support with assignable ports for central control systems.",
-                "Multi-Platform Compatibility: Supports both iOS and Windows OS with dual USB audio interface for recording and conferencing."
-              ],
-              controlSoftware: {
-                title: "Control Software",
-                name: "AuriControl+",
-                description: `AuriControl+ is our dedicated configuration software, available for free download from our official website. Designed with a user-friendly interface, it allows users to easily tailor the matrix settings to match the specific needs of any installation. With this software, you can configure a wide range of parameters, including:`,
-                parameters: [
-                  "Input Gain",
-                  "Expander",
-                  "Compressor & Limiter",
-                  "Auto Gain Control (AGC)",
-                  "Equalizer",
-                  "Figure Balancer",
-                  "Active Noise Control (ANC)",
-                  "Noise Suppression (ANS)",
-                  "Matrix",
-                  "Low & High Pass Filters",
-                  "Delayer",
-                  "Output",
-                  "Feedback (AFC)",
-                  "Noise Gate",
-                  "Ducker",
-                  "SPL",
-                  "Share AM (Automixer)",
-                  "Echo Canceller (AEC)",
-                  "Camera Tracking"
-                ]
-              },
-              applications: ["Auditoriums", "Boardrooms", "Classrooms"],
-              specifications: {
-                "System Specifications": {
-                  "Processor": "ADI SHARC 21489@450 MHz SIMD",
-                  "Raw Processing Capacity": "400 MIPS, 1.6 GFLOPS",
-                  "Sampling Rate": "48 kHz ± 100 ppm",
-                  "Frequency Response (A/D/A)": "20 Hz – 20 kHz ± 0.5 dB",
-                  "Dynamic Range (A/D/A)": "113 dB (A-weighted)",
-                  "THD + Noise": "< -95 dB (22.4 kHz BW, unweighted); 1 kHz @ +17 dBu, 0 dB gain",
-                  "Channel Separation (A/D/A)": "108 dB @ 1 kHz, +24 dBu",
-                  "Latency (A/D/A)": "<3 ms (input routed directly to output)",
-                  "Delay Memory": "174 mono seconds",
-                  "Analog Control Inputs": "0–3.3 VDC",
-                  "Recommended External Control Potentiometer": "10k Ohm, linear taper",
-                  "Logic Outputs": "Low (0 V) when active; Pulled high (5 V) when inactive",
-                  "Logic Output Maximum External Power Supply / Current Sinking": "24 VDC / 50 mA",
-                  "Logic Output Maximum Output Current": "10 mA",
-                  "RS-232 Accessory Serial I/O": "57.6 kbps (default), 8 data bits, 1 stop bit, no parity, Straight-through wiring; pins 2, 3, 5 used",
-                  "AEC Channel": "1-bus AEC",
-                  "Maximum Stored Presets": "16 storable presets"
-                },
-                "Analog Inputs and Outputs": {
-                  "Number of Analog Inputs": "8 switchable balanced mic or line level",
-                  "Analog Input and Output Connectors": "3.81 mm terminal blocks",
-                  "Nominal Analog Input and Output Level": "+4 dBu with 20 dB headroom",
-                  "Analog Input and Output Maximum Level": "+24 dBu (or +22.8 dBu into a 2k Ohm minimum load)",
-                  "Analog Mic Pre-amp Gain": "0 to 51 dB (in 3 dB steps) with ±24 dB digital trim",
-                  "Analog Mic Pre-amp EIN": "< -125 dB (with 150 Ohm source, 22.4 kHz BW)",
-                  "Analog Input Impedance": "2k Ohms balanced, 1k Ohms unbalanced",
-                  "Analog Phantom Power (per input)": "+48 VDC per input, max 10 mA",
-                  "Analog Input Dynamic Range": ">115 dB, A-weighted",
-                  "Analog Input THD + Noise": "< -100 dB (22.4 kHz BW, unweighted), 1 kHz @ +15 dBu, 0 dB gain",
-                  "Analog Input Latency": "0.31 ms",
-                  "Number of Analog Outputs": "8 balanced line level",
-                  "Analog Output Impedance": "300 Ohms balanced, 150 Ohms unbalanced",
-                  "Analog Output Dynamic Range": "117 dB, A-weighted",
-                  "Analog Output THD + Noise": "< -97 dB (22.4 kHz BW, unweighted); 1 kHz, 0 dB gain, +8 dBu output",
-                  "Analog Output Latency": "0.31 ms"
-                }
-              }
+            id: "model-ap-88d",
+            name: "AurisPro-88D",
+            description: "8 in, 8 out DSP, 8x8 Dante",
+            images: [
+              "/images/Products/audio_dsp/aurispro88d.webp"
+            ],
+            overview: `The Resoundify AurisPro-88D is a professional-grade 8x8 Digital Signal Processor (DSP) designed for high-performance audio applications in conferencing, commercial AV, and integrated systems. With native support for Dante™ audio networking, and built-in AEC (Acoustic Echo Cancellation) and ANC (Automatic Noise Cancellation) on all mic inputs, it ensures crystal-clear voice and audio transmission in even the most acoustically challenging environments. This versatile DSP features 8 balanced analog inputs and 8 balanced outputs, along with 8x8 Dante digital channels, enabling seamless integration with modern AV networks. The AurisPro-88D supports flexible routing, powerful DSP tools (EQ, dynamics, delay, etc.), and remote control via Ethernet or RS-232, making it an ideal solution for medium to large meeting rooms, boardrooms, lecture halls, and hybrid AV environments.`,
+            keyFeatures: [
+              "Professional SHARC DSP Core: Powered by Analog Devices’ SHARC processor for advanced, low-latency signal processing.",
+              "High-Quality Audio Processing: 24-bit/48kHz audio resolution ensures crystal-clear sound quality across all channels.",
+              "Intelligent Feedback Suppression: Adaptive per-channel feedback elimination to reduce howling or mic interference.",
+              "Full-Duplex AEC & ANC: Integrated Adaptive Echo Cancellation and Active Noise Cancellation per channel for flawless communication.",
+              "Auto Mixer & Gain Control: Features Gain Sharing Auto Mixer, AGC, and Ducker for smooth level balancing in real-time.",
+              "Ambient Noise Compensation: Dynamically adjusts levels based on background noise fluctuations.",
+              "Comprehensive Audio Matrix: Fully configurable 8x8 routing matrix with input duplication, grouping, level, and mute control.",
+              "Expandable Control Options: 8 configurable GPIOs (input/output/ADC), RS-232 & UDP support with assignable ports for central control systems.",
+              "Multi-Platform Compatibility: Supports both iOS and Windows OS with dual USB audio interface for recording and conferencing."
+            ],
+            controlSoftware: {
+              title: "Control Software",
+              name: "AuriControl+",
+              description: `AuriControl+ is our dedicated configuration software, available for free download from our official website. Designed with a user-friendly interface, it allows users to easily tailor the matrix settings to match the specific needs of any installation. With this software, you can configure a wide range of parameters, including:`,
+              parameters: [
+                "Input Gain",
+                "Expander",
+                "Compressor & Limiter",
+                "Auto Gain Control (AGC)",
+                "Equalizer",
+                "Figure Balancer",
+                "Active Noise Control (ANC)",
+                "Noise Suppression (ANS)",
+                "Matrix",
+                "Low & High Pass Filters",
+                "Delayer",
+                "Output",
+                "Feedback (AFC)",
+                "Noise Gate",
+                "Ducker",
+                "SPL",
+                "Share AM (Automixer)",
+                "Echo Canceller (AEC)",
+                "Camera Tracking"
+              ]
             },
+            applications: ["Auditoriums", "Boardrooms", "Classrooms"],
+            specifications: {
+              "System Specifications": {
+                "Processor": "ADI SHARC 21489@450 MHz SIMD",
+                "Raw Processing Capacity": "400 MIPS, 1.6 GFLOPS",
+                "Sampling Rate": "48 kHz ± 100 ppm",
+                "Frequency Response (A/D/A)": "20 Hz – 20 kHz ± 0.5 dB",
+                "Dynamic Range (A/D/A)": "113 dB (A-weighted)",
+                "THD + Noise": "< -95 dB (22.4 kHz BW, unweighted); 1 kHz @ +17 dBu, 0 dB gain",
+                "Channel Separation (A/D/A)": "108 dB @ 1 kHz, +24 dBu",
+                "Latency (A/D/A)": "<3 ms (input routed directly to output)",
+                "Delay Memory": "174 mono seconds",
+                "Analog Control Inputs": "0–3.3 VDC",
+                "Recommended External Control Potentiometer": "10k Ohm, linear taper",
+                "Logic Outputs": "Low (0 V) when active; Pulled high (5 V) when inactive",
+                "Logic Output Maximum External Power Supply / Current Sinking": "24 VDC / 50 mA",
+                "Logic Output Maximum Output Current": "10 mA",
+                "RS-232 Accessory Serial I/O": "57.6 kbps (default), 8 data bits, 1 stop bit, no parity, Straight-through wiring; pins 2, 3, 5 used",
+                "AEC Channel": "1-bus AEC",
+                "Maximum Stored Presets": "16 storable presets"
+              },
+              "Analog Inputs and Outputs": {
+                "Number of Analog Inputs": "8 switchable balanced mic or line level",
+                "Analog Input and Output Connectors": "3.81 mm terminal blocks",
+                "Nominal Analog Input and Output Level": "+4 dBu with 20 dB headroom",
+                "Analog Input and Output Maximum Level": "+24 dBu (or +22.8 dBu into a 2k Ohm minimum load)",
+                "Analog Mic Pre-amp Gain": "0 to 51 dB (in 3 dB steps) with ±24 dB digital trim",
+                "Analog Mic Pre-amp EIN": "< -125 dB (with 150 Ohm source, 22.4 kHz BW)",
+                "Analog Input Impedance": "2k Ohms balanced, 1k Ohms unbalanced",
+                "Analog Phantom Power (per input)": "+48 VDC per input, max 10 mA",
+                "Analog Input Dynamic Range": ">115 dB, A-weighted",
+                "Analog Input THD + Noise": "< -100 dB (22.4 kHz BW, unweighted), 1 kHz @ +15 dBu, 0 dB gain",
+                "Analog Input Latency": "0.31 ms",
+                "Number of Analog Outputs": "8 balanced line level",
+                "Analog Output Impedance": "300 Ohms balanced, 150 Ohms unbalanced",
+                "Analog Output Dynamic Range": "117 dB, A-weighted",
+                "Analog Output THD + Noise": "< -97 dB (22.4 kHz BW, unweighted); 1 kHz, 0 dB gain, +8 dBu output",
+                "Analog Output Latency": "0.31 ms"
+              }
+            }
+          },
 
           // {
-          //   id: "model_ap_1212d",
+          //   id: "model-ap-1212d",
           //   name: "Auris Pro-1212D",
           //   description: "12 in, 12 out DSP, 8x8 Dante",
           //   images: [
@@ -200,147 +200,147 @@ export const productsData = [
           //   ]
           // },
           {
-              id: "model_ap_1616d",
-              name: "AurisPro-1616D",
-              description: "16 in, 16 out DSP, 16x16 Dante",
-              images: [
-                "/images/Products/audio_dsp/aurispro1616.webp"
-              ],
-              overview: "The Resoundify AurisPro-1616D is a flagship-grade 16×16 Advanced Audio Digital Signal Processor (DSP) designed for large-scale, mission-critical AV installations. Powered by the ADI SHARC DSP platform, it delivers robust performance, ultra-low latency, and professional-grade audio processing. With 16 balanced analog inputs and 16 balanced outputs, plus 16×16 Dante™ audio networking, this system is built for high-capacity audio routing and processing. Ideal for enterprise-level applications, the AurisPro-1616D includes full-duplex AEC (Acoustic Echo Cancellation) and ANC (Automatic Noise Cancellation) on all mic inputs, ensuring crystal-clear communication in challenging acoustic environments. It also features intelligent auto mixing, feedback suppression, gain sharing, and ambient noise compensation — making it a complete solution for conferencing, courtrooms, broadcast studios, and more.",
-              keyFeatures: [
-                "Professional SHARC DSP Core: Delivers powerful processing using Analog Devices’ renowned SHARC platform, ensuring low-latency performance and customization potential.",
-                "High-Quality Audio Processing: 24-bit/48kHz audio resolution ensures crystal-clear sound quality across all channels.",
-                "Intelligent Feedback Suppression: Adaptive per-channel feedback elimination for consistent, interference-free audio.",
-                "Full-Duplex AEC & ANC: Integrated Adaptive Echo Cancellation and Active Noise Cancellation per channel for flawless communication.",
-                "Auto Mixer & Gain Control: Features Gain Sharing Auto Mixer, AGC, and Ducker for smooth level balancing in real-time.",
-                "Ambient Noise Compensation: Dynamically adjusts levels based on background noise fluctuations.",
-                "Comprehensive Audio Matrix: Fully configurable 16×16 routing matrix with input duplication, grouping, level, and mute control.",
-                "Expandable Control Options: 8 configurable GPIOs (input/output/ADC), RS-232 & UDP support with assignable ports for central control systems.",
-                "Multi-Platform Compatibility: Supports both iOS and Windows OS with dual USB audio interface for recording and conferencing.",
-                "Dual Power Support: Operates on PoE or DC 12V for flexible power deployment."
-              ],
-              controlSoftware: {
-                "title": "Control Software",
-                "name": "AuriControl+",
-                "description": "AuriControl+ is our dedicated configuration software, available for free download from our official website. Designed with a user-friendly interface, it allows users to easily tailor the matrix settings to match the specific needs of any installation. With this software, you can configure a wide range of parameters, including:",
-                "parameters": [
-                  "Input Gain",
-                  "Expander",
-                  "Compressor & Limiter",
-                  "Auto Gain Control (AGC)",
-                  "Equalizer",
-                  "Figure Balancer",
-                  "Active Noise Control (ANC)",
-                  "Noise Suppression (ANS)",
-                  "Matrix",
-                  "Low & High Pass Filters",
-                  "Delayer",
-                  "Output",
-                  "Feedback (AFC)",
-                  "Noise Gate",
-                  "Ducker",
-                  "SPL",
-                  "Share AM (Automixer)",
-                  "Echo Canceller (AEC)",
-                  "Camera Tracking"
-                ]
-              },
-              applications: [
-                "Auditoriums",
-                "Classrooms",
-                "Boardrooms"
-              ],
-              specifications: {
-                "System Specifications": {
-                  "Processor": "ADI SHARC 21489@450 MHz SIMDx2",
-                  "Raw Processing Capacity": "400 MIPS, 1.6 GFLOPS",
-                  "Sampling Rate": "48 kHz ± 100 ppm",
-                  "Frequency Response (A/D/A)": "20 Hz – 20 kHz ± 0.5 dB",
-                  "Dynamic Range (A/D/A)": "114 dB (A-weighted)",
-                  "THD + Noise": "< -95 dB (22.4 kHz BW, unweighted); 1 kHz @ +17 dBu, 0 dB gain",
-                  "Channel Separation (A/D/A)": "110 dB @ 1 kHz, +24 dBu",
-                  "Latency (A/D/A)": "1.04 ms (input routed directly to output)",
-                  "Delay Memory": "174 mono seconds",
-                  "Analog Control Inputs": "0–3.3 VDC",
-                  "Recommended External Control Potentiometer": "10k Ohm, linear taper",
-                  "Logic Outputs": "Low (0 V) when active; Pulled high (5 V) when inactive",
-                  "Logic Output Maximum External Power Supply / Current Sinking": "24 VDC / 50 mA",
-                  "Logic Output Maximum Output Current": "10 mA",
-                  "RS-232 Accessory Serial I/O": "57.6 kbps (default), 8 data bits, 1 stop bit, no parity; Straight-through wiring; pins 2, 3, 5 used",
-                  "Ethernet Cable": "Standard CAT5/6, max 100 m (328 ft)",
-                  "Maximum Stored Presets": "1,000 storable presets"
-                },
-                "Analog Inputs and Outputs": {
-                  "Number of Analog Inputs": "16 switchable balanced mic or line level",
-                  "Analog Input and Output Connectors": "3.81 mm terminal blocks",
-                  "Nominal Analog Input and Output Level": "+4 dBu with 20 dB headroom",
-                  "Analog Input and Output Maximum Level": "+24 dBu (or +22.8 dBu into a 2k Ohm minimum load)",
-                  "Analog Mic Pre-amp Gain": "0 to 51 dB (in 3 dB steps) with ±24 dB digital trim",
-                  "Analog Mic Pre-amp EIN": "< -125 dB (with 150 Ohm source, 22.4 kHz BW)",
-                  "Analog Input Impedance": "2k Ohms balanced, 1k Ohms unbalanced",
-                  "Analog Phantom Power (per input)": "+48 VDC per input, max 10 mA",
-                  "Analog Input Dynamic Range": ">115 dB, A-weighted",
-                  "Analog Input THD + Noise": "< -100 dB (22.4 kHz BW, unweighted), 1 kHz @ +15 dBu, 0 dB gain",
-                  "Analog Input Latency": "0.31 ms",
-                  "Number of Analog Outputs": "16 balanced line level",
-                  "Analog Output Impedance": "300 Ohms balanced, 150 Ohms unbalanced",
-                  "Analog Output Dynamic Range": "117 dB, A-weighted",
-                  "Analog Output THD + Noise": "< -97 dB (22.4 kHz BW, unweighted); 1 kHz, 0 dB gain, +8 dBu output",
-                  "Analog Output Latency": "0.31 ms"
-                }
-              }
+            id: "model-ap-1616d",
+            name: "AurisPro-1616D",
+            description: "16 in, 16 out DSP, 16x16 Dante",
+            images: [
+              "/images/Products/audio_dsp/aurispro1616.webp"
+            ],
+            overview: "The Resoundify AurisPro-1616D is a flagship-grade 16×16 Advanced Audio Digital Signal Processor (DSP) designed for large-scale, mission-critical AV installations. Powered by the ADI SHARC DSP platform, it delivers robust performance, ultra-low latency, and professional-grade audio processing. With 16 balanced analog inputs and 16 balanced outputs, plus 16×16 Dante™ audio networking, this system is built for high-capacity audio routing and processing. Ideal for enterprise-level applications, the AurisPro-1616D includes full-duplex AEC (Acoustic Echo Cancellation) and ANC (Automatic Noise Cancellation) on all mic inputs, ensuring crystal-clear communication in challenging acoustic environments. It also features intelligent auto mixing, feedback suppression, gain sharing, and ambient noise compensation — making it a complete solution for conferencing, courtrooms, broadcast studios, and more.",
+            keyFeatures: [
+              "Professional SHARC DSP Core: Delivers powerful processing using Analog Devices’ renowned SHARC platform, ensuring low-latency performance and customization potential.",
+              "High-Quality Audio Processing: 24-bit/48kHz audio resolution ensures crystal-clear sound quality across all channels.",
+              "Intelligent Feedback Suppression: Adaptive per-channel feedback elimination for consistent, interference-free audio.",
+              "Full-Duplex AEC & ANC: Integrated Adaptive Echo Cancellation and Active Noise Cancellation per channel for flawless communication.",
+              "Auto Mixer & Gain Control: Features Gain Sharing Auto Mixer, AGC, and Ducker for smooth level balancing in real-time.",
+              "Ambient Noise Compensation: Dynamically adjusts levels based on background noise fluctuations.",
+              "Comprehensive Audio Matrix: Fully configurable 16×16 routing matrix with input duplication, grouping, level, and mute control.",
+              "Expandable Control Options: 8 configurable GPIOs (input/output/ADC), RS-232 & UDP support with assignable ports for central control systems.",
+              "Multi-Platform Compatibility: Supports both iOS and Windows OS with dual USB audio interface for recording and conferencing.",
+              "Dual Power Support: Operates on PoE or DC 12V for flexible power deployment."
+            ],
+            controlSoftware: {
+              "title": "Control Software",
+              "name": "AuriControl+",
+              "description": "AuriControl+ is our dedicated configuration software, available for free download from our official website. Designed with a user-friendly interface, it allows users to easily tailor the matrix settings to match the specific needs of any installation. With this software, you can configure a wide range of parameters, including:",
+              "parameters": [
+                "Input Gain",
+                "Expander",
+                "Compressor & Limiter",
+                "Auto Gain Control (AGC)",
+                "Equalizer",
+                "Figure Balancer",
+                "Active Noise Control (ANC)",
+                "Noise Suppression (ANS)",
+                "Matrix",
+                "Low & High Pass Filters",
+                "Delayer",
+                "Output",
+                "Feedback (AFC)",
+                "Noise Gate",
+                "Ducker",
+                "SPL",
+                "Share AM (Automixer)",
+                "Echo Canceller (AEC)",
+                "Camera Tracking"
+              ]
             },
+            applications: [
+              "Auditoriums",
+              "Classrooms",
+              "Boardrooms"
+            ],
+            specifications: {
+              "System Specifications": {
+                "Processor": "ADI SHARC 21489@450 MHz SIMDx2",
+                "Raw Processing Capacity": "400 MIPS, 1.6 GFLOPS",
+                "Sampling Rate": "48 kHz ± 100 ppm",
+                "Frequency Response (A/D/A)": "20 Hz – 20 kHz ± 0.5 dB",
+                "Dynamic Range (A/D/A)": "114 dB (A-weighted)",
+                "THD + Noise": "< -95 dB (22.4 kHz BW, unweighted); 1 kHz @ +17 dBu, 0 dB gain",
+                "Channel Separation (A/D/A)": "110 dB @ 1 kHz, +24 dBu",
+                "Latency (A/D/A)": "1.04 ms (input routed directly to output)",
+                "Delay Memory": "174 mono seconds",
+                "Analog Control Inputs": "0–3.3 VDC",
+                "Recommended External Control Potentiometer": "10k Ohm, linear taper",
+                "Logic Outputs": "Low (0 V) when active; Pulled high (5 V) when inactive",
+                "Logic Output Maximum External Power Supply / Current Sinking": "24 VDC / 50 mA",
+                "Logic Output Maximum Output Current": "10 mA",
+                "RS-232 Accessory Serial I/O": "57.6 kbps (default), 8 data bits, 1 stop bit, no parity; Straight-through wiring; pins 2, 3, 5 used",
+                "Ethernet Cable": "Standard CAT5/6, max 100 m (328 ft)",
+                "Maximum Stored Presets": "1,000 storable presets"
+              },
+              "Analog Inputs and Outputs": {
+                "Number of Analog Inputs": "16 switchable balanced mic or line level",
+                "Analog Input and Output Connectors": "3.81 mm terminal blocks",
+                "Nominal Analog Input and Output Level": "+4 dBu with 20 dB headroom",
+                "Analog Input and Output Maximum Level": "+24 dBu (or +22.8 dBu into a 2k Ohm minimum load)",
+                "Analog Mic Pre-amp Gain": "0 to 51 dB (in 3 dB steps) with ±24 dB digital trim",
+                "Analog Mic Pre-amp EIN": "< -125 dB (with 150 Ohm source, 22.4 kHz BW)",
+                "Analog Input Impedance": "2k Ohms balanced, 1k Ohms unbalanced",
+                "Analog Phantom Power (per input)": "+48 VDC per input, max 10 mA",
+                "Analog Input Dynamic Range": ">115 dB, A-weighted",
+                "Analog Input THD + Noise": "< -100 dB (22.4 kHz BW, unweighted), 1 kHz @ +15 dBu, 0 dB gain",
+                "Analog Input Latency": "0.31 ms",
+                "Number of Analog Outputs": "16 balanced line level",
+                "Analog Output Impedance": "300 Ohms balanced, 150 Ohms unbalanced",
+                "Analog Output Dynamic Range": "117 dB, A-weighted",
+                "Analog Output THD + Noise": "< -97 dB (22.4 kHz BW, unweighted); 1 kHz, 0 dB gain, +8 dBu output",
+                "Analog Output Latency": "0.31 ms"
+              }
+            }
+          },
 
           {
-              id: "model_ap_6464d",
-              name: "AurisPro-6464D",
-              description: "0 in, 0 out DSP, 64x64 Dante",
-              images: [
-                "/images/Products/audio_dsp/aurispro6464.webp"
-              ],
-              overview: "The Resoundify AurisPro-6464D is a high-performance, enterprise-class 64x64 Audio Digital Signal Processor (DSP) engineered for large-scale, professional AV installations. Designed for audio environments that demand extensive input/output capacity and uncompromising processing power, this DSP is built on the Analog Devices SHARC DSP platform and supports full Dante™ audio networking (64x64 channels). With built-in AEC (Acoustic Echo Cancellation) and ANC (Automatic Noise Cancellation) on all mic channels, the AurisPro-6464D guarantees crystal-clear voice pickup and reliable audio clarity in high-density conferencing or broadcast setups. It features intelligent audio tools such as auto-mixing, adaptive feedback suppression, AGC, ducking, and ambient noise compensation, all configurable through an intuitive interface.",
-              keyFeatures: [
-                "Professional SHARC DSP Core: Delivers powerful processing using Analog Devices’ renowned SHARC platform, ensuring low-latency performance and customization potential.",
-                "High-Quality Audio Processing: 24-bit/48kHz audio resolution ensures crystal-clear sound quality across all channels.",
-                "Intelligent Feedback Suppression: Adaptive per-channel feedback elimination for consistent, interference-free audio.",
-                "Full-Duplex AEC & ANC: Integrated Adaptive Echo Cancellation and Active Noise Cancellation per channel for flawless communication.",
-                "Auto Mixer & Gain Control: Features Gain Sharing Auto Mixer, AGC, and Ducker for smooth level balancing in real-time.",
-                "Ambient Noise Compensation: Dynamically adjusts levels based on background noise fluctuations.",
-                "Expandable Control Options: 8 configurable GPIOs (input/output/ADC), RS-232 & UDP support with assignable ports for central control systems.",
-                "Multi-Platform Compatibility: Supports both iOS and Windows OS with dual USB audio interface for recording and conferencing."
-              ],
-              applications: [
-                "Auditoriums",
-                "Classrooms",
-                "Boardrooms"
-              ],
-              specifications: {
-                "System Specifications": {
-                  "Processor": "ADI SHARC 21489 @ 450 MHz SIMDx2",
-                  "Raw Processing Capacity": "400 MIPS, 1.6 GFLOPS",
-                  "Sampling Rate": "48 kHz ± 100 ppm",
-                  "Frequency Response (A/D/A)": "20 Hz – 20 kHz ± 0.3 dB",
-                  "Dynamic Range (A/D/A)": "114 dB (A-weighted)",
-                  "THD + Noise": "< -95 dB (22.4 kHz BW, unweighted); 1 kHz @ +17 dBu, 0 dB gain",
-                  "Channel Separation (A/D/A)": "110 dB @ 1 kHz, +24 dBu",
-                  "Latency (A/D/A)": "<6 ms (input routed directly to output)",
-                  "Delay Memory": "174 mono seconds",
-                  "Analog Control Inputs": "0–3.3 VDC",
-                  "Recommended External Control Potentiometer": "10k Ohm, linear taper",
-                  "Logic Outputs": "Low (0 V) when active; Pulled high (5 V) when inactive",
-                  "Logic Output Maximum External Power Supply / Current Sinking": "24 VDC / 50 mA",
-                  "Logic Output Maximum Output Current": "10 mA",
-                  "RS-232 Accessory Serial I/O": "57.6 kbps (default), 8 data bits, 1 stop bit, no parity; Straight-through wiring; pins 2, 3, 5 used",
-                  "AEC Channel": "1-bus AEC",
-                  "Maximum Stored Presets": "16 storable presets",
-                  "Dimension": "482 x 260 x 45 mm"
-                }
+            id: "model-ap-6464d",
+            name: "AurisPro-6464D",
+            description: "0 in, 0 out DSP, 64x64 Dante",
+            images: [
+              "/images/Products/audio_dsp/aurispro6464.webp"
+            ],
+            overview: "The Resoundify AurisPro-6464D is a high-performance, enterprise-class 64x64 Audio Digital Signal Processor (DSP) engineered for large-scale, professional AV installations. Designed for audio environments that demand extensive input/output capacity and uncompromising processing power, this DSP is built on the Analog Devices SHARC DSP platform and supports full Dante™ audio networking (64x64 channels). With built-in AEC (Acoustic Echo Cancellation) and ANC (Automatic Noise Cancellation) on all mic channels, the AurisPro-6464D guarantees crystal-clear voice pickup and reliable audio clarity in high-density conferencing or broadcast setups. It features intelligent audio tools such as auto-mixing, adaptive feedback suppression, AGC, ducking, and ambient noise compensation, all configurable through an intuitive interface.",
+            keyFeatures: [
+              "Professional SHARC DSP Core: Delivers powerful processing using Analog Devices’ renowned SHARC platform, ensuring low-latency performance and customization potential.",
+              "High-Quality Audio Processing: 24-bit/48kHz audio resolution ensures crystal-clear sound quality across all channels.",
+              "Intelligent Feedback Suppression: Adaptive per-channel feedback elimination for consistent, interference-free audio.",
+              "Full-Duplex AEC & ANC: Integrated Adaptive Echo Cancellation and Active Noise Cancellation per channel for flawless communication.",
+              "Auto Mixer & Gain Control: Features Gain Sharing Auto Mixer, AGC, and Ducker for smooth level balancing in real-time.",
+              "Ambient Noise Compensation: Dynamically adjusts levels based on background noise fluctuations.",
+              "Expandable Control Options: 8 configurable GPIOs (input/output/ADC), RS-232 & UDP support with assignable ports for central control systems.",
+              "Multi-Platform Compatibility: Supports both iOS and Windows OS with dual USB audio interface for recording and conferencing."
+            ],
+            applications: [
+              "Auditoriums",
+              "Classrooms",
+              "Boardrooms"
+            ],
+            specifications: {
+              "System Specifications": {
+                "Processor": "ADI SHARC 21489 @ 450 MHz SIMDx2",
+                "Raw Processing Capacity": "400 MIPS, 1.6 GFLOPS",
+                "Sampling Rate": "48 kHz ± 100 ppm",
+                "Frequency Response (A/D/A)": "20 Hz – 20 kHz ± 0.3 dB",
+                "Dynamic Range (A/D/A)": "114 dB (A-weighted)",
+                "THD + Noise": "< -95 dB (22.4 kHz BW, unweighted); 1 kHz @ +17 dBu, 0 dB gain",
+                "Channel Separation (A/D/A)": "110 dB @ 1 kHz, +24 dBu",
+                "Latency (A/D/A)": "<6 ms (input routed directly to output)",
+                "Delay Memory": "174 mono seconds",
+                "Analog Control Inputs": "0–3.3 VDC",
+                "Recommended External Control Potentiometer": "10k Ohm, linear taper",
+                "Logic Outputs": "Low (0 V) when active; Pulled high (5 V) when inactive",
+                "Logic Output Maximum External Power Supply / Current Sinking": "24 VDC / 50 mA",
+                "Logic Output Maximum Output Current": "10 mA",
+                "RS-232 Accessory Serial I/O": "57.6 kbps (default), 8 data bits, 1 stop bit, no parity; Straight-through wiring; pins 2, 3, 5 used",
+                "AEC Channel": "1-bus AEC",
+                "Maximum Stored Presets": "16 storable presets",
+                "Dimension": "482 x 260 x 45 mm"
               }
-            },
+            }
+          },
         ],
       },
       {
-        id: "series_echoprime",
+        id: "series-echoprime",
         name: "EchoPrime Series",
         description: "Versatile DSPs with Acoustic Echo Cancellation (AEC) for clear audio conferencing.",
         image: "/images/Products/audio_dsp/EchoPrime-88AEC.webp",
@@ -348,14 +348,14 @@ export const productsData = [
         status: "In Stock",
         type: "series",
         models: [
-              {
-                id: "model_ap_88d",
-                name: "EchoPrime-88AEC",
-                description: "8 in, 8 out DSP, 8x8 Dante",
-                images: [
-                  "/images/Products/audio_dsp/aurispro88d.webp",
-                ],
-                overview: `The Resoundify EchoPrime-88AEC is a professional-grade Digital Signal Processor (DSP) designed for audio
+          {
+            id: "model-ap-88d",
+            name: "EchoPrime-88AEC",
+            description: "8 in, 8 out DSP, 8x8 Dante",
+            images: [
+              "/images/Products/audio_dsp/aurispro88d.webp",
+            ],
+            overview: `The Resoundify EchoPrime-88AEC is a professional-grade Digital Signal Processor (DSP) designed for audio
                       processing applications such as conferencing, broadcasting, and AV installations. It features an 8×8 matrix,
                       meaning it supports 8 input and 8 output channels, allowing flexible routing and audio mixing capabilities.
                       The unit is equipped with 4 channels of Acoustic Echo Cancellation (AEC), making it ideal for clear, echo-free
@@ -365,101 +365,101 @@ export const productsData = [
                       input/output configuration, it allows for powerful audio signal management, routing, and processing
                       between multiple microphones, loudspeakers, and external audio sources.`,
 
-                keyFeatures: [
-                  "Professional SHARC DSP Core: Harnesses the robust ADI SHARC architecture to deliver ultra-fast, high-precision audio processing with exceptional flexibility for complex audio designs.",
-                  "High-Quality Audio Processing: 24-bit/48kHz audio resolution ensures crystal-clear sound quality across all channels.",
-                  "Intelligent Feedback Suppression: Independent adaptive feedback suppression on each channel automatically eliminates unwanted noise.",
-                  "Full-Duplex AEC & ANC: Integrated Adaptive Echo Cancellation and Active Noise Cancellation for clear communication in conferencing environments.",
-                  "Auto Mixer & Gain Control: Built-in Gain Sharing Auto Mixer, Automatic Gain Control (AGC), and Audio Ducking (Ducker) for seamless level balancing.",
-                  "Ambient Noise Compensation: Real-time Ambient Noise Compensator (ANC) adjusts audio levels based on environmental sound.",
-                  "Comprehensive Audio Matrix: A flexible 8×8 audio matrix allows for routing, duplication, linking, grouping, and level control of all inputs and outputs with granular precision.",
-                  "Expandable Control Options: 8 configurable GPIOs (input/output/ADC), RS-232 & UDP support with assignable ports for central control systems.",
-                  "Multi-Platform Compatibility: Supports both iOS and Windows OS with dual USB audio interface for recording and conferencing.",
-                  "Dual Power Support: Operates on PoE or DC 12V for flexible power deployment."
-                ],
+            keyFeatures: [
+              "Professional SHARC DSP Core: Harnesses the robust ADI SHARC architecture to deliver ultra-fast, high-precision audio processing with exceptional flexibility for complex audio designs.",
+              "High-Quality Audio Processing: 24-bit/48kHz audio resolution ensures crystal-clear sound quality across all channels.",
+              "Intelligent Feedback Suppression: Independent adaptive feedback suppression on each channel automatically eliminates unwanted noise.",
+              "Full-Duplex AEC & ANC: Integrated Adaptive Echo Cancellation and Active Noise Cancellation for clear communication in conferencing environments.",
+              "Auto Mixer & Gain Control: Built-in Gain Sharing Auto Mixer, Automatic Gain Control (AGC), and Audio Ducking (Ducker) for seamless level balancing.",
+              "Ambient Noise Compensation: Real-time Ambient Noise Compensator (ANC) adjusts audio levels based on environmental sound.",
+              "Comprehensive Audio Matrix: A flexible 8×8 audio matrix allows for routing, duplication, linking, grouping, and level control of all inputs and outputs with granular precision.",
+              "Expandable Control Options: 8 configurable GPIOs (input/output/ADC), RS-232 & UDP support with assignable ports for central control systems.",
+              "Multi-Platform Compatibility: Supports both iOS and Windows OS with dual USB audio interface for recording and conferencing.",
+              "Dual Power Support: Operates on PoE or DC 12V for flexible power deployment."
+            ],
 
-                applications: [
-                  "Conference Rooms",
-                  "Boardrooms",
-                  "Auditoriums",
-                ],
+            applications: [
+              "Conference Rooms",
+              "Boardrooms",
+              "Auditoriums",
+            ],
 
-                specifications: {
-                  "System Specifications": {
-                    "Processor": "ADI SHARC 21489 x 2",
-                    "Raw Processing Capacity": "500 MIPS, 6 GFLOPS, 2 GMACS",
-                    "Sampling Rate": "48 kHz ± 100 ppm",
-                    "Frequency Response (A/D/A)": "20 Hz – 20 kHz ± 0.5 dB",
-                    "Dynamic Range (A/D/A)": "113 dB (A-weighted)",
-                    "THD + Noise": "< -95 dB (22.4 kHz BW, unweighted); 1 kHz @ +17 dBu, 0 dB gain",
-                    "Channel Separation (A/D/A)": "110 dB @ 1 kHz, +24 dBu",
-                    "Latency (A/D/A)": "<3 ms (input routed directly to output)",
-                    "Delay Memory": "174 mono seconds",
-                    "Analog Control Inputs": "0–3.3 VDC",
-                    "Recommended External Control Potentiometer": "10k Ohm, linear taper",
-                    "Logic Outputs": "Low (0 V) when active Pulled high (5 V) when inactive",
-                    "Logic Output Maximum External Power Supply / Current Sinking": "24 VDC / 50 mA",
-                    "Logic Output Maximum Output Current": "10 mA",
-                    "RS-232 Accessory Serial I/O": "57.6 kbps (default), 8 data bits, 1 stop bit, no parity, Straight-through wiring; pins 2, 3, 5 used",
-                    "AEC Channel": "4-bus AEC",
-                    "Maximum Stored Presets": "16 storable presets"
-                  },
-                  "Analog Inputs and Outputs": {
-                    "Number of Analog Inputs": "8 switchable balanced mic or line level",
-                    "Analog Input and output Connectors": "3.81 mm terminal blocks",
-                    "Nominal Analog Input and output Level": "+4 dBu with 20 dB headroom",
-                    "Analog Input and output Maximum Level": "+24 dBu (or +22.8 dBu into a 2k Ohm minimum load)",
-                    "Analog Mic Pre-amp Gain": "0 to 51 dB (in 3 dB steps) with ±24 dB digital trim",
-                    "Analog Mic Pre-amp EIN": "< -125 dB (with 150 Ohm source, 22.4 kHz BW)",
-                    "Analog Input Impedance": "2k Ohms balanced, 1k Ohms unbalanced",
-                    "Analog Phantom Power (per input)": "+48 VDC per input, max 10 mA",
-                    "Analog Input Dynamic Range": ">115 dB, A-weighted",
-                    "Analog Input THD + Noise": "<-100 dB (22.4 kHz BW, unweighted), 1 kHz @ +15 dBu, 0 dB gain",
-                    "Analog Input Latency": "1 ms",
-                    "Number of Analog Outputs": "8 balanced line level",
-                    "Analog Output Impedance": "300 Ohms balanced, 150 Ohms unbalanced",
-                    "Analog Output Dynamic Range": "117 dB, A-weighted",
-                    "Analog Output THD + Noise": "< -97 dB (22.4 kHz BW, unweighted); 1 kHz, 0 dB gain, +8 dBu output",
-                    "Analog Output Latency": "1.5 ms",
-                    "Dimensions" : "482 x 260 x 45mm",
-                    "AEC Number of Channels":  "4 Channels",
-                    "AEC Tail Length 512 ms" : "suitable for medium rooms",
-                    "AEC Convergence Rate" : "  Typically > 90 dB/sec",
-                    "AEC Latency" : "16 mS",
-                    "AEC Processors" : "ADI SHARC 21489@450 MHz"
-                  },
-                },
-
-                controlSoftware: {
-                title: "Control Software",
-                name: "AuriControl+",
-                description: "AuriControl+ is our dedicated configuration software, available for free download from our official website. Designed with a user-friendly interface, it allows users to easily tailor the matrix settings to match the specific needs of any installation. With this software, you can configure a wide range of parameters, including:",
-                parameters: [
-                  "Input gain",
-                  "Expander",
-                  "Compressor & Limiter",
-                  "Auto Gain Control (AGC)",
-                  "Equalizer",
-                  "Figure Balancer",
-                  "Active Noise Control (ANC)",
-                  "Noise Suppression (ANS)",
-                  "Matrix",
-                  "Low & High Pass filters",
-                  "Delayer",
-                  "Output",
-                  "Feedback (AFC)",
-                  "Noise gate",
-                  "Ducker",
-                  "SPL",
-                  "Share AM (Automixer)",
-                  "Echo Canceller (AEC)",
-                  "Camera Tracking"
-                ]
-              }
+            specifications: {
+              "System Specifications": {
+                "Processor": "ADI SHARC 21489 x 2",
+                "Raw Processing Capacity": "500 MIPS, 6 GFLOPS, 2 GMACS",
+                "Sampling Rate": "48 kHz ± 100 ppm",
+                "Frequency Response (A/D/A)": "20 Hz – 20 kHz ± 0.5 dB",
+                "Dynamic Range (A/D/A)": "113 dB (A-weighted)",
+                "THD + Noise": "< -95 dB (22.4 kHz BW, unweighted); 1 kHz @ +17 dBu, 0 dB gain",
+                "Channel Separation (A/D/A)": "110 dB @ 1 kHz, +24 dBu",
+                "Latency (A/D/A)": "<3 ms (input routed directly to output)",
+                "Delay Memory": "174 mono seconds",
+                "Analog Control Inputs": "0–3.3 VDC",
+                "Recommended External Control Potentiometer": "10k Ohm, linear taper",
+                "Logic Outputs": "Low (0 V) when active Pulled high (5 V) when inactive",
+                "Logic Output Maximum External Power Supply / Current Sinking": "24 VDC / 50 mA",
+                "Logic Output Maximum Output Current": "10 mA",
+                "RS-232 Accessory Serial I/O": "57.6 kbps (default), 8 data bits, 1 stop bit, no parity, Straight-through wiring; pins 2, 3, 5 used",
+                "AEC Channel": "4-bus AEC",
+                "Maximum Stored Presets": "16 storable presets"
+              },
+              "Analog Inputs and Outputs": {
+                "Number of Analog Inputs": "8 switchable balanced mic or line level",
+                "Analog Input and output Connectors": "3.81 mm terminal blocks",
+                "Nominal Analog Input and output Level": "+4 dBu with 20 dB headroom",
+                "Analog Input and output Maximum Level": "+24 dBu (or +22.8 dBu into a 2k Ohm minimum load)",
+                "Analog Mic Pre-amp Gain": "0 to 51 dB (in 3 dB steps) with ±24 dB digital trim",
+                "Analog Mic Pre-amp EIN": "< -125 dB (with 150 Ohm source, 22.4 kHz BW)",
+                "Analog Input Impedance": "2k Ohms balanced, 1k Ohms unbalanced",
+                "Analog Phantom Power (per input)": "+48 VDC per input, max 10 mA",
+                "Analog Input Dynamic Range": ">115 dB, A-weighted",
+                "Analog Input THD + Noise": "<-100 dB (22.4 kHz BW, unweighted), 1 kHz @ +15 dBu, 0 dB gain",
+                "Analog Input Latency": "1 ms",
+                "Number of Analog Outputs": "8 balanced line level",
+                "Analog Output Impedance": "300 Ohms balanced, 150 Ohms unbalanced",
+                "Analog Output Dynamic Range": "117 dB, A-weighted",
+                "Analog Output THD + Noise": "< -97 dB (22.4 kHz BW, unweighted); 1 kHz, 0 dB gain, +8 dBu output",
+                "Analog Output Latency": "1.5 ms",
+                "Dimensions": "482 x 260 x 45mm",
+                "AEC Number of Channels": "4 Channels",
+                "AEC Tail Length 512 ms": "suitable for medium rooms",
+                "AEC Convergence Rate": "  Typically > 90 dB/sec",
+                "AEC Latency": "16 mS",
+                "AEC Processors": "ADI SHARC 21489@450 MHz"
+              },
             },
 
+            controlSoftware: {
+              title: "Control Software",
+              name: "AuriControl+",
+              description: "AuriControl+ is our dedicated configuration software, available for free download from our official website. Designed with a user-friendly interface, it allows users to easily tailor the matrix settings to match the specific needs of any installation. With this software, you can configure a wide range of parameters, including:",
+              parameters: [
+                "Input gain",
+                "Expander",
+                "Compressor & Limiter",
+                "Auto Gain Control (AGC)",
+                "Equalizer",
+                "Figure Balancer",
+                "Active Noise Control (ANC)",
+                "Noise Suppression (ANS)",
+                "Matrix",
+                "Low & High Pass filters",
+                "Delayer",
+                "Output",
+                "Feedback (AFC)",
+                "Noise gate",
+                "Ducker",
+                "SPL",
+                "Share AM (Automixer)",
+                "Echo Canceller (AEC)",
+                "Camera Tracking"
+              ]
+            }
+          },
+
           {
-            id: "model_ep_b88",
+            id: "model-ep-b88",
             name: "EchoPrime-B88",
             description: "8 in, 8 out DSP",
             images: [
@@ -476,57 +476,57 @@ export const productsData = [
                         processing performance and routing flexibility for medium to large-scale AV integration projects. Powered by
                         the BEIDOU DSP core, this processor is engineered to meet the dynamic demands of professional audio
                         environments, including conference systems, educational networks, multi-room installations, and broadcastgrade setups.`
-                        ,
-              keyFeatures: [
-                    "Professional SHARC DSP Core: Powered by ADI SHARC platform with semi-open architecture for flexibility and high-performance processing.",
-                    "High-Quality Audio Processing: 24-bit/48kHz audio resolution ensures crystal-clear sound quality across all channels.",
-                    "Intelligent Feedback Suppression: Independent adaptive feedback suppression on each channel automatically eliminates unwanted noise.",
-                    "Auto Mixer & Gain Control: Built-in Gain Sharing Auto Mixer, Automatic Gain Control (AGC), and Audio Ducking (Ducker) for seamless level balancing.",
-                    "Ambient Noise Compensation: Real-time gain adjustment based on room noise levels ensures consistent and comfortable listening even in fluctuating environments.",
-                    "Comprehensive Audio Matrix: Flexible mixing matrix with input level control, channel duplication, linking, and grouping.",
-                    "Expandable Control Options: 8 configurable GPIOs (input/output/ADC), RS-232 & UDP support with assignable ports for central control systems.",
-                    "Multi-Platform Compatibility: Supports both iOS and Windows OS with dual USB audio interface for recording and conferencing."
-                  ],
+            ,
+            keyFeatures: [
+              "Professional SHARC DSP Core: Powered by ADI SHARC platform with semi-open architecture for flexibility and high-performance processing.",
+              "High-Quality Audio Processing: 24-bit/48kHz audio resolution ensures crystal-clear sound quality across all channels.",
+              "Intelligent Feedback Suppression: Independent adaptive feedback suppression on each channel automatically eliminates unwanted noise.",
+              "Auto Mixer & Gain Control: Built-in Gain Sharing Auto Mixer, Automatic Gain Control (AGC), and Audio Ducking (Ducker) for seamless level balancing.",
+              "Ambient Noise Compensation: Real-time gain adjustment based on room noise levels ensures consistent and comfortable listening even in fluctuating environments.",
+              "Comprehensive Audio Matrix: Flexible mixing matrix with input level control, channel duplication, linking, and grouping.",
+              "Expandable Control Options: 8 configurable GPIOs (input/output/ADC), RS-232 & UDP support with assignable ports for central control systems.",
+              "Multi-Platform Compatibility: Supports both iOS and Windows OS with dual USB audio interface for recording and conferencing."
+            ],
 
-              applications: [
-                "Conference Rooms",
-                "Boardrooms",
-                "Auditoriums",
-              ],
+            applications: [
+              "Conference Rooms",
+              "Boardrooms",
+              "Auditoriums",
+            ],
 
-              specifications: {
-                  "System Specifications": {
-                    "Processor": "ADI SHARC 21489@450 MHz SIMD",
-                    "Raw Processing Capacity": "500 MIPS, 6 GFLOPS, 2 GMACS",
-                    "Sampling Rate": "48 kHz ± 100 ppm",
-                    "Frequency Response (A/D/A)": "20 Hz – 20 kHz ± 0.5 dB",
-                    "Dynamic Range (A/D/A)": "110 dB (A-weighted)",
-                    "THD + Noise": "< -95 dB (22.4 kHz BW, unweighted); 1 kHz @ +17 dBu, 0 dB gain",
-                    "Channel Separation (A/D/A)": "110 dB @ 1 kHz, +24 dBu",
-                    "Latency (A/D/A)": "1.04 ms (input routed directly to output)",
-                    "Delay Memory": "174 mono seconds",
-                    "Analog Control Inputs": "0–3.3 VDC",
-                    "Recommended External Control Potentiometer": "10k Ohm, linear taper",
-                    "Logic Outputs": "Low (0 V) when active Pulled high (5 V) when inactive",
-                    "Logic Output Maximum External Power Supply / Current Sinking": "24 VDC / 50 mA",
-                    "Logic Output Maximum Output Current": "10 mA",
-                    "RS-232 Accessory Serial I/O": "57.6 kbps (default), 8 data bits, 1 stop bit, no parity, Straight-through wiring; pins 2, 3, 5 used",
-                    "Ethernet Cable": "Standard CAT5/6, max 100 m (328 ft)",
-                    "Maximum Stored Presets": "16 storable presets"
-                  },
+            specifications: {
+              "System Specifications": {
+                "Processor": "ADI SHARC 21489@450 MHz SIMD",
+                "Raw Processing Capacity": "500 MIPS, 6 GFLOPS, 2 GMACS",
+                "Sampling Rate": "48 kHz ± 100 ppm",
+                "Frequency Response (A/D/A)": "20 Hz – 20 kHz ± 0.5 dB",
+                "Dynamic Range (A/D/A)": "110 dB (A-weighted)",
+                "THD + Noise": "< -95 dB (22.4 kHz BW, unweighted); 1 kHz @ +17 dBu, 0 dB gain",
+                "Channel Separation (A/D/A)": "110 dB @ 1 kHz, +24 dBu",
+                "Latency (A/D/A)": "1.04 ms (input routed directly to output)",
+                "Delay Memory": "174 mono seconds",
+                "Analog Control Inputs": "0–3.3 VDC",
+                "Recommended External Control Potentiometer": "10k Ohm, linear taper",
+                "Logic Outputs": "Low (0 V) when active Pulled high (5 V) when inactive",
+                "Logic Output Maximum External Power Supply / Current Sinking": "24 VDC / 50 mA",
+                "Logic Output Maximum Output Current": "10 mA",
+                "RS-232 Accessory Serial I/O": "57.6 kbps (default), 8 data bits, 1 stop bit, no parity, Straight-through wiring; pins 2, 3, 5 used",
+                "Ethernet Cable": "Standard CAT5/6, max 100 m (328 ft)",
+                "Maximum Stored Presets": "16 storable presets"
               },
             },
+          },
           {
-        id: "model_ep_b1616",
-        name: "EchoPrime-B1616",
-        description: "16 in, 16 out DSP",
-        images: [
-          "/images/Products/audio_dsp/EchoPrime-B1616.webp",
-          "/images/Products/audio_dsp/EchoPrime-B1616(1).webp",
+            id: "model-ep-b1616",
+            name: "EchoPrime-B1616",
+            description: "16 in, 16 out DSP",
+            images: [
+              "/images/Products/audio_dsp/EchoPrime-B1616.webp",
+              "/images/Products/audio_dsp/EchoPrime-B1616(1).webp",
 
-        ],
+            ],
 
-        overview: `The Resoundify EchoPrime-B1616 is a professional-grade 16×16 digital audio signal processor built to meet
+            overview: `The Resoundify EchoPrime-B1616 is a professional-grade 16×16 digital audio signal processor built to meet
                   the demanding needs of networked audio systems, multi-room AV setups, and enterprise-grade installations.
                   Powered by a high-performance EchoPrime DSP engine and integrated with Dante audio networking, the
                   B1616 delivers exceptional flexibility, precision, and reliability in managing complex audio signal paths.
@@ -535,50 +535,50 @@ export const productsData = [
                   audio networking, it offers unmatched flexibility, audio fidelity, and system scalability for conference rooms,
                   auditoriums, control centers, broadcast facilities, and smart building infrastructures.`,
 
-        keyFeatures: [
-                "Professional SHARC DSP Core: Delivers powerful processing using Analog Devices’ renowned SHARC platform, ensuring low-latency performance and customization potential.",
-                "High-Quality Audio Processing: 24-bit/48kHz audio resolution ensures crystal-clear sound quality across all channels.",
-                "Intelligent Feedback Suppression: Adaptive per-channel feedback elimination for consistent, interference-free audio.",
-                "Auto Mixer & Gain Control: Features Gain Sharing Auto Mixer, AGC, and Ducker for smooth level balancing in real-time.",
-                "Ambient Noise Compensation: Dynamically adjusts levels based on background noise fluctuations.",
-                "Expandable Control Options: 8 configurable GPIOs (input/output/ADC), RS-232 & UDP support with assignable ports for central control systems.",
-                "Multi-Platform Compatibility: Supports both iOS and Windows OS with dual USB audio interface for recording and conferencing."
-              ],
+            keyFeatures: [
+              "Professional SHARC DSP Core: Delivers powerful processing using Analog Devices’ renowned SHARC platform, ensuring low-latency performance and customization potential.",
+              "High-Quality Audio Processing: 24-bit/48kHz audio resolution ensures crystal-clear sound quality across all channels.",
+              "Intelligent Feedback Suppression: Adaptive per-channel feedback elimination for consistent, interference-free audio.",
+              "Auto Mixer & Gain Control: Features Gain Sharing Auto Mixer, AGC, and Ducker for smooth level balancing in real-time.",
+              "Ambient Noise Compensation: Dynamically adjusts levels based on background noise fluctuations.",
+              "Expandable Control Options: 8 configurable GPIOs (input/output/ADC), RS-232 & UDP support with assignable ports for central control systems.",
+              "Multi-Platform Compatibility: Supports both iOS and Windows OS with dual USB audio interface for recording and conferencing."
+            ],
 
-        applications: [
-          "Conference Rooms",
-                "Boardrooms",
-                "Auditoriums",
-        ],
+            applications: [
+              "Conference Rooms",
+              "Boardrooms",
+              "Auditoriums",
+            ],
 
-       specifications: {
-            "System Specifications": {
-              "Processor": "ADI SHARC 21489@450 MHz SIMDx2",
-              "Raw Processing Capacity": "400 MIPS, 1.6 GFLOPS",
-              "Sampling Rate": "48 kHz ± 100 ppm",
-              "Frequency Response (A/D/A)": "20 Hz – 20 kHz ± 0.3 dB",
-              "Dynamic Range (A/D/A)": "113 dB (A-weighted)",
-              "THD + Noise": "< -95 dB (22.4 kHz BW, unweighted); 1 kHz @ +17 dBu, 0 dB gain",
-              "Channel Separation (A/D/A)": "108 dB @ 1 kHz, +24 dBu",
-              "Latency (A/D/A)": "<6 ms (input routed directly to output)",
-              "Delay Memory": "174 mono seconds",
-              "Analog Control Inputs": "0–3.3 VDC",
-              "Recommended External Control Potentiometer": "10k Ohm, linear taper",
-              "Logic Outputs": "Low (0 V) when active Pulled high (5 V) when inactive",
-              "Logic Output Maximum External Power Supply / Current Sinking": "24 VDC / 50 mA",
-              "Logic Output Maximum Output Current": "10 mA",
-              "RS-232 Accessory Serial I/O": "57.6 kbps (default), 8 data bits, 1 stop bit, no parity, Straight-through wiring; pins 2, 3, 5 used",
-              "Maximum Stored Presets": "16 storable presets"
+            specifications: {
+              "System Specifications": {
+                "Processor": "ADI SHARC 21489@450 MHz SIMDx2",
+                "Raw Processing Capacity": "400 MIPS, 1.6 GFLOPS",
+                "Sampling Rate": "48 kHz ± 100 ppm",
+                "Frequency Response (A/D/A)": "20 Hz – 20 kHz ± 0.3 dB",
+                "Dynamic Range (A/D/A)": "113 dB (A-weighted)",
+                "THD + Noise": "< -95 dB (22.4 kHz BW, unweighted); 1 kHz @ +17 dBu, 0 dB gain",
+                "Channel Separation (A/D/A)": "108 dB @ 1 kHz, +24 dBu",
+                "Latency (A/D/A)": "<6 ms (input routed directly to output)",
+                "Delay Memory": "174 mono seconds",
+                "Analog Control Inputs": "0–3.3 VDC",
+                "Recommended External Control Potentiometer": "10k Ohm, linear taper",
+                "Logic Outputs": "Low (0 V) when active Pulled high (5 V) when inactive",
+                "Logic Output Maximum External Power Supply / Current Sinking": "24 VDC / 50 mA",
+                "Logic Output Maximum Output Current": "10 mA",
+                "RS-232 Accessory Serial I/O": "57.6 kbps (default), 8 data bits, 1 stop bit, no parity, Straight-through wiring; pins 2, 3, 5 used",
+                "Maximum Stored Presets": "16 storable presets"
+              },
+              "Mechanical Specifications": {
+                "Dimension": "482x260x45mm"
+              }
             },
-            "Mechanical Specifications": {
-              "Dimension": "482x260x45mm"
-            }
           },
+        ],
       },
-    ],
-    },
       {
-        id: "series_vox_nova",
+        id: "series-vox-nova",
         name: "VoxNova Series",
         description: "Open structure DSPs with extensive Dante and AEC capabilities for flexible audio solutions.",
         image: "/images/Products/audio_dsp/VoxNova88.webp",
@@ -587,11 +587,11 @@ export const productsData = [
         type: "series",
         models: [
           {
-            id: "model_vn_88",
+            id: "model-vn-88",
             name: "VoxNova88",
             description: "Open Structure DSP 8X8, Dante 64X64, 8AEC",
             images: [
-            "/images/Products/audio_dsp/VoxNova88.webp"
+              "/images/Products/audio_dsp/VoxNova88.webp"
             ],
             overview: `The Resoundify VoxNova88 is a high-performance, open-architecture audio DSP processor tailored for
                 professional AV and conferencing applications. It features 8x8 analog inputs and outputs, and supports
@@ -614,11 +614,11 @@ export const productsData = [
               "Multi-Platform Compatibility: Supports both iOS and Windows OS with dual USB audio interface for recording and conferencing."
             ],
             applications: [
-                "Conference Rooms",
-                "Boardrooms",
-                "Auditoriums",
+              "Conference Rooms",
+              "Boardrooms",
+              "Auditoriums",
             ],
-           specifications: {
+            specifications: {
               "System Specifications": {
                 "Processor": "ADI SHARC 21569@1GHz SIMD*2",
                 "Raw Processing Capacity": "500 MIPS, 6 GFLOPS, 2 GMACS",
@@ -664,34 +664,34 @@ export const productsData = [
               },
             },
             controlSoftware: {
-            title: "Control Software",
-            name: "VoxControl+",
-            description: "VoxControl+ is our dedicated configuration software, available for free download from our official website. Designed with a user-friendly interface, it allows fine-tuning to easily tailor the matrix settings to match the specific needs of any installation. With this software, you can configure a wide range of parameters, including:",
-            parameters: [
-              "Input gain",
-              "Expander",
-              "Compressor & Limiter",
-              "Auto Gain Control (AGC)",
-              "Equalizer",
-              "Figure Balancer",
-              "Active Noise Control (ANC)",
-              "Noise Suppression (ANS)",
-              "Matrix",
-              "Low & High Pass filters",
-              "Delayer",
-              "Output",
-              "Feedback (AFC)",
-              "Noise gate",
-              "Ducker",
-              "SPL",
-              "Share AM (Automixer)",
-              "Echo Canceller (AEC)",
-              "Camera Tracking"
-            ]
-          },
+              title: "Control Software",
+              name: "VoxControl+",
+              description: "VoxControl+ is our dedicated configuration software, available for free download from our official website. Designed with a user-friendly interface, it allows fine-tuning to easily tailor the matrix settings to match the specific needs of any installation. With this software, you can configure a wide range of parameters, including:",
+              parameters: [
+                "Input gain",
+                "Expander",
+                "Compressor & Limiter",
+                "Auto Gain Control (AGC)",
+                "Equalizer",
+                "Figure Balancer",
+                "Active Noise Control (ANC)",
+                "Noise Suppression (ANS)",
+                "Matrix",
+                "Low & High Pass filters",
+                "Delayer",
+                "Output",
+                "Feedback (AFC)",
+                "Noise gate",
+                "Ducker",
+                "SPL",
+                "Share AM (Automixer)",
+                "Echo Canceller (AEC)",
+                "Camera Tracking"
+              ]
             },
+          },
           {
-            id: "model_vn_1616",
+            id: "model-vn-1616",
             name: "VoxNova1616",
             description: "Open Structure DSP 16X16, Dante 64X64, 8AEC",
             images: [
@@ -708,99 +708,99 @@ export const productsData = [
                       The VoxNova1616 is engineered to meet the evolving needs of enterprise AV systems, delivering unparalleled`,
 
             keyFeatures: [
-                  "Professional SHARC DSP Core: Powered by Analog Devices’ SHARC platform, the VoxNova1616 delivers ultra-fast signal processing with a semi-open architecture that supports complete customization of audio workflows and routing.",
-                  "High-Quality Audio Processing: 24-bit/48kHz audio resolution ensures crystal-clear sound quality across all channels.",
-                  "Intelligent Feedback Suppression: Independent adaptive feedback suppression on each channel automatically eliminates unwanted noise.",
-                  "Full-Duplex AEC & ANC: Integrated Adaptive Echo Cancellation and Active Noise Cancellation for clear communication in conferencing environments.",
-                  "Auto Mixer & Gain Control: Built-in Gain Sharing Auto Mixer, Automatic Gain Control (AGC), and Audio Ducking (Ducker) for seamless level balancing.",
-                  "Ambient Noise Compensation: Real-time Ambient Noise Compensator (ANC) adjusts audio levels based on environmental sound.",
-                  "Comprehensive Audio Matrix: Flexible mixing matrix with input level control, channel duplication, linking, and grouping.",
-                  "Expandable Control Options: 8 configurable GPIOs (input/output/ADC), RS-232 & UDP support with assignable ports for central control systems.",
-                  "Multi-Platform Compatibility: Supports both iOS and Windows OS with dual USB audio interface for recording and conferencing."
-                ],
+              "Professional SHARC DSP Core: Powered by Analog Devices’ SHARC platform, the VoxNova1616 delivers ultra-fast signal processing with a semi-open architecture that supports complete customization of audio workflows and routing.",
+              "High-Quality Audio Processing: 24-bit/48kHz audio resolution ensures crystal-clear sound quality across all channels.",
+              "Intelligent Feedback Suppression: Independent adaptive feedback suppression on each channel automatically eliminates unwanted noise.",
+              "Full-Duplex AEC & ANC: Integrated Adaptive Echo Cancellation and Active Noise Cancellation for clear communication in conferencing environments.",
+              "Auto Mixer & Gain Control: Built-in Gain Sharing Auto Mixer, Automatic Gain Control (AGC), and Audio Ducking (Ducker) for seamless level balancing.",
+              "Ambient Noise Compensation: Real-time Ambient Noise Compensator (ANC) adjusts audio levels based on environmental sound.",
+              "Comprehensive Audio Matrix: Flexible mixing matrix with input level control, channel duplication, linking, and grouping.",
+              "Expandable Control Options: 8 configurable GPIOs (input/output/ADC), RS-232 & UDP support with assignable ports for central control systems.",
+              "Multi-Platform Compatibility: Supports both iOS and Windows OS with dual USB audio interface for recording and conferencing."
+            ],
 
             applications: [
               "Conference Rooms",
-                "Boardrooms",
-                "Auditoriums",
+              "Boardrooms",
+              "Auditoriums",
             ],
 
             specifications: {
-                  "System Specifications": {
-                    "Processor": "ADI SHARC 21569@1GHz SIMD*2",
-                    "Raw Processing Capacity": "500 MIPS, 6 GFLOPS, 2 GMACS",
-                    "Sampling Rate": "48 kHz ± 100 ppm",
-                    "Frequency Response (A/D/A)": "20 Hz – 20 kHz ± 0.3 dB",
-                    "Dynamic Range (A/D/A)": "115 dB (A-weighted)",
-                    "THD + Noise": "<0.003%@4dBu",
-                    "Channel Separation (A/D/A)": "108 dB @ 1 kHz, +24 dBu",
-                    "Latency (A/D/A)": "<4 ms (input routed directly to output)",
-                    "Delay Memory": "174 mono seconds",
-                    "Analog Control Inputs": "0–3.3 VDC",
-                    "Recommended External Control Potentiometer": "10k Ohm, linear taper",
-                    "Logic Outputs": "Low (0 V) when active Pulled high (5 V) when inactive",
-                    "Logic Output Maximum External Power Supply / Current Sinking": "24 VDC / 50 mA",
-                    "Logic Output Maximum Output Current": "10 mA",
-                    "RS-232 Accessory Serial I/O": "57.6 kbps (default), 8 data bits, 1 stop bit, no parity, Straight-through wiring; pins 2, 3, 5 used",
-                    "Maximum Stored Presets": "1,000 storable presets"
-                  },
-                  "Analog Inputs and Outputs": {
-                    "Number of Analog Inputs": "16 switchable balanced mic or line level",
-                    "Analog Input and output Connectors": "3.81 mm terminal blocks",
-                    "Nominal Analog Input and output Level": "+4 dBu with 20 dB headroom",
-                    "Analog Input and output Maximum Level": "+24 dBu (or +22.8 dBu into a 2k Ohm minimum load)",
-                    "Analog Mic Pre-amp Gain": "0 to 51 dB (in 3 dB steps) with ±24 dB digital trim",
-                    "Analog Mic Pre-amp EIN": "< -125 dB (with 150 Ohm source, 22.4 kHz BW)",
-                    "Analog Input Impedance": "5.4k Ohms balanced, 1k Ohms unbalanced",
-                    "Analog Phantom Power (per input)": "+48 VDC per input, max 10 mA",
-                    "Analog Input Dynamic Range": ">115 dB, A-weighted",
-                    "Analog Input THD + Noise": "<-100 dB (22.4 kHz BW, unweighted), 1 kHz @ +15 dBu, 0 dB gain",
-                    "Analog Input Latency": "2.5ms",
-                    "Number of Analog Outputs": "16 balanced line level",
-                    "Analog Output Impedance": "600 Ohms balanced, 300 Ohms unbalanced",
-                    "Analog Output Dynamic Range": "115 dB, A-weighted",
-                    "Analog Output THD + Noise": "< -97 dB (22.4 kHz BW, unweighted); 1 kHz, 0 dB gain, +8 dBu output",
-                    "Analog Output Latency": "1.5 ms"
-                  },
-                  "AEC Specifications": {
-                    "Number of Channels": "8 Channels",
-                    "AEC Tail Length": "512 ms – suitable for medium rooms",
-                    "AEC Convergence Rate": "Typically > 90 dB/sec",
-                    "AEC Latency": "16 mS",
-                    "AEC Processors": "ADI SHARC 21569@1GHz"
-                  },
-                },
+              "System Specifications": {
+                "Processor": "ADI SHARC 21569@1GHz SIMD*2",
+                "Raw Processing Capacity": "500 MIPS, 6 GFLOPS, 2 GMACS",
+                "Sampling Rate": "48 kHz ± 100 ppm",
+                "Frequency Response (A/D/A)": "20 Hz – 20 kHz ± 0.3 dB",
+                "Dynamic Range (A/D/A)": "115 dB (A-weighted)",
+                "THD + Noise": "<0.003%@4dBu",
+                "Channel Separation (A/D/A)": "108 dB @ 1 kHz, +24 dBu",
+                "Latency (A/D/A)": "<4 ms (input routed directly to output)",
+                "Delay Memory": "174 mono seconds",
+                "Analog Control Inputs": "0–3.3 VDC",
+                "Recommended External Control Potentiometer": "10k Ohm, linear taper",
+                "Logic Outputs": "Low (0 V) when active Pulled high (5 V) when inactive",
+                "Logic Output Maximum External Power Supply / Current Sinking": "24 VDC / 50 mA",
+                "Logic Output Maximum Output Current": "10 mA",
+                "RS-232 Accessory Serial I/O": "57.6 kbps (default), 8 data bits, 1 stop bit, no parity, Straight-through wiring; pins 2, 3, 5 used",
+                "Maximum Stored Presets": "1,000 storable presets"
+              },
+              "Analog Inputs and Outputs": {
+                "Number of Analog Inputs": "16 switchable balanced mic or line level",
+                "Analog Input and output Connectors": "3.81 mm terminal blocks",
+                "Nominal Analog Input and output Level": "+4 dBu with 20 dB headroom",
+                "Analog Input and output Maximum Level": "+24 dBu (or +22.8 dBu into a 2k Ohm minimum load)",
+                "Analog Mic Pre-amp Gain": "0 to 51 dB (in 3 dB steps) with ±24 dB digital trim",
+                "Analog Mic Pre-amp EIN": "< -125 dB (with 150 Ohm source, 22.4 kHz BW)",
+                "Analog Input Impedance": "5.4k Ohms balanced, 1k Ohms unbalanced",
+                "Analog Phantom Power (per input)": "+48 VDC per input, max 10 mA",
+                "Analog Input Dynamic Range": ">115 dB, A-weighted",
+                "Analog Input THD + Noise": "<-100 dB (22.4 kHz BW, unweighted), 1 kHz @ +15 dBu, 0 dB gain",
+                "Analog Input Latency": "2.5ms",
+                "Number of Analog Outputs": "16 balanced line level",
+                "Analog Output Impedance": "600 Ohms balanced, 300 Ohms unbalanced",
+                "Analog Output Dynamic Range": "115 dB, A-weighted",
+                "Analog Output THD + Noise": "< -97 dB (22.4 kHz BW, unweighted); 1 kHz, 0 dB gain, +8 dBu output",
+                "Analog Output Latency": "1.5 ms"
+              },
+              "AEC Specifications": {
+                "Number of Channels": "8 Channels",
+                "AEC Tail Length": "512 ms – suitable for medium rooms",
+                "AEC Convergence Rate": "Typically > 90 dB/sec",
+                "AEC Latency": "16 mS",
+                "AEC Processors": "ADI SHARC 21569@1GHz"
+              },
+            },
 
             controlSoftware: {
-            title: "Control Software",
-            name: "VoxControl+",
-            description: "VoxControl+ is our dedicated configuration software, available for free download from our official website. Designed with a user-friendly interface, it allows fine-tuning to easily tailor the matrix settings to match the specific needs of any installation. With this software, you can configure a wide range of parameters, including:",
-            parameters: [
-              "Input gain",
-              "Expander",
-              "Compressor & Limiter",
-              "Auto Gain Control (AGC)",
-              "Equalizer",
-              "Figure Balancer",
-              "Active Noise Control (ANC)",
-              "Noise Suppression (ANS)",
-              "Matrix",
-              "Low & High Pass filters",
-              "Delayer",
-              "Output",
-              "Feedback (AFC)",
-              "Noise gate",
-              "Ducker",
-              "SPL",
-              "Share AM (Automixer)",
-              "Echo Canceller (AEC)",
-              "Camera Tracking"
-            ]
-          },
+              title: "Control Software",
+              name: "VoxControl+",
+              description: "VoxControl+ is our dedicated configuration software, available for free download from our official website. Designed with a user-friendly interface, it allows fine-tuning to easily tailor the matrix settings to match the specific needs of any installation. With this software, you can configure a wide range of parameters, including:",
+              parameters: [
+                "Input gain",
+                "Expander",
+                "Compressor & Limiter",
+                "Auto Gain Control (AGC)",
+                "Equalizer",
+                "Figure Balancer",
+                "Active Noise Control (ANC)",
+                "Noise Suppression (ANS)",
+                "Matrix",
+                "Low & High Pass filters",
+                "Delayer",
+                "Output",
+                "Feedback (AFC)",
+                "Noise gate",
+                "Ducker",
+                "SPL",
+                "Share AM (Automixer)",
+                "Echo Canceller (AEC)",
+                "Camera Tracking"
+              ]
+            },
 
           },
           {
-            id: "model_vn_128f",
+            id: "model-vn-128f",
             name: "VoxNova128F",
             description: "Open Structure DSP 12X8, Dante 64X64, 8 flex channels, 12AEC",
             images: [
@@ -819,22 +819,22 @@ export const productsData = [
               boardrooms, command centers, hybrid learning spaces, and corporate AV networks.
               `,
 
-           keyFeatures: [
-            "Professional SHARC DSP Core: Built on the ADI SHARC platform with a semi-open architecture, the VoxNova128F delivers exceptional signal processing power and flexibility for custom audio flow designs and advanced configurations.",
-            "High-Quality Audio Processing: 24-bit/48kHz audio resolution ensures crystal-clear sound quality across all channels.",
-            "Intelligent Feedback Suppression: Independent adaptive feedback suppression on each channel automatically eliminates unwanted noise.",
-            "Full-Duplex AEC & ANC: Integrated Adaptive Echo Cancellation and Active Noise Cancellation for clear communication in conferencing environments.",
-            "Auto Mixer & Gain Control: Built-in Gain Sharing Auto Mixer, Automatic Gain Control (AGC), and Audio Ducking (Ducker) for seamless level balancing.",
-            "Ambient Noise Compensation: Real-time Ambient Noise Compensator (ANC) adjusts audio levels based on environmental sound.",
-            "Comprehensive Audio Matrix: Flexible mixing matrix with input level control, channel duplication, linking, and grouping.",
-            "Expandable Control Options: 8 configurable GPIOs (input/output/ADC), RS-232 & UDP support with assignable ports for central control systems.",
-            "Multi-Platform Compatibility: Supports both iOS and Windows OS with dual USB audio interface for recording and conferencing."
-          ],
+            keyFeatures: [
+              "Professional SHARC DSP Core: Built on the ADI SHARC platform with a semi-open architecture, the VoxNova128F delivers exceptional signal processing power and flexibility for custom audio flow designs and advanced configurations.",
+              "High-Quality Audio Processing: 24-bit/48kHz audio resolution ensures crystal-clear sound quality across all channels.",
+              "Intelligent Feedback Suppression: Independent adaptive feedback suppression on each channel automatically eliminates unwanted noise.",
+              "Full-Duplex AEC & ANC: Integrated Adaptive Echo Cancellation and Active Noise Cancellation for clear communication in conferencing environments.",
+              "Auto Mixer & Gain Control: Built-in Gain Sharing Auto Mixer, Automatic Gain Control (AGC), and Audio Ducking (Ducker) for seamless level balancing.",
+              "Ambient Noise Compensation: Real-time Ambient Noise Compensator (ANC) adjusts audio levels based on environmental sound.",
+              "Comprehensive Audio Matrix: Flexible mixing matrix with input level control, channel duplication, linking, and grouping.",
+              "Expandable Control Options: 8 configurable GPIOs (input/output/ADC), RS-232 & UDP support with assignable ports for central control systems.",
+              "Multi-Platform Compatibility: Supports both iOS and Windows OS with dual USB audio interface for recording and conferencing."
+            ],
 
             applications: [
-               "Conference Rooms",
-                "Boardrooms",
-                "Auditoriums",
+              "Conference Rooms",
+              "Boardrooms",
+              "Auditoriums",
             ],
 
             specifications: {
@@ -883,37 +883,37 @@ export const productsData = [
               },
             },
 
-          controlSoftware: {
-          title: "Control Software",
-          name: "VoxControl+",
-          description: "VoxControl+ is our dedicated configuration software, available for free download from our official website. Designed with a user-friendly interface, it allows fine-tuning to easily tailor the matrix settings to match the specific needs of any installation. With this software, you can configure a wide range of parameters, including:",
-          parameters: [
-            "Input gain",
-            "Expander",
-            "Compressor & Limiter",
-            "Auto Gain Control (AGC)",
-            "Equalizer",
-            "Figure Balancer",
-            "Active Noise Control (ANC)",
-            "Noise Suppression (ANS)",
-            "Matrix",
-            "Low & High Pass filters",
-            "Delayer",
-            "Output",
-            "Feedback (AFC)",
-            "Noise gate",
-            "Ducker",
-            "SPL",
-            "Share AM (Automixer)",
-            "Echo Canceller (AEC)",
-            "Camera Tracking"
-          ]
-        },
+            controlSoftware: {
+              title: "Control Software",
+              name: "VoxControl+",
+              description: "VoxControl+ is our dedicated configuration software, available for free download from our official website. Designed with a user-friendly interface, it allows fine-tuning to easily tailor the matrix settings to match the specific needs of any installation. With this software, you can configure a wide range of parameters, including:",
+              parameters: [
+                "Input gain",
+                "Expander",
+                "Compressor & Limiter",
+                "Auto Gain Control (AGC)",
+                "Equalizer",
+                "Figure Balancer",
+                "Active Noise Control (ANC)",
+                "Noise Suppression (ANS)",
+                "Matrix",
+                "Low & High Pass filters",
+                "Delayer",
+                "Output",
+                "Feedback (AFC)",
+                "Noise gate",
+                "Ducker",
+                "SPL",
+                "Share AM (Automixer)",
+                "Echo Canceller (AEC)",
+                "Camera Tracking"
+              ]
+            },
           },
         ],
       },
       {
-        id: "series_multiplayer",
+        id: "series-multiplayer",
         name: "Multiplayer Series",
         description: "Multi-channel audio web streamers with scheduling and Dante virtual sound card support.",
         image: "/images/Products/audio_dsp/R-MP8.jpg",
@@ -922,7 +922,7 @@ export const productsData = [
         type: "series",
         models: [
           {
-            id: "model_r_mp8",
+            id: "model-r-mp8",
             name: "R-MP8",
             description: "8-Channel Web Audio Streamer with Scheduler & Dante",
             images: [
@@ -930,7 +930,7 @@ export const productsData = [
             ]
           },
           {
-            id: "model_r_mp16",
+            id: "model-r-mp16",
             name: "R-MP16",
             description: "16-Channel Web Audio Streamer with Scheduler & Dante",
             images: [
@@ -942,7 +942,7 @@ export const productsData = [
     ],
   },
   {
-    id: "brand_av_over_ip_solutions",
+    id: "brand-av-over-ip-solutions",
     name: "AV over IP Solutions",
     category: "av_over_ip_solutions",
     description: "Seamless audio-visual distribution over IP networks for various applications.",
@@ -950,7 +950,7 @@ export const productsData = [
     type: "brand",
     series: [
       {
-        id: "series_streamlite",
+        id: "series-streamlite",
         name: "StreamLite Series",
         description: "Efficient H.264 AV over IP solutions with multi-screen capability.",
         image: "/images/Products/av_over_ip_soln/IPM2000.webp",
@@ -959,7 +959,7 @@ export const productsData = [
         type: "series",
         models: [
           {
-            id: "model_sl_4k30",
+            id: "model-sl-4k30",
             name: "StreamLite-4k30",
             description: "H.264 with up to 4 screen capability, 4K@30",
             images: [
@@ -980,7 +980,7 @@ export const productsData = [
             ],
 
             applications: [
-             "Classrooms",
+              "Classrooms",
               "Boardrooms",
               "Auditoriums",
             ],
@@ -1019,7 +1019,7 @@ export const productsData = [
         ],
       },
       {
-        id: "series_streamcore",
+        id: "series-streamcore",
         name: "StreamCore Series",
         description: "High-quality 4K60 4:4:4/HDR AV over IP with JPEG2K compression and advanced features.",
         image: "/images/Products/av_over_ip_soln/StreamCore-ENDE.webp",
@@ -1028,7 +1028,7 @@ export const productsData = [
         type: "series",
         models: [
           // {
-          //   id: "model_sc_en",
+          //   id: "model-sc-en",
           //   name: "StreamCore-EN",
           //   description: "4K60 4:4:4/HDR AV over IP JPEG2K Encoder - Basic Version",
           //   images: [
@@ -1036,7 +1036,7 @@ export const productsData = [
           //   ]
           // },
           // {
-          //   id: "model_sc_dn",
+          //   id: "model-sc-dn",
           //   name: "StreamCore-DN",
           //   description: "4K60 4:4:4/HDR AV over IP JPEG2K Decoder - Basic Version",
           //   images: [
@@ -1044,7 +1044,7 @@ export const productsData = [
           //   ]
           // },
           {
-            id: "model_sc_enkvm",
+            id: "model-sc-enkvm",
             name: "StreamCore-EN/DE",
             description: "4K60 4:4:4/HDR AV over IP JPEG2K Encoder / Decoder",
             images: [
@@ -1105,7 +1105,7 @@ export const productsData = [
             },
           },
           // {
-          //   id: "model_sc_dnkvm",
+          //   id: "model-sc-dnkvm",
           //   name: "StreamCore-DNKVM",
           //   description: "4K60 4:4:4/HDR w/USB and Audio over IP JPEG2K Decoder",
           //   images: [
@@ -1113,7 +1113,7 @@ export const productsData = [
           //   ]
           // },
           {
-            id: "model_sc_wp",
+            id: "model-sc-wp",
             name: "StreamCore-WP",
             description: "4K60 4:4:4/HDR w/USB and Audio over IP JPEG2K HDMI/USB-C Wall plate Encoder",
             images: [
@@ -1140,7 +1140,7 @@ export const productsData = [
               "Auditoriums",
             ],
 
-           specifications: {
+            specifications: {
               "Video & Audio": {
                 "Video Inputs": "HDMI 2.0a (Type A) and USB-C",
                 "Video Resolutions": "Supports all major VESA resolutions and variations including: VGA: 640x480 (4:3), SVGA: 800x600 (4:3), XGA: 1024x768 (4:3), SXGA: 1280x1024 (5:4), WXGA: 1366x768 (16:9), SXGA+: 1440x1080 (4:3), UXGA: 1600x1200 (4:3), QXGA: 2048x1536 (4:3), 1080p/i, 720p, Ultra HD 3840x2160 (16:9), 4K: 4096x2160 (16:10)",
@@ -1167,7 +1167,7 @@ export const productsData = [
             },
           },
           {
-            id: "model_sc_cb",
+            id: "model-sc-cb",
             name: "StreamCore-CB",
             description: "Control box for with Dante management",
             images: [
@@ -1217,7 +1217,7 @@ export const productsData = [
             },
           },
           {
-            id: "model_sc_cbd",
+            id: "model-sc-cbd",
             name: "StreamCore-CBD",
             description: "Control box for JPEG2K Gen 1/2 IP",
             images: [
@@ -1227,7 +1227,7 @@ export const productsData = [
         ],
       },
       {
-        id: "series_streampro",
+        id: "series-streampro",
         name: "StreamPro Series",
         description: "SDVoE solutions for advanced 4K60 A/V over IP with KVM and video wall capabilities.",
         image: "/images/Products/av_over_ip_soln/StreamPro_HDN-EB100AT.webp",
@@ -1235,9 +1235,9 @@ export const productsData = [
         status: "In Stock",
         type: "series",
         models: [
-         
-         {
-            id: "model_sp_fiber_kvm_2",
+
+          {
+            id: "model-sp-fiber-kvm-2",
             name: "StreamPro-100ASENDE",
             description: "SDVoE AVP2000 IP solution Seamless Matrix/Video Wall/Multiview -- Fiber Port",
             images: [
@@ -1309,8 +1309,8 @@ export const productsData = [
               }
             },
           },
-         {
-            id: "model_sp_avp2000_fiber_3",
+          {
+            id: "model-sp-avp2000-fiber-3",
             name: "StreamPro-100ASLEN/DE",
             description: "SDVoE AVP1000 IP solution Seamless Matrix - Fiber Port",
             images: [
@@ -1382,7 +1382,7 @@ export const productsData = [
             },
           },
           {
-            id: "model_sp_avp1000_fiber_6",
+            id: "model-sp-avp1000-fiber-6",
             name: "StreamPro100ATF",
             description: "4K60 4:4:4/HDR W/USB KVM over IP SDVoE Tranceiver Fiber",
             images: [
@@ -1445,8 +1445,8 @@ export const productsData = [
               }
             },
           },
-           {
-            id: "model_sp_copper_fiber_1",
+          {
+            id: "model-sp-copper-fiber-1",
             name: "StreamPro",
             description: "4K60 4:4:4/HDR w/USB2.0/Video Preview over IP SDVoE Tranceiver Copper&Fiber",
             images: [
@@ -1454,7 +1454,7 @@ export const productsData = [
             ]
           },
           {
-            id: "model_sp_avp2000_fiber_4",
+            id: "model-sp-avp2000-fiber-4",
             name: "StreamPro",
             description: "SDVoE AVP2000 IP solution Seamless Matrix/Video Wall/Multiview -- Fiber Port",
             images: [
@@ -1462,7 +1462,7 @@ export const productsData = [
             ]
           },
           {
-            id: "model_sp_avp1000_fiber_5",
+            id: "model-sp-avp1000-fiber-5",
             name: "StreamPro",
             description: "SDVoE AVP1000 IP solution Seamless Matrix -- Fiber Port",
             images: [
@@ -1470,7 +1470,7 @@ export const productsData = [
             ]
           },
           {
-            id: "model_sp_control_box_7",
+            id: "model-sp-control-box-7",
             name: "StreamPro",
             description: "Control box for SDVoE IP",
             images: [
@@ -1482,7 +1482,7 @@ export const productsData = [
     ],
   },
   {
-    id: "brand_video_conferencing",
+    id: "brand-video-conferencing",
     name: "Video Conferencing & Broadcasting",
     category: "video_conferencing_and_broadcasting_system",
     description: "Integrated systems for professional communication and content delivery.",
@@ -1490,7 +1490,7 @@ export const productsData = [
     type: "brand",
     series: [
       {
-        id: "series_dante_ptz_camera",
+        id: "series-dante-ptz-camera",
         name: "Dante PTZ Camera",
         description: "4K Ultra HD PTZ cameras with Dante audio and AI tracking for superior video conferencing.",
         image: "/images/Products/video_conferencing/PTZ12.webp",
@@ -1499,7 +1499,7 @@ export const productsData = [
         type: "series",
         models: [
           {
-            id: "model_vc_ptz12_dante",
+            id: "model-vc-ptz12-dante",
             name: "VC-PTZ12 (DANTE)",
             description: "4K Ultra HD Video Conference Camera AI tracking",
             images: [
@@ -1520,9 +1520,9 @@ export const productsData = [
             ],
 
             applications: [
-             "classrooms",
-             "boardrooms",
-             "auditoriums",
+              "classrooms",
+              "boardrooms",
+              "auditoriums",
             ],
 
             specifications: {
@@ -1594,7 +1594,7 @@ export const productsData = [
             },
           },
           {
-            id: "model_vc_ptz16_dante",
+            id: "model-vc-ptz16-dante",
             name: "VC-PTZ16 (DANTE)",
             description: "4K Ultra HD Video Conference Camera AI Tracking",
             images: [
@@ -1683,8 +1683,8 @@ export const productsData = [
               }
             },
           },
-         {
-            id: "model_vc_ptz20_dante",
+          {
+            id: "model-vc-ptz20-dante",
             name: "VC-PTZ20 (DANTE)",
             description: "4K Ultra HD Video Conference Camera",
             images: [
@@ -1765,8 +1765,8 @@ export const productsData = [
               }
             },
           },
-         {
-            id: "model_vc_ptz30_dante",
+          {
+            id: "model-vc-ptz30-dante",
             name: "VC-PTZ30 (DANTE)",
             description: "4K Ultra HD Video Conference Camera AI tracking",
             images: [
@@ -1814,7 +1814,7 @@ export const productsData = [
                 "Image Freeze": "Support",
                 "PoE+": "Support",
                 "Preset Position": "255",
-                "Preset Accuracy" : "0.1°"
+                "Preset Accuracy": "0.1°"
               },
               "Interface Specifications": {
                 "HD Output": "1 x HDMI: Version 2.0; 1 x 3G-SDI: BNC, 800mVp-p, 75Ω, as per SMPTE 424M standard",
@@ -1847,11 +1847,11 @@ export const productsData = [
               }
             }
           },
-         
+
         ],
       },
       {
-        id: "series_auto_switching_tracking_camera",
+        id: "series-auto-switching-tracking-camera",
         name: "Auto switching auto Tracking camera",
         description: "Integrated 4K HD tracking cameras for teaching and presentation environments.",
         image: "/images/Products/video_conferencing/VC-AUTO2.webp",
@@ -1860,7 +1860,7 @@ export const productsData = [
         type: "series",
         models: [
           {
-            id: "model_vc_auto2",
+            id: "model-vc-auto2",
             name: "VC-AUTO2",
             description: "4K Integrated HD teaching tracking camera with dual-lens AI tracking",
             images: [
@@ -1941,13 +1941,13 @@ export const productsData = [
                 "Operating Temperature": "0°C ~ 40°C",
                 "Storage Temperature": "-40°C ~ 60°C",
                 "Net Weight": "TBD",
-                "No Failure Time" : "30000h"
+                "No Failure Time": "30000h"
 
               }
             },
           },
           {
-            id: "model_vc_auto4",
+            id: "model-vc-auto4",
             name: "VC-AUTO4",
             description: "All-in-One 4K Intelligent Video Conferencing Endpoint with 12x Optical Zoom",
             images: [
@@ -2021,7 +2021,7 @@ export const productsData = [
         ],
       },
       {
-        id: "series_all_in_one_bar_solution",
+        id: "series-all-in-one-bar-solution",
         name: "All in one BAR solution",
         description: "Integrated 4K UHD USB cameras with built-in mics and speakers for seamless collaboration.",
         image: "/images/Products/video_conferencing/RC-700.webp",
@@ -2029,8 +2029,8 @@ export const productsData = [
         status: "In Stock",
         type: "series",
         models: [
-         {
-            id: "model_st_200",
+          {
+            id: "model-st-200",
             name: "ST-200",
             description: "4K UHD All-in-One USB Video Bar with AI Tracking",
             images: [
@@ -2102,7 +2102,7 @@ export const productsData = [
             }
           },
           {
-            id: "model_st_400",
+            id: "model-st-400",
             name: "ST-400",
             description: "All-in-One 4K Intelligent Video Conferencing Endpoint",
             images: [
@@ -2162,8 +2162,8 @@ export const productsData = [
               }
             }
           },
-         {
-            id: "model_rc_700",
+          {
+            id: "model-rc-700",
             name: "RC-700",
             description: "7-Mic Array Ceiling/Surface Mic – 360° 8m Pickup, USB + 3.5mm",
             images: [
@@ -2227,74 +2227,74 @@ export const productsData = [
               }
             }
           },
-         {
-          id: "model_rc_702",
-          name: "RC-702",
-          description: "POE Cascading 6-Mic Array – 360° Omnidirectional, Up to 6 Units Cascade",
-          images: [
-            "/images/Products/video_conferencing/RC-702(1).webp",
-             "/images/Products/video_conferencing/RC-702.webp",
-            "/images/Products/video_conferencing/RC-702(2).webp"
-          ],
+          {
+            id: "model-rc-702",
+            name: "RC-702",
+            description: "POE Cascading 6-Mic Array – 360° Omnidirectional, Up to 6 Units Cascade",
+            images: [
+              "/images/Products/video_conferencing/RC-702(1).webp",
+              "/images/Products/video_conferencing/RC-702.webp",
+              "/images/Products/video_conferencing/RC-702(2).webp"
+            ],
 
-          overview: "The Resoundify RC-702 is a high-performance omnidirectional digital array microphone designed for professional conferencing and collaboration environments. Equipped with six built-in microphones arranged in a circular array, it ensures 360° voice pickup with exceptional clarity. Its POE (Power over Ethernet) capability enables easy installation and scalability through cascading multiple units, making it ideal for large meeting rooms, boardrooms, and smart conferencing setups. With POE support, the RC-702 simplifies installation by transmitting both power and audio data over a single network cable, reducing clutter and complexity. Its cascading capability allows multiple microphones to be linked together seamlessly, extending coverage for larger rooms without sacrificing audio quality.",
+            overview: "The Resoundify RC-702 is a high-performance omnidirectional digital array microphone designed for professional conferencing and collaboration environments. Equipped with six built-in microphones arranged in a circular array, it ensures 360° voice pickup with exceptional clarity. Its POE (Power over Ethernet) capability enables easy installation and scalability through cascading multiple units, making it ideal for large meeting rooms, boardrooms, and smart conferencing setups. With POE support, the RC-702 simplifies installation by transmitting both power and audio data over a single network cable, reducing clutter and complexity. Its cascading capability allows multiple microphones to be linked together seamlessly, extending coverage for larger rooms without sacrificing audio quality.",
 
-          keyFeatures: [
-            "360° Omnidirectional Pickup: Captures voices from all directions using a high SNR microphone array for crystal-clear sound.",
-            "Intelligent Audio Processing: Built-in DSP algorithms for automatic noise reduction, echo cancellation, automatic gain control, and voice optimization.",
-            "POE (Power over Ethernet): Delivers power and data through a single cable for simplified installation and clean setup.",
-            "Six-Microphone Cascading: Supports up to six interconnected microphones with coverage up to 150㎡ for large meeting spaces.",
-            "Blind Beamforming Technology: Automatically focuses on active speakers and adapts to room acoustics for improved clarity.",
-            "Flexible Installation Options: Desktop placement or ceiling suspension for fast, neat deployment with reduced maintenance.",
-            "Scalable Conference Setup: Easily expandable for small to large rooms without sacrificing performance.",
-            "Wide Frequency Response: Ensures natural, full-spectrum voice reproduction.",
-            "Low Latency Transmission: Maintains real-time audio sync for video conferencing.",
-            "Modern Aesthetic Design: Sleek, professional look that complements any meeting room interior."
-          ],
+            keyFeatures: [
+              "360° Omnidirectional Pickup: Captures voices from all directions using a high SNR microphone array for crystal-clear sound.",
+              "Intelligent Audio Processing: Built-in DSP algorithms for automatic noise reduction, echo cancellation, automatic gain control, and voice optimization.",
+              "POE (Power over Ethernet): Delivers power and data through a single cable for simplified installation and clean setup.",
+              "Six-Microphone Cascading: Supports up to six interconnected microphones with coverage up to 150㎡ for large meeting spaces.",
+              "Blind Beamforming Technology: Automatically focuses on active speakers and adapts to room acoustics for improved clarity.",
+              "Flexible Installation Options: Desktop placement or ceiling suspension for fast, neat deployment with reduced maintenance.",
+              "Scalable Conference Setup: Easily expandable for small to large rooms without sacrificing performance.",
+              "Wide Frequency Response: Ensures natural, full-spectrum voice reproduction.",
+              "Low Latency Transmission: Maintains real-time audio sync for video conferencing.",
+              "Modern Aesthetic Design: Sleek, professional look that complements any meeting room interior."
+            ],
 
-          applications: [
-            "boardrooms",
-            "classrooms",
-            "auditoriums"
-          ],
+            applications: [
+              "boardrooms",
+              "classrooms",
+              "auditoriums"
+            ],
 
-          specifications: {
-            "Technical Specifications": {
-              Type: "Digital array microphone",
-              "Array Configuration": "6 omnidirectional microphones in a circular array for full 360° pickup",
-              Sensitivity: "-38 dBFS",
-              "Signal-to-Noise Ratio (SNR)": "65 dB(A)",
-              "Frequency Response": "50 Hz - 16 kHz",
-              "Sampling Rate": "32 kHz, high-definition broadband audio",
-              "Pickup Distance": "Up to 3 meters (single unit)",
-              "Echo Cancellation": "Supported",
-              "Noise Suppression": "Supported",
-              "Automatic Gain Control": "Supported"
-            },
-            "Cascading & Coverage": {
-              "Cascade Mode": "POE cable",
-              "Maximum Units": "Up to 6 microphones",
-              "Coverage Area": "Up to 150–6㎡ with full cascade"
-            },
-            "Connectivity": {
-              "Network Ports": "RJ45 upstream and downstream networking ports",
-              "USB Interface": "USB Type-C, UAC 1.0 protocol for audio data, firmware upgrades, and parameter configuration",
-              "Analog Audio": "AUX1 & AUX2 linear audio input/output",
-              POE: "48V IEEE 802.3at standard via cascade",
-              "USB Power": "5V / 500mA (single unit)"
-            },
-            "Mechanical Specifications": {
-              Dimensions: "Ø170 mm × H40 mm",
-              "Net Weight": "370 g",
-              "Body Design": "Low-profile, modern round design for minimal visual obstruction",
-              Color: "Professional matte finish"
-            },
-          }
-        },
+            specifications: {
+              "Technical Specifications": {
+                Type: "Digital array microphone",
+                "Array Configuration": "6 omnidirectional microphones in a circular array for full 360° pickup",
+                Sensitivity: "-38 dBFS",
+                "Signal-to-Noise Ratio (SNR)": "65 dB(A)",
+                "Frequency Response": "50 Hz - 16 kHz",
+                "Sampling Rate": "32 kHz, high-definition broadband audio",
+                "Pickup Distance": "Up to 3 meters (single unit)",
+                "Echo Cancellation": "Supported",
+                "Noise Suppression": "Supported",
+                "Automatic Gain Control": "Supported"
+              },
+              "Cascading & Coverage": {
+                "Cascade Mode": "POE cable",
+                "Maximum Units": "Up to 6 microphones",
+                "Coverage Area": "Up to 150–6㎡ with full cascade"
+              },
+              "Connectivity": {
+                "Network Ports": "RJ45 upstream and downstream networking ports",
+                "USB Interface": "USB Type-C, UAC 1.0 protocol for audio data, firmware upgrades, and parameter configuration",
+                "Analog Audio": "AUX1 & AUX2 linear audio input/output",
+                POE: "48V IEEE 802.3at standard via cascade",
+                "USB Power": "5V / 500mA (single unit)"
+              },
+              "Mechanical Specifications": {
+                Dimensions: "Ø170 mm × H40 mm",
+                "Net Weight": "370 g",
+                "Body Design": "Low-profile, modern round design for minimal visual obstruction",
+                Color: "Professional matte finish"
+              },
+            }
+          },
         ],
       },
       {
-        id: "series_video_codec_control_panel",
+        id: "series-video-codec-control-panel",
         name: "Video codec and control panel",
         description: "Smart video conferencing endpoints and intuitive control panels for enhanced meeting experiences.",
         image: "/images/Products/video_conferencing/RC-VCE.webp",
@@ -2303,7 +2303,7 @@ export const productsData = [
         type: "series",
         models: [
           {
-            id: "model_rc_vce",
+            id: "model-rc-vce",
             name: "RC-VCE",
             description: "4K Smart Detachable Video Conferencing Endpoint Android 12",
             images: [
@@ -2367,7 +2367,7 @@ export const productsData = [
             }
           },
           {
-            id: "model_rc_10cp",
+            id: "model-rc-10cp",
             name: "RC-10CP",
             description: "Zoom meeting controlling Panel - 10.1-inch IPS touch screen, Android 9.0 system",
             images: [
@@ -2418,7 +2418,7 @@ export const productsData = [
             }
           },
           {
-            id: "model_rc_rec",
+            id: "model-rc-rec",
             name: "RC-REC",
             description: "Professional conferencing recorder with 1 TB",
             images: [
@@ -2466,7 +2466,7 @@ export const productsData = [
             }
           },
           // {
-          //   id: "model_rc_10cp",
+          //   id: "model-rc-10cp",
           //   name: "RC-10CP",
           //   description: "Zoom meeting controlling Panel * 10.1-inch IPS touch screen, Android 9.0 system",
           //   images: [
@@ -2477,7 +2477,7 @@ export const productsData = [
         ],
       },
       {
-        id: "series_av_processor",
+        id: "series-av-processor",
         name: "AV Processor",
         description: "Video Conference AV bridges for seamless integration of audio-visual systems.",
         image: "/images/Products/video_conferencing/AV_PROCESSOR.webp",
@@ -2486,7 +2486,7 @@ export const productsData = [
         type: "series",
         models: [
           {
-            id: "model_rc_avb",
+            id: "model-rc-avb",
             name: "RC-AVB",
             description: "Video Conference AV Bridge",
             images: [
@@ -2537,7 +2537,7 @@ export const productsData = [
         ],
       },
       // {
-      //   id: "series_large_meeting_room_setup",
+      //   id: "series-large-meeting-room-setup",
       //   name: "Large meeting room setup",
       //   description: "Comprehensive solutions for large meeting room audio and video tracking, enhancing collaboration.",
       //   image: "https://placehold.co/400x300/F0F4F8/22C55E?text=Meeting+Room",
@@ -2546,7 +2546,7 @@ export const productsData = [
       //   type: "series",
       //   models: [
       //     {
-      //       id: "model_rai_150",
+      //       id: "model-rai-150",
       //       name: "RAI-150",
       //       description: "Multi position camera in the venue AI Speech",
       //       images: [
@@ -2555,7 +2555,7 @@ export const productsData = [
       //       ]
       //     },
       //     {
-      //       id: "model_rai_tb",
+      //       id: "model-rai-tb",
       //       name: "RAI-TB",
       //       description: "Intelligent audio video tracking box",
       //       images: [
@@ -2564,7 +2564,7 @@ export const productsData = [
       //       ]
       //     },
       //     {
-      //       id: "model_rai_128c",
+      //       id: "model-rai-128c",
       //       name: "RAI-128C",
       //       description: "Dante ceiling mount array microphone",
       //       images: [
@@ -2575,7 +2575,7 @@ export const productsData = [
       //   ],
       // },
       // {
-      //   id: "series_av_recorder",
+      //   id: "series-av-recorder",
       //   name: "AV Recoder",
       //   description: "Professional conferencing recorders with ample storage for capturing important meetings.",
       //   image: "https://placehold.co/400x300/F0F4F8/22C55E?text=AV+Recorder",
@@ -2584,7 +2584,7 @@ export const productsData = [
       //   type: "series",
       //   models: [
       //     { 
-      //       id: "model_rc_rec", 
+      //       id: "model-rc-rec", 
       //       name: "RC-REC", 
       //       description: "Professional conferencing recorder with 1 TB", 
       //       images: [
@@ -2597,7 +2597,7 @@ export const productsData = [
     ],
   },
   {
-    id: "brand_dante_wall_plates",
+    id: "brand-dante-wall-plates",
     name: "Dante Wall Plates",
     category: "dante_wall_plates",
     description: "Convenient Dante audio network access points with various input/output options.",
@@ -2605,7 +2605,7 @@ export const productsData = [
     type: "brand",
     series: [
       {
-        id: "series_dante_wall_plate",
+        id: "series-dante-wall-plate",
         name: "Dante wall plate",
         description: "Versatile Dante wall plates featuring XLR, RCA, 3.5mm, and Bluetooth connectivity.",
         image: "/images/Products/dante_wall_plates/XLRIO.webp",
@@ -2614,7 +2614,7 @@ export const productsData = [
         type: "series",
         models: [
           {
-            id: "model_dw_12_xlrio",
+            id: "model-dw-12-xlrio",
             name: "DW 12-XLRiO",
             description: "Dante wall plate with 2 XLR in and 2 XLR Out",
             images: [
@@ -2622,7 +2622,7 @@ export const productsData = [
             ]
           },
           {
-            id: "model_dw_33_lrbtio",
+            id: "model-dw-33-lrbtio",
             name: "DW 33-LRBTiO",
             description: "Dante wall plate with Bluetooth, RCA, and 3.5mm inputs",
             images: [
@@ -2630,7 +2630,7 @@ export const productsData = [
             ]
           },
           // {
-          //   id: "model_dw_44_lrbtio",
+          //   id: "model-dw-44-lrbtio",
           //   name: "DW 44-LRBTiO",
           //   description: "Dante wall plate with RCA bluetooth and TRS",
           //   images: [
@@ -2639,7 +2639,7 @@ export const productsData = [
           //   ]
           // },
           // {
-          //   id: "model_dw_20_lrbt_io",
+          //   id: "model-dw-20-lrbt-io",
           //   name: "DW 20 - LRBT iO",
           //   description: "Dante wall plate with Bluetooth or stereo signals and Dante/AES67 network digital signals",
           //   images: [
@@ -2648,7 +2648,7 @@ export const productsData = [
           //   ]
           // },
           {
-            id: "model_dw_25_lrbt_io",
+            id: "model-dw-25-lrbt-io",
             name: "DW 25 - LRBT iO",
             description: "Dante Wall Plate – 4x XLR Input with 48V Phantom",
             images: [
@@ -2656,7 +2656,7 @@ export const productsData = [
             ]
           },
           {
-            id: "model_dw_26_lrbt_io",
+            id: "model-dw-26-lrbt-io",
             name: "DW 26 - LRBT iO",
             description: "Dante Wall Panel – Bluetooth 5.0 + Stereo RCA Input",
             images: [
@@ -2664,7 +2664,7 @@ export const productsData = [
             ]
           },
           {
-            id: "model_dw_27_lrbt_io",
+            id: "model-dw-27-lrbt-io",
             name: "DW 27 - LRBT iO",
             description: "Dante Wall Panel (Black) – Bluetooth 5.0 + Stereo RCA",
             images: [
@@ -2672,7 +2672,7 @@ export const productsData = [
             ]
           },
           {
-            id: "model_dw_28_lrbt_io",
+            id: "model-dw-28-lrbt-io",
             name: "DW 28 - LRBT iO",
             description: "Dante Wall Panel (Rose Gold) – Bluetooth 5.0 + Stereo RCA",
             images: [
@@ -2682,7 +2682,7 @@ export const productsData = [
         ],
       },
       {
-        id: "series_customizable_floor_box",
+        id: "series-customizable-floor-box",
         name: "Customizable Floor box",
         description: "Tailored floor boxes for flexible and discreet cable management and connectivity.",
         image: "/images/Products/dante_wall_plates/floor_box.webp",
@@ -2691,7 +2691,7 @@ export const productsData = [
         type: "series",
         models: [
           {
-            id: "model_custom_floor_box",
+            id: "model-custom-floor-box",
             name: "Custom",
             description: "Customizable Floor box",
             images: [
@@ -2701,7 +2701,7 @@ export const productsData = [
         ],
       },
       {
-        id: "series_customizable_wall_plate",
+        id: "series-customizable-wall-plate",
         name: "Customizable wall plate",
         description: "Design your own wall plates for unique installation needs and aesthetic preferences.",
         image: "/images/Products/dante_wall_plates/wall_plate.webp",
@@ -2710,7 +2710,7 @@ export const productsData = [
         type: "series",
         models: [
           {
-            id: "model_custom_wall_plate",
+            id: "model-custom-wall-plate",
             name: "Custom",
             description: "Customizable wall plate",
             images: [
@@ -2722,7 +2722,7 @@ export const productsData = [
     ],
   },
   {
-    id: "brand_microphones",
+    id: "brand-microphones",
     name: "Professional Microphones",
     category: "microphones",
     description: "High-quality microphones for every application, from live sound to studio recording.",
@@ -2730,7 +2730,7 @@ export const productsData = [
     type: "brand",
     series: [
       {
-        id: "series-2_channel_wireless_mic",
+        id: "series-2-channel-wireless-mic",
         name: "2 Channel wireless mic",
         description: "Dual wireless microphone systems offering versatility with handheld, bodypack, and desktop options.",
         image: "/images/Products/Microphone/AM-RX2H.webp",
@@ -2739,7 +2739,7 @@ export const productsData = [
         type: "series",
         models: [
           {
-            id: "model_am_rx2h",
+            id: "model-am-rx2h",
             name: "AM-RX2H",
             description: "RUHF-2H Dual Wireless Handheld Microphone System",
             images: [
@@ -2747,7 +2747,7 @@ export const productsData = [
             ]
           },
           {
-            id: "model_am_rx2b",
+            id: "model-am-rx2b",
             name: "AM-RX2B",
             description: "RUHF-2B Dual Wireless Bodypack Microphone System",
             images: [
@@ -2755,7 +2755,7 @@ export const productsData = [
             ]
           },
           {
-            id: "model_am_rx2d",
+            id: "model-am-rx2d",
             name: "AM-RX2D",
             description: "RUHF-2D Dual Wireless Desktop Microphone System",
             images: [
@@ -2765,7 +2765,7 @@ export const productsData = [
         ],
       },
       // {
-      //   id: "series_4_channel_wireless_mic",
+      //   id: "series-4-channel-wireless-mic",
       //   name: "4 Channel wireless mic",
       //   description: "Quad wireless microphone systems providing extensive coverage for larger setups.",
       //   image: "https://placehold.co/400x300/F0F4F8/8B5CF6?text=4Ch+Wireless",
@@ -2774,7 +2774,7 @@ export const productsData = [
       //   type: "series",
       //   models: [
       //     {
-      //       id: "model_am_rx4h",
+      //       id: "model-am-rx4h",
       //       name: "AM-RX4H",
       //       description: "RUHF-4H Quad Wireless Handheld Microphone System",
       //       images: [
@@ -2783,7 +2783,7 @@ export const productsData = [
       //       ]
       //     },
       //     {
-      //       id: "model_am_rx4b",
+      //       id: "model-am-rx4b",
       //       name: "AM-RX4B",
       //       description: "RUHF-4B Quad Wireless Bodypack Microphone System",
       //       images: [
@@ -2792,7 +2792,7 @@ export const productsData = [
       //       ]
       //     },
       //     {
-      //       id: "model_am_rx4d",
+      //       id: "model-am-rx4d",
       //       name: "AM-RX4D",
       //       description: "RUHF-4D Quad Wireless Desktop Microphone System",
       //       images: [
@@ -2803,7 +2803,7 @@ export const productsData = [
       //   ],
       // },
       // {
-      //   id: "series_8_channel_wireless_mic",
+      //   id: "series-8-channel-wireless-mic",
       //   name: "8 Channel wireless mic",
       //   description: "Eight-channel wireless microphone systems ideal for large-scale events and installations.",
       //   image: "https://placehold.co/400x300/F0F4F8/8B5CF6?text=8Ch+Wireless",
@@ -2812,7 +2812,7 @@ export const productsData = [
       //   type: "series",
       //   models: [
       //     {
-      //       id: "model_am_rx8h",
+      //       id: "model-am-rx8h",
       //       name: "AM-RX8H",
       //       description: "RUHF-8H Eight Wireless Handheld Microphone System",
       //       images: [
@@ -2821,7 +2821,7 @@ export const productsData = [
       //       ]
       //     },
       //     {
-      //       id: "model_am_rx8b",
+      //       id: "model-am-rx8b",
       //       name: "AM-RX8B",
       //       description: "RUHF-8B Eight Wireless Bodypack Microphone System",
       //       images: [
@@ -2830,7 +2830,7 @@ export const productsData = [
       //       ]
       //     },
       //     {
-      //       id: "model_am_rx8d",
+      //       id: "model-am-rx8d",
       //       name: "AM-RX8D",
       //       description: "RUHF-8D Eight Wireless Desktop Microphone System",
       //       images: [
@@ -2841,7 +2841,7 @@ export const productsData = [
       //   ],
       // },
       // {
-      //   id: "series_antenna_system",
+      //   id: "series-antenna-system",
       //   name: "Antenna System",
       //   description: "Enhance your wireless microphone range and reliability with dedicated antenna systems.",
       //   image: "https://placehold.co/400x300/F0F4F8/8B5CF6?text=Antenna+System",
@@ -2850,7 +2850,7 @@ export const productsData = [
       //   type: "series",
       //   models: [
       //     {
-      //       id: "model_am_ac800",
+      //       id: "model-am-ac800",
       //       name: "AM-AC800",
       //       description: "Antenna System",
       //       images: [
@@ -2863,7 +2863,7 @@ export const productsData = [
     ],
   },
   {
-    id: "brand_all_in_one",
+    id: "brand-all-in-one",
     name: "All-in-One Processors",
     category: "all_in_one_processor",
     description: "Integrated audio and video processing solutions for centralized control.",
@@ -2871,7 +2871,7 @@ export const productsData = [
     type: "brand",
     series: [
       {
-        id: "series_all_in_one_processor",
+        id: "series-all-in-one-processor",
         name: "ALL In one processor",
         description: "Multifunctional integrated processors offering comprehensive audio and video management.",
         image: "/images/Products/all_in_one_processor/CLIMBER-1005.webp",
@@ -2880,7 +2880,7 @@ export const productsData = [
         type: "series",
         models: [
           {
-            id: "model_fusion_1005",
+            id: "model-fusion-1005",
             name: "Fusion-1005",
             description: "Five-in-one Integrated Processor",
             images: [
@@ -2889,23 +2889,23 @@ export const productsData = [
             ],
             overview: `The Fusion -1005 is a state-of-the-art five-in-one integrated processor designed for advanced audio-visual, control, and IoT applications in professional environments. Built on an industrial-grade, virus-resistant embedded system with a high-performance DSP core and OPS computer, it delivers seamless 4K video matrix switching, robust audio processing, and smart centralized control. With support for Zigbee IoT, multi-stream recording, and third-party platform integration, it is ideal for corporate boardrooms, auditoriums, educational facilities, live event venues, and multimedia studios.`,
             keyFeatures: [
-                      "Smart Centralized Control: Integrated control of multimedia equipment via a conference tablet, enabling unified management of audio/video, conferencing, recording, broadcasting, and third-party peripherals.",
-                      "Standard Control Interfaces: Supports RS232/485, IR, IO, and RELAY connections for common AV and automation devices.",
-                      "Zigbee IoT Protocol: Enables wireless control of smart devices through Zigbee integration.",
-                      "Bi-directional Serial Communication: Supports two-way control over a single serial link for seamless device interaction.",
-                      "Hybrid Control Design: Combines wired and wireless IoT control, preventing interference and disconnection even in shielded environments.",
-                      "4K Video Matrix Switching: 4-in 2-out seamless 4K@60Hz video switching for fast and clear AV transitions.",
-                      "Digital Audio Interface: Features 8-in/4-out configuration with network and HDMI audio routing.",
-                      "Built-in Amplifier: Delivers 2×100W output power for direct speaker drive.",
-                      "Multi-Stream Local Recording: Records 4–6 video streams simultaneously for meetings, training, or lectures.",
-                      "IPC Camera Integration: Supports up to 12 IPC video inputs for live output, display, or recording.",
-                      "Third-Party Platform Integration: RTMP push and RTSP pull for seamless integration with external platforms.",
-                      "Industrial-Grade System: Virus-resistant embedded architecture with 32GB RAM, 1TB SSD OPS computer.",
-                      "Advanced Audio Processing: Includes AEC, AGC, ANC/ANS, AFC, audio mix matrix, and dodger ducker for superior sound management.",
-                      "Maintenance Interface: Web-based configuration, upgrades, logs, remote O&M, Telnet debugging, and USB restore.",
-                      "Energy-Saving Features: Network sleep/wake and one-touch system shutdown for efficient power management.",
-                      "Enhanced Processing Power: Nine integrated processing functions, including advanced dynamics, multi-zone control, and IoT ecosystem management."
-                    ],
+              "Smart Centralized Control: Integrated control of multimedia equipment via a conference tablet, enabling unified management of audio/video, conferencing, recording, broadcasting, and third-party peripherals.",
+              "Standard Control Interfaces: Supports RS232/485, IR, IO, and RELAY connections for common AV and automation devices.",
+              "Zigbee IoT Protocol: Enables wireless control of smart devices through Zigbee integration.",
+              "Bi-directional Serial Communication: Supports two-way control over a single serial link for seamless device interaction.",
+              "Hybrid Control Design: Combines wired and wireless IoT control, preventing interference and disconnection even in shielded environments.",
+              "4K Video Matrix Switching: 4-in 2-out seamless 4K@60Hz video switching for fast and clear AV transitions.",
+              "Digital Audio Interface: Features 8-in/4-out configuration with network and HDMI audio routing.",
+              "Built-in Amplifier: Delivers 2×100W output power for direct speaker drive.",
+              "Multi-Stream Local Recording: Records 4–6 video streams simultaneously for meetings, training, or lectures.",
+              "IPC Camera Integration: Supports up to 12 IPC video inputs for live output, display, or recording.",
+              "Third-Party Platform Integration: RTMP push and RTSP pull for seamless integration with external platforms.",
+              "Industrial-Grade System: Virus-resistant embedded architecture with 32GB RAM, 1TB SSD OPS computer.",
+              "Advanced Audio Processing: Includes AEC, AGC, ANC/ANS, AFC, audio mix matrix, and dodger ducker for superior sound management.",
+              "Maintenance Interface: Web-based configuration, upgrades, logs, remote O&M, Telnet debugging, and USB restore.",
+              "Energy-Saving Features: Network sleep/wake and one-touch system shutdown for efficient power management.",
+              "Enhanced Processing Power: Nine integrated processing functions, including advanced dynamics, multi-zone control, and IoT ecosystem management."
+            ],
             applications: [
               "Meeting Room",
               "Conference Center",
@@ -2920,77 +2920,77 @@ export const productsData = [
             ],
 
             specifications: {
-                "System Specifications": {
-                  "System Architecture": "Industrial-grade embedded system, virus-resistant",
-                  "Operating System": "Embedded system (OS not specified)",
-                  "Built-in PC": "OPS computer with 16GB RAM, 512GB SSD",
-                  "Processor": "High-performance DSP Core with Video Processing Unit",
-                  "Sampling Rate (Audio)": "48 kHz ± 100 ppm",
-                  "Video Resolution": "Up to 4K@60Hz (4:4:4)",
-                  "Main Stream": "1080P@60",
-                  "Preview Stream": "CIF",
-                  "Encoding/Decoding Bandwidth": "512Kbps ~ 16Mbps",
-                  "Frequency Response (Audio)": "20 Hz – 20 kHz ± 0.5 dB",
-                  "Dynamic Range (Audio)": "115 dB (A-weighted)",
-                  "THD + Noise (Audio)": "<0.005% @ 4 dBu",
-                  "Latency (Audio)": "<1 ms (input to output)",
-                  "Latency (Video)": "<16 ms (input to output)",
-                  "Delay Memory": "150 mono seconds (audio)",
-                  "Control Inputs": "0–3.3 VDC",
-                  "External Control Potentiometer": "10k Ohm, linear",
-                  "Logic Outputs": "Low (0 V) active, high (5 V) inactive",
-                  "Logic Output Max Power": "24 VDC / 50 mA",
-                  "Serial I/O": "2 x RS-232, 2 x RS-485, 57.6 kbps, 8 data bits, 1 stop bit, no parity",
-                  "Stored Presets": "500 storable presets",
-                  "IoT Protocol": "Zigbee for wireless device control",
-                  "Amplifier Output": "2 x 100W @ 8 Ohms, 2 x 150W @ 4 Ohms",
-                  "Power Input": "AC 100–240V, 50/60Hz",
-                  "Power Consumption": "Typical: 50W, Full Load: 750W",
-                  "Power Switch": "One-touch system switch, sleep/wake via network"
-                },
-                "Analog and Digital Inputs/Outputs": {
-                  "Analog Audio Inputs": "6 channels Phoenix terminal (mic/line level)",
-                  "Analog Audio Outputs": "2 pairs L/R stereo Phoenix terminal outputs",
-                  "Digital Audio Inputs/Outputs": "6-in/2-out (network and HDMI audio routing)",
-                  "Video Inputs": "3 x HDMI inputs (up to 4K@60Hz), 2 x RTSP IP camera streams, up to 12 IPC video inputs",
-                  "Video Outputs": "3 x HDMI outputs (up to 4K@60Hz), 1 channel HDMI decoding",
-                  "Connectors (Audio)": "Phoenix terminal (3.81 mm)",
-                  "Connectors (Video)": "HDMI 2.0, RJ45 (for IPC)",
-                  "Nominal Level (Audio)": "+4 dBu with 20 dB headroom",
-                  "Maximum Level (Audio)": "+24 dBu",
-                  "Mic Pre-amp Gain": "0 to 48 dB (in 3 dB steps)",
-                  "Phantom Power": "+48 VDC, 10 mA per input",
-                  "Input Impedance (Audio)": "5k Ohms balanced",
-                  "Input Dynamic Range (Audio)": ">115 dB, A-weighted",
-                  "Input THD + Noise (Audio)": "<-95 dB, 1 kHz @ +15 dBu",
-                  "Input Latency (Audio)": "0.25 ms",
-                  "Output Impedance (Audio)": "600 Ohms balanced",
-                  "Output Dynamic Range (Audio)": "115 dB, A-weighted",
-                  "Output THD + Noise (Audio)": "<-90 dB, 1 kHz @ +8 dBu",
-                  "Output Latency (Audio)": "0.25 ms"
-                },
-                "Control Specifications": {
-                  "Control Interfaces": "2 x RS-232, 2 x RS-485, 2 x Relay, 2 x I/O, 2 x IR, Zigbee",
-                  "Bi-directional Serial Communication": "Supported over RS232/485",
-                  "Display Control": "Supports central control panel (10.1”/4” Android PoE or non-PoE options)",
-                  "Central Control Functions": "One-touch control for system power, signal switching, volume, recording, broadcasting, remote call, environment control",
-                  "Maintenance Interface": "Web interface for configuration, upgrades, logs, remote O&M, Telnet debugging, USB restore",
-                  "Third-Party Platform Integration": "RTMP push stream, RTSP pull stream",
-                  "Recording Capability": "4–6 simultaneous video streams (local storage)",
-                  "USB Ports": "1 x USB Type-A, 1 x USB Type-C",
-                  "Network Interfaces": "4 x PoE LAN ports, 1 x WAN port, 1 x SFP Fiber port, 2 x WiFi Antennas"
-                },
-                "Mechanical Specifications": {
-                  "Installation": "3U rackmount (telecom standard)",
-                  "Dimensions": "437 mm (W) × 410 mm (D) × 132.5 mm (H)",
-                  "Operating Temperature": "0–45°C",
-                  "Operating Humidity": "10%–90%",
-                  "Operating Altitude": "≤ 5000 meters"
-                }
+              "System Specifications": {
+                "System Architecture": "Industrial-grade embedded system, virus-resistant",
+                "Operating System": "Embedded system (OS not specified)",
+                "Built-in PC": "OPS computer with 16GB RAM, 512GB SSD",
+                "Processor": "High-performance DSP Core with Video Processing Unit",
+                "Sampling Rate (Audio)": "48 kHz ± 100 ppm",
+                "Video Resolution": "Up to 4K@60Hz (4:4:4)",
+                "Main Stream": "1080P@60",
+                "Preview Stream": "CIF",
+                "Encoding/Decoding Bandwidth": "512Kbps ~ 16Mbps",
+                "Frequency Response (Audio)": "20 Hz – 20 kHz ± 0.5 dB",
+                "Dynamic Range (Audio)": "115 dB (A-weighted)",
+                "THD + Noise (Audio)": "<0.005% @ 4 dBu",
+                "Latency (Audio)": "<1 ms (input to output)",
+                "Latency (Video)": "<16 ms (input to output)",
+                "Delay Memory": "150 mono seconds (audio)",
+                "Control Inputs": "0–3.3 VDC",
+                "External Control Potentiometer": "10k Ohm, linear",
+                "Logic Outputs": "Low (0 V) active, high (5 V) inactive",
+                "Logic Output Max Power": "24 VDC / 50 mA",
+                "Serial I/O": "2 x RS-232, 2 x RS-485, 57.6 kbps, 8 data bits, 1 stop bit, no parity",
+                "Stored Presets": "500 storable presets",
+                "IoT Protocol": "Zigbee for wireless device control",
+                "Amplifier Output": "2 x 100W @ 8 Ohms, 2 x 150W @ 4 Ohms",
+                "Power Input": "AC 100–240V, 50/60Hz",
+                "Power Consumption": "Typical: 50W, Full Load: 750W",
+                "Power Switch": "One-touch system switch, sleep/wake via network"
               },
+              "Analog and Digital Inputs/Outputs": {
+                "Analog Audio Inputs": "6 channels Phoenix terminal (mic/line level)",
+                "Analog Audio Outputs": "2 pairs L/R stereo Phoenix terminal outputs",
+                "Digital Audio Inputs/Outputs": "6-in/2-out (network and HDMI audio routing)",
+                "Video Inputs": "3 x HDMI inputs (up to 4K@60Hz), 2 x RTSP IP camera streams, up to 12 IPC video inputs",
+                "Video Outputs": "3 x HDMI outputs (up to 4K@60Hz), 1 channel HDMI decoding",
+                "Connectors (Audio)": "Phoenix terminal (3.81 mm)",
+                "Connectors (Video)": "HDMI 2.0, RJ45 (for IPC)",
+                "Nominal Level (Audio)": "+4 dBu with 20 dB headroom",
+                "Maximum Level (Audio)": "+24 dBu",
+                "Mic Pre-amp Gain": "0 to 48 dB (in 3 dB steps)",
+                "Phantom Power": "+48 VDC, 10 mA per input",
+                "Input Impedance (Audio)": "5k Ohms balanced",
+                "Input Dynamic Range (Audio)": ">115 dB, A-weighted",
+                "Input THD + Noise (Audio)": "<-95 dB, 1 kHz @ +15 dBu",
+                "Input Latency (Audio)": "0.25 ms",
+                "Output Impedance (Audio)": "600 Ohms balanced",
+                "Output Dynamic Range (Audio)": "115 dB, A-weighted",
+                "Output THD + Noise (Audio)": "<-90 dB, 1 kHz @ +8 dBu",
+                "Output Latency (Audio)": "0.25 ms"
+              },
+              "Control Specifications": {
+                "Control Interfaces": "2 x RS-232, 2 x RS-485, 2 x Relay, 2 x I/O, 2 x IR, Zigbee",
+                "Bi-directional Serial Communication": "Supported over RS232/485",
+                "Display Control": "Supports central control panel (10.1”/4” Android PoE or non-PoE options)",
+                "Central Control Functions": "One-touch control for system power, signal switching, volume, recording, broadcasting, remote call, environment control",
+                "Maintenance Interface": "Web interface for configuration, upgrades, logs, remote O&M, Telnet debugging, USB restore",
+                "Third-Party Platform Integration": "RTMP push stream, RTSP pull stream",
+                "Recording Capability": "4–6 simultaneous video streams (local storage)",
+                "USB Ports": "1 x USB Type-A, 1 x USB Type-C",
+                "Network Interfaces": "4 x PoE LAN ports, 1 x WAN port, 1 x SFP Fiber port, 2 x WiFi Antennas"
+              },
+              "Mechanical Specifications": {
+                "Installation": "3U rackmount (telecom standard)",
+                "Dimensions": "437 mm (W) × 410 mm (D) × 132.5 mm (H)",
+                "Operating Temperature": "0–45°C",
+                "Operating Humidity": "10%–90%",
+                "Operating Altitude": "≤ 5000 meters"
+              }
+            },
           },
           {
-            id: "model_fusion_1008",
+            id: "model-fusion-1008",
             name: "Fusion-1008",
             description: "Nine-in-one Integrated Processor",
             images: [
@@ -3001,17 +3001,17 @@ export const productsData = [
             overview: `The Fusion -1008 is a next-generation nine-in-one integrated processor designed for comprehensive audio-visual, control, and IoT applications in professional environments. Built on an industrial-grade, virus-resistant embedded system with a high-performance DSP core and integrated OPS computer, it delivers seamless 4K video matrix switching, advanced audio processing, and smart centralized control. With enhanced capabilities for multi-stream recording, third-party platform integration, and Zigbee IoT connectivity, it is the ultimate solution for large-scale corporate boardrooms, auditoriums, educational facilities, live event venues, and multimedia studios.`,
 
             keyFeatures: [
-                  "Smart Centralized Control: Integrated control of multimedia equipment via a conference tablet, enabling unified management of audio/video, conferencing, recording, broadcasting, and third-party peripherals.",
-                  "Standard Control Interfaces: Supports RS232/485, IR, IO, and RELAY connections for common AV and automation devices.",
-                  "Zigbee IoT Protocol: Enables wireless control of smart devices through Zigbee integration.",
-                  "Bi-directional Serial Communication: Supports two-way control over a single serial link for seamless device interaction.",
-                  "Hybrid Control Design: Combines wired and wireless IoT control, preventing interference and disconnection even in shielded environments.",
-                  "4K Video Matrix Switching: 4-in 2-out seamless 4K@60Hz video switching for fast and clear AV transitions.",
-                  "Digital Audio Interface: Features 8-in/4-out configuration with network and HDMI audio routing.",
-                  "Built-in Amplifier: Delivers 2×100W output power for direct speaker drive.",
-                  "Multi-Stream Local Recording: Records 4–6 video streams simultaneously for meetings, training, or lectures.",
-                  "IPC Camera Integration: Supports up to 12 IPC video inputs for live output, display, or recording."
-                ],
+              "Smart Centralized Control: Integrated control of multimedia equipment via a conference tablet, enabling unified management of audio/video, conferencing, recording, broadcasting, and third-party peripherals.",
+              "Standard Control Interfaces: Supports RS232/485, IR, IO, and RELAY connections for common AV and automation devices.",
+              "Zigbee IoT Protocol: Enables wireless control of smart devices through Zigbee integration.",
+              "Bi-directional Serial Communication: Supports two-way control over a single serial link for seamless device interaction.",
+              "Hybrid Control Design: Combines wired and wireless IoT control, preventing interference and disconnection even in shielded environments.",
+              "4K Video Matrix Switching: 4-in 2-out seamless 4K@60Hz video switching for fast and clear AV transitions.",
+              "Digital Audio Interface: Features 8-in/4-out configuration with network and HDMI audio routing.",
+              "Built-in Amplifier: Delivers 2×100W output power for direct speaker drive.",
+              "Multi-Stream Local Recording: Records 4–6 video streams simultaneously for meetings, training, or lectures.",
+              "IPC Camera Integration: Supports up to 12 IPC video inputs for live output, display, or recording."
+            ],
 
             applications: [
               "Meeting Room",
@@ -3086,125 +3086,125 @@ export const productsData = [
             },
           },
           {
-              id: "model_fusion_1009",
-              name: "Fusion-1009",
-              description: "Twelve-in-one Integrated Processor",
-              images: [
-                "/images/Products/all_in_one_processor/CLIMBER-1009.webp",
-                "/images/Products/all_in_one_processor/CLIMBER-1009b.webp"
-              ],
-              overview: `The Fusion-1008 is a next-generation 12-in-1 integrated processor, engineered for superior multimedia performance and seamless system integration. Building on the success of its predecessor, the Fusion-1009 consolidates twelve powerful functions into a single, compact unit—maximizing efficiency, minimizing wiring complexity, and reducing installation time. Ideal for smart classrooms, advanced conference rooms, hybrid lecture halls, command centers, and multifunctional venues, the Fusion-1009 supports a broad range of applications—from local presentations and remote collaboration to live streaming and interactive training. With robust reliability, intuitive control, and high-resolution performance, the Fusion-1009 delivers unmatched flexibility for modern AV environments.`,
+            id: "model-fusion-1009",
+            name: "Fusion-1009",
+            description: "Twelve-in-one Integrated Processor",
+            images: [
+              "/images/Products/all_in_one_processor/CLIMBER-1009.webp",
+              "/images/Products/all_in_one_processor/CLIMBER-1009b.webp"
+            ],
+            overview: `The Fusion-1008 is a next-generation 12-in-1 integrated processor, engineered for superior multimedia performance and seamless system integration. Building on the success of its predecessor, the Fusion-1009 consolidates twelve powerful functions into a single, compact unit—maximizing efficiency, minimizing wiring complexity, and reducing installation time. Ideal for smart classrooms, advanced conference rooms, hybrid lecture halls, command centers, and multifunctional venues, the Fusion-1009 supports a broad range of applications—from local presentations and remote collaboration to live streaming and interactive training. With robust reliability, intuitive control, and high-resolution performance, the Fusion-1009 delivers unmatched flexibility for modern AV environments.`,
 
-              keyFeatures: [
-                "Smart Centralized Control: Control and manage all multimedia systems via a single conference tablet. Seamlessly operate audio, video, conferencing, recording, broadcasting, and third-party devices through one unified interface.",
-                "Standard Control Interfaces: Supports RS232/485, IR, IO, and RELAY connections for common AV and automation devices.",
-                "Zigbee IoT Protocol: Enables wireless control of smart devices through Zigbee integration.",
-                "Bi-directional Serial Communication: Supports two-way control over a single serial link for seamless device interaction.",
-                "Hybrid Control Design: Combines wired and wireless IoT control, preventing interference and disconnection even in shielded environments.",
-                "4K Video Matrix Switching: 4-in 2-out seamless 4K@60Hz video switching for fast and clear AV transitions.",
-                "Digital Audio Interface: Features 8-in/4-out configuration with network and HDMI audio routing.",
-                "Built-in Amplifier: Delivers 2×100W output power for direct speaker drive.",
-                "Multi-Stream Local Recording: Records 4–6 video streams simultaneously for meetings, training, or lectures.",
-                "IPC Camera Integration: Supports up to 12 IPC video inputs for live output, display, or recording.",
-              ],
+            keyFeatures: [
+              "Smart Centralized Control: Control and manage all multimedia systems via a single conference tablet. Seamlessly operate audio, video, conferencing, recording, broadcasting, and third-party devices through one unified interface.",
+              "Standard Control Interfaces: Supports RS232/485, IR, IO, and RELAY connections for common AV and automation devices.",
+              "Zigbee IoT Protocol: Enables wireless control of smart devices through Zigbee integration.",
+              "Bi-directional Serial Communication: Supports two-way control over a single serial link for seamless device interaction.",
+              "Hybrid Control Design: Combines wired and wireless IoT control, preventing interference and disconnection even in shielded environments.",
+              "4K Video Matrix Switching: 4-in 2-out seamless 4K@60Hz video switching for fast and clear AV transitions.",
+              "Digital Audio Interface: Features 8-in/4-out configuration with network and HDMI audio routing.",
+              "Built-in Amplifier: Delivers 2×100W output power for direct speaker drive.",
+              "Multi-Stream Local Recording: Records 4–6 video streams simultaneously for meetings, training, or lectures.",
+              "IPC Camera Integration: Supports up to 12 IPC video inputs for live output, display, or recording.",
+            ],
 
-              applications: [
-                "Meeting Room",
-                "Conference Center",
-                "Courtrooms",
-                "Classrooms",
-                "Lecture Halls",
-                "House of Worship",
-                "Hotels",
-                "Event Venues",
-                "Training Centers",
-                "All Hand Space"
-              ],
+            applications: [
+              "Meeting Room",
+              "Conference Center",
+              "Courtrooms",
+              "Classrooms",
+              "Lecture Halls",
+              "House of Worship",
+              "Hotels",
+              "Event Venues",
+              "Training Centers",
+              "All Hand Space"
+            ],
 
-              specifications: {
-                "System Specifications": {
-                  "System Architecture": "Industrial-grade architecture based on Linux, virus-free",
-                  "Operating System": "Linux-based embedded system with integrated OPS 11th Gen Windows 11 Pro PC (16GB RAM, 512GB SSD)",
-                  "Processor": "High-performance DSP Core with Advanced Video Processing Unit",
-                  "Sampling Rate (Audio)": "48 kHz ± 100 ppm",
-                  "Video Resolution": "Up to 4K@60Hz (4:4:4)",
-                  "Main Stream": "1080P@60",
-                  "Preview Stream": "CIF",
-                  "Video Codec": "H.264 HP/MP/BP, H.265 MP, up to 16 channels 1080P encoding/decoding, 512 Kbps–16 Mbps per channel",
-                  "Audio Protocols": "G.711, G.722, G.722.1, G.722.1C, AAC",
-                  "Communication Protocols": "SIP, H.323, BFCP, H.239, RTSP, RTMP, TCP/IP, HTTP, FTP, NTP, RTP, RTCP, TLS, Telnet",
-                  "Frequency Response (Audio)": "20 Hz – 20 kHz ± 0.5 dB",
-                  "Dynamic Range (Audio)": "120 dB (A-weighted)",
-                  "THD + Noise (Audio)": "<0.003% @ 4 dBu",
-                  "Latency (Audio)": "<0.7 ms (input to output)",
-                  "Latency (Video)": "<12 ms (input to output)",
-                  "Delay Memory": "250 mono seconds (audio)",
-                  "Control Inputs": "0–3.3 VDC",
-                  "External Control Potentiometer": "10k Ohm, linear",
-                  "Logic Outputs": "Low (0 V) active, high (5 V) inactive",
-                  "Logic Output Max Power": "24 VDC / 50 mA0",
-                  "Stored Presets": "1500 storable presets",
-                  "IoT Protocol": "Zigbee for wireless device control",
-                  "Amplifier Output": "2 x 100W @ 8 Ohms, 2 x 150W @ 4 Ohms",
-                  "Power Input": "AC 100–240V, 50/60Hz",
-                  "Power Consumption": "80W (no speakers/PoE devices)",
-                  "Power Switch": "One-touch system switch, sleep/wake via network"
-                },
-                "Analog and Digital Inputs/Outputs": {
-                  "Analog Audio Inputs": "8 x Phoenix terminal (mic/line level, 48V phantom power), 1 x OPS PC audio, 1 x अस्पताल screen projection (optional), 1 x wireless mic module (optional)",
-                  "Analog Audio Outputs": "4 x Line out (2 pairs L/R stereo Phoenix terminal)",
-                  "Digital Audio Inputs/Outputs": "8-in/4-out (network and HDMI audio routing), 4 x HDMI embedded audio input, 2 x HDMI embedded audio output",
-                  "Video Inputs": "4 x HDMI inputs (IN1 & IN3 up to 4K30, IN2 & IN4 up to 1080P60), 12 x IP network camera inputs (RTSP supported)",
-                  "Video Outputs": "6 x HDMI outputs (OUT1 up to 4K30, OUT2–OUT6 up to 1080P60), 1 channel HDMI decoding",
-                  "Connectors (Audio)": "Phoenix terminal (3.81 mm)",
-                  "Connectors (Video)": "HDMI 2.0, RJ45 (for IPC)",
-                  "Nominal Level (Audio)": "+4 dBu with 20 dB headroom",
-                  "Maximum Level (Audio)": "+24 dBu",
-                  "Mic Pre-amp Gain": "0 to 51 dB (in 3 dB steps)",
-                  "Phantom Power": "+48 VDC, 10 mA per input",
-                  "Input Impedance (Audio)": "5k Ohms balanced",
-                  "Input Dynamic Range (Audio)": ">120 dB, A-weighted",
-                  "Input THD + Noise (Audio)": "<-97 dB, 1 kHz @ +15 dBu",
-                  "Input Latency (Audio)": "0.15 ms",
-                  "Output Impedance (Audio)": "600 Ohms balanced",
-                  "Output Dynamic Range (Audio)": "120 dB, A-weighted",
-                  "Output THD + Noise (Audio)": "<-93 dB, 1 kHz @ +8 dBu",
-                  "Output Latency (Audio)": "0.15 ms"
-                },
-                "Control Specifications": {
-                  "Control Interfaces": "3 x RS-232/485, 1 x RS232/RS485 DEBUG, 2 x Relay, 2 x I/O, 2 x IR, Zigbee",
-                  "Bi-directional Serial Communication": "Supported over RS232/485",
-                  "Control Panel Options": "10.1” Android wired touchscreen (no PoE), 10.1” PoE desktop touchscreen, 10.1” PoE wall-mount touchscreen (w/ box)",
-                  "Central Control Functions": "One-touch control for system switch, source selection, volume, camera control, recording, broadcasting, remote call, environment control",
-                  "Maintenance Interface": "Web-based configuration, upgrades, logs, remote O&M, Telnet debugging, USB restore",
-                  "Video Conferencing": "H.323 & SIP with short-number calling, GK & SIP registration, up to 6-party conferences, multiple templates, scheduling, mute/unmute, invite/kick participants",
-                  "Third-Party Platform Integration": "RTMP push stream (>8 simultaneous platforms), RTSP pull stream",
-                  "Recording Capability": "Up to 6 local recording streams or 1 x 4K video stream, file format: MP4",
-                  "Display Terminal": "Supports 1–16 split screens, picture-in-picture, picture-out-picture, subtitle overlay, terminal name, station logo with transparency control",
-                  "Data Interfaces": "USB ports for wireless projection transmitter pairing and updates",
-                  "Network Interfaces": "1 x WAN, 5 x LAN (4 PoE-enabled), configurable full interconnection, 2 x ceiling-mounted WiFi antennas",
-                  "Network Communication": "4-channel audio mixing/playback",
-                  "Live Streaming": "Up to 10-channel multicast, live/on-demand playback",
-                  "Wireless Projection": "PC/mobile/PAD to HDMI output via optional wireless module",
-                  "Wireless Microphone": "Optional UHF clip-on/headset mics, dual-mic receiver module"
-                },
-                "Mechanical Specifications": {
-                  "Installation": "2U standard telecom rack mount, install near AV peripherals for reduced wiring",
-                  "Dimensions": "436.8 mm (W) × 89 mm (H) × 320 mm (D)",
-                  "Operating Temperature": "0–45°C",
-                  "Operating Humidity": "10%–90%",
-                  "Operating Altitude": "≤ 5000 meters"
-                }
+            specifications: {
+              "System Specifications": {
+                "System Architecture": "Industrial-grade architecture based on Linux, virus-free",
+                "Operating System": "Linux-based embedded system with integrated OPS 11th Gen Windows 11 Pro PC (16GB RAM, 512GB SSD)",
+                "Processor": "High-performance DSP Core with Advanced Video Processing Unit",
+                "Sampling Rate (Audio)": "48 kHz ± 100 ppm",
+                "Video Resolution": "Up to 4K@60Hz (4:4:4)",
+                "Main Stream": "1080P@60",
+                "Preview Stream": "CIF",
+                "Video Codec": "H.264 HP/MP/BP, H.265 MP, up to 16 channels 1080P encoding/decoding, 512 Kbps–16 Mbps per channel",
+                "Audio Protocols": "G.711, G.722, G.722.1, G.722.1C, AAC",
+                "Communication Protocols": "SIP, H.323, BFCP, H.239, RTSP, RTMP, TCP/IP, HTTP, FTP, NTP, RTP, RTCP, TLS, Telnet",
+                "Frequency Response (Audio)": "20 Hz – 20 kHz ± 0.5 dB",
+                "Dynamic Range (Audio)": "120 dB (A-weighted)",
+                "THD + Noise (Audio)": "<0.003% @ 4 dBu",
+                "Latency (Audio)": "<0.7 ms (input to output)",
+                "Latency (Video)": "<12 ms (input to output)",
+                "Delay Memory": "250 mono seconds (audio)",
+                "Control Inputs": "0–3.3 VDC",
+                "External Control Potentiometer": "10k Ohm, linear",
+                "Logic Outputs": "Low (0 V) active, high (5 V) inactive",
+                "Logic Output Max Power": "24 VDC / 50 mA0",
+                "Stored Presets": "1500 storable presets",
+                "IoT Protocol": "Zigbee for wireless device control",
+                "Amplifier Output": "2 x 100W @ 8 Ohms, 2 x 150W @ 4 Ohms",
+                "Power Input": "AC 100–240V, 50/60Hz",
+                "Power Consumption": "80W (no speakers/PoE devices)",
+                "Power Switch": "One-touch system switch, sleep/wake via network"
               },
+              "Analog and Digital Inputs/Outputs": {
+                "Analog Audio Inputs": "8 x Phoenix terminal (mic/line level, 48V phantom power), 1 x OPS PC audio, 1 x अस्पताल screen projection (optional), 1 x wireless mic module (optional)",
+                "Analog Audio Outputs": "4 x Line out (2 pairs L/R stereo Phoenix terminal)",
+                "Digital Audio Inputs/Outputs": "8-in/4-out (network and HDMI audio routing), 4 x HDMI embedded audio input, 2 x HDMI embedded audio output",
+                "Video Inputs": "4 x HDMI inputs (IN1 & IN3 up to 4K30, IN2 & IN4 up to 1080P60), 12 x IP network camera inputs (RTSP supported)",
+                "Video Outputs": "6 x HDMI outputs (OUT1 up to 4K30, OUT2–OUT6 up to 1080P60), 1 channel HDMI decoding",
+                "Connectors (Audio)": "Phoenix terminal (3.81 mm)",
+                "Connectors (Video)": "HDMI 2.0, RJ45 (for IPC)",
+                "Nominal Level (Audio)": "+4 dBu with 20 dB headroom",
+                "Maximum Level (Audio)": "+24 dBu",
+                "Mic Pre-amp Gain": "0 to 51 dB (in 3 dB steps)",
+                "Phantom Power": "+48 VDC, 10 mA per input",
+                "Input Impedance (Audio)": "5k Ohms balanced",
+                "Input Dynamic Range (Audio)": ">120 dB, A-weighted",
+                "Input THD + Noise (Audio)": "<-97 dB, 1 kHz @ +15 dBu",
+                "Input Latency (Audio)": "0.15 ms",
+                "Output Impedance (Audio)": "600 Ohms balanced",
+                "Output Dynamic Range (Audio)": "120 dB, A-weighted",
+                "Output THD + Noise (Audio)": "<-93 dB, 1 kHz @ +8 dBu",
+                "Output Latency (Audio)": "0.15 ms"
+              },
+              "Control Specifications": {
+                "Control Interfaces": "3 x RS-232/485, 1 x RS232/RS485 DEBUG, 2 x Relay, 2 x I/O, 2 x IR, Zigbee",
+                "Bi-directional Serial Communication": "Supported over RS232/485",
+                "Control Panel Options": "10.1” Android wired touchscreen (no PoE), 10.1” PoE desktop touchscreen, 10.1” PoE wall-mount touchscreen (w/ box)",
+                "Central Control Functions": "One-touch control for system switch, source selection, volume, camera control, recording, broadcasting, remote call, environment control",
+                "Maintenance Interface": "Web-based configuration, upgrades, logs, remote O&M, Telnet debugging, USB restore",
+                "Video Conferencing": "H.323 & SIP with short-number calling, GK & SIP registration, up to 6-party conferences, multiple templates, scheduling, mute/unmute, invite/kick participants",
+                "Third-Party Platform Integration": "RTMP push stream (>8 simultaneous platforms), RTSP pull stream",
+                "Recording Capability": "Up to 6 local recording streams or 1 x 4K video stream, file format: MP4",
+                "Display Terminal": "Supports 1–16 split screens, picture-in-picture, picture-out-picture, subtitle overlay, terminal name, station logo with transparency control",
+                "Data Interfaces": "USB ports for wireless projection transmitter pairing and updates",
+                "Network Interfaces": "1 x WAN, 5 x LAN (4 PoE-enabled), configurable full interconnection, 2 x ceiling-mounted WiFi antennas",
+                "Network Communication": "4-channel audio mixing/playback",
+                "Live Streaming": "Up to 10-channel multicast, live/on-demand playback",
+                "Wireless Projection": "PC/mobile/PAD to HDMI output via optional wireless module",
+                "Wireless Microphone": "Optional UHF clip-on/headset mics, dual-mic receiver module"
+              },
+              "Mechanical Specifications": {
+                "Installation": "2U standard telecom rack mount, install near AV peripherals for reduced wiring",
+                "Dimensions": "436.8 mm (W) × 89 mm (H) × 320 mm (D)",
+                "Operating Temperature": "0–45°C",
+                "Operating Humidity": "10%–90%",
+                "Operating Altitude": "≤ 5000 meters"
+              }
             },
+          },
           {
-            id: "model_fusion_2009",
+            id: "model-fusion-2009",
             name: "Fusion-2009",
             description: "Thirteen-in-one Integrated Processor",
             images: [
               "/images/Products/all_in_one_processor/Fusion_2009(1).webp",
               "/images/Products/all_in_one_processor/Fusion_2009.webp",
-             
+
             ],
             overview: `The Fusion-2009 is a state-of-the-art 13-in-1 integrated processor engineered for high-performance
               multimedia applications. Building on advanced design principles, the Fusion-2009 merges thirteen core
@@ -3215,7 +3215,7 @@ export const productsData = [
               presentations and remote conferencing to live streaming and interactive learning, the Fusion-2009 delivers
               seamless performance and reliability across a wide range of professional environments.`,
 
-            keyFeatures : [
+            keyFeatures: [
               "Smart Centralized Control: Integrated control of multimedia equipment via a conference tablet, enabling unified management of audio/video, conferencing, recording, broadcasting, and third-party peripherals.",
               "Standard Control Interfaces: Supports RS232/485, IR, IO, and RELAY connections for common AV and automation devices.",
               "Zigbee IoT Protocol: Enables wireless control of smart devices through Zigbee integration.",
@@ -3243,83 +3243,83 @@ export const productsData = [
             ],
 
             specifications: {
-          "System Specifications": {
-            "System Architecture": "Industrial-grade embedded system, virus-resistant",
-            "Operating System": "Embedded system with integrated OPS 11th Gen Windows 11 Pro PC (16GB RAM, 512GB SSD)",
-            "Processor": "High-performance DSP Core with Advanced Video Processing Unit",
-            "Sampling Rate (Audio)": "48 kHz ± 100 ppm",
-            "Video Resolution": "Up to 4K@60Hz (4:4:4)",
-            "Main Stream": "1080P@60",
-            "Preview Stream": "CIF",
-            "Video Codec": "H.264 HP/MP/BP, H.265 MP, up to 16 channels 1080P encoding/decoding, 512 Kbps–16 Mbps per channel",
-            "Audio Protocols": "G.711, G.722, G.722.1, G.722.1C, AAC",
-            "Communication Protocols": "SIP, BFCP, H.323, H.239, RTSP, RTMP, TCP/IP, HTTP, FTP, UDP, RTP, RTCP, TLS, Telnet, NAT, E.164, H.245, H.225, Q.931, NTP",
-            "Frequency Response (Audio)": "20 Hz – 20 kHz ± 0.5 dB",
-            "Dynamic Range (Audio)": "122 dB (A-weighted)",
-            "THD + Noise (Audio)": "<0.002% @ 4 dBu",
-            "Latency (Audio)": "<0.6 ms (input to output)",
-            "Latency (Video)": "<10 ms (input to output)",
-            "Delay Memory": "300 mono seconds (audio)",
-            "Control Inputs": "0–3.3 VDC",
-            "External Control Potentiometer": "10k Ohm, linear",
-            "Logic Outputs": "Low (0 V) active, high (5 V) inactive",
-            "Logic Output Max Power": "24 VDC / 50 mA",
-            "Stored Presets": "2000 storable presets",
-            "IoT Protocol": "Zigbee for wireless device control",
-            "Amplifier Output": "4 x 200W @ 8 Ohms",
-            "Power Input": "AC 100–240V, 50/60Hz",
-            "Power Consumption": "Typical: 50W, Full Load: 750W",
-            "Power Switch": "One-touch system switch, sleep/wake via network"
+              "System Specifications": {
+                "System Architecture": "Industrial-grade embedded system, virus-resistant",
+                "Operating System": "Embedded system with integrated OPS 11th Gen Windows 11 Pro PC (16GB RAM, 512GB SSD)",
+                "Processor": "High-performance DSP Core with Advanced Video Processing Unit",
+                "Sampling Rate (Audio)": "48 kHz ± 100 ppm",
+                "Video Resolution": "Up to 4K@60Hz (4:4:4)",
+                "Main Stream": "1080P@60",
+                "Preview Stream": "CIF",
+                "Video Codec": "H.264 HP/MP/BP, H.265 MP, up to 16 channels 1080P encoding/decoding, 512 Kbps–16 Mbps per channel",
+                "Audio Protocols": "G.711, G.722, G.722.1, G.722.1C, AAC",
+                "Communication Protocols": "SIP, BFCP, H.323, H.239, RTSP, RTMP, TCP/IP, HTTP, FTP, UDP, RTP, RTCP, TLS, Telnet, NAT, E.164, H.245, H.225, Q.931, NTP",
+                "Frequency Response (Audio)": "20 Hz – 20 kHz ± 0.5 dB",
+                "Dynamic Range (Audio)": "122 dB (A-weighted)",
+                "THD + Noise (Audio)": "<0.002% @ 4 dBu",
+                "Latency (Audio)": "<0.6 ms (input to output)",
+                "Latency (Video)": "<10 ms (input to output)",
+                "Delay Memory": "300 mono seconds (audio)",
+                "Control Inputs": "0–3.3 VDC",
+                "External Control Potentiometer": "10k Ohm, linear",
+                "Logic Outputs": "Low (0 V) active, high (5 V) inactive",
+                "Logic Output Max Power": "24 VDC / 50 mA",
+                "Stored Presets": "2000 storable presets",
+                "IoT Protocol": "Zigbee for wireless device control",
+                "Amplifier Output": "4 x 200W @ 8 Ohms",
+                "Power Input": "AC 100–240V, 50/60Hz",
+                "Power Consumption": "Typical: 50W, Full Load: 750W",
+                "Power Switch": "One-touch system switch, sleep/wake via network"
+              },
+              "Analog and Digital Inputs/Outputs": {
+                "Analog Audio Inputs": "8 x Phoenix terminal (mic/line level, 48V phantom power), 1 x OPS PC audio, 1 x wireless screen projection (optional), 1 x wireless speech (optional), DIGIT MIC network port (2 mic links)",
+                "Analog Audio Outputs": "4 x Line out (2 pairs L/R stereo Phoenix terminal), 4 x 200W @ 8Ω digital amp",
+                "Digital Audio Inputs/Outputs": "8-in/4-out (network and HDMI audio routing), 8 x HDMI embedded audio input, 8 x HDMI embedded audio output, 10 x DSP, 1 x OPS",
+                "Video Inputs": "8 x HDMI inputs (4K@60Hz), 12 x IP network camera inputs (RTSP supported), 1 x OPS, 1 x wireless screen projection",
+                "Video Outputs": "8 x HDMI outputs (4K@60Hz), 8 x RTMP, 1 x OPS",
+                "Connectors (Audio)": "Phoenix terminal (3.81 mm), DIGIT MIC network port",
+                "Connectors (Video)": "HDMI 2.0, RJ45 (for IPC)",
+                "Nominal Level (Audio)": "+4 dBu with 20 dB headroom",
+                "Maximum Level (Audio)": "+24 dBu",
+                "Mic Pre-amp Gain": "0 to 51 dB (in 3 dB steps)",
+                "Phantom Power": "+48 VDC, 10 mA per input",
+                "Input Impedance (Audio)": "5k Ohms balanced",
+                "Input Dynamic Range (Audio)": ">122 dB, A-weighted",
+                "Input THD + Noise (Audio)": "<-98 dB, 1 kHz @ +15 dBu",
+                "Input Latency (Audio)": "0.12 ms",
+                "Output Impedance (Audio)": "600 Ohms balanced",
+                "Output Dynamic Range (Audio)": "122 dB, A-weighted",
+                "Output THD + Noise (Audio)": "<-94 dB,  Banda, 1 kHz @ +8 dBu",
+                "Output Latency (Audio)": "0.12 ms"
+              },
+              "Control Specifications": {
+                "Control Interfaces": "3 x RS-232/485, 1 x RS232/RS485 DEBUG, 2 x Relay, 2 x I/O, 2 x IR, Zigbee",
+                "Bi-directional Serial Communication": "Supported over RS232/485",
+                "Control Panel Options": "10.1” Android wired touchscreen (no PoE), 10.1” PoE desktop touchscreen, 10.1” PoE wall-mount touchscreen (w/ box), 4” Android PoE/non-PoE options",
+                "Central Control Functions": "One-touch control for system power, signal switching, volume control, recording, broadcasting, remote call, environment control",
+                "Maintenance Interface": "Web-based configuration, upgrades, logs, remote O&M, Telnet debugging, USB restore",
+                "Video Conferencing": "H.323 & SIP with short-number calling, GK & SIP registration, up to 6-party conferences, multiple templates, scheduling, mute/unmute, invite/kick participants",
+                "Third-Party Platform Integration": "RTMP push stream (>8 simultaneous platforms), RTSP pull stream, up to 10-channel multicast",
+                "Recording Capability": "Up to 6 local recording streams or 1 x 4K video stream, file format: MP4, supports USB backup and content management, 4K multi-screen synthesis (virtual)",
+                "Display Terminal": "Supports single to 16-screen splits (e.g., 2/4/9/13/16), picture-in-picture, picture-out-picture, resolution adaptation, subtitle overlay, terminal name, station logo with transparency control",
+                "Data Interfaces": "2 x USB Type-A, 1 x USB Type-B (for wireless projection transmitter pairing, updates, and recording backup)",
+                "Network Interfaces": "2 x WAN, 6 x LAN (4 PoE-enabled), configurable full interconnection, external antenna support",
+                "Network Communication": "6-channel audio mixing/playback",
+                "Live Streaming": "Up to 10-channel multicast, live/on-demand playback",
+                "Wireless Projection": "PC/mobile/PAD to HDMI output with 1-click projection and external antenna support",
+                "Wireless Speaking Module": "Dual mic support for handheld/lapel/headset with antenna support"
+              },
+              "Mechanical Specifications": {
+                "Installation": "3U standard telecom rack mount",
+                "Dimensions": "437 mm (W) × 410 mm (D) × 132.5 mm (H)",
+                "Operating Temperature": "0–45°C",
+                "Operating Humidity": "10%–90%",
+                "Operating Altitude": "≤ 5000 meters"
+              }
+            },
           },
-          "Analog and Digital Inputs/Outputs": {
-            "Analog Audio Inputs": "8 x Phoenix terminal (mic/line level, 48V phantom power), 1 x OPS PC audio, 1 x wireless screen projection (optional), 1 x wireless speech (optional), DIGIT MIC network port (2 mic links)",
-            "Analog Audio Outputs": "4 x Line out (2 pairs L/R stereo Phoenix terminal), 4 x 200W @ 8Ω digital amp",
-            "Digital Audio Inputs/Outputs": "8-in/4-out (network and HDMI audio routing), 8 x HDMI embedded audio input, 8 x HDMI embedded audio output, 10 x DSP, 1 x OPS",
-            "Video Inputs": "8 x HDMI inputs (4K@60Hz), 12 x IP network camera inputs (RTSP supported), 1 x OPS, 1 x wireless screen projection",
-            "Video Outputs": "8 x HDMI outputs (4K@60Hz), 8 x RTMP, 1 x OPS",
-            "Connectors (Audio)": "Phoenix terminal (3.81 mm), DIGIT MIC network port",
-            "Connectors (Video)": "HDMI 2.0, RJ45 (for IPC)",
-            "Nominal Level (Audio)": "+4 dBu with 20 dB headroom",
-            "Maximum Level (Audio)": "+24 dBu",
-            "Mic Pre-amp Gain": "0 to 51 dB (in 3 dB steps)",
-            "Phantom Power": "+48 VDC, 10 mA per input",
-            "Input Impedance (Audio)": "5k Ohms balanced",
-            "Input Dynamic Range (Audio)": ">122 dB, A-weighted",
-            "Input THD + Noise (Audio)": "<-98 dB, 1 kHz @ +15 dBu",
-            "Input Latency (Audio)": "0.12 ms",
-            "Output Impedance (Audio)": "600 Ohms balanced",
-            "Output Dynamic Range (Audio)": "122 dB, A-weighted",
-            "Output THD + Noise (Audio)": "<-94 dB,  Banda, 1 kHz @ +8 dBu",
-            "Output Latency (Audio)": "0.12 ms"
-          },
-          "Control Specifications": {
-            "Control Interfaces": "3 x RS-232/485, 1 x RS232/RS485 DEBUG, 2 x Relay, 2 x I/O, 2 x IR, Zigbee",
-            "Bi-directional Serial Communication": "Supported over RS232/485",
-            "Control Panel Options": "10.1” Android wired touchscreen (no PoE), 10.1” PoE desktop touchscreen, 10.1” PoE wall-mount touchscreen (w/ box), 4” Android PoE/non-PoE options",
-            "Central Control Functions": "One-touch control for system power, signal switching, volume control, recording, broadcasting, remote call, environment control",
-            "Maintenance Interface": "Web-based configuration, upgrades, logs, remote O&M, Telnet debugging, USB restore",
-            "Video Conferencing": "H.323 & SIP with short-number calling, GK & SIP registration, up to 6-party conferences, multiple templates, scheduling, mute/unmute, invite/kick participants",
-            "Third-Party Platform Integration": "RTMP push stream (>8 simultaneous platforms), RTSP pull stream, up to 10-channel multicast",
-            "Recording Capability": "Up to 6 local recording streams or 1 x 4K video stream, file format: MP4, supports USB backup and content management, 4K multi-screen synthesis (virtual)",
-            "Display Terminal": "Supports single to 16-screen splits (e.g., 2/4/9/13/16), picture-in-picture, picture-out-picture, resolution adaptation, subtitle overlay, terminal name, station logo with transparency control",
-            "Data Interfaces": "2 x USB Type-A, 1 x USB Type-B (for wireless projection transmitter pairing, updates, and recording backup)",
-            "Network Interfaces": "2 x WAN, 6 x LAN (4 PoE-enabled), configurable full interconnection, external antenna support",
-            "Network Communication": "6-channel audio mixing/playback",
-            "Live Streaming": "Up to 10-channel multicast, live/on-demand playback",
-            "Wireless Projection": "PC/mobile/PAD to HDMI output with 1-click projection and external antenna support",
-            "Wireless Speaking Module": "Dual mic support for handheld/lapel/headset with antenna support"
-          },
-          "Mechanical Specifications": {
-            "Installation": "3U standard telecom rack mount",
-            "Dimensions": "437 mm (W) × 410 mm (D) × 132.5 mm (H)",
-            "Operating Temperature": "0–45°C",
-            "Operating Humidity": "10%–90%",
-            "Operating Altitude": "≤ 5000 meters"
-          }
-          },
-        },
           // {
-          //   id: "model_fs_40_hdmi",
+          //   id: "model-fs-40-hdmi",
           //   name: "FS-40-HDMI",
           //   description: "Quad HDMI Input Card",
           //   images: [
@@ -3328,7 +3328,7 @@ export const productsData = [
           //   ]
           // },
           // {
-          //   id: "model_fs_41_hdmi",
+          //   id: "model-fs-41-hdmi",
           //   name: "FS-41-HDMI",
           //   description: "Four -way HDMI output card",
           //   images: [
@@ -3337,7 +3337,7 @@ export const productsData = [
           //   ]
           // },
           // {
-          //   id: "model_fs_ops_win",
+          //   id: "model-fs-ops-win",
           //   name: "FS-OPS-WIN",
           //   description: "OPS Board",
           //   images: [
@@ -3346,7 +3346,7 @@ export const productsData = [
           //   ]
           // },
           // {
-          //   id: "model_fs_via_cast",
+          //   id: "model-fs-via-cast",
           //   name: "FS-VIA-CAST",
           //   description: "Wireless screen projector card & screen projection device",
           //   images: [
@@ -3355,7 +3355,7 @@ export const productsData = [
           //   ]
           // },
           // {
-          //   id: "model_fs_md_mic",
+          //   id: "model-fs-md-mic",
           //   name: "FS-MD-MIC",
           //   description: "Wireless microphone card & Handheld microphone",
           //   images: [
@@ -3367,7 +3367,7 @@ export const productsData = [
         ],
       },
       // {
-      //   id: "series_touchscreen_control_panel",
+      //   id: "series-touchscreen-control-panel",
       //   name: "Touchscreen control Panel",
       //   description: "High-performance wired touchscreen control panels for intuitive system interaction.",
       //   image: "https://placehold.co/400x300/E5E7EB/6B7280?text=Touchscreen",
@@ -3376,7 +3376,7 @@ export const productsData = [
       //   type: "series",
       //   models: [
       //     {
-      //       id: "model_fusion_cp6",
+      //       id: "model-fusion-cp6",
       //       name: "Fusion-CP6",
       //       description: "10.1\" Wired Touch Control Panel – ARM 1.8GHz",
       //       images: [
@@ -3441,7 +3441,7 @@ export const productsData = [
       //     }
       //     },
       // {
-      //       id: "model_fusion_cp2",
+      //       id: "model-fusion-cp2",
       //       name: "Fusion-CP2",
       //       description: "10.1\" In-Wall Touch Panel – PoE, Android, 1.8GHz ARM",
       //       images: [
@@ -3503,7 +3503,7 @@ export const productsData = [
     ],
   },
   {
-    id: "brand_dante_paging",
+    id: "brand-dante-paging",
     name: "Dante Table Top Paging Microphone",
     category: "dante_paging_microphone",
     description: "Professional Dante-enabled tabletop paging and announcement microphones with gooseneck design, perfect for conference rooms, auditoriums, control rooms, and public address systems.",
@@ -3511,7 +3511,7 @@ export const productsData = [
     type: "brand",
     series: [
       {
-        id: "series_dante_paging_gooseneck",
+        id: "series-dante-paging-gooseneck",
         name: "Dante Paging Series",
         description: "High-quality Dante networked tabletop paging microphones with touch-to-talk, priority override, and crystal-clear audio.",
         image: "/images/Products/dante_paging_series/GMIC-CP(1).webp",
@@ -3520,7 +3520,7 @@ export const productsData = [
         type: "series",
         models: [
           {
-            id: "model_gmic_cp",
+            id: "model-gmic-cp",
             name: "GMIC-CP",
             description: "Dante microphone with 7-inch Android control panel",
             images: [
@@ -3530,16 +3530,16 @@ export const productsData = [
 
             overview: "The GMIC-CP is a professional-grade Dante-enabled gooseneck microphone with an integrated 7-inch Android touch control panel. Featuring a built-in microphone pre-amplifier and fully digital Dante transmission, it delivers exceptional audio quality with flexible analog/digital output switching. The customizable Android interface supports web browser control, app integration, and user-imported UI designs – making it perfect for high-end conference rooms, command centers, and control rooms.",
 
-           keyFeatures: [
-                "7-inch Android Touch Screen: Provides an intuitive control interface with customizable UI design based on the processor.",
-                "Customizable Interface: Supports importing personalized user interfaces for flexible operation.",
-                "Web Browser & App Support: Enables convenient control and system monitoring via Web browsers and dedicated applications.",
-                "Flexible Signal Output: Rear panel source dial allows switching between Analog and Digital (Dante) outputs.",
-                "Dual Signal Handling: In analog mode, outputs via line-out; in digital mode, delivers Dante audio while allowing analog input as Dante receive signal.",
-                "Built-in Microphone Pre-amplifier: Ensures clear, professional-quality sound pickup.",
-                "Stable Digital Transmission: Guarantees reliable audio delivery in mission-critical applications.",
-                "Versatile Applications: Ideal for conferences, boardrooms, command centers, and control rooms."
-              ],
+            keyFeatures: [
+              "7-inch Android Touch Screen: Provides an intuitive control interface with customizable UI design based on the processor.",
+              "Customizable Interface: Supports importing personalized user interfaces for flexible operation.",
+              "Web Browser & App Support: Enables convenient control and system monitoring via Web browsers and dedicated applications.",
+              "Flexible Signal Output: Rear panel source dial allows switching between Analog and Digital (Dante) outputs.",
+              "Dual Signal Handling: In analog mode, outputs via line-out; in digital mode, delivers Dante audio while allowing analog input as Dante receive signal.",
+              "Built-in Microphone Pre-amplifier: Ensures clear, professional-quality sound pickup.",
+              "Stable Digital Transmission: Guarantees reliable audio delivery in mission-critical applications.",
+              "Versatile Applications: Ideal for conferences, boardrooms, command centers, and control rooms."
+            ],
 
             applications: [
               "Boardrooms",
@@ -3583,7 +3583,7 @@ export const productsData = [
             }
           },
           {
-            id: "model_gmic_3",
+            id: "model-gmic-3",
             name: "GMIC-3",
             description: "Dante Gooseneck Microphone with Touch Switch",
             images: [
@@ -3629,231 +3629,231 @@ export const productsData = [
     ]
   },
   {
-  id: "brand_ai_power_av",
-  name: "AI Power Audio Video Solutions",
-  category: "ai_power_av",
-  description: "Next-generation AI-powered all-in-one conferencing endpoints, 4K tracking cameras, smart control panels and professional recording solutions for modern meeting rooms, classrooms and auditoriums.",
-  image: "/images/Products/ai_power_av/ai_power_av_banner.webp",
-  type: "brand",
-  series: [
-    {
-      id: "ai_conferencing_solutions",
-      name: "AI Conferencing Solutions",
-      description: "Complete range of intelligent 4K video bars, detachable endpoints, tracking cameras, control panels and recording systems with AI tracking, Dante AV, Android OS and plug-and-play USB connectivity.",
-      image: "/images/Products/ai_conferencing_solutions/RAI-150.webp",
-      features: [
-        "4K UHD with AI Tracking",
-        "Dante AV & USB Dual Mode",
-      ],
-      status: "In Stock",
-      type: "series",
-      models: [
-        {
-          id: "model_rai_128c",
-          name: "RAI-128C",
-          description: "Dante ceiling mount array microphone",
-          images: [
-            "/images/Products/ai_conferencing_solutions/RAI_128C(1).webp",
-            "/images/Products/ai_conferencing_solutions/RAI_128C(2).webp",
-            "/images/Products/ai_conferencing_solutions/RAI_128C.webp",
-          ],
+    id: "brand-ai-power-av",
+    name: "AI Power Audio Video Solutions",
+    category: "ai_power_av",
+    description: "Next-generation AI-powered all-in-one conferencing endpoints, 4K tracking cameras, smart control panels and professional recording solutions for modern meeting rooms, classrooms and auditoriums.",
+    image: "/images/Products/ai_power_av/ai_power_av_banner.webp",
+    type: "brand",
+    series: [
+      {
+        id: "ai-conferencing-solutions",
+        name: "AI Conferencing Solutions",
+        description: "Complete range of intelligent 4K video bars, detachable endpoints, tracking cameras, control panels and recording systems with AI tracking, Dante AV, Android OS and plug-and-play USB connectivity.",
+        image: "/images/Products/ai_conferencing_solutions/RAI-150.webp",
+        features: [
+          "4K UHD with AI Tracking",
+          "Dante AV & USB Dual Mode",
+        ],
+        status: "In Stock",
+        type: "series",
+        models: [
+          {
+            id: "model-rai-128c",
+            name: "RAI-128C",
+            description: "Dante ceiling mount array microphone",
+            images: [
+              "/images/Products/ai_conferencing_solutions/RAI_128C(1).webp",
+              "/images/Products/ai_conferencing_solutions/RAI_128C(2).webp",
+              "/images/Products/ai_conferencing_solutions/RAI_128C.webp",
+            ],
 
-          overview: "The Resoundify RAI-128C is a flagship high-end ceiling conference microphone. It features a 128-unit omnidirectional microphone array and multiple independently configurable pickup zones. Equipped with advanced AI audio algorithms such as high definition noise reduction, reverberation suppression, and automatic gain control, it seamlessly meets diverse pickup needs across different scenarios. With its 48kHz audio sampling capability, RAI-128C captures intricate sound details, ensuring utmost fidelity. Each RAI-128C unit also comes with built-in feedback suppression algorithms, enabling straightforward sound reinforcement solutions. Utilizing Dante digital audio technology, RAI-128C ensures stable transmission and broad compatibility. With support for POE power supply, it simplifies setup by requiring only a single network cable for both audio transmission and device power. Additionally, RAI-128C offers versatile installation options including suspension pole, suspension rope, and ceiling grid mounting, making it suitable for various installation requirements in different meeting spaces.",
+            overview: "The Resoundify RAI-128C is a flagship high-end ceiling conference microphone. It features a 128-unit omnidirectional microphone array and multiple independently configurable pickup zones. Equipped with advanced AI audio algorithms such as high definition noise reduction, reverberation suppression, and automatic gain control, it seamlessly meets diverse pickup needs across different scenarios. With its 48kHz audio sampling capability, RAI-128C captures intricate sound details, ensuring utmost fidelity. Each RAI-128C unit also comes with built-in feedback suppression algorithms, enabling straightforward sound reinforcement solutions. Utilizing Dante digital audio technology, RAI-128C ensures stable transmission and broad compatibility. With support for POE power supply, it simplifies setup by requiring only a single network cable for both audio transmission and device power. Additionally, RAI-128C offers versatile installation options including suspension pole, suspension rope, and ceiling grid mounting, making it suitable for various installation requirements in different meeting spaces.",
 
-          keyFeatures: [
-            "Personalized Configuration: RAI-128C and its accessories support personalized configuration tailored to various scenarios, which can be achieved by downloading and installing configuration software.",
-            "Call Scene Configuration: Configure remote meeting scenarios via the software, enabling simultaneous setup for multiple devices and pickup zones.",
-            "Sound Reinforcement Scene Configuration: Customize local sound reinforcement scenarios through the software, allowing simultaneous setup for multiple devices and sound reinforcement zones.",
-            "Mixed Scene Configuration: Facilitate mixed configuration for remote calls and local sound reinforcement, supporting multiple devices and overlaying two sound reinforcement zones.",
-            "Device Upgrade: Conduct online upgrades for the ceiling microphone via the software."
-          ],
+            keyFeatures: [
+              "Personalized Configuration: RAI-128C and its accessories support personalized configuration tailored to various scenarios, which can be achieved by downloading and installing configuration software.",
+              "Call Scene Configuration: Configure remote meeting scenarios via the software, enabling simultaneous setup for multiple devices and pickup zones.",
+              "Sound Reinforcement Scene Configuration: Customize local sound reinforcement scenarios through the software, allowing simultaneous setup for multiple devices and sound reinforcement zones.",
+              "Mixed Scene Configuration: Facilitate mixed configuration for remote calls and local sound reinforcement, supporting multiple devices and overlaying two sound reinforcement zones.",
+              "Device Upgrade: Conduct online upgrades for the ceiling microphone via the software."
+            ],
 
-          applications: [
-            "boardrooms",
-            "classrooms",
-            "auditoriums"
-          ],
+            applications: [
+              "boardrooms",
+              "classrooms",
+              "auditoriums"
+            ],
 
-          specifications: {
-            "Basic Specifications": {
-              "Product Model": "AIMIC-M100",
-              "Product Color": "White",
-              "Product Size": "597mm × 597mm × 53.5mm",
-              "Net Weight": "5KG",
-              "Power Supply": "PoE"
-            },
-            "Mic Specifications": {
-              "Mic Type": "128-unit MEMS microphone array",
-              Sensitivity: "-38dBV/94dB SPL @1KHz",
-              "Signal-to-Noise Ratio": "65dBV/94dB SPL@1KHz, A-weighted"
-            },
-            "Dante": {
-              "Number of Channels": "2x2",
-              "Remote Meeting/Local Sound Reinforcement Channels": "1/1"
-            },
-            "Audio Performance": {
-              "Remote Conversation Pickup Zones": "8",
-              "Local Amplification Pickup Zones": "8",
-              "Sampling Rate": "48kHz",
-              "Maximum Background Noise Suppression": "35dB",
-              "AI Noise Reduction Suppression": "Support",
-              "AI Reverberation Suppression": "Support",
-              "AI Feedback Suppression": "Support",
-              "AI Echo Cancellation": "Support",
-              "Delay (Automatic Mixing Output, Including Dante)": "<30ms"
-            },
-            "Cascade Performance": {
-              "Cascade Quantity": "Unlimited",
-              "Cascade Method": "Dante audio"
-            },
-            "Interface": {
-              "RJ45 Port": "1 (Dante Audio Transmission, POE)",
-              "Reset Button": "1"
+            specifications: {
+              "Basic Specifications": {
+                "Product Model": "AIMIC-M100",
+                "Product Color": "White",
+                "Product Size": "597mm × 597mm × 53.5mm",
+                "Net Weight": "5KG",
+                "Power Supply": "PoE"
+              },
+              "Mic Specifications": {
+                "Mic Type": "128-unit MEMS microphone array",
+                Sensitivity: "-38dBV/94dB SPL @1KHz",
+                "Signal-to-Noise Ratio": "65dBV/94dB SPL@1KHz, A-weighted"
+              },
+              "Dante": {
+                "Number of Channels": "2x2",
+                "Remote Meeting/Local Sound Reinforcement Channels": "1/1"
+              },
+              "Audio Performance": {
+                "Remote Conversation Pickup Zones": "8",
+                "Local Amplification Pickup Zones": "8",
+                "Sampling Rate": "48kHz",
+                "Maximum Background Noise Suppression": "35dB",
+                "AI Noise Reduction Suppression": "Support",
+                "AI Reverberation Suppression": "Support",
+                "AI Feedback Suppression": "Support",
+                "AI Echo Cancellation": "Support",
+                "Delay (Automatic Mixing Output, Including Dante)": "<30ms"
+              },
+              "Cascade Performance": {
+                "Cascade Quantity": "Unlimited",
+                "Cascade Method": "Dante audio"
+              },
+              "Interface": {
+                "RJ45 Port": "1 (Dante Audio Transmission, POE)",
+                "Reset Button": "1"
+              }
             }
-          }
-        },
-        {
-          id: "model_rai_150",
-          name: "RAI-150",
-          description: "Multi position camera in the venue AI Speech",
-          images: [
-            "/images/Products/ai_conferencing_solutions/RAI-150.webp",
-            "/images/Products/ai_conferencing_solutions/RAI-150(1).webp",
-            "/images/Products/ai_conferencing_solutions/RAI-150(2).webp"
-          ],
+          },
+          {
+            id: "model-rai-150",
+            name: "RAI-150",
+            description: "Multi position camera in the venue AI Speech",
+            images: [
+              "/images/Products/ai_conferencing_solutions/RAI-150.webp",
+              "/images/Products/ai_conferencing_solutions/RAI-150(1).webp",
+              "/images/Products/ai_conferencing_solutions/RAI-150(2).webp"
+            ],
 
-          overview: "The Resoundify RAI-150 system features a 4K UHD image sensor with a 1/2.8-inch CMOS and 8.46 million pixels, delivering exceptional image clarity and detail. It is equipped with a wide-angle lens offering 12x optical zoom and a horizontal viewing angle of up to 72.5° for versatile coverage. The AI Real-Time Subtitles function, when expanded and connected to AI Speech microphones and combined with the AI Speech Ltd public cloud service, provides real-time subtitle overlays during cloud conference scenarios, enhancing meeting efficiency. The AI Voice Linkage feature, when paired with the high-end ceiling microphone system of AI Speech, enables precise audiovisual linkage to accurately capture close-up images of the active speaker. The built-in AI Person Centering algorithm automatically centers the subject when the image is offset, ensuring a consistent and professional frame.",
+            overview: "The Resoundify RAI-150 system features a 4K UHD image sensor with a 1/2.8-inch CMOS and 8.46 million pixels, delivering exceptional image clarity and detail. It is equipped with a wide-angle lens offering 12x optical zoom and a horizontal viewing angle of up to 72.5° for versatile coverage. The AI Real-Time Subtitles function, when expanded and connected to AI Speech microphones and combined with the AI Speech Ltd public cloud service, provides real-time subtitle overlays during cloud conference scenarios, enhancing meeting efficiency. The AI Voice Linkage feature, when paired with the high-end ceiling microphone system of AI Speech, enables precise audiovisual linkage to accurately capture close-up images of the active speaker. The built-in AI Person Centering algorithm automatically centers the subject when the image is offset, ensuring a consistent and professional frame.",
 
-          keyFeatures: [
-            "Multiple Access and Control Options: The camera can be accessed and controlled through various methods for flexible operation and configuration.",
-            "Client Software (CameraCMS): Set tracking parameters, search for cameras, control camera movement, and change network parameters via the CameraCMS software.",
-            "VLC Access: View the two-channel video stream of the camera directly using VLC media player.",
-            "IE Access: Access the main video stream, control camera functions, and modify network parameters through the Internet Explorer interface.",
-            "Onvif Support: Compatible with Onvif version 2.1 for integration with third-party systems."
-          ],
+            keyFeatures: [
+              "Multiple Access and Control Options: The camera can be accessed and controlled through various methods for flexible operation and configuration.",
+              "Client Software (CameraCMS): Set tracking parameters, search for cameras, control camera movement, and change network parameters via the CameraCMS software.",
+              "VLC Access: View the two-channel video stream of the camera directly using VLC media player.",
+              "IE Access: Access the main video stream, control camera functions, and modify network parameters through the Internet Explorer interface.",
+              "Onvif Support: Compatible with Onvif version 2.1 for integration with third-party systems."
+            ],
 
-          applications: [
-            "Boardrooms",
-            "Classrooms",
-            "Auditoriums"
-          ],
+            applications: [
+              "Boardrooms",
+              "Classrooms",
+              "Auditoriums"
+            ],
 
-          specifications: {
-            "Camera Specifications": {
-              "Imaging Sensor": "1/2.8 inch CMOS, 8.46 Million pixels",
-              "Focal Distance": "f=3.9mm–46.8mm",
-              "Iris Diaphragm": "F1.6–F2.8",
-              "Optical Zoom": "12x",
-              "Digital Zoom": "16x",
-              "Horizontal Field of View": "72.5°–6.3°",
-              "Shutter Speed": "1/60–1/10,000 second",
-              "White Balance": "Automatic, Manual, One-button trigger, Automatic tracking, One-key white balance, Static color temperature",
-              "Exposure Control": "Automatic, Manual, Shutter priority, Aperture priority, Brightness priority",
-              "Wide Dynamic": "Available",
-              "Signal-to-Noise Ratio": "≥50dB",
-              "Anti-Flashing": "Support"
-            },
-            "PTZ Specifications": {
-              "Horizontal Rotation Range": "-130° ~ +130°",
-              "Vertical Rotation Range": "-30° ~ +90°",
-              "Horizontal Rotation Speed": "0.2° ~ 90°/second",
-              "Vertical Rotation Speed": "0.2° ~ 60°/second",
-              "Preset Positions": "256"
-            },
-            "Interface Specifications": {
-              "HDMI": "1 × HDMI 1.4 (4KP30/P25, 1080P60 etc.)",
-              "3G-SDI": "1 × 3G-SDI (1080P60/P50/P30/P25, 720P60 etc.)",
-              "USB 3.0": "1 × USB 3.0 Type-B (UVC 1.1, YUY2/NV12/MJPEG/H.264/H.265)",
-              "USB 2.0": "1 × USB 2.0 Type-A HOST",
-              "Network": "1 × 10/100M RJ-45 POE",
-              "Audio Input": "1 × LINE IN 3.5mm, 1 × REF 3.5mm",
-              "Control Interface": "1 × RS-485, 1 × RS-232 IN",
-              "Power Interface": "DC 12V"
-            },
-            "General Specifications": {
-              "Power Consumption": "< 20W",
-              "Operating Temperature": "0°C ~ 40°C",
-              "Operating Humidity": "10% RH ~ 90% RH",
-              "Storage Temperature": "-20°C ~ +60°C",
-              "Storage Humidity": "10% RH ~ 95% RH",
-              "Weight": "≈2kg",
-              "Color": "Elegant gray",
-              "Control Protocol": "VISCA"
+            specifications: {
+              "Camera Specifications": {
+                "Imaging Sensor": "1/2.8 inch CMOS, 8.46 Million pixels",
+                "Focal Distance": "f=3.9mm–46.8mm",
+                "Iris Diaphragm": "F1.6–F2.8",
+                "Optical Zoom": "12x",
+                "Digital Zoom": "16x",
+                "Horizontal Field of View": "72.5°–6.3°",
+                "Shutter Speed": "1/60–1/10,000 second",
+                "White Balance": "Automatic, Manual, One-button trigger, Automatic tracking, One-key white balance, Static color temperature",
+                "Exposure Control": "Automatic, Manual, Shutter priority, Aperture priority, Brightness priority",
+                "Wide Dynamic": "Available",
+                "Signal-to-Noise Ratio": "≥50dB",
+                "Anti-Flashing": "Support"
+              },
+              "PTZ Specifications": {
+                "Horizontal Rotation Range": "-130° ~ +130°",
+                "Vertical Rotation Range": "-30° ~ +90°",
+                "Horizontal Rotation Speed": "0.2° ~ 90°/second",
+                "Vertical Rotation Speed": "0.2° ~ 60°/second",
+                "Preset Positions": "256"
+              },
+              "Interface Specifications": {
+                "HDMI": "1 × HDMI 1.4 (4KP30/P25, 1080P60 etc.)",
+                "3G-SDI": "1 × 3G-SDI (1080P60/P50/P30/P25, 720P60 etc.)",
+                "USB 3.0": "1 × USB 3.0 Type-B (UVC 1.1, YUY2/NV12/MJPEG/H.264/H.265)",
+                "USB 2.0": "1 × USB 2.0 Type-A HOST",
+                "Network": "1 × 10/100M RJ-45 POE",
+                "Audio Input": "1 × LINE IN 3.5mm, 1 × REF 3.5mm",
+                "Control Interface": "1 × RS-485, 1 × RS-232 IN",
+                "Power Interface": "DC 12V"
+              },
+              "General Specifications": {
+                "Power Consumption": "< 20W",
+                "Operating Temperature": "0°C ~ 40°C",
+                "Operating Humidity": "10% RH ~ 90% RH",
+                "Storage Temperature": "-20°C ~ +60°C",
+                "Storage Humidity": "10% RH ~ 95% RH",
+                "Weight": "≈2kg",
+                "Color": "Elegant gray",
+                "Control Protocol": "VISCA"
+              }
             }
-          }
-        },
-        {
-          id: "model_rai_tb",
-          name: "RAI-TB",
-          description: "Intelligent AI Audio-Visual Tracking & Switching Box – Supports 6 Cameras",
-          images: [
-            "/images/Products/ai_conferencing_solutions/RAI-TB.webp",
-            "/images/Products/ai_conferencing_solutions/RAI-TB(1).webp",
-            "/images/Products/ai_conferencing_solutions/RAI-TB(5).webp",
-            "/images/Products/ai_conferencing_solutions/RAI-TB(3).webp",
-            "/images/Products/ai_conferencing_solutions/RAI-TB(4).webp",
+          },
+          {
+            id: "model-rai-tb",
+            name: "RAI-TB",
+            description: "Intelligent AI Audio-Visual Tracking & Switching Box – Supports 6 Cameras",
+            images: [
+              "/images/Products/ai_conferencing_solutions/RAI-TB.webp",
+              "/images/Products/ai_conferencing_solutions/RAI-TB(1).webp",
+              "/images/Products/ai_conferencing_solutions/RAI-TB(5).webp",
+              "/images/Products/ai_conferencing_solutions/RAI-TB(3).webp",
+              "/images/Products/ai_conferencing_solutions/RAI-TB(4).webp",
 
 
-          ],
+            ],
 
-          overview: "The Resoundify AIVIS-MT100 is a high-performance AI Audio-Visual Tracking Box developed by AI-Speech, designed to deliver intelligent and seamless tracking for modern conferencing environments. Compact and easy to deploy, it is ideal for enterprise meeting rooms, training centers, university lecture halls, and other professional venues. Equipped with advanced AI image processing technologies—including face recognition, body posture recognition, and image stitching—the MT100 ensures precise and dynamic visual tracking. When integrated with AI-Speech's high-end ceiling microphones, its DOA (Direction of Arrival) technology accurately locates speakers' voices and synchronizes with multiple PTZ cameras to automatically track participants and their movements in real time. Supporting up to six cameras simultaneously and unlimited ceiling microphones, the MT100 provides a high-definition, low-latency audio-visual experience that enhances both local and hybrid conference scenarios.",
+            overview: "The Resoundify AIVIS-MT100 is a high-performance AI Audio-Visual Tracking Box developed by AI-Speech, designed to deliver intelligent and seamless tracking for modern conferencing environments. Compact and easy to deploy, it is ideal for enterprise meeting rooms, training centers, university lecture halls, and other professional venues. Equipped with advanced AI image processing technologies—including face recognition, body posture recognition, and image stitching—the MT100 ensures precise and dynamic visual tracking. When integrated with AI-Speech's high-end ceiling microphones, its DOA (Direction of Arrival) technology accurately locates speakers' voices and synchronizes with multiple PTZ cameras to automatically track participants and their movements in real time. Supporting up to six cameras simultaneously and unlimited ceiling microphones, the MT100 provides a high-definition, low-latency audio-visual experience that enhances both local and hybrid conference scenarios.",
 
-          keyFeatures: [
-            "Supports linkage with the spatial DOA capabilities of AI-Speech high-end ceiling microphones to precisely capture close-up shots of the speaker.",
-            "Supports a WEB UI configuration interface, facilitating easy control of multiple video streams and supporting the configuration of preset point screens and panoramic screens.",
-            "Incorporates an AI intelligent screen scheduling algorithm for real-time adjustment of the output screen.",
-            "Supports 1 USB3.0 video output with a maximum support of 4KP30.",
-            "Supports 6 network inputs and 1 HDMI IN interface input, and provides support for HDMI OUT, USB, and LAN interface outputs.",
-            "USB3.0 supports H.264/H.265/MJPEG video encoding and is compliant with UAC/UVC protocols.",
-            "HDMI supports a maximum resolution of 4KP30."
-          ],
+            keyFeatures: [
+              "Supports linkage with the spatial DOA capabilities of AI-Speech high-end ceiling microphones to precisely capture close-up shots of the speaker.",
+              "Supports a WEB UI configuration interface, facilitating easy control of multiple video streams and supporting the configuration of preset point screens and panoramic screens.",
+              "Incorporates an AI intelligent screen scheduling algorithm for real-time adjustment of the output screen.",
+              "Supports 1 USB3.0 video output with a maximum support of 4KP30.",
+              "Supports 6 network inputs and 1 HDMI IN interface input, and provides support for HDMI OUT, USB, and LAN interface outputs.",
+              "USB3.0 supports H.264/H.265/MJPEG video encoding and is compliant with UAC/UVC protocols.",
+              "HDMI supports a maximum resolution of 4KP30."
+            ],
 
-          applications: [
-            "Boardrooms",
-            "Classrooms",
-            "Auditoriums"
-          ],
+            applications: [
+              "Boardrooms",
+              "Classrooms",
+              "Auditoriums"
+            ],
 
-          specifications: {
-            "System Specifications": {
-              "Maximum Resolution": "4K @ 30fps Output",
-              "Video Compression": "H.265/H.264/MJPEG",
-              "Video Input": "Maximum support for 4K @ 30fps input (6 × Network + 1 × HDMI IN reserved)",
-              "Video Output": "Maximum support for 4K @ 30fps output",
-              "Video Switching": "Built-in AI algorithm, supports automatic video switching",
-              "Audio Interface": "1 × LINE IN, 1 × LINE OUT (3.5mm)"
-            },
-            "Interface Specifications": {
-              "HDMI": "1 × HDMI-IN (Reserved), 1 × HDMI-OUT (supports audio output, 4KP30, 1080P30/25, 720P30/25)",
-              "USB": "1 × USB2.0 Host (Reserved), 1 × USB3.0 Device (USB3.0 compatible with USB2.0)",
-              "Network": "1 × RJ-45, 10M/100M adaptive Ethernet port, standard POE, Supports WEB UI configuration and video preview",
-              "TF Card": "1 × external Micro SD card, up to 256GB"
-            },
-            "General Specifications": {
-              "Power": "DC 12V",
-              "Operating Temperature": "0°C ~ +40°C",
-              "Storage Temperature": "-20°C ~ +40°C",
-              "Dimensions": "119 mm × 104 mm × 29 mm",
-              "Weight": "0.2KG"
+            specifications: {
+              "System Specifications": {
+                "Maximum Resolution": "4K @ 30fps Output",
+                "Video Compression": "H.265/H.264/MJPEG",
+                "Video Input": "Maximum support for 4K @ 30fps input (6 × Network + 1 × HDMI IN reserved)",
+                "Video Output": "Maximum support for 4K @ 30fps output",
+                "Video Switching": "Built-in AI algorithm, supports automatic video switching",
+                "Audio Interface": "1 × LINE IN, 1 × LINE OUT (3.5mm)"
+              },
+              "Interface Specifications": {
+                "HDMI": "1 × HDMI-IN (Reserved), 1 × HDMI-OUT (supports audio output, 4KP30, 1080P30/25, 720P30/25)",
+                "USB": "1 × USB2.0 Host (Reserved), 1 × USB3.0 Device (USB3.0 compatible with USB2.0)",
+                "Network": "1 × RJ-45, 10M/100M adaptive Ethernet port, standard POE, Supports WEB UI configuration and video preview",
+                "TF Card": "1 × external Micro SD card, up to 256GB"
+              },
+              "General Specifications": {
+                "Power": "DC 12V",
+                "Operating Temperature": "0°C ~ +40°C",
+                "Storage Temperature": "-20°C ~ +40°C",
+                "Dimensions": "119 mm × 104 mm × 29 mm",
+                "Weight": "0.2KG"
+              }
             }
-          }
-        },
-              
-      ]
-    }
-  ]
+          },
+
+        ]
+      }
+    ]
   },
   {
-  id: "brand_control_panel",
-  name: "Control Panel",
-  category: "control_panel",
-  description: "Smart touchscreen wall panels for intuitive AV, lighting, and room automation control.",
-  image: "/images/Products/audio_dsp/Ominipanel8.webp",
-  type: "brand",
-  status: "In Stock",
-  series: [
-    {
-        id: "series_control_panel_accessories",
+    id: "brand-control-panel",
+    name: "Control Panel",
+    category: "control_panel",
+    description: "Smart touchscreen wall panels for intuitive AV, lighting, and room automation control.",
+    image: "/images/Products/audio_dsp/Ominipanel8.webp",
+    type: "brand",
+    status: "In Stock",
+    series: [
+      {
+        id: "series-control-panel-accessories",
         name: "Control panel and accessories",
         description: "Intuitive control solutions and accessories for seamless audio system management.",
         image: "/images/Products/audio_dsp/Ominipanel8.webp",
@@ -3861,14 +3861,14 @@ export const productsData = [
         status: "In Stock",
         type: "series",
         models: [
-           {
-            id: "model_omni_panel3",
+          {
+            id: "model-omni-panel3",
             name: "OmniPanel3",
             description: "VC and SS with LCD Screen and Rotary Knob – Aurispro Series",
             images: [
               "/images/Products/audio_dsp/omnipanel3.webp"
             ],
-             overview: `The Resoundify OmniPanel3 is a modern, user-centric control interface designed for conference rooms,
+            overview: `The Resoundify OmniPanel3 is a modern, user-centric control interface designed for conference rooms,
                       boardrooms, and AV-integrated environments. It combines Volume Control (VC) and Source Selector (SS)
                       control into a single intuitive wall-mounted unit, offering real-time interaction and effortless operation.
                       The OmniPane13 is a premium-grade, multi-function wall control panel designed for seamless integration
@@ -3876,20 +3876,20 @@ export const productsData = [
                       environments, the OmniPane13 provides a highly intuitive, ergonomic, and interactive control solution that
                       simplifies room technology for everyday users.`,
 
-             keyFeatures: [
-                    "High-Resolution Multi-Touch Display: The OmniPane13 features a high-quality LCD screen with clear visual feedback and customizable UI layouts. It delivers a smooth and intuitive interface for real-time control of video conferencing systems, audio levels, input sources, and presets — all in one sleek panel.",
-                    "Seamless Ethernet Connectivity: Equipped with a Gigabit Ethernet port and Power over Ethernet (PoE), the panel ensures fast data transmission, simplified wiring, and flexible installation across networked environments.",
-                    "Modern Mechanical Design: Its slim, wall-mountable form factor and optional mounting accessories allow for seamless integration into a variety of architectural settings.",
-                    "Secure & Maintainable Platform: Advanced encryption protocols and remote firmware update capabilities ensure long-term reliability, security, and ease of maintenance."
-                  ],
+            keyFeatures: [
+              "High-Resolution Multi-Touch Display: The OmniPane13 features a high-quality LCD screen with clear visual feedback and customizable UI layouts. It delivers a smooth and intuitive interface for real-time control of video conferencing systems, audio levels, input sources, and presets — all in one sleek panel.",
+              "Seamless Ethernet Connectivity: Equipped with a Gigabit Ethernet port and Power over Ethernet (PoE), the panel ensures fast data transmission, simplified wiring, and flexible installation across networked environments.",
+              "Modern Mechanical Design: Its slim, wall-mountable form factor and optional mounting accessories allow for seamless integration into a variety of architectural settings.",
+              "Secure & Maintainable Platform: Advanced encryption protocols and remote firmware update capabilities ensure long-term reliability, security, and ease of maintenance."
+            ],
 
-             applications: [
+            applications: [
               "Classrooms",
               "Boardrooms",
               "Auditoriums",
             ],
 
-           specifications: {
+            specifications: {
               "System Specifications": {
                 "Power": "DC 12V 1.5A & PoE IEEE 802.3at",
                 "Display Type": "IPS",
@@ -3905,7 +3905,7 @@ export const productsData = [
             },
           },
           {
-            id: "model_omni_panel4",
+            id: "model-omni-panel4",
             name: "OmniPanel4",
             description: "4 inch control panel",
             images: [
@@ -3946,50 +3946,50 @@ export const productsData = [
               }
             },
           },
-        {
-          id: "model_omni_panel8",
-          name: "OmniPanel8",
-          description: "8 inch control panel",
-          images: [
-            "/images/Products/audio_dsp/Ominipanel8.webp"
-          ],
+          {
+            id: "model-omni-panel8",
+            name: "OmniPanel8",
+            description: "8 inch control panel",
+            images: [
+              "/images/Products/audio_dsp/Ominipanel8.webp"
+            ],
 
-          overview: "The Resoundify OmniPanel8 is a sleek and powerful 8-inch capacitive touch control panel designed for seamless control of AV systems, lighting, HVAC, and other automation functions. Engineered for both commercial and residential applications, it features a vibrant high-resolution display, intuitive UI, and network connectivity, enabling it to serve as the central interface in modern smart environments. With support for custom graphical layouts, control scripting, and integration with third-party systems (via TCP/IP, RS-232), the OmniPanel8 delivers flexibility and performance for meeting rooms, classrooms, control centers, and luxury living spaces. Wall-mountable and PoE-powered, it offers both a clean aesthetic and simple installation.",
+            overview: "The Resoundify OmniPanel8 is a sleek and powerful 8-inch capacitive touch control panel designed for seamless control of AV systems, lighting, HVAC, and other automation functions. Engineered for both commercial and residential applications, it features a vibrant high-resolution display, intuitive UI, and network connectivity, enabling it to serve as the central interface in modern smart environments. With support for custom graphical layouts, control scripting, and integration with third-party systems (via TCP/IP, RS-232), the OmniPanel8 delivers flexibility and performance for meeting rooms, classrooms, control centers, and luxury living spaces. Wall-mountable and PoE-powered, it offers both a clean aesthetic and simple installation.",
 
-          keyFeatures: [
-            "High-Resolution Multi-Touch Display: The OmniPanel8 features an 8-inch capacitive multi-touch screen with gesture support, providing an intuitive and responsive user interface for control and monitoring.",
-            "Seamless Ethernet Connectivity: Equipped with a Gigabit Ethernet port and Power over Ethernet (PoE), the panel ensures fast data transmission, simplified wiring, and flexible installation across networked environments.",
-            "Modern Mechanical Design: Its slim, wall-mountable form factor and optional mounting accessories allow for seamless integration into a variety of architectural settings.",
-            "Secure & Maintainable Platform: Advanced encryption protocols and remote firmware update capabilities ensure long-term reliability, security, and ease of maintenance.",
-          ],
+            keyFeatures: [
+              "High-Resolution Multi-Touch Display: The OmniPanel8 features an 8-inch capacitive multi-touch screen with gesture support, providing an intuitive and responsive user interface for control and monitoring.",
+              "Seamless Ethernet Connectivity: Equipped with a Gigabit Ethernet port and Power over Ethernet (PoE), the panel ensures fast data transmission, simplified wiring, and flexible installation across networked environments.",
+              "Modern Mechanical Design: Its slim, wall-mountable form factor and optional mounting accessories allow for seamless integration into a variety of architectural settings.",
+              "Secure & Maintainable Platform: Advanced encryption protocols and remote firmware update capabilities ensure long-term reliability, security, and ease of maintenance.",
+            ],
 
-          applications: [
-            "Classrooms",
-            "Boardrooms",
-            "Auditoriums",
-          ],
+            applications: [
+              "Classrooms",
+              "Boardrooms",
+              "Auditoriums",
+            ],
 
-          specifications: {
-            "System Specifications": {
-              Power: "DC 12V 1.5A & PoE IEEE 802.3at",
-              "Display Type": "IPS",
-              Compatibility: "Supports DSP volume, mute, preset, matrix mixing, and device status detection controls",
-              "Display Resolution": "1280000",
-              "Display Aspect Ratio": "16:9",
-              "Display Contrast Ratio": "800:1",
-              "Display Colors": "16.7M",
-              "Display Orientation": "Landscape (horizontal), or portrait (vertical)",
-              "Display Viewing Angle": "±85° horizontal, ±85° vertical"
+            specifications: {
+              "System Specifications": {
+                Power: "DC 12V 1.5A & PoE IEEE 802.3at",
+                "Display Type": "IPS",
+                Compatibility: "Supports DSP volume, mute, preset, matrix mixing, and device status detection controls",
+                "Display Resolution": "1280000",
+                "Display Aspect Ratio": "16:9",
+                "Display Contrast Ratio": "800:1",
+                "Display Colors": "16.7M",
+                "Display Orientation": "Landscape (horizontal), or portrait (vertical)",
+                "Display Viewing Angle": "±85° horizontal, ±85° vertical"
+              },
+              "Mechanical Specifications": {
+                "Screen Size": "8 inches",
+                Dimensions: "212.2x147.6x31mm",
+                "Product Weight": "0.7kg"
+              }
             },
-            "Mechanical Specifications": {
-              "Screen Size": "8 inches",
-              Dimensions: "212.2x147.6x31mm",
-              "Product Weight": "0.7kg"
-            }
           },
-        },
         ],
       },
-  ]
+    ]
   },
 ];
