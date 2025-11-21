@@ -2730,7 +2730,7 @@ export const productsData = [
     type: "brand",
     series: [
       {
-        id: "series_2_channel_wireless_mic",
+        id: "series-2_channel_wireless_mic",
         name: "2 Channel wireless mic",
         description: "Dual wireless microphone systems offering versatility with handheld, bodypack, and desktop options.",
         image: "/images/Products/Microphone/AM-RX2H.webp",
@@ -3868,7 +3868,7 @@ export const productsData = [
             images: [
               "/images/Products/audio_dsp/omnipanel3.webp"
             ],
-             overview: `The Resoundify OmniPane13 is a modern, user-centric control interface designed for conference rooms,
+             overview: `The Resoundify OmniPanel3 is a modern, user-centric control interface designed for conference rooms,
                       boardrooms, and AV-integrated environments. It combines Volume Control (VC) and Source Selector (SS)
                       control into a single intuitive wall-mounted unit, offering real-time interaction and effortless operation.
                       The OmniPane13 is a premium-grade, multi-function wall control panel designed for seamless integration

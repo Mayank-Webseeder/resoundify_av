@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -6,12 +6,14 @@ import ProductsHero from '../components/Products/ProductsHero';
 import JoinCommunitySection from '../components/ProductPageCta';
 import ContactForm from '../components/Contact/ContactForm';
 
+
 // Import the product data
 import { productsData } from '../data/products';
 
 const ProductsPage = () => {
   const navigate = useNavigate();
 
+  const [searchMode, setSearchMode] = useState('series');
   const [activeCategory, setActiveCategory] = useState("all");
   const [hoveredProduct, setHoveredProduct] = useState(null);
   const [productsPerPage] = useState(12);
@@ -44,42 +46,83 @@ const ProductsPage = () => {
     setProductsToShow(productsPerPage);
   };
 
-  // Get filtered and sorted products
   const getDisplayProducts = () => {
-    let products = [];
+    const term = searchTerm.trim().toLowerCase();
 
-    if (activeCategory === "all") {
-      products = productsData.flatMap(brand => brand.series || []);
-    } else {
-      const selectedBrand = productsData.find(brand => brand.category === activeCategory);
-      products = selectedBrand ? selectedBrand.series : [];
-    }
-
-    // Apply search filter
-    if (searchTerm) {
-      const lowerCaseSearchTerm = searchTerm.toLowerCase();
-      products = products.filter(product =>
-        product.name.toLowerCase().includes(lowerCaseSearchTerm) ||
-        (product.description && product.description.toLowerCase().includes(lowerCaseSearchTerm))
-      );
-    }
-
-    // Sort products
-    return products.sort((a, b) => {
-      switch (sortBy) {
-        case 'name':
-          return a.name.localeCompare(b.name);
-        case 'newest':
-          return new Date(b.releaseDate || 0) - new Date(a.releaseDate || 0);
-        default:
-          return 0;
+    // Agar search empty hai → sirf series cards
+    if (!term) {
+      // setSearchMode('series');  ← YE LINE HATA DI
+      if (activeCategory === "all") {
+        return { items: productsData.flatMap(brand => brand.series || []), mode: 'series' };
+      } else {
+        const selectedBrand = productsData.find(brand => brand.category === activeCategory);
+        return { items: selectedBrand ? selectedBrand.series || [] : [], mode: 'series' };
       }
+    }
+
+    let matchedModels = [];
+    let matchedSeries = [];
+
+    productsData.forEach(brand => {
+      const brandMatched = brand.name.toLowerCase().includes(term) ||
+        brand.category.toLowerCase().includes(term);
+
+      brand.series?.forEach(series => {
+        let seriesMatched = brandMatched ||
+          series.name.toLowerCase().includes(term) ||
+          series.description?.toLowerCase().includes(term);
+
+        series.models?.forEach(model => {
+          const modelSearchText = `
+          ${model.name} 
+          ${model.description || ""} 
+          ${model.overview || ""} 
+          ${(model.keyFeatures || []).join(" ")}
+          ${JSON.stringify(model.specifications || {}).toLowerCase()}
+        `.toLowerCase();
+
+          if (model.name.toLowerCase().includes(term) || modelSearchText.includes(term)) {
+            matchedModels.push({
+              ...model,
+              _type: 'model',
+              brandName: brand.name,
+              category: brand.category,
+              seriesName: series.name,
+              seriesImage: series.image
+            });
+            seriesMatched = true;
+          }
+        });
+
+        if (seriesMatched) {
+          matchedSeries.push({
+            ...series,
+            _type: 'series',
+            brandName: brand.name,
+            category: brand.category
+          });
+        }
+      });
     });
+
+    if (matchedModels.length > 0) {
+      // setSearchMode('models');  ← YE BHI HATA DI
+      return { items: matchedModels, mode: 'models' };
+    }
+
+    // setSearchMode('series');  ← YE BHI HATA DI
+    return { items: matchedSeries, mode: 'series' };
   };
 
-  const allFilteredProducts = getDisplayProducts();
+  const { items: allFilteredProducts, mode: currentSearchMode } = getDisplayProducts();
   const productsToRender = allFilteredProducts.slice(0, productsToShow);
   const hasMoreProducts = allFilteredProducts.length > productsToShow;
+
+  // Add this useEffect (koi bhi jagah state ke baad)
+  useEffect(() => {
+    const { mode } = getDisplayProducts();
+    setSearchMode(mode);
+  }, [searchTerm, activeCategory]);
 
   // Calculate total products count
   const totalProductsCount = productsData.reduce((total, brand) => {
@@ -344,55 +387,74 @@ const ProductsPage = () => {
                 <>
                   {/* Products Grid */}
                   <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mb-12">
-                    {productsToRender.map((product, index) => (
+                    {productsToRender.map((item, index) => (
                       <div
-                        key={product.id}
-                        onClick={() => {
-                          handleSeriesClick(product);
-                        }}
+                        key={item.id || item._type + index}
                         className="group cursor-pointer bg-white rounded-xl border border-gray-200 hover:border-gray-300 hover:shadow-lg transition-all duration-200 overflow-hidden flex flex-col"
+                        onClick={() => {
+                          if (searchMode === 'models' || item._type === 'model') {
+                            // Direct model page pe jaaye (tu baad me bana lena ya series page pe bhej dena)
+                            navigate(`/products/detail/${item.id}`, {
+                              state: {
+                                model: item,
+                                seriesName: item.seriesName,
+                                brandName: item.brandName
+                              }
+                            });
+                          } else {
+                            // Normal series click
+                            handleSeriesClick(item);
+                          }
+                        }}
                       >
-                        {/* Product Image */}
+                        {/* Image */}
                         <div className="relative h-48 overflow-hidden bg-white">
-                          {product.image ? (
-                            <img
-                              src={product.image}
-                              alt={product.name}
-                              className="w-full h-full object-contain transition-transform duration-300 p-4"
-                            />
-                          ) : (
-                            <div className="w-full h-full flex items-center justify-center">
-                              {/* placeholder svg */}
+                          <img
+                            src={item.images?.[0] || item.image || "/images/placeholder.jpg"}
+                            alt={item.name}
+                            className="w-full h-full object-contain transition-transform duration-300 p-4 group-hover:scale-105"
+                          />
+                          {/* Badge for Model */}
+                          {searchMode === 'models' && (
+                            <div className="absolute top-3 left-3 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full">
+                              MODEL
                             </div>
                           )}
                         </div>
 
-                        {/* Product Content */}
                         <div className="p-6 flex flex-col flex-1">
-                          {/* Product Name */}
                           <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
-                            {product.name}
+                            {item.name}
+                            {searchMode === 'models' && (
+                              <span className="block text-sm font-normal text-gray-600 mt-1">
+                                {item.seriesName} • {item.brandName}
+                              </span>
+                            )}
                           </h3>
 
-                          {/* Product Description */}
-                          <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-2">
-                            {product.description || "Premium enterprise solution designed for optimal performance and reliability."}
-                          </p>
+                          {/* DESCRIPTION SIRF SERIES CARD ME DIKHEGI — MODEL ME NHI */}
+                          {searchMode === 'series' && item.description && (
+                            <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3">
+                              {item.description}
+                            </p>
+                          )}
+                          {/* Features (only for series) */}
+                          {searchMode === 'series' && item.features && (
+                            <div className="flex flex-wrap gap-2 mb-4">
+                              {item.features.slice(0, 3).map((feature, idx) => (
+                                <span key={idx} className="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-gray-100 text-gray-700">
+                                  {feature}
+                                </span>
+                              ))}
+                            </div>
+                          )}
 
-                          {/* Product Features */}
-                          <div className="flex flex-wrap gap-2 mb-4">
-                            {product.features.map((feature, idx) => (
-                              <span
-                                key={idx}
-                                className="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-gray-100 text-gray-700"
-                              >
-                                {feature}
-                              </span>
-                            ))}
-                          </div>
-
-                          {/* Spacer pushes button down */}
                           <div className="flex-1"></div>
+
+                          {/* CTA Text */}
+                          <div className="text-sm text-blue-600 font-medium">
+                            {searchMode === 'models' ? "View Model Details →" : "Explore Series →"}
+                          </div>
                         </div>
                       </div>
                     ))}
