@@ -399,7 +399,7 @@ const ProductsPage = () => {
                       }}
                     >
                       {/* Image */}
-                      <div className="relative h-48 bg-gradient-to-br from-gray-50 to-gray-100 overflow-hidden">
+                      <div className="relative h-48 bg-white overflow-hidden">
                         {/* Badge for Model */}
                         {searchMode === 'models' && (
                           <div className="absolute top-3 right-3 z-10">

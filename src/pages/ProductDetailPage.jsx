@@ -455,7 +455,16 @@ const ProductDetailPage = () => {
 
             'model_rai_128c': '/datasheets/ai_conferencing_solutions/RAI-128C.pdf',
             'model_rai_150': '/datasheets/ai_conferencing_solutions/RAI-150.pdf',
-            'model_rai_tb': '/datasheets/ai_conferencing_solutions/RAI-TB.pdf'
+            'model_rai_tb': '/datasheets/ai_conferencing_solutions/RAI-TB.pdf',
+
+            // Dante Wall Plates Series
+            'model-dw-12-xlrio': '/datasheets/dante_wall_plates/DW-12-XLR-IO.pdf',
+            'model-dw-25-lrbt-io': '/datasheets/dante_wall_plates/DW-25-LRBT-IO.pdf',
+            'model-dw-26-lrbt-io': '/datasheets/dante_wall_plates/DW-26-LRBT-IO.pdf',
+            'model-dw-27-lrbt-io': '/datasheets/dante_wall_plates/DW-27-LRBT-IO.pdf',
+            'model-dw-28-lrbt-io': '/datasheets/dante_wall_plates/DW-28-LRBT-IO.pdf',
+            'model-dw-33-lrbtio': '/datasheets/dante_wall_plates/DW-33-LRBT-IO.pdf',
+            'model-dw-44-lrbtio': '/datasheets/dante_wall_plates/DW-44-LRBT-IO.pdf',
 
         };
 

@@ -2608,75 +2608,421 @@ export const productsData = [
         id: "series-dante-wall-plate",
         name: "Dante wall plate",
         description: "Versatile Dante wall plates featuring XLR, RCA, 3.5mm, and Bluetooth connectivity.",
-        image: "/images/Products/dante_wall_plates/XLRIO.webp",
+        image: "/images/Products/dante_wall_plates/DW25-LRBT.webp",
         features: ["XLR I/O", "Bluetooth", "RCA/TRS", "PoE"],
         status: "In Stock",
         type: "series",
         models: [
           {
             id: "model-dw-12-xlrio",
-            name: "DW 12-XLRiO",
-            description: "Dante wall plate with 2 XLR in and 2 XLR Out",
-            images: [
-              "/images/Products/dante_wall_plates/XLRIO.webp",
-            ]
+            name: "DW 12 -XLR IO",
+            description: "Dante Wall Plate XLR IO",
+            images: ["/images/Products/dante_wall_plates/DW12XLRIO.webp"],
+
+            overview: `The Dante wall plate with XLR input is a purpose-built audio interface designed to integrate DJ equipment directly into a Dante-enabled audio network. Housed in a standard wall-mount or floor box form factor, it provides a clean and professional solution for routing high-quality analog audio from DJ mixers or controllers into the digital AV infrastructure.
+
+          Equipped with balanced XLR inputs, this wall plate ensures robust signal transmission, ideal for the high-output levels typical of DJ gear. Audio is converted via premium-grade A/D converters and transmitted over the Dante network with ultra-low latency and high fidelity.
+
+          This system allows DJs to plug in easily at designated wall or floor points, eliminating long analog cable runs and ensuring pristine audio transmission to amplifiers, processors, or speakers anywhere on the Dante network.`,
+
+            keyFeatures: [
+              "Dual XLR inputs for stereo or dual-mono DJ signal routing",
+              "Dante audio-over-IP support for seamless integration with networked audio systems",
+              "POE (Power over Ethernet) for single-cable installation (power + data)",
+              "Rugged and flush-mount design for professional-grade installations",
+              "LED indicators for power and network activity",
+              "Compatible with Dante Controller for channel routing and configuration"
+            ],
+
+            applications: [
+              "Hospitality venues (clubs, lounges, hotels)",
+              "Event halls and live performance spaces",
+              "Conference and multi-use AV installations"
+            ],
+
+            specifications: {
+              "Technical": {
+                "Power": "PoE IEEE 802.3af; 15.4W Max",
+                "Operating Temperature": "0°C – 40°C (32°F – 104°F); maximum recommended ambient operating temperature 30°C (86°F)",
+                "Sampling Rate": "48 kHz, 96 kHz (configure in Dante Controller)"
+              },
+              "Analog Input": {
+                "Frequency Response": "+1/-0.2 dB; 20 Hz–20 kHz (+4 dBu @ 0 dB gain)",
+                "Crosstalk": "-107 dB (+4 dBu @ 1 kHz @ 0 dB gain)",
+                "EIN": "<-127 dBu (150 Ohm source impedance, 22.4 kHz BW)",
+                "CMRR": ">60 dB (1 kHz @ 0 dB gain)",
+                "Phantom Power": "+48 VDC @ 10 mA maximum",
+                "Maximum Level": "+23.5 dBu (1% THD @ 1 kHz @ 0 dB gain)",
+                "Impedance": "2k Ohms balanced",
+                "Dynamic Range": "> 110 dB (A-weighted @ 0 dB gain)",
+                "THD + Noise": "0.003% (+15 dBu @ 1 kHz @ 0 dB gain)",
+                "Latency (Analog → Dante)": "0.77 mS"
+              },
+              "Analog Output": {
+                "Frequency Response": "+/-0.2 dB; 20 Hz–20 kHz (+4 dBu @ 0 dB gain)",
+                "Maximum Level": "+23.5 dBu (1% THD+N @ 1 kHz)",
+                "Impedance": "300 Ohms balanced",
+                "Dynamic Range": "> 110 dB (A-weighted @ 0 dB gain)",
+                "THD + Noise": "0.005% (-4 dBFS @ 1 kHz)",
+                "Latency (Dante → Analog)": "0.60 mS"
+              }
+            }
           },
-          {
-            id: "model-dw-33-lrbtio",
-            name: "DW 33-LRBTiO",
-            description: "Dante wall plate with Bluetooth, RCA, and 3.5mm inputs",
-            images: [
-              "/images/Products/dante_wall_plates/LRBTIO.webp",
+         {
+          id: "model-dw-33-lrbtio",
+          name: "DW 33 - LRBT IO",
+          description: "Dante Wall Plate – Bluetooth + RCA + 3.5mm TRS Input",
+          images: ["/images/Products/dante_wall_plates/DW33-LRBT.webp"],
+
+          overview: `The Dante wall plate with Bluetooth, RCA, and 3.5mm inputs is a versatile audio interface designed to connect a wide range of consumer and professional audio sources directly to a Dante-enabled network. Its sleek, wall-mounted design makes it ideal for discreet and permanent installations in meeting rooms, hospitality venues, classrooms, and event spaces.
+
+        This wall plate supports Bluetooth wireless streaming, as well as analog audio input via RCA and 3.5mm TRS, making it perfect for smartphones, tablets, laptops, media players, and other external audio devices. The unit provides a flexible and user-friendly interface for audio playback, eliminating the need for additional hardware and reducing installation complexity. It ensures reliable, high-quality audio delivery across your Dante network.`,
+
+          keyFeatures: [
+            "Bluetooth connectivity for seamless wireless audio streaming",
+            "Stereo RCA inputs for connecting media players and DJ gear",
+            "3.5mm TRS input for phones, tablets, or laptop audio",
+            "Auto-switching priority (e.g., Bluetooth override or manual control options)",
+            "Integrated Dante interface for network audio transmission",
+            "POE (Power over Ethernet) support for simplified installation",
+            "Configurable via Dante Controller software",
+            "LED status indicators for power, network, and input status"
+          ],
+
+          applications: [
+            "Boardrooms and training rooms",
+            "Hotels, restaurants, and lounges",
+            "Schools and universities",
+            "Retail environments and fitness centers"
+          ],
+
+          specifications: {
+            "Power & Environmental": {
+              Power: "PoE IEEE 802.3af; 15.4W Max",
+              "Operating Temperature": "0°C – 40°C (32°F – 104°F)",
+              "Recommended Max Ambient": "30°C (86°F)"
+            },
+            "Audio Performance": {
+              "Sampling Rate": "48 kHz / 96 kHz (configurable in Dante Controller)",
+              "RCA/3.5mm Input Max Level": "+12 dBu / +10 dBV",
+              "Frequency Response": "20 Hz – 20 kHz (±0.5 dB)",
+              "THD + Noise": "< 0.005% @ 0 dB gain, 1 kHz",
+              "Crosstalk": "< -93 dB @ 1 kHz (Input), < -99 dB @ 1 kHz (Output)",
+              "SNR": "> 96 dB (Input), > 103 dB (Output)"
+            },
+            "Mechanical": {
+              "Form Factor": "Double-gang US wall mount",
+              Dimensions: "3.612 × 4.205 × 2.063 inches (91.74 × 108.80 × 52.40 mm)",
+              "Product Weight": "0.65 lb (0.29 kg)",
+              "Shipping Weight": "1.10 lb (0.5 kg)",
+              "Box Contents": "DW 33-LRBT IO unit, Dual-gang Decora wall plate (black/white), Mounting screws, Quick Start Guide"
+            },
+            "Certifications": [
+              "UL/CSA/EN 62368-1",
+              "FCC 15.107:2021",
+              "FCC 15.109:2021",
+              "ICES003:2020",
+              "RoHS",
+              "EN 300 328 V2.2.2:2019",
+              "EN 301 489-1/17",
+              "EN 55035",
+              "EN 55032"
             ]
-          },
-          // {
-          //   id: "model-dw-44-lrbtio",
-          //   name: "DW 44-LRBTiO",
-          //   description: "Dante wall plate with RCA bluetooth and TRS",
-          //   images: [
-          //     "https://placehold.co/400x300/E5E7EB/6B7280?text=DW+44-LRBTiO+1",
-          //     "https://placehold.co/400x300/E5E7EB/6B7280?text=DW+44-LRBTiO+2"
-          //   ]
-          // },
-          // {
-          //   id: "model-dw-20-lrbt-io",
-          //   name: "DW 20 - LRBT iO",
-          //   description: "Dante wall plate with Bluetooth or stereo signals and Dante/AES67 network digital signals",
-          //   images: [
-          //     "https://placehold.co/400x300/E5E7EB/6B7280?text=DW+20+1",
-          //     "https://placehold.co/400x300/E5E7EB/6B7280?text=DW+20+2"
-          //   ]
-          // },
-          {
+          }
+        },
+        {
+          id: "model-dw-44-lrbtio",
+          name: "DW 44 - LRBT IO",
+          description: "Dante Wall Plate with Bluetooth, RCA & 3.5mm TRS Inputs",
+          images: ["/images/Products/dante_wall_plates/DW44-LRBT.webp"],
+
+          overview: `The DW 44 - LRBT IO is a premium, multifunctional Dante-enabled wall plate engineered to support a wide range of audio input formats in modern, high-performance AV environments. It combines Bluetooth wireless connectivity, RCA analog stereo inputs, and a 3.5mm TRS (auxiliary) jack, offering maximum flexibility when connecting smartphones, laptops, media players, or professional audio equipment.
+                     Designed for seamless integration into Dante audio networks, it allows efficient transmission of audio signals over standard CAT5e/CAT6 Ethernet cabling with low-latency, lossless, and synchronized performance — perfect for conference rooms, classrooms, training facilities, lecture halls, houses of worship, and hospitality venues.`,
+
+          keyFeatures: [
+            "Multi-format Audio Input Options: Bluetooth + Dual RCA + 3.5mm TRS (Aux) jack",
+            "Dante Audio-over-IP Integration: Full compatibility with Dante networks",
+            "POE (Power over Ethernet) Support: Single cable for power and data",
+            "Professional-Grade Design: Flush-mount, rugged build for commercial installations",
+            "High-quality analog-to-digital conversion with ultra-low latency",
+            "Ideal for permanent wall or podium mounting"
+          ],
+
+          applications: [
+            "Conference rooms & boardrooms",
+            "Classrooms & training facilities",
+            "Lecture halls & auditoriums",
+            "Houses of worship",
+            "Hospitality venues (hotels, lounges, clubs)",
+            "Corporate AV systems",
+            "Event spaces"
+          ],
+
+          specifications: {
+            "Power & Environment": {
+              Power: "PoE IEEE 802.3af; 15.4W Max",
+              "Operating Temperature": "0°C – 40°C (32°F – 104°F)",
+              "Recommended Max Ambient": "30°C (86°F)"
+            },
+            "Audio Performance": {
+              "Sampling Rate": "48 kHz / 96 kHz (configurable in Dante Controller)",
+              "Input Frequency Response": "+/-0.2 dB; 20 Hz – 20 kHz",
+              "Input Crosstalk": "-107 dB @ 1 kHz",
+              "Input EIN": "< -127 dBu (150Ω source, 22.4 kHz BW)",
+              "Input CMRR": "> 60 dB @ 1 kHz",
+              "Phantom Power": "+48 VDC @ 10 mA maximum (per channel if applicable)",
+              "Analog Input Max Level": "+23.5 dBu",
+              "Analog Input Impedance": "2kΩ balanced",
+              "Dynamic Range": "> 110 dB (A-weighted)",
+              "THD + Noise (Input)": "0.003% (+15 dBu @ 1 kHz)",
+              "Latency (Analog → Dante)": "0.77 ms",
+              "Latency (Dante → Analog)": "0.60 ms (if output used)"
+            },
+            "Connectivity": {
+              Inputs: "Bluetooth Wireless + Stereo RCA (L/R) + 3.5mm TRS (Aux)",
+              Network: "Dante Audio-over-IP via RJ45",
+              Power: "PoE IEEE 802.3af"
+            }
+          }
+        },
+         
+         {
             id: "model-dw-25-lrbt-io",
-            name: "DW 25 - LRBT iO",
-            description: "Dante Wall Plate – 4x XLR Input with 48V Phantom",
-            images: [
-              "/images/Products/dante_wall_plates/DW25-LRBT.webp",
-            ]
+            name: "DW 25 - LRBT IO",
+            description: "4-Channel Wall Panel – Bluetooth + 48V Phantom",
+            images: ["/images/Products/dante_wall_plates/DW25-LRBT.webp"],
+
+            overview: `The Resoundify DW 25 - LRBT iO is a 4-channel wall-mounted audio input panel designed for professional AV installations. It supports multiple input sources and delivers high-quality audio transmission to the connected sound system. With an integrated 48V phantom power supply, it can directly power condenser microphones and other phantom-powered devices, ensuring clear, noise-free audio capture. Its wall-mount design provides a neat, space-saving installation, ideal for conference rooms, auditoriums, classrooms, and multi-zone audio systems.`,
+
+           keyFeatures: [
+              "4-Channel Audio Input: Supports multiple sources such as microphones, instruments, and line-level devices",
+              "48V Phantom Power Supply: Powers condenser microphones and other phantom-powered audio equipment directly",
+              "Wall-Mounted Design: Provides a clean, space-saving installation ideal for fixed AV setups",
+              "High-Fidelity Audio Transmission: Ensures clear, low-noise, and distortion-free sound",
+              "Multi-Source Compatibility: Accepts balanced/unbalanced inputs for versatile audio connections",
+              "Durable Construction: Built with robust materials for long-term professional use",
+              "User-Friendly Operation: Simple controls for easy use by technical and non-technical users",
+              "Professional Integration: Ideal for conference rooms, auditoriums, classrooms, hotels, and event venues",
+              "Low Power Consumption: Efficient design for continuous operation",
+              "Ideal for Permanent Installations: Conference halls, hotels, schools, houses of worship, and multi-zone audio systems"
+            ],
+
+            applications: [
+              "Boardrooms",
+              "Classrooms",
+              "Auditoriums",
+            ],
+
+            specifications: {
+              "Technical Specifications": {
+                Model: "DW 25 - LRBT iO",
+                Type: "4-Channel Wall-Mounted Audio Input Panel",
+                Installation: "Standard wall-mount back box / surface mount",
+                "Housing Material": "High-grade metal/aluminum front plate",
+                Finish: "Powder-coated / anodized finish"
+              },
+              "Audio Inputs": {
+                Inputs: "4 x Balanced/Unbalanced audio inputs (XLR / TRS combo)",
+                "Input Types": "Mic / Line selectable",
+                "Phantom Power": "+48V DC, switchable per channel",
+                "Frequency Response": "20 Hz - 20 kHz (±0.5 dB)",
+                "Total Harmonic Distortion (THD+N)": "< 0.05% @ 1 kHz",
+                "Signal-to-Noise Ratio (SNR)": "> 90 dB",
+                "Input Impedance": "Mic: 2kΩ | Line: 20kΩ"
+              },
+              "Power": {
+                "Power Supply": "24 VDC 50 mA",
+                "Power Consumption": "10 mA"
+              },
+              "Connection": {
+                "Connectors": "XLR / TRS Combo Jacks (Ch 1-4)",
+                "Bluetooth": "Pair Button (optional)",
+                "LED Indicators": "Show phantom power status, signal presence, and Bluetooth link",
+                "Audio Output": "Terminal Block / Phoenix Connectors",
+                "Power Input": "DC Power Input or PoE Port",
+                "Ground": "Ground Terminal"
+              },
+              "Mechanical Specifications": {
+                "Panel Size": "86 x 86 mm",
+                Depth: "40-50 mm",
+                Weight: "~0.3-0.5 kg",
+                "Operating Temperature": "0°C to +50°C",
+                "Storage Temperature": "-20°C to +70°C",
+                Humidity: "10% - 90% (non-condensing)"
+              }
+            }
           },
           {
             id: "model-dw-26-lrbt-io",
-            name: "DW 26 - LRBT iO",
-            description: "Dante Wall Panel – Bluetooth 5.0 + Stereo RCA Input",
-            images: [
-              "/images/Products/dante_wall_plates/DW26-LRBT.webp",
-            ]
+            name: "DW 26 - LRBT IO (White)",
+            description: "Dante Wall Panel – Bluetooth 5.0 + Stereo RCA Input (White Finish)",
+            images: ["/images/Products/dante_wall_plates/DW26-LRBT.webp"],
+
+            overview: `The Resoundify DW 26 - LRBT iO is a high-performance Dante-enabled audio input panel designed for modern AV systems requiring seamless digital audio networking. Featuring Bluetooth 5.0 wireless connectivity and RCA stereo inputs, it enables easy streaming from mobile devices and connection of analog sources. Finished in elegant white, it blends perfectly into light-colored interiors while delivering low-latency, high-fidelity Dante audio over IP networks.`,
+
+            keyFeatures: [
+              "Dante Audio Network Compatible: High-quality, low-latency digital audio over IP",
+              "Bluetooth 5.0 Wireless Connectivity: Stable long-range streaming with AAC/SBC support",
+              "RCA Stereo Inputs (Left & Right): Connect CD players, mixers, or legacy devices",
+              "Elegant White Finish: Perfect for modern, light-colored interiors",
+              "Wall-Mount Design: Flush mount for clean, professional installation",
+              "Low Latency Audio: < 2 ms Dante streaming",
+              "Wide Compatibility: Works with all Dante-enabled systems",
+              "Robust Construction: Durable build for high-traffic areas",
+              "Easy Installation & Configuration via Dante Controller",
+              "Supports Multi-Zone Audio Systems"
+            ],
+
+            applications: ["Boardrooms", "Classrooms", "Auditoriums", "Hotels", "Retail Spaces", "Hospitality Venues", "Conference Centers"],
+
+            specifications: {
+              "General": {
+                Models: "DW 26 (White), DW 27 (Black), DW 28 (Rose Gold)",
+                Type: "Dante Audio Input Panel with Bluetooth 5.0 and RCA stereo inputs",
+                Installation: "Flush wall-mount"
+              },
+              "Audio & Network": {
+                Inputs: "2 x RCA stereo inputs (Left and Right channels)",
+                Dante: "24-bit / 48 kHz digital audio streaming",
+                Bluetooth: "Version 5.0, AAC/SBC codec support",
+                "Frequency Response": "20 Hz – 20 kHz (±0.5 dB)",
+                "Signal-to-Noise Ratio": "> 95 dB",
+                "Total Harmonic Distortion": "< 0.05%",
+                Latency: "< 2 ms (Dante streaming)",
+                Protocol: "Dante over IP (Audio over Ethernet)",
+                "Network Interface": "1 x RJ45 Ethernet port (Gigabit recommended)"
+              },
+              "Power & Environment": {
+                Power: "PoE (Power over Ethernet)",
+                "Alternative Power": "Optional 24V DC input",
+                "Operating Temperature": "0°C to +50°C",
+                "Storage Temperature": "-20°C to +70°C",
+                Humidity: "10% to 90% RH (non-condensing)"
+              },
+              "Connection": {
+                "RCA Left & Right Inputs": "For analog stereo sources",
+                "Bluetooth Pair Button": "For wireless device pairing",
+                "Status LEDs": "Power, Network, Bluetooth connection",
+                "RJ45 Ethernet Port": "Dante network + PoE power",
+                "Optional 24V DC Input": "For non-PoE installations"
+              }
+            }
           },
           {
             id: "model-dw-27-lrbt-io",
-            name: "DW 27 - LRBT iO",
-            description: "Dante Wall Panel (Black) – Bluetooth 5.0 + Stereo RCA",
-            images: [
-              "/images/Products/dante_wall_plates/DW27-LRBT.webp",
-            ]
+            name: "DW 27 - LRBT IO (Black)",
+            description: "Dante Wall Panel – Bluetooth 5.0 + Stereo RCA Input (Black Finish)",
+            images: ["/images/Products/dante_wall_plates/DW27-LRBT.webp"],
+            
+            overview: `The Resoundify DW 27 - LRBT iO offers identical high-performance features as the DW 26 with Bluetooth 5.0, RCA stereo inputs, and full Dante compatibility — now in a sleek black finish that complements dark or modern interior designs.`,
+
+            keyFeatures: [
+              "Dante Audio Network Compatible: High-quality, low-latency digital audio over IP",
+              "Bluetooth 5.0 Wireless Connectivity: Stable long-range streaming with AAC/SBC support",
+              "RCA Stereo Inputs (Left & Right): Connect CD players, mixers, or legacy devices",
+              "Premium Black Finish: Ideal for modern and high-contrast interiors",
+              "Wall-Mount Design: Flush mount for clean, professional installation",
+              "Low Latency Audio: < 2 ms Dante streaming",
+              "Wide Compatibility: Works with all Dante-enabled systems",
+              "Robust Construction: Durable build for high-traffic areas",
+              "Easy Installation & Configuration via Dante Controller",
+              "Supports Multi-Zone Audio Systems"
+            ],
+
+            applications: ["Boardrooms", "Classrooms", "Auditoriums", "Hotels", "Retail Spaces", "Hospitality Venues", "Conference Centers"],
+            specifications: {
+              "General": {
+                Models: "DW 26 (White), DW 27 (Black), DW 28 (Rose Gold)",
+                Type: "Dante Audio Input Panel with Bluetooth 5.0 and RCA stereo inputs",
+                Installation: "Flush wall-mount"
+              },
+              "Audio & Network": {
+                Inputs: "2 x RCA stereo inputs (Left and Right channels)",
+                Dante: "24-bit / 48 kHz digital audio streaming",
+                Bluetooth: "Version 5.0, AAC/SBC codec support",
+                "Frequency Response": "20 Hz – 20 kHz (±0.5 dB)",
+                "Signal-to-Noise Ratio": "> 95 dB",
+                "Total Harmonic Distortion": "< 0.05%",
+                Latency: "< 2 ms (Dante streaming)",
+                Protocol: "Dante over IP (Audio over Ethernet)",
+                "Network Interface": "1 x RJ45 Ethernet port (Gigabit recommended)"
+              },
+              "Power & Environment": {
+                Power: "PoE (Power over Ethernet)",
+                "Alternative Power": "Optional 24V DC input",
+                "Operating Temperature": "0°C to +50°C",
+                "Storage Temperature": "-20°C to +70°C",
+                Humidity: "10% to 90% RH (non-condensing)"
+              },
+              "Connection": {
+                "RCA Left & Right Inputs": "For analog stereo sources",
+                "Bluetooth Pair Button": "For wireless device pairing",
+                "Status LEDs": "Power, Network, Bluetooth connection",
+                "RJ45 Ethernet Port": "Dante network + PoE power",
+                "Optional 24V DC Input": "For non-PoE installations"
+              }
+            }
           },
           {
             id: "model-dw-28-lrbt-io",
-            name: "DW 28 - LRBT iO",
-            description: "Dante Wall Panel (Rose Gold) – Bluetooth 5.0 + Stereo RCA",
+            name: "DW 28 - LRBT IO (Rose Gold)",
+            description: "Dante Wall Panel – Bluetooth 5.0 + Stereo RCA Input (Rose Gold Finish)",
+            images: ["/images/Products/dante_wall_plates/DW28-LRBT.webp"],
+            overview: `The Resoundify DW 28 - LRBT iO delivers the same powerful Bluetooth 5.0 and Dante audio performance with RCA stereo inputs — now in luxurious rose gold finish, perfect for premium hospitality, executive boardrooms, and high-end residential projects.`,
+
+            keyFeatures: [
+              "Dante Audio Network Compatible: High-quality, low-latency digital audio over IP",
+              "Bluetooth 5.0 Wireless Connectivity: Stable long-range streaming with AAC/SBC support",
+              "RCA Stereo Inputs (Left & Right): Connect CD players, mixers, or legacy devices",
+              "Luxurious Rose Gold Finish: Premium aesthetic for upscale environments",
+              "Wall-Mount Design: Flush mount for clean, professional installation",
+              "Low Latency Audio: < 2 ms Dante streaming",
+              "Wide Compatibility: Works with all Dante-enabled systems",
+              "Robust Construction: Durable build for high-traffic areas",
+              "Easy Installation & Configuration via Dante Controller",
+              "Supports Multi-Zone Audio Systems"
+            ],
+
+            applications: ["Boardrooms", "Classrooms", "Auditoriums", "Hotels", "Retail Spaces", "Hospitality Venues", "Conference Centers"],
+             specifications: {
+              "General": {
+                Models: "DW 26 (White), DW 27 (Black), DW 28 (Rose Gold)",
+                Type: "Dante Audio Input Panel with Bluetooth 5.0 and RCA stereo inputs",
+                Installation: "Flush wall-mount"
+              },
+              "Audio & Network": {
+                Inputs: "2 x RCA stereo inputs (Left and Right channels)",
+                Dante: "24-bit / 48 kHz digital audio streaming",
+                Bluetooth: "Version 5.0, AAC/SBC codec support",
+                "Frequency Response": "20 Hz – 20 kHz (±0.5 dB)",
+                "Signal-to-Noise Ratio": "> 95 dB",
+                "Total Harmonic Distortion": "< 0.05%",
+                Latency: "< 2 ms (Dante streaming)",
+                Protocol: "Dante over IP (Audio over Ethernet)",
+                "Network Interface": "1 x RJ45 Ethernet port (Gigabit recommended)"
+              },
+              "Power & Environment": {
+                Power: "PoE (Power over Ethernet)",
+                "Alternative Power": "Optional 24V DC input",
+                "Operating Temperature": "0°C to +50°C",
+                "Storage Temperature": "-20°C to +70°C",
+                Humidity: "10% to 90% RH (non-condensing)"
+              },
+              "Connection": {
+                "RCA Left & Right Inputs": "For analog stereo sources",
+                "Bluetooth Pair Button": "For wireless device pairing",
+                "Status LEDs": "Power, Network, Bluetooth connection",
+                "RJ45 Ethernet Port": "Dante network + PoE power",
+                "Optional 24V DC Input": "For non-PoE installations"
+              }
+            }
+          },
+           {
+            id: "model-dw-20-lrbt-io",
+            name: "DW 20 - LRBT IO",
+            description: "Dante Wall Plate – Bluetooth + Stereo to Dante/AES67",
             images: [
-              "/images/Products/dante_wall_plates/DW28-LRBT.webp",
+               "/images/Products/dante_wall_plates/DW20-LRBT.webp",
             ]
           },
         ],
@@ -2733,7 +3079,7 @@ export const productsData = [
         id: "series-2-channel-wireless-mic",
         name: "2 Channel wireless mic",
         description: "Dual wireless microphone systems offering versatility with handheld, bodypack, and desktop options.",
-        image: "/images/Products/Microphone/AM-RX2H.webp",
+        image: "/images/Products/Microphone/RX2B.webp",
         features: ["Dual Channel", "UHF Frequency", "Handheld/Bodypack/Desktop Options"],
         status: "In Stock",
         type: "series",
@@ -3719,7 +4065,9 @@ export const productsData = [
             images: [
               "/images/Products/ai_conferencing_solutions/RAI-150.webp",
               "/images/Products/ai_conferencing_solutions/RAI-150(1).webp",
-              "/images/Products/ai_conferencing_solutions/RAI-150(2).webp"
+              "/images/Products/ai_conferencing_solutions/RAI-150(2).webp",
+              "/images/Products/ai_conferencing_solutions/RAI-150(3).webp"
+
             ],
 
             overview: "The Resoundify RAI-150 system features a 4K UHD image sensor with a 1/2.8-inch CMOS and 8.46 million pixels, delivering exceptional image clarity and detail. It is equipped with a wide-angle lens offering 12x optical zoom and a horizontal viewing angle of up to 72.5° for versatile coverage. The AI Real-Time Subtitles function, when expanded and connected to AI Speech microphones and combined with the AI Speech Ltd public cloud service, provides real-time subtitle overlays during cloud conference scenarios, enhancing meeting efficiency. The AI Voice Linkage feature, when paired with the high-end ceiling microphone system of AI Speech, enables precise audiovisual linkage to accurately capture close-up images of the active speaker. The built-in AI Person Centering algorithm automatically centers the subject when the image is offset, ensuring a consistent and professional frame.",
